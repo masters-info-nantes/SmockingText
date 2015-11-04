@@ -12,26 +12,42 @@
 
 a = abstract
 i = interface
-
+e = enumeration
 
 ## Sample
 
-+ Roue {
-	~ integer taille 
-}
+com.voiture [[
 
-+ Moteur {
-	- integer puissance
-}
+	+ e Marque {
+		Audi
+		Renault
+		Peugeot
+		Volkswagen
+	}
 
-+ i Vehicule {}
+	+ Roue {
+		~ taille : integer
+		+ tourne(angle : integer) : boolean
+	}
 
-+ a VehiculeMotorise : Vehicule {
-	- <!> Moteur moteur
-}
+	+ Moteur {
+		- puissance : integer
+	}
 
-+ Vehicule : VehiculeMotorise {
-	- <> Roue[4] roues
-	- integer nbPorte
-}
+	+ i Vehicule {
+		+ avance()
+	}
 
+	+ a VehiculeMotorise : Vehicule {
+		- marque : Marque
+		- <!> moteur : Moteur
+	}
+
+	+ Voiture : VehiculeMotorise {
+		- <> roues : Roue[4]
+		- nbPorte : integer 
+		
+		+ avance() <- Vehicule:avance()
+	}
+	
+]]
