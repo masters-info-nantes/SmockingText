@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/org.xtext.smokingtext.diagramclass/src-gen"
+    editDirectory="/org.xtext.smokingtext.diagramclass.edit/src" editorDirectory="/org.xtext.smokingtext.diagramclass.editor/src"
+    modelPluginID="org.xtext.smokingtext.diagramclass" forceOverwrite="true" modelName="DiagramClass"
+    updateClasspath="false" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    complianceLevel="5.0" copyrightFields="false" editPluginID="org.xtext.smokingtext.diagramclass.edit"
+    editorPluginID="org.xtext.smokingtext.diagramclass.editor">
+  <genPackages prefix="DiagramClass" basePackage="org.xtext.smokingtext.diagramclass"
+      disposableProviderFactory="true" ecorePackage="platform:/resource/org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/DiagramClass.ecore#/">
+    <genClasses ecoreClass="platform:/resource/org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/DiagramClass.ecore#//Model">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference platform:/resource/org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/DiagramClass.ecore#//Model/greetings"/>
+    </genClasses>
+    <genClasses ecoreClass="platform:/resource/org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/DiagramClass.ecore#//Elements"/>
+    <genClasses ecoreClass="platform:/resource/org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/DiagramClass.ecore#//Class">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute platform:/resource/org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/DiagramClass.ecore#//Class/classname"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute platform:/resource/org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/DiagramClass.ecore#//Class/extension"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute platform:/resource/org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/DiagramClass.ecore#//Class/implements"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference platform:/resource/org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/DiagramClass.ecore#//Class/body"/>
+    </genClasses>
+    <genClasses ecoreClass="platform:/resource/org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/DiagramClass.ecore#//Dependancy">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute platform:/resource/org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/DiagramClass.ecore#//Dependancy/name"/>
+    </genClasses>
+    <genClasses ecoreClass="platform:/resource/org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/DiagramClass.ecore#//Enumeration">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute platform:/resource/org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/DiagramClass.ecore#//Enumeration/classname"/>
+    </genClasses>
+    <genClasses ecoreClass="platform:/resource/org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/DiagramClass.ecore#//Interface">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute platform:/resource/org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/DiagramClass.ecore#//Interface/methodname"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference platform:/resource/org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/DiagramClass.ecore#//Interface/body"/>
+    </genClasses>
+    <genClasses ecoreClass="platform:/resource/org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/DiagramClass.ecore#//Abstract">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute platform:/resource/org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/DiagramClass.ecore#//Abstract/classname"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute platform:/resource/org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/DiagramClass.ecore#//Abstract/extension"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute platform:/resource/org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/DiagramClass.ecore#//Abstract/implements"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference platform:/resource/org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/DiagramClass.ecore#//Abstract/body"/>
+    </genClasses>
+    <genClasses ecoreClass="platform:/resource/org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/DiagramClass.ecore#//Attribute">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute platform:/resource/org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/DiagramClass.ecore#//Attribute/attributename"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute platform:/resource/org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/DiagramClass.ecore#//Attribute/type"/>
+    </genClasses>
+    <genClasses ecoreClass="platform:/resource/org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/DiagramClass.ecore#//paramIn">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute platform:/resource/org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/DiagramClass.ecore#//paramIn/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute platform:/resource/org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/DiagramClass.ecore#//paramIn/type"/>
+    </genClasses>
+    <genClasses ecoreClass="platform:/resource/org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/DiagramClass.ecore#//Method">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute platform:/resource/org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/DiagramClass.ecore#//Method/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference platform:/resource/org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/DiagramClass.ecore#//Method/param"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute platform:/resource/org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/DiagramClass.ecore#//Method/returnType"/>
+    </genClasses>
+    <genClasses ecoreClass="platform:/resource/org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/DiagramClass.ecore#//Package">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute platform:/resource/org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/DiagramClass.ecore#//Package/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference platform:/resource/org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/DiagramClass.ecore#//Package/classType"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference platform:/resource/org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/DiagramClass.ecore#//Package/subPackage"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>
