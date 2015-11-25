@@ -35,9 +35,13 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute platform:/resource/org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/DiagramClass.ecore#//Abstract/implements"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference platform:/resource/org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/DiagramClass.ecore#//Abstract/body"/>
     </genClasses>
+    <genClasses ecoreClass="platform:/resource/org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/DiagramClass.ecore#//BiRelation">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute platform:/resource/org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/DiagramClass.ecore#//BiRelation/linkName"/>
+    </genClasses>
     <genClasses ecoreClass="platform:/resource/org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/DiagramClass.ecore#//Attribute">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute platform:/resource/org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/DiagramClass.ecore#//Attribute/attributename"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute platform:/resource/org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/DiagramClass.ecore#//Attribute/type"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference platform:/resource/org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/DiagramClass.ecore#//Attribute/birelation"/>
     </genClasses>
     <genClasses ecoreClass="platform:/resource/org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/DiagramClass.ecore#//paramIn">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute platform:/resource/org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/DiagramClass.ecore#//paramIn/name"/>

@@ -14,6 +14,7 @@ import org.eclipse.emf.ecore.EObject;
 
 import org.xtext.smokingtext.diagramclass.diagramClass.Abstract;
 import org.xtext.smokingtext.diagramclass.diagramClass.Attribute;
+import org.xtext.smokingtext.diagramclass.diagramClass.BiRelation;
 import org.xtext.smokingtext.diagramclass.diagramClass.Dependancy;
 import org.xtext.smokingtext.diagramclass.diagramClass.DiagramClassPackage;
 import org.xtext.smokingtext.diagramclass.diagramClass.Elements;
@@ -120,6 +121,11 @@ public class DiagramClassAdapterFactory extends AdapterFactoryImpl
       public Adapter caseAbstract(Abstract object)
       {
         return createAbstractAdapter();
+      }
+      @Override
+      public Adapter caseBiRelation(BiRelation object)
+      {
+        return createBiRelationAdapter();
       }
       @Override
       public Adapter caseAttribute(Attribute object)
@@ -264,6 +270,21 @@ public class DiagramClassAdapterFactory extends AdapterFactoryImpl
    * @generated
    */
   public Adapter createAbstractAdapter()
+  {
+    return null;
+  }
+
+  /**
+   * Creates a new adapter for an object of class '{@link org.xtext.smokingtext.diagramclass.diagramClass.BiRelation <em>Bi Relation</em>}'.
+   * <!-- begin-user-doc -->
+   * This default implementation returns null so that we can easily ignore cases;
+   * it's useful to ignore a case when inheritance will catch all the cases anyway.
+   * <!-- end-user-doc -->
+   * @return the new adapter.
+   * @see org.xtext.smokingtext.diagramclass.diagramClass.BiRelation
+   * @generated
+   */
+  public Adapter createBiRelationAdapter()
   {
     return null;
   }

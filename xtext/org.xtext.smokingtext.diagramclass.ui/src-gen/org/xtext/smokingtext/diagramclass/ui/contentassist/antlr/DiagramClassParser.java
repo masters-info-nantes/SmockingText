@@ -40,7 +40,12 @@ public class DiagramClassParser extends AbstractContentAssistParser {
 					put(grammarAccess.getElementsAccess().getAlternatives(), "rule__Elements__Alternatives");
 					put(grammarAccess.getClassAccess().getBodyAlternatives_6_0(), "rule__Class__BodyAlternatives_6_0");
 					put(grammarAccess.getAbstractAccess().getBodyAlternatives_7_0(), "rule__Abstract__BodyAlternatives_7_0");
+					put(grammarAccess.getBiRelationAccess().getAlternatives_1(), "rule__BiRelation__Alternatives_1");
+					put(grammarAccess.getBiRelationAccess().getAlternatives_1_0_1_1(), "rule__BiRelation__Alternatives_1_0_1_1");
+					put(grammarAccess.getBiRelationAccess().getAlternatives_7(), "rule__BiRelation__Alternatives_7");
+					put(grammarAccess.getBiRelationAccess().getAlternatives_7_0_1_1(), "rule__BiRelation__Alternatives_7_0_1_1");
 					put(grammarAccess.getAttributeAccess().getAlternatives_1(), "rule__Attribute__Alternatives_1");
+					put(grammarAccess.getAttributeAccess().getAlternatives_5(), "rule__Attribute__Alternatives_5");
 					put(grammarAccess.getBodyVisibilityAccess().getAlternatives(), "rule__BodyVisibility__Alternatives");
 					put(grammarAccess.getClassVisibilityAccess().getAlternatives(), "rule__ClassVisibility__Alternatives");
 					put(grammarAccess.getClassAccess().getGroup(), "rule__Class__Group__0");
@@ -50,8 +55,13 @@ public class DiagramClassParser extends AbstractContentAssistParser {
 					put(grammarAccess.getEnumerationAccess().getGroup_4(), "rule__Enumeration__Group_4__0");
 					put(grammarAccess.getInterfaceAccess().getGroup(), "rule__Interface__Group__0");
 					put(grammarAccess.getAbstractAccess().getGroup(), "rule__Abstract__Group__0");
+					put(grammarAccess.getBiRelationAccess().getGroup(), "rule__BiRelation__Group__0");
+					put(grammarAccess.getBiRelationAccess().getGroup_1_0(), "rule__BiRelation__Group_1_0__0");
+					put(grammarAccess.getBiRelationAccess().getGroup_1_0_1(), "rule__BiRelation__Group_1_0_1__0");
+					put(grammarAccess.getBiRelationAccess().getGroup_7_0(), "rule__BiRelation__Group_7_0__0");
+					put(grammarAccess.getBiRelationAccess().getGroup_7_0_1(), "rule__BiRelation__Group_7_0_1__0");
 					put(grammarAccess.getAttributeAccess().getGroup(), "rule__Attribute__Group__0");
-					put(grammarAccess.getAttributeAccess().getGroup_5(), "rule__Attribute__Group_5__0");
+					put(grammarAccess.getAttributeAccess().getGroup_5_0(), "rule__Attribute__Group_5_0__0");
 					put(grammarAccess.getParamInAccess().getGroup(), "rule__ParamIn__Group__0");
 					put(grammarAccess.getMethodAccess().getGroup(), "rule__Method__Group__0");
 					put(grammarAccess.getMethodAccess().getGroup_5(), "rule__Method__Group_5__0");
@@ -70,8 +80,10 @@ public class DiagramClassParser extends AbstractContentAssistParser {
 					put(grammarAccess.getAbstractAccess().getExtensionAssignment_4(), "rule__Abstract__ExtensionAssignment_4");
 					put(grammarAccess.getAbstractAccess().getImplementsAssignment_5(), "rule__Abstract__ImplementsAssignment_5");
 					put(grammarAccess.getAbstractAccess().getBodyAssignment_7(), "rule__Abstract__BodyAssignment_7");
+					put(grammarAccess.getBiRelationAccess().getLinkNameAssignment_4(), "rule__BiRelation__LinkNameAssignment_4");
 					put(grammarAccess.getAttributeAccess().getAttributenameAssignment_2(), "rule__Attribute__AttributenameAssignment_2");
 					put(grammarAccess.getAttributeAccess().getTypeAssignment_4(), "rule__Attribute__TypeAssignment_4");
+					put(grammarAccess.getAttributeAccess().getBirelationAssignment_5_1(), "rule__Attribute__BirelationAssignment_5_1");
 					put(grammarAccess.getParamInAccess().getNameAssignment_0(), "rule__ParamIn__NameAssignment_0");
 					put(grammarAccess.getParamInAccess().getTypeAssignment_2(), "rule__ParamIn__TypeAssignment_2");
 					put(grammarAccess.getMethodAccess().getNameAssignment_1(), "rule__Method__NameAssignment_1");

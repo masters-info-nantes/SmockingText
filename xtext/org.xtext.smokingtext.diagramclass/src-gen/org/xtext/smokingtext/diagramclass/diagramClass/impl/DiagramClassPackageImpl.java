@@ -14,6 +14,7 @@ import org.eclipse.emf.ecore.impl.EPackageImpl;
 
 import org.xtext.smokingtext.diagramclass.diagramClass.Abstract;
 import org.xtext.smokingtext.diagramclass.diagramClass.Attribute;
+import org.xtext.smokingtext.diagramclass.diagramClass.BiRelation;
 import org.xtext.smokingtext.diagramclass.diagramClass.Dependancy;
 import org.xtext.smokingtext.diagramclass.diagramClass.DiagramClassFactory;
 import org.xtext.smokingtext.diagramclass.diagramClass.DiagramClassPackage;
@@ -80,6 +81,13 @@ public class DiagramClassPackageImpl extends EPackageImpl implements DiagramClas
    * @generated
    */
   private EClass abstractEClass = null;
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  private EClass biRelationEClass = null;
 
   /**
    * <!-- begin-user-doc -->
@@ -377,6 +385,26 @@ public class DiagramClassPackageImpl extends EPackageImpl implements DiagramClas
    * <!-- end-user-doc -->
    * @generated
    */
+  public EClass getBiRelation()
+  {
+    return biRelationEClass;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EAttribute getBiRelation_LinkName()
+  {
+    return (EAttribute)biRelationEClass.getEStructuralFeatures().get(0);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
   public EClass getAttribute()
   {
     return attributeEClass;
@@ -400,6 +428,16 @@ public class DiagramClassPackageImpl extends EPackageImpl implements DiagramClas
   public EAttribute getAttribute_Type()
   {
     return (EAttribute)attributeEClass.getEStructuralFeatures().get(1);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EReference getAttribute_Birelation()
+  {
+    return (EReference)attributeEClass.getEStructuralFeatures().get(2);
   }
 
   /**
@@ -569,9 +607,13 @@ public class DiagramClassPackageImpl extends EPackageImpl implements DiagramClas
     createEAttribute(abstractEClass, ABSTRACT__IMPLEMENTS);
     createEReference(abstractEClass, ABSTRACT__BODY);
 
+    biRelationEClass = createEClass(BI_RELATION);
+    createEAttribute(biRelationEClass, BI_RELATION__LINK_NAME);
+
     attributeEClass = createEClass(ATTRIBUTE);
     createEAttribute(attributeEClass, ATTRIBUTE__ATTRIBUTENAME);
     createEAttribute(attributeEClass, ATTRIBUTE__TYPE);
+    createEReference(attributeEClass, ATTRIBUTE__BIRELATION);
 
     paramInEClass = createEClass(PARAM_IN);
     createEAttribute(paramInEClass, PARAM_IN__NAME);
@@ -650,9 +692,13 @@ public class DiagramClassPackageImpl extends EPackageImpl implements DiagramClas
     initEAttribute(getAbstract_Implements(), ecorePackage.getEString(), "implements", null, 0, 1, Abstract.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEReference(getAbstract_Body(), ecorePackage.getEObject(), null, "body", null, 0, -1, Abstract.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
+    initEClass(biRelationEClass, BiRelation.class, "BiRelation", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+    initEAttribute(getBiRelation_LinkName(), ecorePackage.getEString(), "linkName", null, 0, 1, BiRelation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
     initEClass(attributeEClass, Attribute.class, "Attribute", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
     initEAttribute(getAttribute_Attributename(), ecorePackage.getEString(), "attributename", null, 0, 1, Attribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEAttribute(getAttribute_Type(), ecorePackage.getEString(), "type", null, 0, 1, Attribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEReference(getAttribute_Birelation(), this.getBiRelation(), null, "birelation", null, 0, 1, Attribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
     initEClass(paramInEClass, paramIn.class, "paramIn", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
     initEAttribute(getparamIn_Name(), ecorePackage.getEString(), "name", null, 0, 1, paramIn.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);

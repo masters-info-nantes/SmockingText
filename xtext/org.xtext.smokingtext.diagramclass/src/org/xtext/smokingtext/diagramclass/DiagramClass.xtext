@@ -40,9 +40,16 @@ Abstract:
 	'}'
 ;
 	
-Attribute:
-	BodyVisibility ("<>"|"<!>")? attributename = ID ":" type = ID ("[" number? "]")?
+
+BiRelation:
+	 "[" (number+ (".." (number+ | "*"))| "*")? "]" "-" linkName = ID "->" "[" (number+ (".." (number+ | "*"))| "*")? "]"
 ;
+
+Attribute:
+	BodyVisibility ("<>"|"<!>")? attributename = ID ":" type = ID (("[" number* "]") | birelation = BiRelation)?
+;
+
+
 
 paramIn:
 	name = ID ":" type =  ID (",")? 

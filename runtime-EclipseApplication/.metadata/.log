@@ -1,0 +1,471 @@
+!SESSION 2015-11-04 15:34:52.233 -----------------------------------------------
+eclipse.buildId=debbuild
+java.version=1.7.0_85
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=fr_FR
+Framework arguments:  -product org.eclipse.platform.ide
+Command-line arguments:  -product org.eclipse.platform.ide -data /home/david/Documents/M2ALMA/MDE/Projet/SmokingText/xtext/../runtime-EclipseApplication -dev file:/home/david/Documents/M2ALMA/MDE/Projet/SmokingText/xtext/.metadata/.plugins/org.eclipse.pde.core/Eclipse Application/dev.properties -os linux -ws gtk -arch x86_64 -consoleLog
+
+!ENTRY org.eclipse.osgi 2 0 2015-11-04 15:34:56.811
+!MESSAGE One or more bundles are not resolved because the following root constraints are not resolved:
+!SUBENTRY 1 org.eclipse.osgi 2 0 2015-11-04 15:34:56.812
+!MESSAGE Bundle reference:file:/home/david/.eclipse/org.eclipse.platform_3.8_155965261/plugins/org.eclipse.m2e.usagedata_1.0.200.20111228-1245.jar was not resolved.
+!SUBENTRY 2 org.eclipse.m2e.usagedata 2 0 2015-11-04 15:34:56.812
+!MESSAGE Missing required capability Require-Capability: osgi.ee; filter="(|(&(osgi.ee=JavaSE)(version=1.5))(&(osgi.ee=JavaSE)(version=1.6)))".
+!SUBENTRY 2 org.eclipse.m2e.usagedata 2 0 2015-11-04 15:34:56.812
+!MESSAGE Missing required bundle org.eclipse.epp.usagedata.gathering_0.0.0.
+
+!ENTRY org.eclipse.osgi 2 0 2015-11-04 15:34:56.838
+!MESSAGE The following is a complete list of bundles which are not resolved, see the prior log entry for the root cause if it exists:
+!SUBENTRY 1 org.eclipse.osgi 2 0 2015-11-04 15:34:56.838
+!MESSAGE Bundle org.eclipse.cvs_1.2.0.dist [66] was not resolved.
+!SUBENTRY 2 org.eclipse.cvs 2 0 2015-11-04 15:34:56.838
+!MESSAGE Another singleton version selected: org.eclipse.cvs_1.2.1.v201302041200
+!SUBENTRY 1 org.eclipse.osgi 2 0 2015-11-04 15:34:56.839
+!MESSAGE Bundle org.eclipse.m2e.usagedata_1.0.200.20111228-1245 [213] was not resolved.
+!SUBENTRY 2 org.eclipse.m2e.usagedata 2 0 2015-11-04 15:34:56.839
+!MESSAGE Missing required bundle org.eclipse.epp.usagedata.gathering_0.0.0.
+!SUBENTRY 2 org.eclipse.m2e.usagedata 2 0 2015-11-04 15:34:56.839
+!MESSAGE Missing required capability Require-Capability: osgi.ee; filter="(|(&(osgi.ee=JavaSE)(version=1.5))(&(osgi.ee=JavaSE)(version=1.6)))".
+!SUBENTRY 1 org.eclipse.osgi 2 0 2015-11-04 15:34:56.840
+!MESSAGE Bundle org.eclipse.team.cvs.core_3.3.500.dist [259] was not resolved.
+!SUBENTRY 2 org.eclipse.team.cvs.core 2 0 2015-11-04 15:34:56.840
+!MESSAGE Another singleton version selected: org.eclipse.team.cvs.core_3.3.500.v20120522-1148
+!SUBENTRY 1 org.eclipse.osgi 2 0 2015-11-04 15:34:56.840
+!MESSAGE Bundle org.eclipse.team.cvs.ssh2_3.2.300.dist [261] was not resolved.
+!SUBENTRY 2 org.eclipse.team.cvs.ssh2 2 0 2015-11-04 15:34:56.841
+!MESSAGE Missing optionally required bundle org.eclipse.team.cvs.ssh_[3.2.0,4.0.0).
+!SUBENTRY 1 org.eclipse.osgi 2 0 2015-11-04 15:34:56.841
+!MESSAGE Bundle org.eclipse.team.cvs.ui_3.3.500.dist [263] was not resolved.
+!SUBENTRY 2 org.eclipse.team.cvs.ui 2 0 2015-11-04 15:34:56.841
+!MESSAGE Another singleton version selected: org.eclipse.team.cvs.ui_3.3.500.v20120522-1148
+
+!ENTRY org.eclipse.mylyn.tasks.ui 2 0 2015-11-04 15:34:59.021
+!MESSAGE No search provider was registed. Tasks search is not available.
+
+!ENTRY org.eclipse.ui 2 2 2015-11-04 15:35:36.657
+!MESSAGE Invalid property category path: ValidationPropertiesPage (bundle: org.eclipse.wst.xml.ui, propertyPage: org.eclipse.wst.xml.ui.propertyPage.project.validation)
+!SESSION 2015-11-04 15:53:30.466 -----------------------------------------------
+eclipse.buildId=debbuild
+java.version=1.7.0_85
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=fr_FR
+Framework arguments:  -product org.eclipse.platform.ide
+Command-line arguments:  -product org.eclipse.platform.ide -data /home/david/Documents/M2ALMA/MDE/Projet/SmokingText/xtext/../runtime-EclipseApplication -dev file:/home/david/Documents/M2ALMA/MDE/Projet/SmokingText/xtext/.metadata/.plugins/org.eclipse.pde.core/Eclipse Application/dev.properties -os linux -ws gtk -arch x86_64 -consoleLog
+
+!ENTRY org.eclipse.osgi 2 0 2015-11-04 15:53:35.570
+!MESSAGE One or more bundles are not resolved because the following root constraints are not resolved:
+!SUBENTRY 1 org.eclipse.osgi 2 0 2015-11-04 15:53:35.571
+!MESSAGE Bundle reference:file:/home/david/.eclipse/org.eclipse.platform_3.8_155965261/plugins/org.eclipse.m2e.usagedata_1.0.200.20111228-1245.jar was not resolved.
+!SUBENTRY 2 org.eclipse.m2e.usagedata 2 0 2015-11-04 15:53:35.571
+!MESSAGE Missing required bundle org.eclipse.epp.usagedata.gathering_0.0.0.
+!SUBENTRY 2 org.eclipse.m2e.usagedata 2 0 2015-11-04 15:53:35.571
+!MESSAGE Missing required capability Require-Capability: osgi.ee; filter="(|(&(osgi.ee=JavaSE)(version=1.5))(&(osgi.ee=JavaSE)(version=1.6)))".
+
+!ENTRY org.eclipse.osgi 2 0 2015-11-04 15:53:35.593
+!MESSAGE The following is a complete list of bundles which are not resolved, see the prior log entry for the root cause if it exists:
+!SUBENTRY 1 org.eclipse.osgi 2 0 2015-11-04 15:53:35.593
+!MESSAGE Bundle org.eclipse.cvs_1.2.0.dist [66] was not resolved.
+!SUBENTRY 2 org.eclipse.cvs 2 0 2015-11-04 15:53:35.593
+!MESSAGE Another singleton version selected: org.eclipse.cvs_1.2.1.v201302041200
+!SUBENTRY 2 org.eclipse.cvs 2 0 2015-11-04 15:53:35.594
+!MESSAGE Another singleton version selected: org.eclipse.cvs_1.2.1.v201302041200
+!SUBENTRY 1 org.eclipse.osgi 2 0 2015-11-04 15:53:35.594
+!MESSAGE Bundle org.eclipse.m2e.usagedata_1.0.200.20111228-1245 [213] was not resolved.
+!SUBENTRY 2 org.eclipse.m2e.usagedata 2 0 2015-11-04 15:53:35.594
+!MESSAGE Missing required bundle org.eclipse.epp.usagedata.gathering_0.0.0.
+!SUBENTRY 2 org.eclipse.m2e.usagedata 2 0 2015-11-04 15:53:35.595
+!MESSAGE Missing required capability Require-Capability: osgi.ee; filter="(|(&(osgi.ee=JavaSE)(version=1.5))(&(osgi.ee=JavaSE)(version=1.6)))".
+!SUBENTRY 1 org.eclipse.osgi 2 0 2015-11-04 15:53:35.595
+!MESSAGE Bundle org.eclipse.team.cvs.core_3.3.500.dist [259] was not resolved.
+!SUBENTRY 2 org.eclipse.team.cvs.core 2 0 2015-11-04 15:53:35.595
+!MESSAGE Another singleton version selected: org.eclipse.team.cvs.core_3.3.500.v20120522-1148
+!SUBENTRY 2 org.eclipse.team.cvs.core 2 0 2015-11-04 15:53:35.595
+!MESSAGE Another singleton version selected: org.eclipse.team.cvs.core_3.3.500.v20120522-1148
+!SUBENTRY 1 org.eclipse.osgi 2 0 2015-11-04 15:53:35.596
+!MESSAGE Bundle org.eclipse.team.cvs.ssh2_3.2.300.dist [261] was not resolved.
+!SUBENTRY 2 org.eclipse.team.cvs.ssh2 2 0 2015-11-04 15:53:35.596
+!MESSAGE Missing optionally required bundle org.eclipse.team.cvs.ssh_[3.2.0,4.0.0).
+!SUBENTRY 1 org.eclipse.osgi 2 0 2015-11-04 15:53:35.596
+!MESSAGE Bundle org.eclipse.team.cvs.ui_3.3.500.dist [263] was not resolved.
+!SUBENTRY 2 org.eclipse.team.cvs.ui 2 0 2015-11-04 15:53:35.597
+!MESSAGE Another singleton version selected: org.eclipse.team.cvs.ui_3.3.500.v20120522-1148
+!SUBENTRY 2 org.eclipse.team.cvs.ui 2 0 2015-11-04 15:53:35.597
+!MESSAGE Another singleton version selected: org.eclipse.team.cvs.ui_3.3.500.v20120522-1148
+
+!ENTRY org.eclipse.mylyn.tasks.ui 2 0 2015-11-04 15:53:38.039
+!MESSAGE No search provider was registed. Tasks search is not available.
+
+!ENTRY org.eclipse.ui 2 2 2015-11-04 15:59:38.107
+!MESSAGE Invalid property category path: ValidationPropertiesPage (bundle: org.eclipse.wst.xml.ui, propertyPage: org.eclipse.wst.xml.ui.propertyPage.project.validation)
+!SESSION 2015-11-04 16:00:54.514 -----------------------------------------------
+eclipse.buildId=debbuild
+java.version=1.7.0_85
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=fr_FR
+Framework arguments:  -product org.eclipse.platform.ide
+Command-line arguments:  -product org.eclipse.platform.ide -data /home/david/Documents/M2ALMA/MDE/Projet/SmokingText/xtext/../runtime-EclipseApplication -dev file:/home/david/Documents/M2ALMA/MDE/Projet/SmokingText/xtext/.metadata/.plugins/org.eclipse.pde.core/Eclipse Application/dev.properties -os linux -ws gtk -arch x86_64 -consoleLog
+
+!ENTRY org.eclipse.osgi 2 0 2015-11-04 16:00:58.995
+!MESSAGE One or more bundles are not resolved because the following root constraints are not resolved:
+!SUBENTRY 1 org.eclipse.osgi 2 0 2015-11-04 16:00:58.995
+!MESSAGE Bundle reference:file:/home/david/.eclipse/org.eclipse.platform_3.8_155965261/plugins/org.eclipse.m2e.usagedata_1.0.200.20111228-1245.jar was not resolved.
+!SUBENTRY 2 org.eclipse.m2e.usagedata 2 0 2015-11-04 16:00:58.996
+!MESSAGE Missing required capability Require-Capability: osgi.ee; filter="(|(&(osgi.ee=JavaSE)(version=1.5))(&(osgi.ee=JavaSE)(version=1.6)))".
+!SUBENTRY 2 org.eclipse.m2e.usagedata 2 0 2015-11-04 16:00:58.996
+!MESSAGE Missing required bundle org.eclipse.epp.usagedata.gathering_0.0.0.
+
+!ENTRY org.eclipse.osgi 2 0 2015-11-04 16:00:59.021
+!MESSAGE The following is a complete list of bundles which are not resolved, see the prior log entry for the root cause if it exists:
+!SUBENTRY 1 org.eclipse.osgi 2 0 2015-11-04 16:00:59.022
+!MESSAGE Bundle org.eclipse.cvs_1.2.0.dist [66] was not resolved.
+!SUBENTRY 2 org.eclipse.cvs 2 0 2015-11-04 16:00:59.022
+!MESSAGE Another singleton version selected: org.eclipse.cvs_1.2.1.v201302041200
+!SUBENTRY 2 org.eclipse.cvs 2 0 2015-11-04 16:00:59.023
+!MESSAGE Another singleton version selected: org.eclipse.cvs_1.2.1.v201302041200
+!SUBENTRY 1 org.eclipse.osgi 2 0 2015-11-04 16:00:59.023
+!MESSAGE Bundle org.eclipse.m2e.usagedata_1.0.200.20111228-1245 [213] was not resolved.
+!SUBENTRY 2 org.eclipse.m2e.usagedata 2 0 2015-11-04 16:00:59.023
+!MESSAGE Missing required bundle org.eclipse.epp.usagedata.gathering_0.0.0.
+!SUBENTRY 2 org.eclipse.m2e.usagedata 2 0 2015-11-04 16:00:59.024
+!MESSAGE Missing required capability Require-Capability: osgi.ee; filter="(|(&(osgi.ee=JavaSE)(version=1.5))(&(osgi.ee=JavaSE)(version=1.6)))".
+!SUBENTRY 1 org.eclipse.osgi 2 0 2015-11-04 16:00:59.024
+!MESSAGE Bundle org.eclipse.team.cvs.core_3.3.500.dist [259] was not resolved.
+!SUBENTRY 2 org.eclipse.team.cvs.core 2 0 2015-11-04 16:00:59.024
+!MESSAGE Another singleton version selected: org.eclipse.team.cvs.core_3.3.500.v20120522-1148
+!SUBENTRY 2 org.eclipse.team.cvs.core 2 0 2015-11-04 16:00:59.025
+!MESSAGE Another singleton version selected: org.eclipse.team.cvs.core_3.3.500.v20120522-1148
+!SUBENTRY 1 org.eclipse.osgi 2 0 2015-11-04 16:00:59.025
+!MESSAGE Bundle org.eclipse.team.cvs.ssh2_3.2.300.dist [261] was not resolved.
+!SUBENTRY 2 org.eclipse.team.cvs.ssh2 2 0 2015-11-04 16:00:59.026
+!MESSAGE Missing optionally required bundle org.eclipse.team.cvs.ssh_[3.2.0,4.0.0).
+!SUBENTRY 1 org.eclipse.osgi 2 0 2015-11-04 16:00:59.026
+!MESSAGE Bundle org.eclipse.team.cvs.ui_3.3.500.dist [263] was not resolved.
+!SUBENTRY 2 org.eclipse.team.cvs.ui 2 0 2015-11-04 16:00:59.026
+!MESSAGE Another singleton version selected: org.eclipse.team.cvs.ui_3.3.500.v20120522-1148
+!SUBENTRY 2 org.eclipse.team.cvs.ui 2 0 2015-11-04 16:00:59.027
+!MESSAGE Another singleton version selected: org.eclipse.team.cvs.ui_3.3.500.v20120522-1148
+
+!ENTRY org.eclipse.mylyn.tasks.ui 2 0 2015-11-04 16:01:01.244
+!MESSAGE No search provider was registed. Tasks search is not available.
+
+!ENTRY org.eclipse.ui 2 2 2015-11-04 16:03:07.048
+!MESSAGE Invalid property category path: ValidationPropertiesPage (bundle: org.eclipse.wst.xml.ui, propertyPage: org.eclipse.wst.xml.ui.propertyPage.project.validation)
+!SESSION 2015-11-04 16:03:27.051 -----------------------------------------------
+eclipse.buildId=debbuild
+java.version=1.7.0_85
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=fr_FR
+Framework arguments:  -product org.eclipse.platform.ide
+Command-line arguments:  -product org.eclipse.platform.ide -data /home/david/Documents/M2ALMA/MDE/Projet/SmokingText/xtext/../runtime-EclipseApplication -dev file:/home/david/Documents/M2ALMA/MDE/Projet/SmokingText/xtext/.metadata/.plugins/org.eclipse.pde.core/Eclipse Application/dev.properties -os linux -ws gtk -arch x86_64 -consoleLog
+
+!ENTRY org.eclipse.osgi 2 0 2015-11-04 16:03:31.801
+!MESSAGE One or more bundles are not resolved because the following root constraints are not resolved:
+!SUBENTRY 1 org.eclipse.osgi 2 0 2015-11-04 16:03:31.802
+!MESSAGE Bundle reference:file:/home/david/.eclipse/org.eclipse.platform_3.8_155965261/plugins/org.eclipse.m2e.usagedata_1.0.200.20111228-1245.jar was not resolved.
+!SUBENTRY 2 org.eclipse.m2e.usagedata 2 0 2015-11-04 16:03:31.802
+!MESSAGE Missing required bundle org.eclipse.epp.usagedata.gathering_0.0.0.
+!SUBENTRY 2 org.eclipse.m2e.usagedata 2 0 2015-11-04 16:03:31.803
+!MESSAGE Missing required capability Require-Capability: osgi.ee; filter="(|(&(osgi.ee=JavaSE)(version=1.5))(&(osgi.ee=JavaSE)(version=1.6)))".
+
+!ENTRY org.eclipse.osgi 2 0 2015-11-04 16:03:31.827
+!MESSAGE The following is a complete list of bundles which are not resolved, see the prior log entry for the root cause if it exists:
+!SUBENTRY 1 org.eclipse.osgi 2 0 2015-11-04 16:03:31.828
+!MESSAGE Bundle org.eclipse.cvs_1.2.0.dist [66] was not resolved.
+!SUBENTRY 2 org.eclipse.cvs 2 0 2015-11-04 16:03:31.828
+!MESSAGE Another singleton version selected: org.eclipse.cvs_1.2.1.v201302041200
+!SUBENTRY 2 org.eclipse.cvs 2 0 2015-11-04 16:03:31.829
+!MESSAGE Another singleton version selected: org.eclipse.cvs_1.2.1.v201302041200
+!SUBENTRY 1 org.eclipse.osgi 2 0 2015-11-04 16:03:31.829
+!MESSAGE Bundle org.eclipse.m2e.usagedata_1.0.200.20111228-1245 [213] was not resolved.
+!SUBENTRY 2 org.eclipse.m2e.usagedata 2 0 2015-11-04 16:03:31.829
+!MESSAGE Missing required bundle org.eclipse.epp.usagedata.gathering_0.0.0.
+!SUBENTRY 2 org.eclipse.m2e.usagedata 2 0 2015-11-04 16:03:31.830
+!MESSAGE Missing required capability Require-Capability: osgi.ee; filter="(|(&(osgi.ee=JavaSE)(version=1.5))(&(osgi.ee=JavaSE)(version=1.6)))".
+!SUBENTRY 1 org.eclipse.osgi 2 0 2015-11-04 16:03:31.830
+!MESSAGE Bundle org.eclipse.team.cvs.core_3.3.500.dist [259] was not resolved.
+!SUBENTRY 2 org.eclipse.team.cvs.core 2 0 2015-11-04 16:03:31.831
+!MESSAGE Another singleton version selected: org.eclipse.team.cvs.core_3.3.500.v20120522-1148
+!SUBENTRY 2 org.eclipse.team.cvs.core 2 0 2015-11-04 16:03:31.831
+!MESSAGE Another singleton version selected: org.eclipse.team.cvs.core_3.3.500.v20120522-1148
+!SUBENTRY 1 org.eclipse.osgi 2 0 2015-11-04 16:03:31.832
+!MESSAGE Bundle org.eclipse.team.cvs.ssh2_3.2.300.dist [261] was not resolved.
+!SUBENTRY 2 org.eclipse.team.cvs.ssh2 2 0 2015-11-04 16:03:31.832
+!MESSAGE Missing optionally required bundle org.eclipse.team.cvs.ssh_[3.2.0,4.0.0).
+!SUBENTRY 1 org.eclipse.osgi 2 0 2015-11-04 16:03:31.833
+!MESSAGE Bundle org.eclipse.team.cvs.ui_3.3.500.dist [263] was not resolved.
+!SUBENTRY 2 org.eclipse.team.cvs.ui 2 0 2015-11-04 16:03:31.833
+!MESSAGE Another singleton version selected: org.eclipse.team.cvs.ui_3.3.500.v20120522-1148
+!SUBENTRY 2 org.eclipse.team.cvs.ui 2 0 2015-11-04 16:03:31.833
+!MESSAGE Another singleton version selected: org.eclipse.team.cvs.ui_3.3.500.v20120522-1148
+
+!ENTRY org.eclipse.mylyn.tasks.ui 2 0 2015-11-04 16:03:34.275
+!MESSAGE No search provider was registed. Tasks search is not available.
+
+!ENTRY org.eclipse.ui 2 2 2015-11-04 16:12:15.540
+!MESSAGE Invalid property category path: ValidationPropertiesPage (bundle: org.eclipse.wst.xml.ui, propertyPage: org.eclipse.wst.xml.ui.propertyPage.project.validation)
+!SESSION 2015-11-04 16:13:20.032 -----------------------------------------------
+eclipse.buildId=debbuild
+java.version=1.7.0_85
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=fr_FR
+Framework arguments:  -product org.eclipse.platform.ide
+Command-line arguments:  -product org.eclipse.platform.ide -data /home/david/Documents/M2ALMA/MDE/Projet/SmokingText/xtext/../runtime-EclipseApplication -dev file:/home/david/Documents/M2ALMA/MDE/Projet/SmokingText/xtext/.metadata/.plugins/org.eclipse.pde.core/Eclipse Application/dev.properties -os linux -ws gtk -arch x86_64 -consoleLog
+
+!ENTRY org.eclipse.osgi 2 0 2015-11-04 16:13:25.259
+!MESSAGE One or more bundles are not resolved because the following root constraints are not resolved:
+!SUBENTRY 1 org.eclipse.osgi 2 0 2015-11-04 16:13:25.259
+!MESSAGE Bundle reference:file:/home/david/.eclipse/org.eclipse.platform_3.8_155965261/plugins/org.eclipse.m2e.usagedata_1.0.200.20111228-1245.jar was not resolved.
+!SUBENTRY 2 org.eclipse.m2e.usagedata 2 0 2015-11-04 16:13:25.260
+!MESSAGE Missing required capability Require-Capability: osgi.ee; filter="(|(&(osgi.ee=JavaSE)(version=1.5))(&(osgi.ee=JavaSE)(version=1.6)))".
+!SUBENTRY 2 org.eclipse.m2e.usagedata 2 0 2015-11-04 16:13:25.260
+!MESSAGE Missing required bundle org.eclipse.epp.usagedata.gathering_0.0.0.
+
+!ENTRY org.eclipse.osgi 2 0 2015-11-04 16:13:25.281
+!MESSAGE The following is a complete list of bundles which are not resolved, see the prior log entry for the root cause if it exists:
+!SUBENTRY 1 org.eclipse.osgi 2 0 2015-11-04 16:13:25.281
+!MESSAGE Bundle org.eclipse.cvs_1.2.0.dist [66] was not resolved.
+!SUBENTRY 2 org.eclipse.cvs 2 0 2015-11-04 16:13:25.282
+!MESSAGE Another singleton version selected: org.eclipse.cvs_1.2.1.v201302041200
+!SUBENTRY 2 org.eclipse.cvs 2 0 2015-11-04 16:13:25.282
+!MESSAGE Another singleton version selected: org.eclipse.cvs_1.2.1.v201302041200
+!SUBENTRY 1 org.eclipse.osgi 2 0 2015-11-04 16:13:25.282
+!MESSAGE Bundle org.eclipse.m2e.usagedata_1.0.200.20111228-1245 [213] was not resolved.
+!SUBENTRY 2 org.eclipse.m2e.usagedata 2 0 2015-11-04 16:13:25.283
+!MESSAGE Missing required bundle org.eclipse.epp.usagedata.gathering_0.0.0.
+!SUBENTRY 2 org.eclipse.m2e.usagedata 2 0 2015-11-04 16:13:25.283
+!MESSAGE Missing required capability Require-Capability: osgi.ee; filter="(|(&(osgi.ee=JavaSE)(version=1.5))(&(osgi.ee=JavaSE)(version=1.6)))".
+!SUBENTRY 1 org.eclipse.osgi 2 0 2015-11-04 16:13:25.283
+!MESSAGE Bundle org.eclipse.team.cvs.core_3.3.500.dist [259] was not resolved.
+!SUBENTRY 2 org.eclipse.team.cvs.core 2 0 2015-11-04 16:13:25.283
+!MESSAGE Another singleton version selected: org.eclipse.team.cvs.core_3.3.500.v20120522-1148
+!SUBENTRY 2 org.eclipse.team.cvs.core 2 0 2015-11-04 16:13:25.284
+!MESSAGE Another singleton version selected: org.eclipse.team.cvs.core_3.3.500.v20120522-1148
+!SUBENTRY 1 org.eclipse.osgi 2 0 2015-11-04 16:13:25.284
+!MESSAGE Bundle org.eclipse.team.cvs.ssh2_3.2.300.dist [261] was not resolved.
+!SUBENTRY 2 org.eclipse.team.cvs.ssh2 2 0 2015-11-04 16:13:25.284
+!MESSAGE Missing optionally required bundle org.eclipse.team.cvs.ssh_[3.2.0,4.0.0).
+!SUBENTRY 1 org.eclipse.osgi 2 0 2015-11-04 16:13:25.284
+!MESSAGE Bundle org.eclipse.team.cvs.ui_3.3.500.dist [263] was not resolved.
+!SUBENTRY 2 org.eclipse.team.cvs.ui 2 0 2015-11-04 16:13:25.285
+!MESSAGE Another singleton version selected: org.eclipse.team.cvs.ui_3.3.500.v20120522-1148
+!SUBENTRY 2 org.eclipse.team.cvs.ui 2 0 2015-11-04 16:13:25.285
+!MESSAGE Another singleton version selected: org.eclipse.team.cvs.ui_3.3.500.v20120522-1148
+
+!ENTRY org.eclipse.mylyn.tasks.ui 2 0 2015-11-04 16:13:27.938
+!MESSAGE No search provider was registed. Tasks search is not available.
+
+!ENTRY org.eclipse.ui 2 2 2015-11-04 16:14:23.306
+!MESSAGE Invalid property category path: ValidationPropertiesPage (bundle: org.eclipse.wst.xml.ui, propertyPage: org.eclipse.wst.xml.ui.propertyPage.project.validation)
+!SESSION 2015-11-04 16:20:56.157 -----------------------------------------------
+eclipse.buildId=debbuild
+java.version=1.7.0_85
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=fr_FR
+Framework arguments:  -product org.eclipse.platform.ide
+Command-line arguments:  -product org.eclipse.platform.ide -data /home/david/Documents/M2ALMA/MDE/Projet/SmokingText/xtext/../runtime-EclipseApplication -dev file:/home/david/Documents/M2ALMA/MDE/Projet/SmokingText/xtext/.metadata/.plugins/org.eclipse.pde.core/Eclipse Application/dev.properties -os linux -ws gtk -arch x86_64 -consoleLog
+
+!ENTRY org.eclipse.osgi 2 0 2015-11-04 16:21:01.151
+!MESSAGE One or more bundles are not resolved because the following root constraints are not resolved:
+!SUBENTRY 1 org.eclipse.osgi 2 0 2015-11-04 16:21:01.152
+!MESSAGE Bundle reference:file:/home/david/.eclipse/org.eclipse.platform_3.8_155965261/plugins/org.eclipse.m2e.usagedata_1.0.200.20111228-1245.jar was not resolved.
+!SUBENTRY 2 org.eclipse.m2e.usagedata 2 0 2015-11-04 16:21:01.152
+!MESSAGE Missing required capability Require-Capability: osgi.ee; filter="(|(&(osgi.ee=JavaSE)(version=1.5))(&(osgi.ee=JavaSE)(version=1.6)))".
+!SUBENTRY 2 org.eclipse.m2e.usagedata 2 0 2015-11-04 16:21:01.153
+!MESSAGE Missing required bundle org.eclipse.epp.usagedata.gathering_0.0.0.
+
+!ENTRY org.eclipse.osgi 2 0 2015-11-04 16:21:01.164
+!MESSAGE The following is a complete list of bundles which are not resolved, see the prior log entry for the root cause if it exists:
+!SUBENTRY 1 org.eclipse.osgi 2 0 2015-11-04 16:21:01.165
+!MESSAGE Bundle org.eclipse.cvs_1.2.0.dist [66] was not resolved.
+!SUBENTRY 2 org.eclipse.cvs 2 0 2015-11-04 16:21:01.165
+!MESSAGE Another singleton version selected: org.eclipse.cvs_1.2.1.v201302041200
+!SUBENTRY 2 org.eclipse.cvs 2 0 2015-11-04 16:21:01.166
+!MESSAGE Another singleton version selected: org.eclipse.cvs_1.2.1.v201302041200
+!SUBENTRY 1 org.eclipse.osgi 2 0 2015-11-04 16:21:01.166
+!MESSAGE Bundle org.eclipse.m2e.usagedata_1.0.200.20111228-1245 [213] was not resolved.
+!SUBENTRY 2 org.eclipse.m2e.usagedata 2 0 2015-11-04 16:21:01.166
+!MESSAGE Missing required bundle org.eclipse.epp.usagedata.gathering_0.0.0.
+!SUBENTRY 2 org.eclipse.m2e.usagedata 2 0 2015-11-04 16:21:01.167
+!MESSAGE Missing required capability Require-Capability: osgi.ee; filter="(|(&(osgi.ee=JavaSE)(version=1.5))(&(osgi.ee=JavaSE)(version=1.6)))".
+!SUBENTRY 1 org.eclipse.osgi 2 0 2015-11-04 16:21:01.167
+!MESSAGE Bundle org.eclipse.team.cvs.core_3.3.500.dist [259] was not resolved.
+!SUBENTRY 2 org.eclipse.team.cvs.core 2 0 2015-11-04 16:21:01.168
+!MESSAGE Another singleton version selected: org.eclipse.team.cvs.core_3.3.500.v20120522-1148
+!SUBENTRY 2 org.eclipse.team.cvs.core 2 0 2015-11-04 16:21:01.168
+!MESSAGE Another singleton version selected: org.eclipse.team.cvs.core_3.3.500.v20120522-1148
+!SUBENTRY 1 org.eclipse.osgi 2 0 2015-11-04 16:21:01.169
+!MESSAGE Bundle org.eclipse.team.cvs.ssh2_3.2.300.dist [261] was not resolved.
+!SUBENTRY 2 org.eclipse.team.cvs.ssh2 2 0 2015-11-04 16:21:01.169
+!MESSAGE Missing optionally required bundle org.eclipse.team.cvs.ssh_[3.2.0,4.0.0).
+!SUBENTRY 1 org.eclipse.osgi 2 0 2015-11-04 16:21:01.169
+!MESSAGE Bundle org.eclipse.team.cvs.ui_3.3.500.dist [263] was not resolved.
+!SUBENTRY 2 org.eclipse.team.cvs.ui 2 0 2015-11-04 16:21:01.170
+!MESSAGE Another singleton version selected: org.eclipse.team.cvs.ui_3.3.500.v20120522-1148
+!SUBENTRY 2 org.eclipse.team.cvs.ui 2 0 2015-11-04 16:21:01.170
+!MESSAGE Another singleton version selected: org.eclipse.team.cvs.ui_3.3.500.v20120522-1148
+
+!ENTRY org.eclipse.mylyn.tasks.ui 2 0 2015-11-04 16:21:03.561
+!MESSAGE No search provider was registed. Tasks search is not available.
+
+!ENTRY org.eclipse.ui 2 2 2015-11-04 16:31:40.506
+!MESSAGE Invalid property category path: ValidationPropertiesPage (bundle: org.eclipse.wst.xml.ui, propertyPage: org.eclipse.wst.xml.ui.propertyPage.project.validation)
+!SESSION 2015-11-04 16:31:51.957 -----------------------------------------------
+eclipse.buildId=debbuild
+java.version=1.7.0_85
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=fr_FR
+Framework arguments:  -product org.eclipse.platform.ide
+Command-line arguments:  -product org.eclipse.platform.ide -data /home/david/Documents/M2ALMA/MDE/Projet/SmokingText/xtext/../runtime-EclipseApplication -dev file:/home/david/Documents/M2ALMA/MDE/Projet/SmokingText/xtext/.metadata/.plugins/org.eclipse.pde.core/Eclipse Application/dev.properties -os linux -ws gtk -arch x86_64 -consoleLog
+
+!ENTRY org.eclipse.osgi 2 0 2015-11-04 16:31:56.866
+!MESSAGE One or more bundles are not resolved because the following root constraints are not resolved:
+!SUBENTRY 1 org.eclipse.osgi 2 0 2015-11-04 16:31:56.867
+!MESSAGE Bundle reference:file:/home/david/.eclipse/org.eclipse.platform_3.8_155965261/plugins/org.eclipse.m2e.usagedata_1.0.200.20111228-1245.jar was not resolved.
+!SUBENTRY 2 org.eclipse.m2e.usagedata 2 0 2015-11-04 16:31:56.868
+!MESSAGE Missing required capability Require-Capability: osgi.ee; filter="(|(&(osgi.ee=JavaSE)(version=1.5))(&(osgi.ee=JavaSE)(version=1.6)))".
+!SUBENTRY 2 org.eclipse.m2e.usagedata 2 0 2015-11-04 16:31:56.868
+!MESSAGE Missing required bundle org.eclipse.epp.usagedata.gathering_0.0.0.
+
+!ENTRY org.eclipse.osgi 2 0 2015-11-04 16:31:56.886
+!MESSAGE The following is a complete list of bundles which are not resolved, see the prior log entry for the root cause if it exists:
+!SUBENTRY 1 org.eclipse.osgi 2 0 2015-11-04 16:31:56.886
+!MESSAGE Bundle org.eclipse.cvs_1.2.0.dist [66] was not resolved.
+!SUBENTRY 2 org.eclipse.cvs 2 0 2015-11-04 16:31:56.887
+!MESSAGE Another singleton version selected: org.eclipse.cvs_1.2.1.v201302041200
+!SUBENTRY 2 org.eclipse.cvs 2 0 2015-11-04 16:31:56.887
+!MESSAGE Another singleton version selected: org.eclipse.cvs_1.2.1.v201302041200
+!SUBENTRY 1 org.eclipse.osgi 2 0 2015-11-04 16:31:56.887
+!MESSAGE Bundle org.eclipse.m2e.usagedata_1.0.200.20111228-1245 [213] was not resolved.
+!SUBENTRY 2 org.eclipse.m2e.usagedata 2 0 2015-11-04 16:31:56.888
+!MESSAGE Missing required bundle org.eclipse.epp.usagedata.gathering_0.0.0.
+!SUBENTRY 2 org.eclipse.m2e.usagedata 2 0 2015-11-04 16:31:56.888
+!MESSAGE Missing required capability Require-Capability: osgi.ee; filter="(|(&(osgi.ee=JavaSE)(version=1.5))(&(osgi.ee=JavaSE)(version=1.6)))".
+!SUBENTRY 1 org.eclipse.osgi 2 0 2015-11-04 16:31:56.888
+!MESSAGE Bundle org.eclipse.team.cvs.core_3.3.500.dist [259] was not resolved.
+!SUBENTRY 2 org.eclipse.team.cvs.core 2 0 2015-11-04 16:31:56.888
+!MESSAGE Another singleton version selected: org.eclipse.team.cvs.core_3.3.500.v20120522-1148
+!SUBENTRY 2 org.eclipse.team.cvs.core 2 0 2015-11-04 16:31:56.889
+!MESSAGE Another singleton version selected: org.eclipse.team.cvs.core_3.3.500.v20120522-1148
+!SUBENTRY 1 org.eclipse.osgi 2 0 2015-11-04 16:31:56.889
+!MESSAGE Bundle org.eclipse.team.cvs.ssh2_3.2.300.dist [261] was not resolved.
+!SUBENTRY 2 org.eclipse.team.cvs.ssh2 2 0 2015-11-04 16:31:56.889
+!MESSAGE Missing optionally required bundle org.eclipse.team.cvs.ssh_[3.2.0,4.0.0).
+!SUBENTRY 1 org.eclipse.osgi 2 0 2015-11-04 16:31:56.890
+!MESSAGE Bundle org.eclipse.team.cvs.ui_3.3.500.dist [263] was not resolved.
+!SUBENTRY 2 org.eclipse.team.cvs.ui 2 0 2015-11-04 16:31:56.890
+!MESSAGE Another singleton version selected: org.eclipse.team.cvs.ui_3.3.500.v20120522-1148
+!SUBENTRY 2 org.eclipse.team.cvs.ui 2 0 2015-11-04 16:31:56.890
+!MESSAGE Another singleton version selected: org.eclipse.team.cvs.ui_3.3.500.v20120522-1148
+
+!ENTRY org.eclipse.mylyn.tasks.ui 2 0 2015-11-04 16:31:59.630
+!MESSAGE No search provider was registed. Tasks search is not available.
+
+!ENTRY org.eclipse.ui 2 2 2015-11-04 16:34:25.494
+!MESSAGE Invalid property category path: ValidationPropertiesPage (bundle: org.eclipse.wst.xml.ui, propertyPage: org.eclipse.wst.xml.ui.propertyPage.project.validation)
+!SESSION 2015-11-25 09:51:36.364 -----------------------------------------------
+eclipse.buildId=debbuild
+java.version=1.7.0_85
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=fr_FR
+Framework arguments:  -product org.eclipse.platform.ide
+Command-line arguments:  -product org.eclipse.platform.ide -data /home/david/Documents/M2ALMA/MDE/Projet/SmokingText/xtext/../runtime-EclipseApplication -dev file:/home/david/Documents/M2ALMA/MDE/Projet/SmokingText/xtext/.metadata/.plugins/org.eclipse.pde.core/Eclipse Application/dev.properties -os linux -ws gtk -arch x86_64 -consoleLog
+
+!ENTRY org.eclipse.osgi 2 0 2015-11-25 09:51:43.350
+!MESSAGE One or more bundles are not resolved because the following root constraints are not resolved:
+!SUBENTRY 1 org.eclipse.osgi 2 0 2015-11-25 09:51:43.351
+!MESSAGE Bundle reference:file:/home/david/.eclipse/org.eclipse.platform_3.8_155965261/plugins/org.eclipse.m2e.usagedata_1.0.200.20111228-1245.jar was not resolved.
+!SUBENTRY 2 org.eclipse.m2e.usagedata 2 0 2015-11-25 09:51:43.352
+!MESSAGE Missing required capability Require-Capability: osgi.ee; filter="(|(&(osgi.ee=JavaSE)(version=1.5))(&(osgi.ee=JavaSE)(version=1.6)))".
+!SUBENTRY 2 org.eclipse.m2e.usagedata 2 0 2015-11-25 09:51:43.353
+!MESSAGE Missing required bundle org.eclipse.epp.usagedata.gathering_0.0.0.
+
+!ENTRY org.eclipse.osgi 2 0 2015-11-25 09:51:43.379
+!MESSAGE The following is a complete list of bundles which are not resolved, see the prior log entry for the root cause if it exists:
+!SUBENTRY 1 org.eclipse.osgi 2 0 2015-11-25 09:51:43.379
+!MESSAGE Bundle org.eclipse.cvs_1.2.0.dist [66] was not resolved.
+!SUBENTRY 2 org.eclipse.cvs 2 0 2015-11-25 09:51:43.379
+!MESSAGE Another singleton version selected: org.eclipse.cvs_1.2.1.v201302041200
+!SUBENTRY 2 org.eclipse.cvs 2 0 2015-11-25 09:51:43.380
+!MESSAGE Another singleton version selected: org.eclipse.cvs_1.2.1.v201302041200
+!SUBENTRY 1 org.eclipse.osgi 2 0 2015-11-25 09:51:43.380
+!MESSAGE Bundle org.eclipse.m2e.usagedata_1.0.200.20111228-1245 [213] was not resolved.
+!SUBENTRY 2 org.eclipse.m2e.usagedata 2 0 2015-11-25 09:51:43.380
+!MESSAGE Missing required bundle org.eclipse.epp.usagedata.gathering_0.0.0.
+!SUBENTRY 2 org.eclipse.m2e.usagedata 2 0 2015-11-25 09:51:43.381
+!MESSAGE Missing required capability Require-Capability: osgi.ee; filter="(|(&(osgi.ee=JavaSE)(version=1.5))(&(osgi.ee=JavaSE)(version=1.6)))".
+!SUBENTRY 1 org.eclipse.osgi 2 0 2015-11-25 09:51:43.381
+!MESSAGE Bundle org.eclipse.team.cvs.core_3.3.500.dist [259] was not resolved.
+!SUBENTRY 2 org.eclipse.team.cvs.core 2 0 2015-11-25 09:51:43.382
+!MESSAGE Another singleton version selected: org.eclipse.team.cvs.core_3.3.500.v20120522-1148
+!SUBENTRY 2 org.eclipse.team.cvs.core 2 0 2015-11-25 09:51:43.382
+!MESSAGE Another singleton version selected: org.eclipse.team.cvs.core_3.3.500.v20120522-1148
+!SUBENTRY 1 org.eclipse.osgi 2 0 2015-11-25 09:51:43.382
+!MESSAGE Bundle org.eclipse.team.cvs.ssh2_3.2.300.dist [261] was not resolved.
+!SUBENTRY 2 org.eclipse.team.cvs.ssh2 2 0 2015-11-25 09:51:43.383
+!MESSAGE Missing optionally required bundle org.eclipse.team.cvs.ssh_[3.2.0,4.0.0).
+!SUBENTRY 1 org.eclipse.osgi 2 0 2015-11-25 09:51:43.383
+!MESSAGE Bundle org.eclipse.team.cvs.ui_3.3.500.dist [263] was not resolved.
+!SUBENTRY 2 org.eclipse.team.cvs.ui 2 0 2015-11-25 09:51:43.383
+!MESSAGE Another singleton version selected: org.eclipse.team.cvs.ui_3.3.500.v20120522-1148
+!SUBENTRY 2 org.eclipse.team.cvs.ui 2 0 2015-11-25 09:51:43.384
+!MESSAGE Another singleton version selected: org.eclipse.team.cvs.ui_3.3.500.v20120522-1148
+
+!ENTRY org.eclipse.mylyn.tasks.ui 2 0 2015-11-25 09:51:46.105
+!MESSAGE No search provider was registed. Tasks search is not available.
+
+!ENTRY org.eclipse.ui 2 2 2015-11-25 10:26:46.660
+!MESSAGE Invalid property category path: ValidationPropertiesPage (bundle: org.eclipse.wst.xml.ui, propertyPage: org.eclipse.wst.xml.ui.propertyPage.project.validation)
+!SESSION 2015-11-25 10:26:54.625 -----------------------------------------------
+eclipse.buildId=debbuild
+java.version=1.7.0_85
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=fr_FR
+Framework arguments:  -product org.eclipse.platform.ide
+Command-line arguments:  -product org.eclipse.platform.ide -data /home/david/Documents/M2ALMA/MDE/Projet/SmokingText/xtext/../runtime-EclipseApplication -dev file:/home/david/Documents/M2ALMA/MDE/Projet/SmokingText/xtext/.metadata/.plugins/org.eclipse.pde.core/Eclipse Application/dev.properties -os linux -ws gtk -arch x86_64 -consoleLog
+
+!ENTRY org.eclipse.osgi 2 0 2015-11-25 10:26:59.456
+!MESSAGE One or more bundles are not resolved because the following root constraints are not resolved:
+!SUBENTRY 1 org.eclipse.osgi 2 0 2015-11-25 10:26:59.456
+!MESSAGE Bundle reference:file:/home/david/.eclipse/org.eclipse.platform_3.8_155965261/plugins/org.eclipse.m2e.usagedata_1.0.200.20111228-1245.jar was not resolved.
+!SUBENTRY 2 org.eclipse.m2e.usagedata 2 0 2015-11-25 10:26:59.456
+!MESSAGE Missing required bundle org.eclipse.epp.usagedata.gathering_0.0.0.
+!SUBENTRY 2 org.eclipse.m2e.usagedata 2 0 2015-11-25 10:26:59.457
+!MESSAGE Missing required capability Require-Capability: osgi.ee; filter="(|(&(osgi.ee=JavaSE)(version=1.5))(&(osgi.ee=JavaSE)(version=1.6)))".
+
+!ENTRY org.eclipse.osgi 2 0 2015-11-25 10:26:59.468
+!MESSAGE The following is a complete list of bundles which are not resolved, see the prior log entry for the root cause if it exists:
+!SUBENTRY 1 org.eclipse.osgi 2 0 2015-11-25 10:26:59.469
+!MESSAGE Bundle org.eclipse.cvs_1.2.0.dist [66] was not resolved.
+!SUBENTRY 2 org.eclipse.cvs 2 0 2015-11-25 10:26:59.469
+!MESSAGE Another singleton version selected: org.eclipse.cvs_1.2.1.v201302041200
+!SUBENTRY 2 org.eclipse.cvs 2 0 2015-11-25 10:26:59.470
+!MESSAGE Another singleton version selected: org.eclipse.cvs_1.2.1.v201302041200
+!SUBENTRY 1 org.eclipse.osgi 2 0 2015-11-25 10:26:59.470
+!MESSAGE Bundle org.eclipse.m2e.usagedata_1.0.200.20111228-1245 [213] was not resolved.
+!SUBENTRY 2 org.eclipse.m2e.usagedata 2 0 2015-11-25 10:26:59.470
+!MESSAGE Missing required bundle org.eclipse.epp.usagedata.gathering_0.0.0.
+!SUBENTRY 2 org.eclipse.m2e.usagedata 2 0 2015-11-25 10:26:59.471
+!MESSAGE Missing required capability Require-Capability: osgi.ee; filter="(|(&(osgi.ee=JavaSE)(version=1.5))(&(osgi.ee=JavaSE)(version=1.6)))".
+!SUBENTRY 1 org.eclipse.osgi 2 0 2015-11-25 10:26:59.471
+!MESSAGE Bundle org.eclipse.team.cvs.core_3.3.500.dist [259] was not resolved.
+!SUBENTRY 2 org.eclipse.team.cvs.core 2 0 2015-11-25 10:26:59.472
+!MESSAGE Another singleton version selected: org.eclipse.team.cvs.core_3.3.500.v20120522-1148
+!SUBENTRY 2 org.eclipse.team.cvs.core 2 0 2015-11-25 10:26:59.472
+!MESSAGE Another singleton version selected: org.eclipse.team.cvs.core_3.3.500.v20120522-1148
+!SUBENTRY 1 org.eclipse.osgi 2 0 2015-11-25 10:26:59.473
+!MESSAGE Bundle org.eclipse.team.cvs.ssh2_3.2.300.dist [261] was not resolved.
+!SUBENTRY 2 org.eclipse.team.cvs.ssh2 2 0 2015-11-25 10:26:59.473
+!MESSAGE Missing optionally required bundle org.eclipse.team.cvs.ssh_[3.2.0,4.0.0).
+!SUBENTRY 1 org.eclipse.osgi 2 0 2015-11-25 10:26:59.473
+!MESSAGE Bundle org.eclipse.team.cvs.ui_3.3.500.dist [263] was not resolved.
+!SUBENTRY 2 org.eclipse.team.cvs.ui 2 0 2015-11-25 10:26:59.474
+!MESSAGE Another singleton version selected: org.eclipse.team.cvs.ui_3.3.500.v20120522-1148
+!SUBENTRY 2 org.eclipse.team.cvs.ui 2 0 2015-11-25 10:26:59.474
+!MESSAGE Another singleton version selected: org.eclipse.team.cvs.ui_3.3.500.v20120522-1148
+
+!ENTRY org.eclipse.mylyn.tasks.ui 2 0 2015-11-25 10:27:01.880
+!MESSAGE No search provider was registed. Tasks search is not available.
+
+!ENTRY org.eclipse.ui 2 2 2015-11-25 10:29:13.170
+!MESSAGE Invalid property category path: ValidationPropertiesPage (bundle: org.eclipse.wst.xml.ui, propertyPage: org.eclipse.wst.xml.ui.propertyPage.project.validation)

@@ -1,0 +1,19 @@
+com.bookstore [[
+	+ i Search {
+	}
+	
+	+ i Manage {}
+	
+	+ Catalog : Search,Manage {
+	}
+	
+	+ Patron {
+		-> Search
+	}
+	// sub-package
+	.book [[
+		+ Book {
+			# title : String
+		}	
+	]]
+]]

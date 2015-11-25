@@ -20,8 +20,10 @@ public class AbstractDiagramClassSyntacticSequencer extends AbstractSyntacticSeq
 
 	protected DiagramClassGrammarAccess grammarAccess;
 	protected AbstractElementAlias match_Abstract_ColonKeyword_3_q;
-	protected AbstractElementAlias match_Attribute___LeftSquareBracketKeyword_5_0_NumberTerminalRuleCall_5_1_q_RightSquareBracketKeyword_5_2__q;
+	protected AbstractElementAlias match_Attribute___LeftSquareBracketKeyword_5_0_0_NumberTerminalRuleCall_5_0_1_a_RightSquareBracketKeyword_5_0_2__q;
 	protected AbstractElementAlias match_Attribute___LessThanSignExclamationMarkGreaterThanSignKeyword_1_1_or_LessThanSignGreaterThanSignKeyword_1_0__q;
+	protected AbstractElementAlias match_BiRelation___AsteriskKeyword_1_1_or___NumberTerminalRuleCall_1_0_0_p_FullStopFullStopKeyword_1_0_1_0___AsteriskKeyword_1_0_1_1_1_or_NumberTerminalRuleCall_1_0_1_1_0_p______q;
+	protected AbstractElementAlias match_BiRelation___AsteriskKeyword_7_1_or___NumberTerminalRuleCall_7_0_0_p_FullStopFullStopKeyword_7_0_1_0___AsteriskKeyword_7_0_1_1_1_or_NumberTerminalRuleCall_7_0_1_1_0_p______q;
 	protected AbstractElementAlias match_Class_ColonKeyword_2_q;
 	protected AbstractElementAlias match_Enumeration_____IDTerminalRuleCall_4_0_p_or___IDTerminalRuleCall_4_0_p_CommaKeyword_4_1_____or_____IDTerminalRuleCall_4_0_p_CommaKeyword_4_1__p___IDTerminalRuleCall_4_0_p_or___IDTerminalRuleCall_4_0_p_CommaKeyword_4_1________q;
 	protected AbstractElementAlias match_Package___FullStopKeyword_1_0_IDTerminalRuleCall_1_1__a;
@@ -31,8 +33,10 @@ public class AbstractDiagramClassSyntacticSequencer extends AbstractSyntacticSeq
 	protected void init(IGrammarAccess access) {
 		grammarAccess = (DiagramClassGrammarAccess) access;
 		match_Abstract_ColonKeyword_3_q = new TokenAlias(true, false, grammarAccess.getAbstractAccess().getColonKeyword_3());
-		match_Attribute___LeftSquareBracketKeyword_5_0_NumberTerminalRuleCall_5_1_q_RightSquareBracketKeyword_5_2__q = new GroupAlias(true, false, new TokenAlias(false, false, grammarAccess.getAttributeAccess().getLeftSquareBracketKeyword_5_0()), new TokenAlias(true, false, grammarAccess.getAttributeAccess().getNumberTerminalRuleCall_5_1()), new TokenAlias(false, false, grammarAccess.getAttributeAccess().getRightSquareBracketKeyword_5_2()));
+		match_Attribute___LeftSquareBracketKeyword_5_0_0_NumberTerminalRuleCall_5_0_1_a_RightSquareBracketKeyword_5_0_2__q = new GroupAlias(true, false, new TokenAlias(false, false, grammarAccess.getAttributeAccess().getLeftSquareBracketKeyword_5_0_0()), new TokenAlias(true, true, grammarAccess.getAttributeAccess().getNumberTerminalRuleCall_5_0_1()), new TokenAlias(false, false, grammarAccess.getAttributeAccess().getRightSquareBracketKeyword_5_0_2()));
 		match_Attribute___LessThanSignExclamationMarkGreaterThanSignKeyword_1_1_or_LessThanSignGreaterThanSignKeyword_1_0__q = new AlternativeAlias(true, false, new TokenAlias(false, false, grammarAccess.getAttributeAccess().getLessThanSignExclamationMarkGreaterThanSignKeyword_1_1()), new TokenAlias(false, false, grammarAccess.getAttributeAccess().getLessThanSignGreaterThanSignKeyword_1_0()));
+		match_BiRelation___AsteriskKeyword_1_1_or___NumberTerminalRuleCall_1_0_0_p_FullStopFullStopKeyword_1_0_1_0___AsteriskKeyword_1_0_1_1_1_or_NumberTerminalRuleCall_1_0_1_1_0_p______q = new AlternativeAlias(true, false, new GroupAlias(false, false, new TokenAlias(false, true, grammarAccess.getBiRelationAccess().getNumberTerminalRuleCall_1_0_0()), new TokenAlias(false, false, grammarAccess.getBiRelationAccess().getFullStopFullStopKeyword_1_0_1_0()), new AlternativeAlias(false, false, new TokenAlias(false, false, grammarAccess.getBiRelationAccess().getAsteriskKeyword_1_0_1_1_1()), new TokenAlias(false, true, grammarAccess.getBiRelationAccess().getNumberTerminalRuleCall_1_0_1_1_0()))), new TokenAlias(false, false, grammarAccess.getBiRelationAccess().getAsteriskKeyword_1_1()));
+		match_BiRelation___AsteriskKeyword_7_1_or___NumberTerminalRuleCall_7_0_0_p_FullStopFullStopKeyword_7_0_1_0___AsteriskKeyword_7_0_1_1_1_or_NumberTerminalRuleCall_7_0_1_1_0_p______q = new AlternativeAlias(true, false, new GroupAlias(false, false, new TokenAlias(false, true, grammarAccess.getBiRelationAccess().getNumberTerminalRuleCall_7_0_0()), new TokenAlias(false, false, grammarAccess.getBiRelationAccess().getFullStopFullStopKeyword_7_0_1_0()), new AlternativeAlias(false, false, new TokenAlias(false, false, grammarAccess.getBiRelationAccess().getAsteriskKeyword_7_0_1_1_1()), new TokenAlias(false, true, grammarAccess.getBiRelationAccess().getNumberTerminalRuleCall_7_0_1_1_0()))), new TokenAlias(false, false, grammarAccess.getBiRelationAccess().getAsteriskKeyword_7_1()));
 		match_Class_ColonKeyword_2_q = new TokenAlias(true, false, grammarAccess.getClassAccess().getColonKeyword_2());
 		match_Enumeration_____IDTerminalRuleCall_4_0_p_or___IDTerminalRuleCall_4_0_p_CommaKeyword_4_1_____or_____IDTerminalRuleCall_4_0_p_CommaKeyword_4_1__p___IDTerminalRuleCall_4_0_p_or___IDTerminalRuleCall_4_0_p_CommaKeyword_4_1________q = new AlternativeAlias(true, false, new AlternativeAlias(false, false, new GroupAlias(false, false, new TokenAlias(false, true, grammarAccess.getEnumerationAccess().getIDTerminalRuleCall_4_0()), new TokenAlias(false, false, grammarAccess.getEnumerationAccess().getCommaKeyword_4_1())), new TokenAlias(false, true, grammarAccess.getEnumerationAccess().getIDTerminalRuleCall_4_0())), new GroupAlias(false, false, new GroupAlias(false, true, new TokenAlias(false, true, grammarAccess.getEnumerationAccess().getIDTerminalRuleCall_4_0()), new TokenAlias(false, false, grammarAccess.getEnumerationAccess().getCommaKeyword_4_1())), new AlternativeAlias(false, false, new GroupAlias(false, false, new TokenAlias(false, true, grammarAccess.getEnumerationAccess().getIDTerminalRuleCall_4_0()), new TokenAlias(false, false, grammarAccess.getEnumerationAccess().getCommaKeyword_4_1())), new TokenAlias(false, true, grammarAccess.getEnumerationAccess().getIDTerminalRuleCall_4_0()))));
 		match_Package___FullStopKeyword_1_0_IDTerminalRuleCall_1_1__a = new GroupAlias(true, true, new TokenAlias(false, false, grammarAccess.getPackageAccess().getFullStopKeyword_1_0()), new TokenAlias(false, false, grammarAccess.getPackageAccess().getIDTerminalRuleCall_1_1()));
@@ -81,10 +85,14 @@ public class AbstractDiagramClassSyntacticSequencer extends AbstractSyntacticSeq
 			List<INode> syntaxNodes = getNodesFor(transitionNodes, syntax);
 			if(match_Abstract_ColonKeyword_3_q.equals(syntax))
 				emit_Abstract_ColonKeyword_3_q(semanticObject, getLastNavigableState(), syntaxNodes);
-			else if(match_Attribute___LeftSquareBracketKeyword_5_0_NumberTerminalRuleCall_5_1_q_RightSquareBracketKeyword_5_2__q.equals(syntax))
-				emit_Attribute___LeftSquareBracketKeyword_5_0_NumberTerminalRuleCall_5_1_q_RightSquareBracketKeyword_5_2__q(semanticObject, getLastNavigableState(), syntaxNodes);
+			else if(match_Attribute___LeftSquareBracketKeyword_5_0_0_NumberTerminalRuleCall_5_0_1_a_RightSquareBracketKeyword_5_0_2__q.equals(syntax))
+				emit_Attribute___LeftSquareBracketKeyword_5_0_0_NumberTerminalRuleCall_5_0_1_a_RightSquareBracketKeyword_5_0_2__q(semanticObject, getLastNavigableState(), syntaxNodes);
 			else if(match_Attribute___LessThanSignExclamationMarkGreaterThanSignKeyword_1_1_or_LessThanSignGreaterThanSignKeyword_1_0__q.equals(syntax))
 				emit_Attribute___LessThanSignExclamationMarkGreaterThanSignKeyword_1_1_or_LessThanSignGreaterThanSignKeyword_1_0__q(semanticObject, getLastNavigableState(), syntaxNodes);
+			else if(match_BiRelation___AsteriskKeyword_1_1_or___NumberTerminalRuleCall_1_0_0_p_FullStopFullStopKeyword_1_0_1_0___AsteriskKeyword_1_0_1_1_1_or_NumberTerminalRuleCall_1_0_1_1_0_p______q.equals(syntax))
+				emit_BiRelation___AsteriskKeyword_1_1_or___NumberTerminalRuleCall_1_0_0_p_FullStopFullStopKeyword_1_0_1_0___AsteriskKeyword_1_0_1_1_1_or_NumberTerminalRuleCall_1_0_1_1_0_p______q(semanticObject, getLastNavigableState(), syntaxNodes);
+			else if(match_BiRelation___AsteriskKeyword_7_1_or___NumberTerminalRuleCall_7_0_0_p_FullStopFullStopKeyword_7_0_1_0___AsteriskKeyword_7_0_1_1_1_or_NumberTerminalRuleCall_7_0_1_1_0_p______q.equals(syntax))
+				emit_BiRelation___AsteriskKeyword_7_1_or___NumberTerminalRuleCall_7_0_0_p_FullStopFullStopKeyword_7_0_1_0___AsteriskKeyword_7_0_1_1_1_or_NumberTerminalRuleCall_7_0_1_1_0_p______q(semanticObject, getLastNavigableState(), syntaxNodes);
 			else if(match_Class_ColonKeyword_2_q.equals(syntax))
 				emit_Class_ColonKeyword_2_q(semanticObject, getLastNavigableState(), syntaxNodes);
 			else if(match_Enumeration_____IDTerminalRuleCall_4_0_p_or___IDTerminalRuleCall_4_0_p_CommaKeyword_4_1_____or_____IDTerminalRuleCall_4_0_p_CommaKeyword_4_1__p___IDTerminalRuleCall_4_0_p_or___IDTerminalRuleCall_4_0_p_CommaKeyword_4_1________q.equals(syntax))
@@ -107,9 +115,9 @@ public class AbstractDiagramClassSyntacticSequencer extends AbstractSyntacticSeq
 	
 	/**
 	 * Syntax:
-	 *     ('[' number? ']')?
+	 *     ('[' number* ']')?
 	 */
-	protected void emit_Attribute___LeftSquareBracketKeyword_5_0_NumberTerminalRuleCall_5_1_q_RightSquareBracketKeyword_5_2__q(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
+	protected void emit_Attribute___LeftSquareBracketKeyword_5_0_0_NumberTerminalRuleCall_5_0_1_a_RightSquareBracketKeyword_5_0_2__q(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
 		acceptNodes(transition, nodes);
 	}
 	
@@ -123,6 +131,22 @@ public class AbstractDiagramClassSyntacticSequencer extends AbstractSyntacticSeq
 	
 	/**
 	 * Syntax:
+	 *     ('*' | (number+ '..' ('*' | number+)))?
+	 */
+	protected void emit_BiRelation___AsteriskKeyword_1_1_or___NumberTerminalRuleCall_1_0_0_p_FullStopFullStopKeyword_1_0_1_0___AsteriskKeyword_1_0_1_1_1_or_NumberTerminalRuleCall_1_0_1_1_0_p______q(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
+		acceptNodes(transition, nodes);
+	}
+	
+	/**
+	 * Syntax:
+	 *     ((number+ '..' (number+ | '*')) | '*')?
+	 */
+	protected void emit_BiRelation___AsteriskKeyword_7_1_or___NumberTerminalRuleCall_7_0_0_p_FullStopFullStopKeyword_7_0_1_0___AsteriskKeyword_7_0_1_1_1_or_NumberTerminalRuleCall_7_0_1_1_0_p______q(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
+		acceptNodes(transition, nodes);
+	}
+	
+	/**
+	 * Syntax:
 	 *     ':'?
 	 */
 	protected void emit_Class_ColonKeyword_2_q(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
@@ -131,7 +155,7 @@ public class AbstractDiagramClassSyntacticSequencer extends AbstractSyntacticSeq
 	
 	/**
 	 * Syntax:
-	 *     (((ID+ ',')+ (ID+ | (ID+ ','))) | (ID+ | (ID+ ',')))?
+	 *     (((ID+ ',')+ ((ID+ ',') | ID+)) | ((ID+ ',') | ID+))?
 	 */
 	protected void emit_Enumeration_____IDTerminalRuleCall_4_0_p_or___IDTerminalRuleCall_4_0_p_CommaKeyword_4_1_____or_____IDTerminalRuleCall_4_0_p_CommaKeyword_4_1__p___IDTerminalRuleCall_4_0_p_or___IDTerminalRuleCall_4_0_p_CommaKeyword_4_1________q(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
 		acceptNodes(transition, nodes);

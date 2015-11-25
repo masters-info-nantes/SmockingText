@@ -89,6 +89,15 @@ public interface DiagramClassFactory extends EFactory
   Abstract createAbstract();
 
   /**
+   * Returns a new object of class '<em>Bi Relation</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return a new object of class '<em>Bi Relation</em>'.
+   * @generated
+   */
+  BiRelation createBiRelation();
+
+  /**
    * Returns a new object of class '<em>Attribute</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->

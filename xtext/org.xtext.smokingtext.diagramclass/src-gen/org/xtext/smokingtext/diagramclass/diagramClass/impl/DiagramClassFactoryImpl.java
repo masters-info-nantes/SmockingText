@@ -15,6 +15,7 @@ import org.eclipse.emf.ecore.plugin.EcorePlugin;
 
 import org.xtext.smokingtext.diagramclass.diagramClass.Abstract;
 import org.xtext.smokingtext.diagramclass.diagramClass.Attribute;
+import org.xtext.smokingtext.diagramclass.diagramClass.BiRelation;
 import org.xtext.smokingtext.diagramclass.diagramClass.Dependancy;
 import org.xtext.smokingtext.diagramclass.diagramClass.DiagramClassFactory;
 import org.xtext.smokingtext.diagramclass.diagramClass.DiagramClassPackage;
@@ -84,6 +85,7 @@ public class DiagramClassFactoryImpl extends EFactoryImpl implements DiagramClas
       case DiagramClassPackage.ENUMERATION: return createEnumeration();
       case DiagramClassPackage.INTERFACE: return createInterface();
       case DiagramClassPackage.ABSTRACT: return createAbstract();
+      case DiagramClassPackage.BI_RELATION: return createBiRelation();
       case DiagramClassPackage.ATTRIBUTE: return createAttribute();
       case DiagramClassPackage.PARAM_IN: return createparamIn();
       case DiagramClassPackage.METHOD: return createMethod();
@@ -168,6 +170,17 @@ public class DiagramClassFactoryImpl extends EFactoryImpl implements DiagramClas
   {
     AbstractImpl abstract_ = new AbstractImpl();
     return abstract_;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public BiRelation createBiRelation()
+  {
+    BiRelationImpl biRelation = new BiRelationImpl();
+    return biRelation;
   }
 
   /**

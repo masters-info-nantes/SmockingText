@@ -342,6 +342,122 @@ public class DiagramClassGrammarAccess extends AbstractGrammarElementFinder {
 		public Keyword getRightCurlyBracketKeyword_8() { return cRightCurlyBracketKeyword_8; }
 	}
 
+	public class BiRelationElements extends AbstractParserRuleElementFinder {
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "BiRelation");
+		private final Group cGroup = (Group)rule.eContents().get(1);
+		private final Keyword cLeftSquareBracketKeyword_0 = (Keyword)cGroup.eContents().get(0);
+		private final Alternatives cAlternatives_1 = (Alternatives)cGroup.eContents().get(1);
+		private final Group cGroup_1_0 = (Group)cAlternatives_1.eContents().get(0);
+		private final RuleCall cNumberTerminalRuleCall_1_0_0 = (RuleCall)cGroup_1_0.eContents().get(0);
+		private final Group cGroup_1_0_1 = (Group)cGroup_1_0.eContents().get(1);
+		private final Keyword cFullStopFullStopKeyword_1_0_1_0 = (Keyword)cGroup_1_0_1.eContents().get(0);
+		private final Alternatives cAlternatives_1_0_1_1 = (Alternatives)cGroup_1_0_1.eContents().get(1);
+		private final RuleCall cNumberTerminalRuleCall_1_0_1_1_0 = (RuleCall)cAlternatives_1_0_1_1.eContents().get(0);
+		private final Keyword cAsteriskKeyword_1_0_1_1_1 = (Keyword)cAlternatives_1_0_1_1.eContents().get(1);
+		private final Keyword cAsteriskKeyword_1_1 = (Keyword)cAlternatives_1.eContents().get(1);
+		private final Keyword cRightSquareBracketKeyword_2 = (Keyword)cGroup.eContents().get(2);
+		private final Keyword cHyphenMinusKeyword_3 = (Keyword)cGroup.eContents().get(3);
+		private final Assignment cLinkNameAssignment_4 = (Assignment)cGroup.eContents().get(4);
+		private final RuleCall cLinkNameIDTerminalRuleCall_4_0 = (RuleCall)cLinkNameAssignment_4.eContents().get(0);
+		private final Keyword cHyphenMinusGreaterThanSignKeyword_5 = (Keyword)cGroup.eContents().get(5);
+		private final Keyword cLeftSquareBracketKeyword_6 = (Keyword)cGroup.eContents().get(6);
+		private final Alternatives cAlternatives_7 = (Alternatives)cGroup.eContents().get(7);
+		private final Group cGroup_7_0 = (Group)cAlternatives_7.eContents().get(0);
+		private final RuleCall cNumberTerminalRuleCall_7_0_0 = (RuleCall)cGroup_7_0.eContents().get(0);
+		private final Group cGroup_7_0_1 = (Group)cGroup_7_0.eContents().get(1);
+		private final Keyword cFullStopFullStopKeyword_7_0_1_0 = (Keyword)cGroup_7_0_1.eContents().get(0);
+		private final Alternatives cAlternatives_7_0_1_1 = (Alternatives)cGroup_7_0_1.eContents().get(1);
+		private final RuleCall cNumberTerminalRuleCall_7_0_1_1_0 = (RuleCall)cAlternatives_7_0_1_1.eContents().get(0);
+		private final Keyword cAsteriskKeyword_7_0_1_1_1 = (Keyword)cAlternatives_7_0_1_1.eContents().get(1);
+		private final Keyword cAsteriskKeyword_7_1 = (Keyword)cAlternatives_7.eContents().get(1);
+		private final Keyword cRightSquareBracketKeyword_8 = (Keyword)cGroup.eContents().get(8);
+		
+		//BiRelation:
+		//	"[" (number+ (".." (number+ | "*")) | "*")? "]" "-" linkName=ID "->" "[" (number+ (".." (number+ | "*")) | "*")? "]";
+		public ParserRule getRule() { return rule; }
+
+		//"[" (number+ (".." (number+ | "*")) | "*")? "]" "-" linkName=ID "->" "[" (number+ (".." (number+ | "*")) | "*")? "]"
+		public Group getGroup() { return cGroup; }
+
+		//"["
+		public Keyword getLeftSquareBracketKeyword_0() { return cLeftSquareBracketKeyword_0; }
+
+		//(number+ (".." (number+ | "*")) | "*")?
+		public Alternatives getAlternatives_1() { return cAlternatives_1; }
+
+		//number+ (".." (number+ | "*"))
+		public Group getGroup_1_0() { return cGroup_1_0; }
+
+		//number+
+		public RuleCall getNumberTerminalRuleCall_1_0_0() { return cNumberTerminalRuleCall_1_0_0; }
+
+		//".." (number+ | "*")
+		public Group getGroup_1_0_1() { return cGroup_1_0_1; }
+
+		//".."
+		public Keyword getFullStopFullStopKeyword_1_0_1_0() { return cFullStopFullStopKeyword_1_0_1_0; }
+
+		//number+ | "*"
+		public Alternatives getAlternatives_1_0_1_1() { return cAlternatives_1_0_1_1; }
+
+		//number+
+		public RuleCall getNumberTerminalRuleCall_1_0_1_1_0() { return cNumberTerminalRuleCall_1_0_1_1_0; }
+
+		//"*"
+		public Keyword getAsteriskKeyword_1_0_1_1_1() { return cAsteriskKeyword_1_0_1_1_1; }
+
+		//"*"
+		public Keyword getAsteriskKeyword_1_1() { return cAsteriskKeyword_1_1; }
+
+		//"]"
+		public Keyword getRightSquareBracketKeyword_2() { return cRightSquareBracketKeyword_2; }
+
+		//"-"
+		public Keyword getHyphenMinusKeyword_3() { return cHyphenMinusKeyword_3; }
+
+		//linkName=ID
+		public Assignment getLinkNameAssignment_4() { return cLinkNameAssignment_4; }
+
+		//ID
+		public RuleCall getLinkNameIDTerminalRuleCall_4_0() { return cLinkNameIDTerminalRuleCall_4_0; }
+
+		//"->"
+		public Keyword getHyphenMinusGreaterThanSignKeyword_5() { return cHyphenMinusGreaterThanSignKeyword_5; }
+
+		//"["
+		public Keyword getLeftSquareBracketKeyword_6() { return cLeftSquareBracketKeyword_6; }
+
+		//(number+ (".." (number+ | "*")) | "*")?
+		public Alternatives getAlternatives_7() { return cAlternatives_7; }
+
+		//number+ (".." (number+ | "*"))
+		public Group getGroup_7_0() { return cGroup_7_0; }
+
+		//number+
+		public RuleCall getNumberTerminalRuleCall_7_0_0() { return cNumberTerminalRuleCall_7_0_0; }
+
+		//".." (number+ | "*")
+		public Group getGroup_7_0_1() { return cGroup_7_0_1; }
+
+		//".."
+		public Keyword getFullStopFullStopKeyword_7_0_1_0() { return cFullStopFullStopKeyword_7_0_1_0; }
+
+		//number+ | "*"
+		public Alternatives getAlternatives_7_0_1_1() { return cAlternatives_7_0_1_1; }
+
+		//number+
+		public RuleCall getNumberTerminalRuleCall_7_0_1_1_0() { return cNumberTerminalRuleCall_7_0_1_1_0; }
+
+		//"*"
+		public Keyword getAsteriskKeyword_7_0_1_1_1() { return cAsteriskKeyword_7_0_1_1_1; }
+
+		//"*"
+		public Keyword getAsteriskKeyword_7_1() { return cAsteriskKeyword_7_1; }
+
+		//"]"
+		public Keyword getRightSquareBracketKeyword_8() { return cRightSquareBracketKeyword_8; }
+	}
+
 	public class AttributeElements extends AbstractParserRuleElementFinder {
 		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Attribute");
 		private final Group cGroup = (Group)rule.eContents().get(1);
@@ -354,16 +470,19 @@ public class DiagramClassGrammarAccess extends AbstractGrammarElementFinder {
 		private final Keyword cColonKeyword_3 = (Keyword)cGroup.eContents().get(3);
 		private final Assignment cTypeAssignment_4 = (Assignment)cGroup.eContents().get(4);
 		private final RuleCall cTypeIDTerminalRuleCall_4_0 = (RuleCall)cTypeAssignment_4.eContents().get(0);
-		private final Group cGroup_5 = (Group)cGroup.eContents().get(5);
-		private final Keyword cLeftSquareBracketKeyword_5_0 = (Keyword)cGroup_5.eContents().get(0);
-		private final RuleCall cNumberTerminalRuleCall_5_1 = (RuleCall)cGroup_5.eContents().get(1);
-		private final Keyword cRightSquareBracketKeyword_5_2 = (Keyword)cGroup_5.eContents().get(2);
+		private final Alternatives cAlternatives_5 = (Alternatives)cGroup.eContents().get(5);
+		private final Group cGroup_5_0 = (Group)cAlternatives_5.eContents().get(0);
+		private final Keyword cLeftSquareBracketKeyword_5_0_0 = (Keyword)cGroup_5_0.eContents().get(0);
+		private final RuleCall cNumberTerminalRuleCall_5_0_1 = (RuleCall)cGroup_5_0.eContents().get(1);
+		private final Keyword cRightSquareBracketKeyword_5_0_2 = (Keyword)cGroup_5_0.eContents().get(2);
+		private final Assignment cBirelationAssignment_5_1 = (Assignment)cAlternatives_5.eContents().get(1);
+		private final RuleCall cBirelationBiRelationParserRuleCall_5_1_0 = (RuleCall)cBirelationAssignment_5_1.eContents().get(0);
 		
 		//Attribute:
-		//	BodyVisibility ("<>" | "<!>")? attributename=ID ":" type=ID ("[" number? "]")?;
+		//	BodyVisibility ("<>" | "<!>")? attributename=ID ":" type=ID ("[" number* "]" | birelation=BiRelation)?;
 		public ParserRule getRule() { return rule; }
 
-		//BodyVisibility ("<>" | "<!>")? attributename=ID ":" type=ID ("[" number? "]")?
+		//BodyVisibility ("<>" | "<!>")? attributename=ID ":" type=ID ("[" number* "]" | birelation=BiRelation)?
 		public Group getGroup() { return cGroup; }
 
 		//BodyVisibility
@@ -393,17 +512,26 @@ public class DiagramClassGrammarAccess extends AbstractGrammarElementFinder {
 		//ID
 		public RuleCall getTypeIDTerminalRuleCall_4_0() { return cTypeIDTerminalRuleCall_4_0; }
 
-		//("[" number? "]")?
-		public Group getGroup_5() { return cGroup_5; }
+		//("[" number* "]" | birelation=BiRelation)?
+		public Alternatives getAlternatives_5() { return cAlternatives_5; }
+
+		//"[" number* "]"
+		public Group getGroup_5_0() { return cGroup_5_0; }
 
 		//"["
-		public Keyword getLeftSquareBracketKeyword_5_0() { return cLeftSquareBracketKeyword_5_0; }
+		public Keyword getLeftSquareBracketKeyword_5_0_0() { return cLeftSquareBracketKeyword_5_0_0; }
 
-		//number?
-		public RuleCall getNumberTerminalRuleCall_5_1() { return cNumberTerminalRuleCall_5_1; }
+		//number*
+		public RuleCall getNumberTerminalRuleCall_5_0_1() { return cNumberTerminalRuleCall_5_0_1; }
 
 		//"]"
-		public Keyword getRightSquareBracketKeyword_5_2() { return cRightSquareBracketKeyword_5_2; }
+		public Keyword getRightSquareBracketKeyword_5_0_2() { return cRightSquareBracketKeyword_5_0_2; }
+
+		//birelation=BiRelation
+		public Assignment getBirelationAssignment_5_1() { return cBirelationAssignment_5_1; }
+
+		//BiRelation
+		public RuleCall getBirelationBiRelationParserRuleCall_5_1_0() { return cBirelationBiRelationParserRuleCall_5_1_0; }
 	}
 
 	public class ParamInElements extends AbstractParserRuleElementFinder {
@@ -607,6 +735,7 @@ public class DiagramClassGrammarAccess extends AbstractGrammarElementFinder {
 	private EnumerationElements pEnumeration;
 	private InterfaceElements pInterface;
 	private AbstractElements pAbstract;
+	private BiRelationElements pBiRelation;
 	private AttributeElements pAttribute;
 	private ParamInElements pParamIn;
 	private MethodElements pMethod;
@@ -717,8 +846,18 @@ public class DiagramClassGrammarAccess extends AbstractGrammarElementFinder {
 		return getAbstractAccess().getRule();
 	}
 
+	//BiRelation:
+	//	"[" (number+ (".." (number+ | "*")) | "*")? "]" "-" linkName=ID "->" "[" (number+ (".." (number+ | "*")) | "*")? "]";
+	public BiRelationElements getBiRelationAccess() {
+		return (pBiRelation != null) ? pBiRelation : (pBiRelation = new BiRelationElements());
+	}
+	
+	public ParserRule getBiRelationRule() {
+		return getBiRelationAccess().getRule();
+	}
+
 	//Attribute:
-	//	BodyVisibility ("<>" | "<!>")? attributename=ID ":" type=ID ("[" number? "]")?;
+	//	BodyVisibility ("<>" | "<!>")? attributename=ID ":" type=ID ("[" number* "]" | birelation=BiRelation)?;
 	public AttributeElements getAttributeAccess() {
 		return (pAttribute != null) ? pAttribute : (pAttribute = new AttributeElements());
 	}

@@ -15,6 +15,7 @@ import org.eclipse.xtext.serializer.sequencer.ITransientValueService;
 import org.eclipse.xtext.serializer.sequencer.ITransientValueService.ValueTransient;
 import org.xtext.smokingtext.diagramclass.diagramClass.Abstract;
 import org.xtext.smokingtext.diagramclass.diagramClass.Attribute;
+import org.xtext.smokingtext.diagramclass.diagramClass.BiRelation;
 import org.xtext.smokingtext.diagramclass.diagramClass.Dependancy;
 import org.xtext.smokingtext.diagramclass.diagramClass.DiagramClassPackage;
 import org.xtext.smokingtext.diagramclass.diagramClass.Enumeration;
@@ -62,6 +63,12 @@ public class AbstractDiagramClassSemanticSequencer extends AbstractSemanticSeque
 			case DiagramClassPackage.ATTRIBUTE:
 				if(context == grammarAccess.getAttributeRule()) {
 					sequence_Attribute(context, (Attribute) semanticObject); 
+					return; 
+				}
+				else break;
+			case DiagramClassPackage.BI_RELATION:
+				if(context == grammarAccess.getBiRelationRule()) {
+					sequence_BiRelation(context, (BiRelation) semanticObject); 
 					return; 
 				}
 				else break;
@@ -137,23 +144,33 @@ public class AbstractDiagramClassSemanticSequencer extends AbstractSemanticSeque
 	
 	/**
 	 * Constraint:
-	 *     (attributename=ID type=ID)
+	 *     (attributename=ID type=ID birelation=BiRelation?)
 	 *
 	 * Features:
 	 *    attributename[1, 1]
 	 *    type[1, 1]
+	 *    birelation[0, 1]
 	 */
 	protected void sequence_Attribute(EObject context, Attribute semanticObject) {
+		genericSequencer.createSequence(context, semanticObject);
+	}
+	
+	
+	/**
+	 * Constraint:
+	 *     linkName=ID
+	 *
+	 * Features:
+	 *    linkName[1, 1]
+	 */
+	protected void sequence_BiRelation(EObject context, BiRelation semanticObject) {
 		if(errorAcceptor != null) {
-			if(transientValues.isValueTransient(semanticObject, DiagramClassPackage.Literals.ATTRIBUTE__ATTRIBUTENAME) == ValueTransient.YES)
-				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, DiagramClassPackage.Literals.ATTRIBUTE__ATTRIBUTENAME));
-			if(transientValues.isValueTransient(semanticObject, DiagramClassPackage.Literals.ATTRIBUTE__TYPE) == ValueTransient.YES)
-				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, DiagramClassPackage.Literals.ATTRIBUTE__TYPE));
+			if(transientValues.isValueTransient(semanticObject, DiagramClassPackage.Literals.BI_RELATION__LINK_NAME) == ValueTransient.YES)
+				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, DiagramClassPackage.Literals.BI_RELATION__LINK_NAME));
 		}
 		INodesForEObjectProvider nodes = createNodeProvider(semanticObject);
 		SequenceFeeder feeder = createSequencerFeeder(semanticObject, nodes);
-		feeder.accept(grammarAccess.getAttributeAccess().getAttributenameIDTerminalRuleCall_2_0(), semanticObject.getAttributename());
-		feeder.accept(grammarAccess.getAttributeAccess().getTypeIDTerminalRuleCall_4_0(), semanticObject.getType());
+		feeder.accept(grammarAccess.getBiRelationAccess().getLinkNameIDTerminalRuleCall_4_0(), semanticObject.getLinkName());
 		feeder.finish();
 	}
 	

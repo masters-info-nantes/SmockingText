@@ -6,13 +6,16 @@
 package org.xtext.smokingtext.diagramclass.diagramClass.impl;
 
 import org.eclipse.emf.common.notify.Notification;
+import org.eclipse.emf.common.notify.NotificationChain;
 
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.InternalEObject;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
 import org.xtext.smokingtext.diagramclass.diagramClass.Attribute;
+import org.xtext.smokingtext.diagramclass.diagramClass.BiRelation;
 import org.xtext.smokingtext.diagramclass.diagramClass.DiagramClassPackage;
 
 /**
@@ -24,6 +27,7 @@ import org.xtext.smokingtext.diagramclass.diagramClass.DiagramClassPackage;
  * <ul>
  *   <li>{@link org.xtext.smokingtext.diagramclass.diagramClass.impl.AttributeImpl#getAttributename <em>Attributename</em>}</li>
  *   <li>{@link org.xtext.smokingtext.diagramclass.diagramClass.impl.AttributeImpl#getType <em>Type</em>}</li>
+ *   <li>{@link org.xtext.smokingtext.diagramclass.diagramClass.impl.AttributeImpl#getBirelation <em>Birelation</em>}</li>
  * </ul>
  * </p>
  *
@@ -70,6 +74,16 @@ public class AttributeImpl extends MinimalEObjectImpl.Container implements Attri
    * @ordered
    */
   protected String type = TYPE_EDEFAULT;
+
+  /**
+   * The cached value of the '{@link #getBirelation() <em>Birelation</em>}' containment reference.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #getBirelation()
+   * @generated
+   * @ordered
+   */
+  protected BiRelation birelation;
 
   /**
    * <!-- begin-user-doc -->
@@ -143,6 +157,70 @@ public class AttributeImpl extends MinimalEObjectImpl.Container implements Attri
    * <!-- end-user-doc -->
    * @generated
    */
+  public BiRelation getBirelation()
+  {
+    return birelation;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public NotificationChain basicSetBirelation(BiRelation newBirelation, NotificationChain msgs)
+  {
+    BiRelation oldBirelation = birelation;
+    birelation = newBirelation;
+    if (eNotificationRequired())
+    {
+      ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, DiagramClassPackage.ATTRIBUTE__BIRELATION, oldBirelation, newBirelation);
+      if (msgs == null) msgs = notification; else msgs.add(notification);
+    }
+    return msgs;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public void setBirelation(BiRelation newBirelation)
+  {
+    if (newBirelation != birelation)
+    {
+      NotificationChain msgs = null;
+      if (birelation != null)
+        msgs = ((InternalEObject)birelation).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - DiagramClassPackage.ATTRIBUTE__BIRELATION, null, msgs);
+      if (newBirelation != null)
+        msgs = ((InternalEObject)newBirelation).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - DiagramClassPackage.ATTRIBUTE__BIRELATION, null, msgs);
+      msgs = basicSetBirelation(newBirelation, msgs);
+      if (msgs != null) msgs.dispatch();
+    }
+    else if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, DiagramClassPackage.ATTRIBUTE__BIRELATION, newBirelation, newBirelation));
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  @Override
+  public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
+  {
+    switch (featureID)
+    {
+      case DiagramClassPackage.ATTRIBUTE__BIRELATION:
+        return basicSetBirelation(null, msgs);
+    }
+    return super.eInverseRemove(otherEnd, featureID, msgs);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
   @Override
   public Object eGet(int featureID, boolean resolve, boolean coreType)
   {
@@ -152,6 +230,8 @@ public class AttributeImpl extends MinimalEObjectImpl.Container implements Attri
         return getAttributename();
       case DiagramClassPackage.ATTRIBUTE__TYPE:
         return getType();
+      case DiagramClassPackage.ATTRIBUTE__BIRELATION:
+        return getBirelation();
     }
     return super.eGet(featureID, resolve, coreType);
   }
@@ -171,6 +251,9 @@ public class AttributeImpl extends MinimalEObjectImpl.Container implements Attri
         return;
       case DiagramClassPackage.ATTRIBUTE__TYPE:
         setType((String)newValue);
+        return;
+      case DiagramClassPackage.ATTRIBUTE__BIRELATION:
+        setBirelation((BiRelation)newValue);
         return;
     }
     super.eSet(featureID, newValue);
@@ -192,6 +275,9 @@ public class AttributeImpl extends MinimalEObjectImpl.Container implements Attri
       case DiagramClassPackage.ATTRIBUTE__TYPE:
         setType(TYPE_EDEFAULT);
         return;
+      case DiagramClassPackage.ATTRIBUTE__BIRELATION:
+        setBirelation((BiRelation)null);
+        return;
     }
     super.eUnset(featureID);
   }
@@ -210,6 +296,8 @@ public class AttributeImpl extends MinimalEObjectImpl.Container implements Attri
         return ATTRIBUTENAME_EDEFAULT == null ? attributename != null : !ATTRIBUTENAME_EDEFAULT.equals(attributename);
       case DiagramClassPackage.ATTRIBUTE__TYPE:
         return TYPE_EDEFAULT == null ? type != null : !TYPE_EDEFAULT.equals(type);
+      case DiagramClassPackage.ATTRIBUTE__BIRELATION:
+        return birelation != null;
     }
     return super.eIsSet(featureID);
   }

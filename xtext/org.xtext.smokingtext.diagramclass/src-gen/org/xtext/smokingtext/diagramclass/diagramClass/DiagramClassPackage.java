@@ -310,6 +310,34 @@ public interface DiagramClassPackage extends EPackage
   int ABSTRACT_FEATURE_COUNT = ELEMENTS_FEATURE_COUNT + 4;
 
   /**
+   * The meta object id for the '{@link org.xtext.smokingtext.diagramclass.diagramClass.impl.BiRelationImpl <em>Bi Relation</em>}' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see org.xtext.smokingtext.diagramclass.diagramClass.impl.BiRelationImpl
+   * @see org.xtext.smokingtext.diagramclass.diagramClass.impl.DiagramClassPackageImpl#getBiRelation()
+   * @generated
+   */
+  int BI_RELATION = 7;
+
+  /**
+   * The feature id for the '<em><b>Link Name</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int BI_RELATION__LINK_NAME = 0;
+
+  /**
+   * The number of structural features of the '<em>Bi Relation</em>' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int BI_RELATION_FEATURE_COUNT = 1;
+
+  /**
    * The meta object id for the '{@link org.xtext.smokingtext.diagramclass.diagramClass.impl.AttributeImpl <em>Attribute</em>}' class.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
@@ -317,7 +345,7 @@ public interface DiagramClassPackage extends EPackage
    * @see org.xtext.smokingtext.diagramclass.diagramClass.impl.DiagramClassPackageImpl#getAttribute()
    * @generated
    */
-  int ATTRIBUTE = 7;
+  int ATTRIBUTE = 8;
 
   /**
    * The feature id for the '<em><b>Attributename</b></em>' attribute.
@@ -338,13 +366,22 @@ public interface DiagramClassPackage extends EPackage
   int ATTRIBUTE__TYPE = 1;
 
   /**
+   * The feature id for the '<em><b>Birelation</b></em>' containment reference.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int ATTRIBUTE__BIRELATION = 2;
+
+  /**
    * The number of structural features of the '<em>Attribute</em>' class.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int ATTRIBUTE_FEATURE_COUNT = 2;
+  int ATTRIBUTE_FEATURE_COUNT = 3;
 
   /**
    * The meta object id for the '{@link org.xtext.smokingtext.diagramclass.diagramClass.impl.paramInImpl <em>param In</em>}' class.
@@ -354,7 +391,7 @@ public interface DiagramClassPackage extends EPackage
    * @see org.xtext.smokingtext.diagramclass.diagramClass.impl.DiagramClassPackageImpl#getparamIn()
    * @generated
    */
-  int PARAM_IN = 8;
+  int PARAM_IN = 9;
 
   /**
    * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -391,7 +428,7 @@ public interface DiagramClassPackage extends EPackage
    * @see org.xtext.smokingtext.diagramclass.diagramClass.impl.DiagramClassPackageImpl#getMethod()
    * @generated
    */
-  int METHOD = 9;
+  int METHOD = 10;
 
   /**
    * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -437,7 +474,7 @@ public interface DiagramClassPackage extends EPackage
    * @see org.xtext.smokingtext.diagramclass.diagramClass.impl.DiagramClassPackageImpl#getPackage()
    * @generated
    */
-  int PACKAGE = 10;
+  int PACKAGE = 11;
 
   /**
    * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -690,6 +727,27 @@ public interface DiagramClassPackage extends EPackage
   EReference getAbstract_Body();
 
   /**
+   * Returns the meta object for class '{@link org.xtext.smokingtext.diagramclass.diagramClass.BiRelation <em>Bi Relation</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for class '<em>Bi Relation</em>'.
+   * @see org.xtext.smokingtext.diagramclass.diagramClass.BiRelation
+   * @generated
+   */
+  EClass getBiRelation();
+
+  /**
+   * Returns the meta object for the attribute '{@link org.xtext.smokingtext.diagramclass.diagramClass.BiRelation#getLinkName <em>Link Name</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the attribute '<em>Link Name</em>'.
+   * @see org.xtext.smokingtext.diagramclass.diagramClass.BiRelation#getLinkName()
+   * @see #getBiRelation()
+   * @generated
+   */
+  EAttribute getBiRelation_LinkName();
+
+  /**
    * Returns the meta object for class '{@link org.xtext.smokingtext.diagramclass.diagramClass.Attribute <em>Attribute</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
@@ -720,6 +778,17 @@ public interface DiagramClassPackage extends EPackage
    * @generated
    */
   EAttribute getAttribute_Type();
+
+  /**
+   * Returns the meta object for the containment reference '{@link org.xtext.smokingtext.diagramclass.diagramClass.Attribute#getBirelation <em>Birelation</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the containment reference '<em>Birelation</em>'.
+   * @see org.xtext.smokingtext.diagramclass.diagramClass.Attribute#getBirelation()
+   * @see #getAttribute()
+   * @generated
+   */
+  EReference getAttribute_Birelation();
 
   /**
    * Returns the meta object for class '{@link org.xtext.smokingtext.diagramclass.diagramClass.paramIn <em>param In</em>}'.
@@ -1037,6 +1106,24 @@ public interface DiagramClassPackage extends EPackage
     EReference ABSTRACT__BODY = eINSTANCE.getAbstract_Body();
 
     /**
+     * The meta object literal for the '{@link org.xtext.smokingtext.diagramclass.diagramClass.impl.BiRelationImpl <em>Bi Relation</em>}' class.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @see org.xtext.smokingtext.diagramclass.diagramClass.impl.BiRelationImpl
+     * @see org.xtext.smokingtext.diagramclass.diagramClass.impl.DiagramClassPackageImpl#getBiRelation()
+     * @generated
+     */
+    EClass BI_RELATION = eINSTANCE.getBiRelation();
+
+    /**
+     * The meta object literal for the '<em><b>Link Name</b></em>' attribute feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EAttribute BI_RELATION__LINK_NAME = eINSTANCE.getBiRelation_LinkName();
+
+    /**
      * The meta object literal for the '{@link org.xtext.smokingtext.diagramclass.diagramClass.impl.AttributeImpl <em>Attribute</em>}' class.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
@@ -1061,6 +1148,14 @@ public interface DiagramClassPackage extends EPackage
      * @generated
      */
     EAttribute ATTRIBUTE__TYPE = eINSTANCE.getAttribute_Type();
+
+    /**
+     * The meta object literal for the '<em><b>Birelation</b></em>' containment reference feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EReference ATTRIBUTE__BIRELATION = eINSTANCE.getAttribute_Birelation();
 
     /**
      * The meta object literal for the '{@link org.xtext.smokingtext.diagramclass.diagramClass.impl.paramInImpl <em>param In</em>}' class.

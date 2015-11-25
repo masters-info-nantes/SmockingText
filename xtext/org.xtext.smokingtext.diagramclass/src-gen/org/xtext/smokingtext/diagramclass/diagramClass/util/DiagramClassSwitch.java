@@ -12,6 +12,7 @@ import org.eclipse.emf.ecore.util.Switch;
 
 import org.xtext.smokingtext.diagramclass.diagramClass.Abstract;
 import org.xtext.smokingtext.diagramclass.diagramClass.Attribute;
+import org.xtext.smokingtext.diagramclass.diagramClass.BiRelation;
 import org.xtext.smokingtext.diagramclass.diagramClass.Dependancy;
 import org.xtext.smokingtext.diagramclass.diagramClass.DiagramClassPackage;
 import org.xtext.smokingtext.diagramclass.diagramClass.Elements;
@@ -134,6 +135,13 @@ public class DiagramClassSwitch<T> extends Switch<T>
         Abstract abstract_ = (Abstract)theEObject;
         T result = caseAbstract(abstract_);
         if (result == null) result = caseElements(abstract_);
+        if (result == null) result = defaultCase(theEObject);
+        return result;
+      }
+      case DiagramClassPackage.BI_RELATION:
+      {
+        BiRelation biRelation = (BiRelation)theEObject;
+        T result = caseBiRelation(biRelation);
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
@@ -277,6 +285,22 @@ public class DiagramClassSwitch<T> extends Switch<T>
    * @generated
    */
   public T caseAbstract(Abstract object)
+  {
+    return null;
+  }
+
+  /**
+   * Returns the result of interpreting the object as an instance of '<em>Bi Relation</em>'.
+   * <!-- begin-user-doc -->
+   * This implementation returns null;
+   * returning a non-null result will terminate the switch.
+   * <!-- end-user-doc -->
+   * @param object the target of the switch.
+   * @return the result of interpreting the object as an instance of '<em>Bi Relation</em>'.
+   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+   * @generated
+   */
+  public T caseBiRelation(BiRelation object)
   {
     return null;
   }

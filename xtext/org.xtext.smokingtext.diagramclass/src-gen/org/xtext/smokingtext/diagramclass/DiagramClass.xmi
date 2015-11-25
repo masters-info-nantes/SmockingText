@@ -9,7 +9,7 @@
         <classifier xsi:type="ecore:EClass" href="http://www.xtext.org/smokingtext/diagramclass/DiagramClass#//Model"/>
       </type>
       <alternatives xsi:type="xtext:Assignment" cardinality="*" feature="greetings" operator="+=">
-        <terminal xsi:type="xtext:RuleCall" rule="/0/@rules.14"/>
+        <terminal xsi:type="xtext:RuleCall" rule="/0/@rules.15"/>
       </alternatives>
     </rules>
     <rules xsi:type="xtext:ParserRule" name="Elements">
@@ -28,7 +28,7 @@
         <classifier xsi:type="ecore:EClass" href="http://www.xtext.org/smokingtext/diagramclass/DiagramClass#//Class"/>
       </type>
       <alternatives xsi:type="xtext:Group">
-        <elements xsi:type="xtext:RuleCall" rule="/0/@rules.12"/>
+        <elements xsi:type="xtext:RuleCall" rule="/0/@rules.13"/>
         <elements xsi:type="xtext:Assignment" feature="classname" operator="=">
           <terminal xsi:type="xtext:RuleCall" rule="/1/@rules.0"/>
         </elements>
@@ -42,8 +42,8 @@
         <elements xsi:type="xtext:Keyword" value="{"/>
         <elements xsi:type="xtext:Assignment" cardinality="*" feature="body" operator="+=">
           <terminal xsi:type="xtext:Alternatives">
-            <elements xsi:type="xtext:RuleCall" rule="/0/@rules.8"/>
-            <elements xsi:type="xtext:RuleCall" rule="/0/@rules.10"/>
+            <elements xsi:type="xtext:RuleCall" rule="/0/@rules.9"/>
+            <elements xsi:type="xtext:RuleCall" rule="/0/@rules.11"/>
             <elements xsi:type="xtext:RuleCall" rule="/0/@rules.4"/>
           </terminal>
         </elements>
@@ -75,7 +75,7 @@
         <classifier xsi:type="ecore:EClass" href="http://www.xtext.org/smokingtext/diagramclass/DiagramClass#//Enumeration"/>
       </type>
       <alternatives xsi:type="xtext:Group">
-        <elements xsi:type="xtext:RuleCall" rule="/0/@rules.12"/>
+        <elements xsi:type="xtext:RuleCall" rule="/0/@rules.13"/>
         <elements xsi:type="xtext:Keyword" value="e"/>
         <elements xsi:type="xtext:Assignment" feature="classname" operator="=">
           <terminal xsi:type="xtext:RuleCall" rule="/1/@rules.0"/>
@@ -93,14 +93,14 @@
         <classifier xsi:type="ecore:EClass" href="http://www.xtext.org/smokingtext/diagramclass/DiagramClass#//Interface"/>
       </type>
       <alternatives xsi:type="xtext:Group">
-        <elements xsi:type="xtext:RuleCall" rule="/0/@rules.12"/>
+        <elements xsi:type="xtext:RuleCall" rule="/0/@rules.13"/>
         <elements xsi:type="xtext:Keyword" value="i"/>
         <elements xsi:type="xtext:Assignment" feature="methodname" operator="=">
           <terminal xsi:type="xtext:RuleCall" rule="/1/@rules.0"/>
         </elements>
         <elements xsi:type="xtext:Keyword" value="{"/>
         <elements xsi:type="xtext:Assignment" cardinality="*" feature="body" operator="+=">
-          <terminal xsi:type="xtext:RuleCall" rule="/0/@rules.10"/>
+          <terminal xsi:type="xtext:RuleCall" rule="/0/@rules.11"/>
         </elements>
         <elements xsi:type="xtext:Keyword" value="}"/>
       </alternatives>
@@ -110,7 +110,7 @@
         <classifier xsi:type="ecore:EClass" href="http://www.xtext.org/smokingtext/diagramclass/DiagramClass#//Abstract"/>
       </type>
       <alternatives xsi:type="xtext:Group">
-        <elements xsi:type="xtext:RuleCall" rule="/0/@rules.12"/>
+        <elements xsi:type="xtext:RuleCall" rule="/0/@rules.13"/>
         <elements xsi:type="xtext:Keyword" value="a"/>
         <elements xsi:type="xtext:Assignment" feature="classname" operator="=">
           <terminal xsi:type="xtext:RuleCall" rule="/1/@rules.0"/>
@@ -125,11 +125,53 @@
         <elements xsi:type="xtext:Keyword" value="{"/>
         <elements xsi:type="xtext:Assignment" cardinality="*" feature="body" operator="+=">
           <terminal xsi:type="xtext:Alternatives">
-            <elements xsi:type="xtext:RuleCall" rule="/0/@rules.8"/>
-            <elements xsi:type="xtext:RuleCall" rule="/0/@rules.10"/>
+            <elements xsi:type="xtext:RuleCall" rule="/0/@rules.9"/>
+            <elements xsi:type="xtext:RuleCall" rule="/0/@rules.11"/>
           </terminal>
         </elements>
         <elements xsi:type="xtext:Keyword" value="}"/>
+      </alternatives>
+    </rules>
+    <rules xsi:type="xtext:ParserRule" name="BiRelation">
+      <type metamodel="/0/@metamodelDeclarations.0">
+        <classifier xsi:type="ecore:EClass" href="http://www.xtext.org/smokingtext/diagramclass/DiagramClass#//BiRelation"/>
+      </type>
+      <alternatives xsi:type="xtext:Group">
+        <elements xsi:type="xtext:Keyword" value="["/>
+        <elements xsi:type="xtext:Alternatives" cardinality="?">
+          <elements xsi:type="xtext:Group">
+            <elements xsi:type="xtext:RuleCall" cardinality="+" rule="/0/@rules.14"/>
+            <elements xsi:type="xtext:Group">
+              <elements xsi:type="xtext:Keyword" value=".."/>
+              <elements xsi:type="xtext:Alternatives">
+                <elements xsi:type="xtext:RuleCall" cardinality="+" rule="/0/@rules.14"/>
+                <elements xsi:type="xtext:Keyword" value="*"/>
+              </elements>
+            </elements>
+          </elements>
+          <elements xsi:type="xtext:Keyword" value="*"/>
+        </elements>
+        <elements xsi:type="xtext:Keyword" value="]"/>
+        <elements xsi:type="xtext:Keyword" value="-"/>
+        <elements xsi:type="xtext:Assignment" feature="linkName" operator="=">
+          <terminal xsi:type="xtext:RuleCall" rule="/1/@rules.0"/>
+        </elements>
+        <elements xsi:type="xtext:Keyword" value="->"/>
+        <elements xsi:type="xtext:Keyword" value="["/>
+        <elements xsi:type="xtext:Alternatives" cardinality="?">
+          <elements xsi:type="xtext:Group">
+            <elements xsi:type="xtext:RuleCall" cardinality="+" rule="/0/@rules.14"/>
+            <elements xsi:type="xtext:Group">
+              <elements xsi:type="xtext:Keyword" value=".."/>
+              <elements xsi:type="xtext:Alternatives">
+                <elements xsi:type="xtext:RuleCall" cardinality="+" rule="/0/@rules.14"/>
+                <elements xsi:type="xtext:Keyword" value="*"/>
+              </elements>
+            </elements>
+          </elements>
+          <elements xsi:type="xtext:Keyword" value="*"/>
+        </elements>
+        <elements xsi:type="xtext:Keyword" value="]"/>
       </alternatives>
     </rules>
     <rules xsi:type="xtext:ParserRule" name="Attribute">
@@ -137,7 +179,7 @@
         <classifier xsi:type="ecore:EClass" href="http://www.xtext.org/smokingtext/diagramclass/DiagramClass#//Attribute"/>
       </type>
       <alternatives xsi:type="xtext:Group">
-        <elements xsi:type="xtext:RuleCall" rule="/0/@rules.11"/>
+        <elements xsi:type="xtext:RuleCall" rule="/0/@rules.12"/>
         <elements xsi:type="xtext:Alternatives" cardinality="?">
           <elements xsi:type="xtext:Keyword" value="&lt;>"/>
           <elements xsi:type="xtext:Keyword" value="&lt;!>"/>
@@ -149,10 +191,15 @@
         <elements xsi:type="xtext:Assignment" feature="type" operator="=">
           <terminal xsi:type="xtext:RuleCall" rule="/1/@rules.0"/>
         </elements>
-        <elements xsi:type="xtext:Group" cardinality="?">
-          <elements xsi:type="xtext:Keyword" value="["/>
-          <elements xsi:type="xtext:RuleCall" cardinality="?" rule="/0/@rules.13"/>
-          <elements xsi:type="xtext:Keyword" value="]"/>
+        <elements xsi:type="xtext:Alternatives" cardinality="?">
+          <elements xsi:type="xtext:Group">
+            <elements xsi:type="xtext:Keyword" value="["/>
+            <elements xsi:type="xtext:RuleCall" cardinality="*" rule="/0/@rules.14"/>
+            <elements xsi:type="xtext:Keyword" value="]"/>
+          </elements>
+          <elements xsi:type="xtext:Assignment" feature="birelation" operator="=">
+            <terminal xsi:type="xtext:RuleCall" rule="/0/@rules.8"/>
+          </elements>
         </elements>
       </alternatives>
     </rules>
@@ -176,13 +223,13 @@
         <classifier xsi:type="ecore:EClass" href="http://www.xtext.org/smokingtext/diagramclass/DiagramClass#//Method"/>
       </type>
       <alternatives xsi:type="xtext:Group">
-        <elements xsi:type="xtext:RuleCall" rule="/0/@rules.11"/>
+        <elements xsi:type="xtext:RuleCall" rule="/0/@rules.12"/>
         <elements xsi:type="xtext:Assignment" feature="name" operator="=">
           <terminal xsi:type="xtext:RuleCall" rule="/1/@rules.0"/>
         </elements>
         <elements xsi:type="xtext:Keyword" value="("/>
         <elements xsi:type="xtext:Assignment" cardinality="*" feature="param" operator="+=">
-          <terminal xsi:type="xtext:RuleCall" rule="/0/@rules.9"/>
+          <terminal xsi:type="xtext:RuleCall" rule="/0/@rules.10"/>
         </elements>
         <elements xsi:type="xtext:Keyword" value=")"/>
         <elements xsi:type="xtext:Group" cardinality="?">
@@ -238,7 +285,7 @@
           <terminal xsi:type="xtext:RuleCall" rule="/0/@rules.1"/>
         </elements>
         <elements xsi:type="xtext:Assignment" cardinality="?" feature="subPackage" operator="+=">
-          <terminal xsi:type="xtext:RuleCall" rule="/0/@rules.14"/>
+          <terminal xsi:type="xtext:RuleCall" rule="/0/@rules.15"/>
         </elements>
         <elements xsi:type="xtext:Keyword" value="]]"/>
       </alternatives>

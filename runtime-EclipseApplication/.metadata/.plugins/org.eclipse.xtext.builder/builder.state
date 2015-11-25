@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:builderState="http://www.eclipse.org/xtext/builderstate/1.0">
+  <builderState:ResourceDescription URI="platform:/resource/testSt/src/voiture.st">
+    <exportedObjects fragment="//@greetings.0" name="7:default">
+      <eClass href="http://www.xtext.org/smokingtext/diagramclass/DiagramClass#//Package"/>
+    </exportedObjects>
+    <exportedObjects fragment="//@greetings.0/@classType.1/@body.1" name="7:default6:tourne">
+      <eClass href="http://www.xtext.org/smokingtext/diagramclass/DiagramClass#//Method"/>
+    </exportedObjects>
+    <exportedObjects fragment="//@greetings.0/@classType.1/@body.1/@param.0" name="7:default6:tourne5:angle">
+      <eClass href="http://www.xtext.org/smokingtext/diagramclass/DiagramClass#//paramIn"/>
+    </exportedObjects>
+    <exportedObjects fragment="//@greetings.0/@classType.3/@body.0" name="7:default6:avance">
+      <eClass href="http://www.xtext.org/smokingtext/diagramclass/DiagramClass#//Method"/>
+    </exportedObjects>
+  </builderState:ResourceDescription>
+  <builderState:ResourceDescription URI="platform:/resource/testSt/src/test.st">
+    <exportedObjects fragment="//@greetings.0" name="3:com">
+      <eClass href="http://www.xtext.org/smokingtext/diagramclass/DiagramClass#//Package"/>
+    </exportedObjects>
+    <exportedObjects fragment="//@greetings.0/@classType.3/@body.0" name="3:com6:Search">
+      <eClass href="http://www.xtext.org/smokingtext/diagramclass/DiagramClass#//Dependancy"/>
+    </exportedObjects>
+  </builderState:ResourceDescription>
+</xmi:XMI>

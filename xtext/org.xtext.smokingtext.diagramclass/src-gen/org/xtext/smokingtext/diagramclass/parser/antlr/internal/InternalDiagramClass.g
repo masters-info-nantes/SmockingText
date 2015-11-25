@@ -664,6 +664,113 @@ ruleClassVisibility
 
 
 
+// Entry rule entryRuleBiRelation
+entryRuleBiRelation returns [EObject current=null] 
+	:
+	{ newCompositeNode(grammarAccess.getBiRelationRule()); }
+	 iv_ruleBiRelation=ruleBiRelation 
+	 { $current=$iv_ruleBiRelation.current; } 
+	 EOF 
+;
+
+// Rule BiRelation
+ruleBiRelation returns [EObject current=null] 
+    @init { enterRule(); 
+    }
+    @after { leaveRule(); }:
+(	otherlv_0='[' 
+    {
+    	newLeafNode(otherlv_0, grammarAccess.getBiRelationAccess().getLeftSquareBracketKeyword_0());
+    }
+(((this_number_1=RULE_NUMBER
+    { 
+    newLeafNode(this_number_1, grammarAccess.getBiRelationAccess().getNumberTerminalRuleCall_1_0_0()); 
+    }
+)+(	otherlv_2='..' 
+    {
+    	newLeafNode(otherlv_2, grammarAccess.getBiRelationAccess().getFullStopFullStopKeyword_1_0_1_0());
+    }
+((this_number_3=RULE_NUMBER
+    { 
+    newLeafNode(this_number_3, grammarAccess.getBiRelationAccess().getNumberTerminalRuleCall_1_0_1_1_0()); 
+    }
+)+
+    |	otherlv_4='*' 
+    {
+    	newLeafNode(otherlv_4, grammarAccess.getBiRelationAccess().getAsteriskKeyword_1_0_1_1_1());
+    }
+)))
+    |	otherlv_5='*' 
+    {
+    	newLeafNode(otherlv_5, grammarAccess.getBiRelationAccess().getAsteriskKeyword_1_1());
+    }
+)?	otherlv_6=']' 
+    {
+    	newLeafNode(otherlv_6, grammarAccess.getBiRelationAccess().getRightSquareBracketKeyword_2());
+    }
+	otherlv_7='-' 
+    {
+    	newLeafNode(otherlv_7, grammarAccess.getBiRelationAccess().getHyphenMinusKeyword_3());
+    }
+(
+(
+		lv_linkName_8_0=RULE_ID
+		{
+			newLeafNode(lv_linkName_8_0, grammarAccess.getBiRelationAccess().getLinkNameIDTerminalRuleCall_4_0()); 
+		}
+		{
+	        if ($current==null) {
+	            $current = createModelElement(grammarAccess.getBiRelationRule());
+	        }
+       		setWithLastConsumed(
+       			$current, 
+       			"linkName",
+        		lv_linkName_8_0, 
+        		"ID");
+	    }
+
+)
+)	otherlv_9='->' 
+    {
+    	newLeafNode(otherlv_9, grammarAccess.getBiRelationAccess().getHyphenMinusGreaterThanSignKeyword_5());
+    }
+	otherlv_10='[' 
+    {
+    	newLeafNode(otherlv_10, grammarAccess.getBiRelationAccess().getLeftSquareBracketKeyword_6());
+    }
+(((this_number_11=RULE_NUMBER
+    { 
+    newLeafNode(this_number_11, grammarAccess.getBiRelationAccess().getNumberTerminalRuleCall_7_0_0()); 
+    }
+)+(	otherlv_12='..' 
+    {
+    	newLeafNode(otherlv_12, grammarAccess.getBiRelationAccess().getFullStopFullStopKeyword_7_0_1_0());
+    }
+((this_number_13=RULE_NUMBER
+    { 
+    newLeafNode(this_number_13, grammarAccess.getBiRelationAccess().getNumberTerminalRuleCall_7_0_1_1_0()); 
+    }
+)+
+    |	otherlv_14='*' 
+    {
+    	newLeafNode(otherlv_14, grammarAccess.getBiRelationAccess().getAsteriskKeyword_7_0_1_1_1());
+    }
+)))
+    |	otherlv_15='*' 
+    {
+    	newLeafNode(otherlv_15, grammarAccess.getBiRelationAccess().getAsteriskKeyword_7_1());
+    }
+)?	otherlv_16=']' 
+    {
+    	newLeafNode(otherlv_16, grammarAccess.getBiRelationAccess().getRightSquareBracketKeyword_8());
+    }
+)
+;
+
+
+
+
+
 // Entry rule entryRuleAttribute
 entryRuleAttribute returns [EObject current=null] 
 	:
@@ -735,19 +842,38 @@ ruleBodyVisibility
 	    }
 
 )
-)(	otherlv_6='[' 
+)((	otherlv_6='[' 
     {
-    	newLeafNode(otherlv_6, grammarAccess.getAttributeAccess().getLeftSquareBracketKeyword_5_0());
+    	newLeafNode(otherlv_6, grammarAccess.getAttributeAccess().getLeftSquareBracketKeyword_5_0_0());
     }
 (this_number_7=RULE_NUMBER
     { 
-    newLeafNode(this_number_7, grammarAccess.getAttributeAccess().getNumberTerminalRuleCall_5_1()); 
+    newLeafNode(this_number_7, grammarAccess.getAttributeAccess().getNumberTerminalRuleCall_5_0_1()); 
     }
-)?	otherlv_8=']' 
+)*	otherlv_8=']' 
     {
-    	newLeafNode(otherlv_8, grammarAccess.getAttributeAccess().getRightSquareBracketKeyword_5_2());
+    	newLeafNode(otherlv_8, grammarAccess.getAttributeAccess().getRightSquareBracketKeyword_5_0_2());
     }
-)?)
+)
+    |(
+(
+		{ 
+	        newCompositeNode(grammarAccess.getAttributeAccess().getBirelationBiRelationParserRuleCall_5_1_0()); 
+	    }
+		lv_birelation_9_0=ruleBiRelation		{
+	        if ($current==null) {
+	            $current = createModelElementForParent(grammarAccess.getAttributeRule());
+	        }
+       		set(
+       			$current, 
+       			"birelation",
+        		lv_birelation_9_0, 
+        		"BiRelation");
+	        afterParserOrEnumRuleCall();
+	    }
+
+)
+))?)
 ;
 
 
