@@ -1,3 +1,0 @@
-INDEX VERSION 1.126+/home/david/Documents/M2ALMA/MDE/Projet/SmokingText/xtext/.metadata/.plugins/org.eclipse.jdt.core
-2306102701.index
-203040027.index

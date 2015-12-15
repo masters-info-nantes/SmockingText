@@ -1,5 +1,0 @@
--- @path MM=/org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/DiagramClass.ecore
-
-module test;
-create OUT : MM1 from IN : MM;
-
