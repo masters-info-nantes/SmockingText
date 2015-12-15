@@ -13,12 +13,12 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.xtext.smokingtext.diagramclass.diagramClass.Package#getName <em>Name</em>}</li>
  *   <li>{@link org.xtext.smokingtext.diagramclass.diagramClass.Package#getClassType <em>Class Type</em>}</li>
  *   <li>{@link org.xtext.smokingtext.diagramclass.diagramClass.Package#getSubPackage <em>Sub Package</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.xtext.smokingtext.diagramclass.diagramClass.DiagramClassPackage#getPackage()
  * @model

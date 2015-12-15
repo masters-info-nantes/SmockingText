@@ -26,13 +26,13 @@ import org.xtext.smokingtext.diagramclass.diagramClass.DiagramClassPackage;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.xtext.smokingtext.diagramclass.diagramClass.impl.ClassImpl#getClassname <em>Classname</em>}</li>
  *   <li>{@link org.xtext.smokingtext.diagramclass.diagramClass.impl.ClassImpl#getExtension <em>Extension</em>}</li>
  *   <li>{@link org.xtext.smokingtext.diagramclass.diagramClass.impl.ClassImpl#getImplements <em>Implements</em>}</li>
  *   <li>{@link org.xtext.smokingtext.diagramclass.diagramClass.impl.ClassImpl#getBody <em>Body</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

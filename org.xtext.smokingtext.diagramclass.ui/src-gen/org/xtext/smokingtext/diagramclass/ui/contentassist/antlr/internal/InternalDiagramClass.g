@@ -1492,9 +1492,9 @@ rule__Interface__Group__2__Impl
     }
 :
 (
-{ before(grammarAccess.getInterfaceAccess().getMethodnameAssignment_2()); }
-(rule__Interface__MethodnameAssignment_2)
-{ after(grammarAccess.getInterfaceAccess().getMethodnameAssignment_2()); }
+{ before(grammarAccess.getInterfaceAccess().getInterfacenameAssignment_2()); }
+(rule__Interface__InterfacenameAssignment_2)
+{ after(grammarAccess.getInterfaceAccess().getInterfacenameAssignment_2()); }
 )
 
 ;
@@ -3464,14 +3464,14 @@ finally {
 	restoreStackSize(stackSize);
 }
 
-rule__Interface__MethodnameAssignment_2
+rule__Interface__InterfacenameAssignment_2
     @init {
 		int stackSize = keepStackSize();
     }
 :
 (
-{ before(grammarAccess.getInterfaceAccess().getMethodnameIDTerminalRuleCall_2_0()); }
-	RULE_ID{ after(grammarAccess.getInterfaceAccess().getMethodnameIDTerminalRuleCall_2_0()); }
+{ before(grammarAccess.getInterfaceAccess().getInterfacenameIDTerminalRuleCall_2_0()); }
+	RULE_ID{ after(grammarAccess.getInterfaceAccess().getInterfacenameIDTerminalRuleCall_2_0()); }
 )
 
 ;

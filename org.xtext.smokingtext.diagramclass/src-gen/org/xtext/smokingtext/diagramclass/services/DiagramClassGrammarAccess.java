@@ -232,18 +232,18 @@ public class DiagramClassGrammarAccess extends AbstractGrammarElementFinder {
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final RuleCall cClassVisibilityParserRuleCall_0 = (RuleCall)cGroup.eContents().get(0);
 		private final Keyword cIKeyword_1 = (Keyword)cGroup.eContents().get(1);
-		private final Assignment cMethodnameAssignment_2 = (Assignment)cGroup.eContents().get(2);
-		private final RuleCall cMethodnameIDTerminalRuleCall_2_0 = (RuleCall)cMethodnameAssignment_2.eContents().get(0);
+		private final Assignment cInterfacenameAssignment_2 = (Assignment)cGroup.eContents().get(2);
+		private final RuleCall cInterfacenameIDTerminalRuleCall_2_0 = (RuleCall)cInterfacenameAssignment_2.eContents().get(0);
 		private final Keyword cLeftCurlyBracketKeyword_3 = (Keyword)cGroup.eContents().get(3);
 		private final Assignment cBodyAssignment_4 = (Assignment)cGroup.eContents().get(4);
 		private final RuleCall cBodyMethodParserRuleCall_4_0 = (RuleCall)cBodyAssignment_4.eContents().get(0);
 		private final Keyword cRightCurlyBracketKeyword_5 = (Keyword)cGroup.eContents().get(5);
 		
 		//Interface:
-		//	ClassVisibility "i" methodname=ID "{" body+=Method* "}";
+		//	ClassVisibility "i" interfacename=ID "{" body+=Method* "}";
 		@Override public ParserRule getRule() { return rule; }
 
-		//ClassVisibility "i" methodname=ID "{" body+=Method* "}"
+		//ClassVisibility "i" interfacename=ID "{" body+=Method* "}"
 		public Group getGroup() { return cGroup; }
 
 		//ClassVisibility
@@ -252,11 +252,11 @@ public class DiagramClassGrammarAccess extends AbstractGrammarElementFinder {
 		//"i"
 		public Keyword getIKeyword_1() { return cIKeyword_1; }
 
-		//methodname=ID
-		public Assignment getMethodnameAssignment_2() { return cMethodnameAssignment_2; }
+		//interfacename=ID
+		public Assignment getInterfacenameAssignment_2() { return cInterfacenameAssignment_2; }
 
 		//ID
-		public RuleCall getMethodnameIDTerminalRuleCall_2_0() { return cMethodnameIDTerminalRuleCall_2_0; }
+		public RuleCall getInterfacenameIDTerminalRuleCall_2_0() { return cInterfacenameIDTerminalRuleCall_2_0; }
 
 		//"{"
 		public Keyword getLeftCurlyBracketKeyword_3() { return cLeftCurlyBracketKeyword_3; }
@@ -861,7 +861,7 @@ public class DiagramClassGrammarAccess extends AbstractGrammarElementFinder {
 	}
 
 	//Interface:
-	//	ClassVisibility "i" methodname=ID "{" body+=Method* "}";
+	//	ClassVisibility "i" interfacename=ID "{" body+=Method* "}";
 	public InterfaceElements getInterfaceAccess() {
 		return pInterface;
 	}

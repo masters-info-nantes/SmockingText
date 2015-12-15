@@ -18,11 +18,11 @@ import org.xtext.smokingtext.diagramclass.diagramClass.paramIn;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.xtext.smokingtext.diagramclass.diagramClass.impl.paramInImpl#getName <em>Name</em>}</li>
  *   <li>{@link org.xtext.smokingtext.diagramclass.diagramClass.impl.paramInImpl#getType <em>Type</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

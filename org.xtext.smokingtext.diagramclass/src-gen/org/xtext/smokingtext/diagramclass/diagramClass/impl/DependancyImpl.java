@@ -18,10 +18,10 @@ import org.xtext.smokingtext.diagramclass.diagramClass.DiagramClassPackage;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.xtext.smokingtext.diagramclass.diagramClass.impl.DependancyImpl#getName <em>Name</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

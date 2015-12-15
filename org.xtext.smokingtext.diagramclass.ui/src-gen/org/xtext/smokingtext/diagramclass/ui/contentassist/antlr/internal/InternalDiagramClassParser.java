@@ -4364,31 +4364,31 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
 
 
     // $ANTLR start "rule__Interface__Group__2__Impl"
-    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1489:1: rule__Interface__Group__2__Impl : ( ( rule__Interface__MethodnameAssignment_2 ) ) ;
+    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1489:1: rule__Interface__Group__2__Impl : ( ( rule__Interface__InterfacenameAssignment_2 ) ) ;
     public final void rule__Interface__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1493:1: ( ( ( rule__Interface__MethodnameAssignment_2 ) ) )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1494:1: ( ( rule__Interface__MethodnameAssignment_2 ) )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1493:1: ( ( ( rule__Interface__InterfacenameAssignment_2 ) ) )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1494:1: ( ( rule__Interface__InterfacenameAssignment_2 ) )
             {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1494:1: ( ( rule__Interface__MethodnameAssignment_2 ) )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1495:1: ( rule__Interface__MethodnameAssignment_2 )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1494:1: ( ( rule__Interface__InterfacenameAssignment_2 ) )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1495:1: ( rule__Interface__InterfacenameAssignment_2 )
             {
-             before(grammarAccess.getInterfaceAccess().getMethodnameAssignment_2()); 
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1496:1: ( rule__Interface__MethodnameAssignment_2 )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1496:2: rule__Interface__MethodnameAssignment_2
+             before(grammarAccess.getInterfaceAccess().getInterfacenameAssignment_2()); 
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1496:1: ( rule__Interface__InterfacenameAssignment_2 )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1496:2: rule__Interface__InterfacenameAssignment_2
             {
-            pushFollow(FOLLOW_rule__Interface__MethodnameAssignment_2_in_rule__Interface__Group__2__Impl3056);
-            rule__Interface__MethodnameAssignment_2();
+            pushFollow(FOLLOW_rule__Interface__InterfacenameAssignment_2_in_rule__Interface__Group__2__Impl3056);
+            rule__Interface__InterfacenameAssignment_2();
 
             state._fsp--;
 
 
             }
 
-             after(grammarAccess.getInterfaceAccess().getMethodnameAssignment_2()); 
+             after(grammarAccess.getInterfaceAccess().getInterfacenameAssignment_2()); 
 
             }
 
@@ -9583,9 +9583,9 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
     // $ANTLR end "rule__Enumeration__ClassnameAssignment_2"
 
 
-    // $ANTLR start "rule__Interface__MethodnameAssignment_2"
-    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3467:1: rule__Interface__MethodnameAssignment_2 : ( RULE_ID ) ;
-    public final void rule__Interface__MethodnameAssignment_2() throws RecognitionException {
+    // $ANTLR start "rule__Interface__InterfacenameAssignment_2"
+    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3467:1: rule__Interface__InterfacenameAssignment_2 : ( RULE_ID ) ;
+    public final void rule__Interface__InterfacenameAssignment_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
@@ -9596,9 +9596,9 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
             // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3472:1: ( RULE_ID )
             // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3473:1: RULE_ID
             {
-             before(grammarAccess.getInterfaceAccess().getMethodnameIDTerminalRuleCall_2_0()); 
-            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__Interface__MethodnameAssignment_26976); 
-             after(grammarAccess.getInterfaceAccess().getMethodnameIDTerminalRuleCall_2_0()); 
+             before(grammarAccess.getInterfaceAccess().getInterfacenameIDTerminalRuleCall_2_0()); 
+            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__Interface__InterfacenameAssignment_26976); 
+             after(grammarAccess.getInterfaceAccess().getInterfacenameIDTerminalRuleCall_2_0()); 
 
             }
 
@@ -9617,7 +9617,7 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
         }
         return ;
     }
-    // $ANTLR end "rule__Interface__MethodnameAssignment_2"
+    // $ANTLR end "rule__Interface__InterfacenameAssignment_2"
 
 
     // $ANTLR start "rule__Interface__BodyAssignment_4"
@@ -10481,7 +10481,7 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
     public static final BitSet FOLLOW_24_in_rule__Interface__Group__1__Impl2995 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_rule__Interface__Group__2__Impl_in_rule__Interface__Group__23026 = new BitSet(new long[]{0x0000000000080000L});
     public static final BitSet FOLLOW_rule__Interface__Group__3_in_rule__Interface__Group__23029 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Interface__MethodnameAssignment_2_in_rule__Interface__Group__2__Impl3056 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Interface__InterfacenameAssignment_2_in_rule__Interface__Group__2__Impl3056 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_rule__Interface__Group__3__Impl_in_rule__Interface__Group__33086 = new BitSet(new long[]{0x0000000000138000L});
     public static final BitSet FOLLOW_rule__Interface__Group__4_in_rule__Interface__Group__33089 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_19_in_rule__Interface__Group__3__Impl3117 = new BitSet(new long[]{0x0000000000000002L});
@@ -10651,7 +10651,7 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
     public static final BitSet FOLLOW_rule__Class__BodyAlternatives_6_0_in_rule__Class__BodyAssignment_66881 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_RULE_ID_in_rule__Dependancy__NameAssignment_16914 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_RULE_ID_in_rule__Enumeration__ClassnameAssignment_26945 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ID_in_rule__Interface__MethodnameAssignment_26976 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_rule__Interface__InterfacenameAssignment_26976 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_ruleMethod_in_rule__Interface__BodyAssignment_47007 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_RULE_ID_in_rule__Abstract__ClassnameAssignment_27038 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_RULE_ID_in_rule__Abstract__ExtensionAssignment_47069 = new BitSet(new long[]{0x0000000000000002L});

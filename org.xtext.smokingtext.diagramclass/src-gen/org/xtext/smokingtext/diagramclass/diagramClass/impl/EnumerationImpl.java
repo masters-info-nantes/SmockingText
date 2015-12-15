@@ -17,10 +17,10 @@ import org.xtext.smokingtext.diagramclass.diagramClass.Enumeration;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.xtext.smokingtext.diagramclass.diagramClass.impl.EnumerationImpl#getClassname <em>Classname</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

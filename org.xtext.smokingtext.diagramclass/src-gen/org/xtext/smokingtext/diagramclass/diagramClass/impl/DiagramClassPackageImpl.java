@@ -312,7 +312,7 @@ public class DiagramClassPackageImpl extends EPackageImpl implements DiagramClas
    * <!-- end-user-doc -->
    * @generated
    */
-  public EAttribute getInterface_Methodname()
+  public EAttribute getInterface_Interfacename()
   {
     return (EAttribute)interfaceEClass.getEStructuralFeatures().get(0);
   }
@@ -595,7 +595,7 @@ public class DiagramClassPackageImpl extends EPackageImpl implements DiagramClas
     createEAttribute(enumerationEClass, ENUMERATION__CLASSNAME);
 
     interfaceEClass = createEClass(INTERFACE);
-    createEAttribute(interfaceEClass, INTERFACE__METHODNAME);
+    createEAttribute(interfaceEClass, INTERFACE__INTERFACENAME);
     createEReference(interfaceEClass, INTERFACE__BODY);
 
     abstractEClass = createEClass(ABSTRACT);
@@ -680,7 +680,7 @@ public class DiagramClassPackageImpl extends EPackageImpl implements DiagramClas
     initEAttribute(getEnumeration_Classname(), ecorePackage.getEString(), "classname", null, 0, 1, Enumeration.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
     initEClass(interfaceEClass, Interface.class, "Interface", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-    initEAttribute(getInterface_Methodname(), ecorePackage.getEString(), "methodname", null, 0, 1, Interface.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEAttribute(getInterface_Interfacename(), ecorePackage.getEString(), "interfacename", null, 0, 1, Interface.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEReference(getInterface_Body(), this.getMethod(), null, "body", null, 0, -1, Interface.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
     initEClass(abstractEClass, Abstract.class, "Abstract", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);

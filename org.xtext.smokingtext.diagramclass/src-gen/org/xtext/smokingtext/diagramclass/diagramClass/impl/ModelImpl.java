@@ -25,10 +25,10 @@ import org.xtext.smokingtext.diagramclass.diagramClass.Model;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.xtext.smokingtext.diagramclass.diagramClass.impl.ModelImpl#getGreetings <em>Greetings</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

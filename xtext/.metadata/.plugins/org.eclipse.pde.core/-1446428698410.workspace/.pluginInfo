@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<map>
-	<bundle bundleID="666" class="org.xtext.smokingtext.diagramclass.ui.internal.DiagramClassActivator" localization="OSGI-INF/l10n/bundle" name="org.xtext.smokingtext.diagramclass.ui" project="org.xtext.smokingtext.diagramclass.ui" provider="My Company"/>
-	<bundle bundleID="667" localization="OSGI-INF/l10n/bundle" name="org.xtext.smokingtext.diagramclass.tests" project="org.xtext.smokingtext.diagramclass.tests" provider="My Company"/>
-	<bundle bundleID="668" localization="OSGI-INF/l10n/bundle" name="org.xtext.smokingtext.diagramclass" project="org.xtext.smokingtext.diagramclass" provider="My Company"/>
-</map>

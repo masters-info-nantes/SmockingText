@@ -11,12 +11,12 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.xtext.smokingtext.diagramclass.diagramClass.Attribute#getAttributename <em>Attributename</em>}</li>
  *   <li>{@link org.xtext.smokingtext.diagramclass.diagramClass.Attribute#getType <em>Type</em>}</li>
  *   <li>{@link org.xtext.smokingtext.diagramclass.diagramClass.Attribute#getBirelation <em>Birelation</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.xtext.smokingtext.diagramclass.diagramClass.DiagramClassPackage#getAttribute()
  * @model

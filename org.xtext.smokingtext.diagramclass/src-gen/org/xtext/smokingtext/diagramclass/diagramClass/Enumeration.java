@@ -10,10 +10,10 @@ package org.xtext.smokingtext.diagramclass.diagramClass;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.xtext.smokingtext.diagramclass.diagramClass.Enumeration#getClassname <em>Classname</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.xtext.smokingtext.diagramclass.diagramClass.DiagramClassPackage#getEnumeration()
  * @model

@@ -1298,12 +1298,12 @@ public class InternalDiagramClassParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleInterface"
-    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:465:1: ruleInterface returns [EObject current=null] : ( ruleClassVisibility otherlv_1= 'i' ( (lv_methodname_2_0= RULE_ID ) ) otherlv_3= '{' ( (lv_body_4_0= ruleMethod ) )* otherlv_5= '}' ) ;
+    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:465:1: ruleInterface returns [EObject current=null] : ( ruleClassVisibility otherlv_1= 'i' ( (lv_interfacename_2_0= RULE_ID ) ) otherlv_3= '{' ( (lv_body_4_0= ruleMethod ) )* otherlv_5= '}' ) ;
     public final EObject ruleInterface() throws RecognitionException {
         EObject current = null;
 
         Token otherlv_1=null;
-        Token lv_methodname_2_0=null;
+        Token lv_interfacename_2_0=null;
         Token otherlv_3=null;
         Token otherlv_5=null;
         EObject lv_body_4_0 = null;
@@ -1312,11 +1312,11 @@ public class InternalDiagramClassParser extends AbstractInternalAntlrParser {
          enterRule(); 
             
         try {
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:468:28: ( ( ruleClassVisibility otherlv_1= 'i' ( (lv_methodname_2_0= RULE_ID ) ) otherlv_3= '{' ( (lv_body_4_0= ruleMethod ) )* otherlv_5= '}' ) )
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:469:1: ( ruleClassVisibility otherlv_1= 'i' ( (lv_methodname_2_0= RULE_ID ) ) otherlv_3= '{' ( (lv_body_4_0= ruleMethod ) )* otherlv_5= '}' )
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:468:28: ( ( ruleClassVisibility otherlv_1= 'i' ( (lv_interfacename_2_0= RULE_ID ) ) otherlv_3= '{' ( (lv_body_4_0= ruleMethod ) )* otherlv_5= '}' ) )
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:469:1: ( ruleClassVisibility otherlv_1= 'i' ( (lv_interfacename_2_0= RULE_ID ) ) otherlv_3= '{' ( (lv_body_4_0= ruleMethod ) )* otherlv_5= '}' )
             {
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:469:1: ( ruleClassVisibility otherlv_1= 'i' ( (lv_methodname_2_0= RULE_ID ) ) otherlv_3= '{' ( (lv_body_4_0= ruleMethod ) )* otherlv_5= '}' )
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:470:5: ruleClassVisibility otherlv_1= 'i' ( (lv_methodname_2_0= RULE_ID ) ) otherlv_3= '{' ( (lv_body_4_0= ruleMethod ) )* otherlv_5= '}'
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:469:1: ( ruleClassVisibility otherlv_1= 'i' ( (lv_interfacename_2_0= RULE_ID ) ) otherlv_3= '{' ( (lv_body_4_0= ruleMethod ) )* otherlv_5= '}' )
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:470:5: ruleClassVisibility otherlv_1= 'i' ( (lv_interfacename_2_0= RULE_ID ) ) otherlv_3= '{' ( (lv_body_4_0= ruleMethod ) )* otherlv_5= '}'
             {
              
                     newCompositeNode(grammarAccess.getInterfaceAccess().getClassVisibilityParserRuleCall_0()); 
@@ -1333,15 +1333,15 @@ public class InternalDiagramClassParser extends AbstractInternalAntlrParser {
 
                 	newLeafNode(otherlv_1, grammarAccess.getInterfaceAccess().getIKeyword_1());
                 
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:481:1: ( (lv_methodname_2_0= RULE_ID ) )
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:482:1: (lv_methodname_2_0= RULE_ID )
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:481:1: ( (lv_interfacename_2_0= RULE_ID ) )
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:482:1: (lv_interfacename_2_0= RULE_ID )
             {
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:482:1: (lv_methodname_2_0= RULE_ID )
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:483:3: lv_methodname_2_0= RULE_ID
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:482:1: (lv_interfacename_2_0= RULE_ID )
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:483:3: lv_interfacename_2_0= RULE_ID
             {
-            lv_methodname_2_0=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleInterface1065); 
+            lv_interfacename_2_0=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleInterface1065); 
 
-            			newLeafNode(lv_methodname_2_0, grammarAccess.getInterfaceAccess().getMethodnameIDTerminalRuleCall_2_0()); 
+            			newLeafNode(lv_interfacename_2_0, grammarAccess.getInterfaceAccess().getInterfacenameIDTerminalRuleCall_2_0()); 
             		
 
             	        if (current==null) {
@@ -1349,8 +1349,8 @@ public class InternalDiagramClassParser extends AbstractInternalAntlrParser {
             	        }
                    		setWithLastConsumed(
                    			current, 
-                   			"methodname",
-                    		lv_methodname_2_0, 
+                   			"interfacename",
+                    		lv_interfacename_2_0, 
                     		"ID");
             	    
 

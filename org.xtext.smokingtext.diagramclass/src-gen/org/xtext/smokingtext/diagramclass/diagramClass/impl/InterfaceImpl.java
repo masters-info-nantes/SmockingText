@@ -27,35 +27,35 @@ import org.xtext.smokingtext.diagramclass.diagramClass.Method;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
- *   <li>{@link org.xtext.smokingtext.diagramclass.diagramClass.impl.InterfaceImpl#getMethodname <em>Methodname</em>}</li>
+ *   <li>{@link org.xtext.smokingtext.diagramclass.diagramClass.impl.InterfaceImpl#getInterfacename <em>Interfacename</em>}</li>
  *   <li>{@link org.xtext.smokingtext.diagramclass.diagramClass.impl.InterfaceImpl#getBody <em>Body</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
 public class InterfaceImpl extends ElementsImpl implements Interface
 {
   /**
-   * The default value of the '{@link #getMethodname() <em>Methodname</em>}' attribute.
+   * The default value of the '{@link #getInterfacename() <em>Interfacename</em>}' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getMethodname()
+   * @see #getInterfacename()
    * @generated
    * @ordered
    */
-  protected static final String METHODNAME_EDEFAULT = null;
+  protected static final String INTERFACENAME_EDEFAULT = null;
 
   /**
-   * The cached value of the '{@link #getMethodname() <em>Methodname</em>}' attribute.
+   * The cached value of the '{@link #getInterfacename() <em>Interfacename</em>}' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getMethodname()
+   * @see #getInterfacename()
    * @generated
    * @ordered
    */
-  protected String methodname = METHODNAME_EDEFAULT;
+  protected String interfacename = INTERFACENAME_EDEFAULT;
 
   /**
    * The cached value of the '{@link #getBody() <em>Body</em>}' containment reference list.
@@ -93,9 +93,9 @@ public class InterfaceImpl extends ElementsImpl implements Interface
    * <!-- end-user-doc -->
    * @generated
    */
-  public String getMethodname()
+  public String getInterfacename()
   {
-    return methodname;
+    return interfacename;
   }
 
   /**
@@ -103,12 +103,12 @@ public class InterfaceImpl extends ElementsImpl implements Interface
    * <!-- end-user-doc -->
    * @generated
    */
-  public void setMethodname(String newMethodname)
+  public void setInterfacename(String newInterfacename)
   {
-    String oldMethodname = methodname;
-    methodname = newMethodname;
+    String oldInterfacename = interfacename;
+    interfacename = newInterfacename;
     if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, DiagramClassPackage.INTERFACE__METHODNAME, oldMethodname, methodname));
+      eNotify(new ENotificationImpl(this, Notification.SET, DiagramClassPackage.INTERFACE__INTERFACENAME, oldInterfacename, interfacename));
   }
 
   /**
@@ -151,8 +151,8 @@ public class InterfaceImpl extends ElementsImpl implements Interface
   {
     switch (featureID)
     {
-      case DiagramClassPackage.INTERFACE__METHODNAME:
-        return getMethodname();
+      case DiagramClassPackage.INTERFACE__INTERFACENAME:
+        return getInterfacename();
       case DiagramClassPackage.INTERFACE__BODY:
         return getBody();
     }
@@ -170,8 +170,8 @@ public class InterfaceImpl extends ElementsImpl implements Interface
   {
     switch (featureID)
     {
-      case DiagramClassPackage.INTERFACE__METHODNAME:
-        setMethodname((String)newValue);
+      case DiagramClassPackage.INTERFACE__INTERFACENAME:
+        setInterfacename((String)newValue);
         return;
       case DiagramClassPackage.INTERFACE__BODY:
         getBody().clear();
@@ -191,8 +191,8 @@ public class InterfaceImpl extends ElementsImpl implements Interface
   {
     switch (featureID)
     {
-      case DiagramClassPackage.INTERFACE__METHODNAME:
-        setMethodname(METHODNAME_EDEFAULT);
+      case DiagramClassPackage.INTERFACE__INTERFACENAME:
+        setInterfacename(INTERFACENAME_EDEFAULT);
         return;
       case DiagramClassPackage.INTERFACE__BODY:
         getBody().clear();
@@ -211,8 +211,8 @@ public class InterfaceImpl extends ElementsImpl implements Interface
   {
     switch (featureID)
     {
-      case DiagramClassPackage.INTERFACE__METHODNAME:
-        return METHODNAME_EDEFAULT == null ? methodname != null : !METHODNAME_EDEFAULT.equals(methodname);
+      case DiagramClassPackage.INTERFACE__INTERFACENAME:
+        return INTERFACENAME_EDEFAULT == null ? interfacename != null : !INTERFACENAME_EDEFAULT.equals(interfacename);
       case DiagramClassPackage.INTERFACE__BODY:
         return body != null && !body.isEmpty();
     }
@@ -230,8 +230,8 @@ public class InterfaceImpl extends ElementsImpl implements Interface
     if (eIsProxy()) return super.toString();
 
     StringBuffer result = new StringBuffer(super.toString());
-    result.append(" (methodname: ");
-    result.append(methodname);
+    result.append(" (interfacename: ");
+    result.append(interfacename);
     result.append(')');
     return result.toString();
   }

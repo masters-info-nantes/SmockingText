@@ -151,7 +151,7 @@ public class DiagramClassSemanticSequencer extends AbstractDelegatingSemanticSeq
 	
 	/**
 	 * Constraint:
-	 *     (methodname=ID body+=Method*)
+	 *     (interfacename=ID body+=Method*)
 	 */
 	protected void sequence_Interface(EObject context, Interface semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);

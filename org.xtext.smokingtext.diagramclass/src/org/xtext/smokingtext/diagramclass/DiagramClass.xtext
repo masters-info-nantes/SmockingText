@@ -29,7 +29,7 @@ Enumeration:
 ;
 
 Interface:
-	ClassVisibility "i" methodname = ID '{'
+	ClassVisibility "i" interfacename = ID '{'
 		(body += (Method)*)*	
 	'}'
 ;

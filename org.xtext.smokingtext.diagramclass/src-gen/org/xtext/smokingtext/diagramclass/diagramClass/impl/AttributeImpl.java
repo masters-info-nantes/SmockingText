@@ -21,12 +21,12 @@ import org.xtext.smokingtext.diagramclass.diagramClass.DiagramClassPackage;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.xtext.smokingtext.diagramclass.diagramClass.impl.AttributeImpl#getAttributename <em>Attributename</em>}</li>
  *   <li>{@link org.xtext.smokingtext.diagramclass.diagramClass.impl.AttributeImpl#getType <em>Type</em>}</li>
  *   <li>{@link org.xtext.smokingtext.diagramclass.diagramClass.impl.AttributeImpl#getBirelation <em>Birelation</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

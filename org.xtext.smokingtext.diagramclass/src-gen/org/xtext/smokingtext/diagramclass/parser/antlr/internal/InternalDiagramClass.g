@@ -480,9 +480,9 @@ ruleClassVisibility
     }
 (
 (
-		lv_methodname_2_0=RULE_ID
+		lv_interfacename_2_0=RULE_ID
 		{
-			newLeafNode(lv_methodname_2_0, grammarAccess.getInterfaceAccess().getMethodnameIDTerminalRuleCall_2_0()); 
+			newLeafNode(lv_interfacename_2_0, grammarAccess.getInterfaceAccess().getInterfacenameIDTerminalRuleCall_2_0()); 
 		}
 		{
 	        if ($current==null) {
@@ -490,8 +490,8 @@ ruleClassVisibility
 	        }
        		setWithLastConsumed(
        			$current, 
-       			"methodname",
-        		lv_methodname_2_0, 
+       			"interfacename",
+        		lv_interfacename_2_0, 
         		"ID");
 	    }
 

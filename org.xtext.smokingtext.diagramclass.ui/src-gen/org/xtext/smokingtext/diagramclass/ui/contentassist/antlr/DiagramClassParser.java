@@ -74,7 +74,7 @@ public class DiagramClassParser extends AbstractContentAssistParser {
 					put(grammarAccess.getClassAccess().getBodyAssignment_6(), "rule__Class__BodyAssignment_6");
 					put(grammarAccess.getDependancyAccess().getNameAssignment_1(), "rule__Dependancy__NameAssignment_1");
 					put(grammarAccess.getEnumerationAccess().getClassnameAssignment_2(), "rule__Enumeration__ClassnameAssignment_2");
-					put(grammarAccess.getInterfaceAccess().getMethodnameAssignment_2(), "rule__Interface__MethodnameAssignment_2");
+					put(grammarAccess.getInterfaceAccess().getInterfacenameAssignment_2(), "rule__Interface__InterfacenameAssignment_2");
 					put(grammarAccess.getInterfaceAccess().getBodyAssignment_4(), "rule__Interface__BodyAssignment_4");
 					put(grammarAccess.getAbstractAccess().getClassnameAssignment_2(), "rule__Abstract__ClassnameAssignment_2");
 					put(grammarAccess.getAbstractAccess().getExtensionAssignment_4(), "rule__Abstract__ExtensionAssignment_4");

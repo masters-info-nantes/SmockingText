@@ -11,11 +11,11 @@ import org.eclipse.emf.common.util.EList;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
- *   <li>{@link org.xtext.smokingtext.diagramclass.diagramClass.Interface#getMethodname <em>Methodname</em>}</li>
+ *   <li>{@link org.xtext.smokingtext.diagramclass.diagramClass.Interface#getInterfacename <em>Interfacename</em>}</li>
  *   <li>{@link org.xtext.smokingtext.diagramclass.diagramClass.Interface#getBody <em>Body</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.xtext.smokingtext.diagramclass.diagramClass.DiagramClassPackage#getInterface()
  * @model
@@ -24,30 +24,30 @@ import org.eclipse.emf.common.util.EList;
 public interface Interface extends Elements
 {
   /**
-   * Returns the value of the '<em><b>Methodname</b></em>' attribute.
+   * Returns the value of the '<em><b>Interfacename</b></em>' attribute.
    * <!-- begin-user-doc -->
    * <p>
-   * If the meaning of the '<em>Methodname</em>' attribute isn't clear,
+   * If the meaning of the '<em>Interfacename</em>' attribute isn't clear,
    * there really should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-   * @return the value of the '<em>Methodname</em>' attribute.
-   * @see #setMethodname(String)
-   * @see org.xtext.smokingtext.diagramclass.diagramClass.DiagramClassPackage#getInterface_Methodname()
+   * @return the value of the '<em>Interfacename</em>' attribute.
+   * @see #setInterfacename(String)
+   * @see org.xtext.smokingtext.diagramclass.diagramClass.DiagramClassPackage#getInterface_Interfacename()
    * @model
    * @generated
    */
-  String getMethodname();
+  String getInterfacename();
 
   /**
-   * Sets the value of the '{@link org.xtext.smokingtext.diagramclass.diagramClass.Interface#getMethodname <em>Methodname</em>}' attribute.
+   * Sets the value of the '{@link org.xtext.smokingtext.diagramclass.diagramClass.Interface#getInterfacename <em>Interfacename</em>}' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @param value the new value of the '<em>Methodname</em>' attribute.
-   * @see #getMethodname()
+   * @param value the new value of the '<em>Interfacename</em>' attribute.
+   * @see #getInterfacename()
    * @generated
    */
-  void setMethodname(String value);
+  void setInterfacename(String value);
 
   /**
    * Returns the value of the '<em><b>Body</b></em>' containment reference list.

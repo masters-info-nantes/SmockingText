@@ -4,7 +4,7 @@
     editorDirectory="/org.xtext.smokingtext.diagramclass.editor/src" modelPluginID="org.xtext.smokingtext.diagramclass"
     forceOverwrite="true" modelName="DiagramClass" updateClasspath="false" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
     complianceLevel="6.0" copyrightFields="false" editPluginID="org.xtext.smokingtext.diagramclass.edit"
-    editorPluginID="org.xtext.smokingtext.diagramclass.editor" runtimeVersion="2.10">
+    editorPluginID="org.xtext.smokingtext.diagramclass.editor" runtimeVersion="2.11">
   <genPackages prefix="DiagramClass" basePackage="org.xtext.smokingtext.diagramclass"
       disposableProviderFactory="true" fileExtensions="st" ecorePackage="DiagramClass.ecore#/">
     <genClasses ecoreClass="DiagramClass.ecore#//Model">
@@ -24,7 +24,7 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DiagramClass.ecore#//Enumeration/classname"/>
     </genClasses>
     <genClasses ecoreClass="DiagramClass.ecore#//Interface">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DiagramClass.ecore#//Interface/methodname"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DiagramClass.ecore#//Interface/interfacename"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference DiagramClass.ecore#//Interface/body"/>
     </genClasses>
     <genClasses ecoreClass="DiagramClass.ecore#//Abstract">

@@ -225,13 +225,13 @@ public interface DiagramClassPackage extends EPackage
   int INTERFACE = 5;
 
   /**
-   * The feature id for the '<em><b>Methodname</b></em>' attribute.
+   * The feature id for the '<em><b>Interfacename</b></em>' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int INTERFACE__METHODNAME = ELEMENTS_FEATURE_COUNT + 0;
+  int INTERFACE__INTERFACENAME = ELEMENTS_FEATURE_COUNT + 0;
 
   /**
    * The feature id for the '<em><b>Body</b></em>' containment reference list.
@@ -648,15 +648,15 @@ public interface DiagramClassPackage extends EPackage
   EClass getInterface();
 
   /**
-   * Returns the meta object for the attribute '{@link org.xtext.smokingtext.diagramclass.diagramClass.Interface#getMethodname <em>Methodname</em>}'.
+   * Returns the meta object for the attribute '{@link org.xtext.smokingtext.diagramclass.diagramClass.Interface#getInterfacename <em>Interfacename</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return the meta object for the attribute '<em>Methodname</em>'.
-   * @see org.xtext.smokingtext.diagramclass.diagramClass.Interface#getMethodname()
+   * @return the meta object for the attribute '<em>Interfacename</em>'.
+   * @see org.xtext.smokingtext.diagramclass.diagramClass.Interface#getInterfacename()
    * @see #getInterface()
    * @generated
    */
-  EAttribute getInterface_Methodname();
+  EAttribute getInterface_Interfacename();
 
   /**
    * Returns the meta object for the containment reference list '{@link org.xtext.smokingtext.diagramclass.diagramClass.Interface#getBody <em>Body</em>}'.
@@ -1045,12 +1045,12 @@ public interface DiagramClassPackage extends EPackage
     EClass INTERFACE = eINSTANCE.getInterface();
 
     /**
-     * The meta object literal for the '<em><b>Methodname</b></em>' attribute feature.
+     * The meta object literal for the '<em><b>Interfacename</b></em>' attribute feature.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    EAttribute INTERFACE__METHODNAME = eINSTANCE.getInterface_Methodname();
+    EAttribute INTERFACE__INTERFACENAME = eINSTANCE.getInterface_Interfacename();
 
     /**
      * The meta object literal for the '<em><b>Body</b></em>' containment reference list feature.
