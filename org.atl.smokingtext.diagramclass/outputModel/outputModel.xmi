@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML">
+  <uml:Class name="Roue">
+    <ownedAttribute name="taille"/>
+    <ownedOperation name="tourne"/>
+  </uml:Class>
+  <uml:Class name="Moteur">
+    <ownedAttribute name="puissance"/>
+  </uml:Class>
+  <uml:Class name="Voiture">
+    <ownedAttribute name="roues"/>
+    <ownedAttribute name="nbPorte"/>
+    <ownedOperation name="avance"/>
+  </uml:Class>
+  <uml:Class name="VehiculeMotorise" isAbstract="true">
+    <ownedAttribute name="marque"/>
+    <ownedAttribute name="moteur"/>
+  </uml:Class>
+  <uml:Interface name="Vehicule">
+    <ownedOperation name="avance"/>
+  </uml:Interface>
+  <uml:Enumeration name="Marque"/>
+</xmi:XMI>

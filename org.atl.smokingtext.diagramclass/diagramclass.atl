@@ -1,0 +1,76 @@
+-- @path MM=/org.xtext.smokingtext.diagramclass/model/generated/DiagramClass.ecore
+-- @nsURI MM1=/home/david/Documents/M2ALMA/MDE/Projet/SmokingText/AtlLauncher/src/ressources/UML.ecore
+
+module diagramclass;
+create OUT : MM1 from IN : MM;
+
+
+rule diagramClassToUmldiagramClass {
+	from
+		mmclass : MM!Class 
+	to 
+		 mm1class : MM1!Class (
+		 	name <- mmclass.classname,
+		 	ownedOperation <- mmclass.body->select(p | not p.oclType().conformsTo(MM!Attribute)),
+			ownedAttribute <- mmclass.body->select(p | not p.oclType().conformsTo(MM!Method))
+		)
+	
+}
+
+rule abstractClassTransformation {
+	from
+		mmaclass : MM!Abstract
+	to 
+		mm1aclass : MM1!Class (
+			name <- mmaclass.classname,
+			isAbstract <- true,
+			ownedOperation <- mmaclass.body->select(p | not p.oclType().conformsTo(MM!Attribute)),
+			ownedAttribute <- mmaclass.body->select(p | not p.oclType().conformsTo(MM!Method))
+		)
+}
+
+rule interfaceClassTransformation {
+	from
+		mmaclass : MM!Interface
+	to 
+		mm1aclass : MM1!Interface (
+			name <- mmaclass.interfacename,
+			ownedOperation <- mmaclass.body->select(p | not p.oclType().conformsTo(MM!Attribute)),
+			ownedAttribute <- mmaclass.body->select(p | not p.oclType().conformsTo(MM!Method))
+		)
+}
+
+rule attributeNameTransformation {
+	
+	from
+		mmclass : MM!Attribute 
+	to 
+		 mm1class : MM1!Property (
+		 	name <- mmclass.attributename
+		)
+
+}
+
+
+rule operationNameTransformation {
+	
+	from
+		mmclassOperation : MM!Method
+	to 
+		 mm1classOperation : MM1!Operation (
+		 	name <- mmclassOperation.name
+		)
+	
+}
+
+
+rule diagramEnumerationToUmlEnumeration {
+	from 
+	 mmenumeration : MM!Enumeration
+	to
+		mm1enumeration : MM1!Enumeration (
+			name <- mmenumeration.classname
+		)
+	
+	
+}
