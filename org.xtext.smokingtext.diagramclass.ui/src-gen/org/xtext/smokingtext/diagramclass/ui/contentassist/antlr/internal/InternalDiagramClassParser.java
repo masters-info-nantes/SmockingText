@@ -124,20 +124,20 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
 
 
     // $ANTLR start "ruleModel"
-    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:69:1: ruleModel : ( ( rule__Model__GreetingsAssignment )* ) ;
+    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:69:1: ruleModel : ( ( rule__Model__PackageAssignment )* ) ;
     public final void ruleModel() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:73:2: ( ( ( rule__Model__GreetingsAssignment )* ) )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:74:1: ( ( rule__Model__GreetingsAssignment )* )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:73:2: ( ( ( rule__Model__PackageAssignment )* ) )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:74:1: ( ( rule__Model__PackageAssignment )* )
             {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:74:1: ( ( rule__Model__GreetingsAssignment )* )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:75:1: ( rule__Model__GreetingsAssignment )*
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:74:1: ( ( rule__Model__PackageAssignment )* )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:75:1: ( rule__Model__PackageAssignment )*
             {
-             before(grammarAccess.getModelAccess().getGreetingsAssignment()); 
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:76:1: ( rule__Model__GreetingsAssignment )*
+             before(grammarAccess.getModelAccess().getPackageAssignment()); 
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:76:1: ( rule__Model__PackageAssignment )*
             loop1:
             do {
                 int alt1=2;
@@ -150,10 +150,10 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
 
                 switch (alt1) {
             	case 1 :
-            	    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:76:2: rule__Model__GreetingsAssignment
+            	    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:76:2: rule__Model__PackageAssignment
             	    {
-            	    pushFollow(FOLLOW_rule__Model__GreetingsAssignment_in_ruleModel94);
-            	    rule__Model__GreetingsAssignment();
+            	    pushFollow(FOLLOW_rule__Model__PackageAssignment_in_ruleModel94);
+            	    rule__Model__PackageAssignment();
 
             	    state._fsp--;
 
@@ -166,7 +166,7 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
                 }
             } while (true);
 
-             after(grammarAccess.getModelAccess().getGreetingsAssignment()); 
+             after(grammarAccess.getModelAccess().getPackageAssignment()); 
 
             }
 
@@ -9306,9 +9306,9 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
     // $ANTLR end "rule__Package__Group_1__1__Impl"
 
 
-    // $ANTLR start "rule__Model__GreetingsAssignment"
-    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3361:1: rule__Model__GreetingsAssignment : ( rulePackage ) ;
-    public final void rule__Model__GreetingsAssignment() throws RecognitionException {
+    // $ANTLR start "rule__Model__PackageAssignment"
+    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3361:1: rule__Model__PackageAssignment : ( rulePackage ) ;
+    public final void rule__Model__PackageAssignment() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
@@ -9319,13 +9319,13 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
             // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3366:1: ( rulePackage )
             // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3367:1: rulePackage
             {
-             before(grammarAccess.getModelAccess().getGreetingsPackageParserRuleCall_0()); 
-            pushFollow(FOLLOW_rulePackage_in_rule__Model__GreetingsAssignment6757);
+             before(grammarAccess.getModelAccess().getPackagePackageParserRuleCall_0()); 
+            pushFollow(FOLLOW_rulePackage_in_rule__Model__PackageAssignment6757);
             rulePackage();
 
             state._fsp--;
 
-             after(grammarAccess.getModelAccess().getGreetingsPackageParserRuleCall_0()); 
+             after(grammarAccess.getModelAccess().getPackagePackageParserRuleCall_0()); 
 
             }
 
@@ -9344,7 +9344,7 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
         }
         return ;
     }
-    // $ANTLR end "rule__Model__GreetingsAssignment"
+    // $ANTLR end "rule__Model__PackageAssignment"
 
 
     // $ANTLR start "rule__Class__ClassnameAssignment_1"
@@ -10347,7 +10347,7 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
 
     public static final BitSet FOLLOW_ruleModel_in_entryRuleModel61 = new BitSet(new long[]{0x0000000000000000L});
     public static final BitSet FOLLOW_EOF_in_entryRuleModel68 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Model__GreetingsAssignment_in_ruleModel94 = new BitSet(new long[]{0x0000000280000022L});
+    public static final BitSet FOLLOW_rule__Model__PackageAssignment_in_ruleModel94 = new BitSet(new long[]{0x0000000280000022L});
     public static final BitSet FOLLOW_ruleElements_in_entryRuleElements122 = new BitSet(new long[]{0x0000000000000000L});
     public static final BitSet FOLLOW_EOF_in_entryRuleElements129 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_rule__Elements__Alternatives_in_ruleElements155 = new BitSet(new long[]{0x0000000000000002L});
@@ -10644,7 +10644,7 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
     public static final BitSet FOLLOW_33_in_rule__Package__Group_1__0__Impl6661 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_rule__Package__Group_1__1__Impl_in_rule__Package__Group_1__16692 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_RULE_ID_in_rule__Package__Group_1__1__Impl6719 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rulePackage_in_rule__Model__GreetingsAssignment6757 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rulePackage_in_rule__Model__PackageAssignment6757 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_RULE_ID_in_rule__Class__ClassnameAssignment_16788 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_RULE_ID_in_rule__Class__ExtensionAssignment_36819 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_ruleImplements_in_rule__Class__ImplementsAssignment_46850 = new BitSet(new long[]{0x0000000000000002L});

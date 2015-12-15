@@ -20,18 +20,18 @@ public class DiagramClassGrammarAccess extends AbstractGrammarElementFinder {
 	
 	public class ModelElements extends AbstractParserRuleElementFinder {
 		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Model");
-		private final Assignment cGreetingsAssignment = (Assignment)rule.eContents().get(1);
-		private final RuleCall cGreetingsPackageParserRuleCall_0 = (RuleCall)cGreetingsAssignment.eContents().get(0);
+		private final Assignment cPackageAssignment = (Assignment)rule.eContents().get(1);
+		private final RuleCall cPackagePackageParserRuleCall_0 = (RuleCall)cPackageAssignment.eContents().get(0);
 		
 		//Model:
-		//	greetings+=Package*;
+		//	package+=Package*;
 		@Override public ParserRule getRule() { return rule; }
 
-		//greetings+=Package*
-		public Assignment getGreetingsAssignment() { return cGreetingsAssignment; }
+		//package+=Package*
+		public Assignment getPackageAssignment() { return cPackageAssignment; }
 
 		//Package
-		public RuleCall getGreetingsPackageParserRuleCall_0() { return cGreetingsPackageParserRuleCall_0; }
+		public RuleCall getPackagePackageParserRuleCall_0() { return cPackagePackageParserRuleCall_0; }
 	}
 
 	public class ElementsElements extends AbstractParserRuleElementFinder {
@@ -800,7 +800,7 @@ public class DiagramClassGrammarAccess extends AbstractGrammarElementFinder {
 
 	
 	//Model:
-	//	greetings+=Package*;
+	//	package+=Package*;
 	public ModelElements getModelAccess() {
 		return pModel;
 	}

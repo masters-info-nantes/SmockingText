@@ -8,7 +8,7 @@
   <genPackages prefix="DiagramClass" basePackage="org.xtext.smokingtext.diagramclass"
       disposableProviderFactory="true" fileExtensions="st" ecorePackage="DiagramClass.ecore#/">
     <genClasses ecoreClass="DiagramClass.ecore#//Model">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference DiagramClass.ecore#//Model/greetings"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference DiagramClass.ecore#//Model/package"/>
     </genClasses>
     <genClasses ecoreClass="DiagramClass.ecore#//Elements"/>
     <genClasses ecoreClass="DiagramClass.ecore#//Class">

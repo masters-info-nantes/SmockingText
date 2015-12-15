@@ -80,16 +80,16 @@ ruleModel returns [EObject current=null]
 (
 (
 		{ 
-	        newCompositeNode(grammarAccess.getModelAccess().getGreetingsPackageParserRuleCall_0()); 
+	        newCompositeNode(grammarAccess.getModelAccess().getPackagePackageParserRuleCall_0()); 
 	    }
-		lv_greetings_0_0=rulePackage		{
+		lv_package_0_0=rulePackage		{
 	        if ($current==null) {
 	            $current = createModelElementForParent(grammarAccess.getModelRule());
 	        }
        		add(
        			$current, 
-       			"greetings",
-        		lv_greetings_0_0, 
+       			"package",
+        		lv_package_0_0, 
         		"Package");
 	        afterParserOrEnumRuleCall();
 	    }

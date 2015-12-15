@@ -3,7 +3,7 @@ grammar org.xtext.smokingtext.diagramclass.DiagramClass with org.eclipse.xtext.c
 generate diagramClass "http://www.xtext.org/smokingtext/diagramclass/DiagramClass"
 
 Model:
-	greetings+=Package*;
+	package+= Package*;
 
 Elements:
   Class | Interface | Abstract | Enumeration

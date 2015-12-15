@@ -130,20 +130,20 @@ public class InternalDiagramClassParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleModel"
-    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:76:1: ruleModel returns [EObject current=null] : ( (lv_greetings_0_0= rulePackage ) )* ;
+    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:76:1: ruleModel returns [EObject current=null] : ( (lv_package_0_0= rulePackage ) )* ;
     public final EObject ruleModel() throws RecognitionException {
         EObject current = null;
 
-        EObject lv_greetings_0_0 = null;
+        EObject lv_package_0_0 = null;
 
 
          enterRule(); 
             
         try {
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:79:28: ( ( (lv_greetings_0_0= rulePackage ) )* )
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:80:1: ( (lv_greetings_0_0= rulePackage ) )*
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:79:28: ( ( (lv_package_0_0= rulePackage ) )* )
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:80:1: ( (lv_package_0_0= rulePackage ) )*
             {
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:80:1: ( (lv_greetings_0_0= rulePackage ) )*
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:80:1: ( (lv_package_0_0= rulePackage ) )*
             loop1:
             do {
                 int alt1=2;
@@ -156,16 +156,16 @@ public class InternalDiagramClassParser extends AbstractInternalAntlrParser {
 
                 switch (alt1) {
             	case 1 :
-            	    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:81:1: (lv_greetings_0_0= rulePackage )
+            	    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:81:1: (lv_package_0_0= rulePackage )
             	    {
-            	    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:81:1: (lv_greetings_0_0= rulePackage )
-            	    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:82:3: lv_greetings_0_0= rulePackage
+            	    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:81:1: (lv_package_0_0= rulePackage )
+            	    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:82:3: lv_package_0_0= rulePackage
             	    {
             	     
-            	    	        newCompositeNode(grammarAccess.getModelAccess().getGreetingsPackageParserRuleCall_0()); 
+            	    	        newCompositeNode(grammarAccess.getModelAccess().getPackagePackageParserRuleCall_0()); 
             	    	    
             	    pushFollow(FOLLOW_rulePackage_in_ruleModel130);
-            	    lv_greetings_0_0=rulePackage();
+            	    lv_package_0_0=rulePackage();
 
             	    state._fsp--;
 
@@ -175,8 +175,8 @@ public class InternalDiagramClassParser extends AbstractInternalAntlrParser {
             	    	        }
             	           		add(
             	           			current, 
-            	           			"greetings",
-            	            		lv_greetings_0_0, 
+            	           			"package",
+            	            		lv_package_0_0, 
             	            		"Package");
             	    	        afterParserOrEnumRuleCall();
             	    	    

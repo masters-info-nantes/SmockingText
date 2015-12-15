@@ -67,13 +67,13 @@ public interface DiagramClassPackage extends EPackage
   int MODEL = 0;
 
   /**
-   * The feature id for the '<em><b>Greetings</b></em>' containment reference list.
+   * The feature id for the '<em><b>Package</b></em>' containment reference list.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int MODEL__GREETINGS = 0;
+  int MODEL__PACKAGE = 0;
 
   /**
    * The number of structural features of the '<em>Model</em>' class.
@@ -521,15 +521,15 @@ public interface DiagramClassPackage extends EPackage
   EClass getModel();
 
   /**
-   * Returns the meta object for the containment reference list '{@link org.xtext.smokingtext.diagramclass.diagramClass.Model#getGreetings <em>Greetings</em>}'.
+   * Returns the meta object for the containment reference list '{@link org.xtext.smokingtext.diagramclass.diagramClass.Model#getPackage <em>Package</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return the meta object for the containment reference list '<em>Greetings</em>'.
-   * @see org.xtext.smokingtext.diagramclass.diagramClass.Model#getGreetings()
+   * @return the meta object for the containment reference list '<em>Package</em>'.
+   * @see org.xtext.smokingtext.diagramclass.diagramClass.Model#getPackage()
    * @see #getModel()
    * @generated
    */
-  EReference getModel_Greetings();
+  EReference getModel_Package();
 
   /**
    * Returns the meta object for class '{@link org.xtext.smokingtext.diagramclass.diagramClass.Elements <em>Elements</em>}'.
@@ -939,12 +939,12 @@ public interface DiagramClassPackage extends EPackage
     EClass MODEL = eINSTANCE.getModel();
 
     /**
-     * The meta object literal for the '<em><b>Greetings</b></em>' containment reference list feature.
+     * The meta object literal for the '<em><b>Package</b></em>' containment reference list feature.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    EReference MODEL__GREETINGS = eINSTANCE.getModel_Greetings();
+    EReference MODEL__PACKAGE = eINSTANCE.getModel_Package();
 
     /**
      * The meta object literal for the '{@link org.xtext.smokingtext.diagramclass.diagramClass.impl.ElementsImpl <em>Elements</em>}' class.

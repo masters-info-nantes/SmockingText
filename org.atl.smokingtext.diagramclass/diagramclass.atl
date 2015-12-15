@@ -4,6 +4,14 @@
 module diagramclass;
 create OUT : MM1 from IN : MM;
 
+rule packageTransformation {
+	from 
+		mmpackage : MM!Package
+	to 
+		mm1package : MM1!Package (
+			name <- mmpackage.name	
+		)
+}
 
 rule diagramClassToUmldiagramClass {
 	from

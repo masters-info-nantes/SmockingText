@@ -27,7 +27,7 @@ import org.xtext.smokingtext.diagramclass.diagramClass.Model;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link org.xtext.smokingtext.diagramclass.diagramClass.impl.ModelImpl#getGreetings <em>Greetings</em>}</li>
+ *   <li>{@link org.xtext.smokingtext.diagramclass.diagramClass.impl.ModelImpl#getPackage <em>Package</em>}</li>
  * </ul>
  *
  * @generated
@@ -35,14 +35,14 @@ import org.xtext.smokingtext.diagramclass.diagramClass.Model;
 public class ModelImpl extends MinimalEObjectImpl.Container implements Model
 {
   /**
-   * The cached value of the '{@link #getGreetings() <em>Greetings</em>}' containment reference list.
+   * The cached value of the '{@link #getPackage() <em>Package</em>}' containment reference list.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getGreetings()
+   * @see #getPackage()
    * @generated
    * @ordered
    */
-  protected EList<org.xtext.smokingtext.diagramclass.diagramClass.Package> greetings;
+  protected EList<org.xtext.smokingtext.diagramclass.diagramClass.Package> package_;
 
   /**
    * <!-- begin-user-doc -->
@@ -70,13 +70,13 @@ public class ModelImpl extends MinimalEObjectImpl.Container implements Model
    * <!-- end-user-doc -->
    * @generated
    */
-  public EList<org.xtext.smokingtext.diagramclass.diagramClass.Package> getGreetings()
+  public EList<org.xtext.smokingtext.diagramclass.diagramClass.Package> getPackage()
   {
-    if (greetings == null)
+    if (package_ == null)
     {
-      greetings = new EObjectContainmentEList<org.xtext.smokingtext.diagramclass.diagramClass.Package>(org.xtext.smokingtext.diagramclass.diagramClass.Package.class, this, DiagramClassPackage.MODEL__GREETINGS);
+      package_ = new EObjectContainmentEList<org.xtext.smokingtext.diagramclass.diagramClass.Package>(org.xtext.smokingtext.diagramclass.diagramClass.Package.class, this, DiagramClassPackage.MODEL__PACKAGE);
     }
-    return greetings;
+    return package_;
   }
 
   /**
@@ -89,8 +89,8 @@ public class ModelImpl extends MinimalEObjectImpl.Container implements Model
   {
     switch (featureID)
     {
-      case DiagramClassPackage.MODEL__GREETINGS:
-        return ((InternalEList<?>)getGreetings()).basicRemove(otherEnd, msgs);
+      case DiagramClassPackage.MODEL__PACKAGE:
+        return ((InternalEList<?>)getPackage()).basicRemove(otherEnd, msgs);
     }
     return super.eInverseRemove(otherEnd, featureID, msgs);
   }
@@ -105,8 +105,8 @@ public class ModelImpl extends MinimalEObjectImpl.Container implements Model
   {
     switch (featureID)
     {
-      case DiagramClassPackage.MODEL__GREETINGS:
-        return getGreetings();
+      case DiagramClassPackage.MODEL__PACKAGE:
+        return getPackage();
     }
     return super.eGet(featureID, resolve, coreType);
   }
@@ -122,9 +122,9 @@ public class ModelImpl extends MinimalEObjectImpl.Container implements Model
   {
     switch (featureID)
     {
-      case DiagramClassPackage.MODEL__GREETINGS:
-        getGreetings().clear();
-        getGreetings().addAll((Collection<? extends org.xtext.smokingtext.diagramclass.diagramClass.Package>)newValue);
+      case DiagramClassPackage.MODEL__PACKAGE:
+        getPackage().clear();
+        getPackage().addAll((Collection<? extends org.xtext.smokingtext.diagramclass.diagramClass.Package>)newValue);
         return;
     }
     super.eSet(featureID, newValue);
@@ -140,8 +140,8 @@ public class ModelImpl extends MinimalEObjectImpl.Container implements Model
   {
     switch (featureID)
     {
-      case DiagramClassPackage.MODEL__GREETINGS:
-        getGreetings().clear();
+      case DiagramClassPackage.MODEL__PACKAGE:
+        getPackage().clear();
         return;
     }
     super.eUnset(featureID);
@@ -157,8 +157,8 @@ public class ModelImpl extends MinimalEObjectImpl.Container implements Model
   {
     switch (featureID)
     {
-      case DiagramClassPackage.MODEL__GREETINGS:
-        return greetings != null && !greetings.isEmpty();
+      case DiagramClassPackage.MODEL__PACKAGE:
+        return package_ != null && !package_.isEmpty();
     }
     return super.eIsSet(featureID);
   }

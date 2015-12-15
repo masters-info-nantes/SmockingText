@@ -72,9 +72,9 @@ ruleModel
     }
 	:
 (
-{ before(grammarAccess.getModelAccess().getGreetingsAssignment()); }
-(rule__Model__GreetingsAssignment)*
-{ after(grammarAccess.getModelAccess().getGreetingsAssignment()); }
+{ before(grammarAccess.getModelAccess().getPackageAssignment()); }
+(rule__Model__PackageAssignment)*
+{ after(grammarAccess.getModelAccess().getPackageAssignment()); }
 )
 
 ;
@@ -3358,14 +3358,14 @@ finally {
 
 
 
-rule__Model__GreetingsAssignment
+rule__Model__PackageAssignment
     @init {
 		int stackSize = keepStackSize();
     }
 :
 (
-{ before(grammarAccess.getModelAccess().getGreetingsPackageParserRuleCall_0()); }
-	rulePackage{ after(grammarAccess.getModelAccess().getGreetingsPackageParserRuleCall_0()); }
+{ before(grammarAccess.getModelAccess().getPackagePackageParserRuleCall_0()); }
+	rulePackage{ after(grammarAccess.getModelAccess().getPackagePackageParserRuleCall_0()); }
 )
 
 ;

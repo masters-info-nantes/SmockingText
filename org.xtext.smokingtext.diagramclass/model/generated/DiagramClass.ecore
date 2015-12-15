@@ -3,7 +3,7 @@
     xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="diagramClass" nsURI="http://www.xtext.org/smokingtext/diagramclass/DiagramClass"
     nsPrefix="diagramClass">
   <eClassifiers xsi:type="ecore:EClass" name="Model">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="greetings" upperBound="-1"
+    <eStructuralFeatures xsi:type="ecore:EReference" name="package" upperBound="-1"
         eType="#//Package" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Elements"/>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <diagramClass:Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:diagramClass="http://www.xtext.org/smokingtext/diagramclass/DiagramClass">
-  <greetings name="default">
+  <package name="default">
     <classType xsi:type="diagramClass:Enumeration" classname="Marque"/>
     <classType xsi:type="diagramClass:Class" classname="Roue">
       <body xsi:type="diagramClass:Attribute" attributename="taille" type="integer"/>
@@ -24,5 +24,5 @@
       <body xsi:type="diagramClass:Attribute" attributename="nbPorte" type="integer"/>
       <body xsi:type="diagramClass:Method" name="avance"/>
     </classType>
-  </greetings>
+  </package>
 </diagramClass:Model>
