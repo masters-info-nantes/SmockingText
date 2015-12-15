@@ -4,12 +4,15 @@
 module diagramclass;
 create OUT : MM1 from IN : MM;
 
+
+
 rule packageTransformation {
 	from 
 		mmpackage : MM!Package
 	to 
 		mm1package : MM1!Package (
-			name <- mmpackage.name	
+			name <- mmpackage.name,
+			packagedElement <-mmpackage.classType
 		)
 }
 
@@ -22,7 +25,6 @@ rule diagramClassToUmldiagramClass {
 		 	ownedOperation <- mmclass.body->select(p | not p.oclType().conformsTo(MM!Attribute)),
 			ownedAttribute <- mmclass.body->select(p | not p.oclType().conformsTo(MM!Method))
 		)
-	
 }
 
 rule abstractClassTransformation {
