@@ -12,7 +12,8 @@ rule packageTransformation {
 	to 
 		mm1package : MM1!Package (
 			name <- mmpackage.name,
-			packagedElement <-mmpackage.classType
+			packagedElement <- mmpackage.classType,
+			packagedElement <- mmpackage.subPackage
 		)
 }
 
@@ -22,8 +23,18 @@ rule diagramClassToUmldiagramClass {
 	to 
 		 mm1class : MM1!Class (
 		 	name <- mmclass.classname,
-		 	ownedOperation <- mmclass.body->select(p | not p.oclType().conformsTo(MM!Attribute)),
-			ownedAttribute <- mmclass.body->select(p | not p.oclType().conformsTo(MM!Method))
+			superClass <- mmclass.extension,
+		 	ownedOperation <- mmclass.body->select(p |  p.oclType().conformsTo(MM!Method)),
+			ownedAttribute <- mmclass.body->select(p |  p.oclType().conformsTo(MM!Attribute))
+		)
+}
+
+rule usageTranformation {
+	from 
+		mmdependancy : MM!Dependancy
+	to 
+		mm1Usage : MM1!Usage (
+			
 		)
 }
 
@@ -34,8 +45,8 @@ rule abstractClassTransformation {
 		mm1aclass : MM1!Class (
 			name <- mmaclass.classname,
 			isAbstract <- true,
-			ownedOperation <- mmaclass.body->select(p | not p.oclType().conformsTo(MM!Attribute)),
-			ownedAttribute <- mmaclass.body->select(p | not p.oclType().conformsTo(MM!Method))
+			ownedOperation <- mmaclass.body->select(p | p.oclType().conformsTo(MM!Method)),
+			ownedAttribute <- mmaclass.body->select(p | p.oclType().conformsTo(MM!Attribute))
 		)
 }
 
@@ -45,8 +56,8 @@ rule interfaceClassTransformation {
 	to 
 		mm1aclass : MM1!Interface (
 			name <- mmaclass.interfacename,
-			ownedOperation <- mmaclass.body->select(p | not p.oclType().conformsTo(MM!Attribute)),
-			ownedAttribute <- mmaclass.body->select(p | not p.oclType().conformsTo(MM!Method))
+			ownedOperation <- mmaclass.body->select(p |  p.oclType().conformsTo(MM!Method)),
+			ownedAttribute <- mmaclass.body->select(p |  p.oclType().conformsTo(MM!Attribute))
 		)
 }
 
@@ -58,7 +69,6 @@ rule attributeNameTransformation {
 		 mm1class : MM1!Property (
 		 	name <- mmclass.attributename
 		)
-
 }
 
 
@@ -68,10 +78,12 @@ rule operationNameTransformation {
 		mmclassOperation : MM!Method
 	to 
 		 mm1classOperation : MM1!Operation (
-		 	name <- mmclassOperation.name
+		 	name <- mmclassOperation.name,
+			ownedParameter <- mmclassOperation.param	
 		)
-	
 }
+
+
 
 
 rule diagramEnumerationToUmlEnumeration {
@@ -81,6 +93,4 @@ rule diagramEnumerationToUmlEnumeration {
 		mm1enumeration : MM1!Enumeration (
 			name <- mmenumeration.classname
 		)
-	
-	
 }

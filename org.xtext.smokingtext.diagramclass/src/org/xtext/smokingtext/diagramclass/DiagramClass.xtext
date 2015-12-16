@@ -10,14 +10,12 @@ Elements:
 ;
 
 Class:
-	ClassVisibility classname= ID (":")? extension = ID? implements= Implements* "{"
+	ClassVisibility classname= ID (":")? extension = ID? ((",") implements = ID)* "{"
 		body += (Attribute | Method | Dependancy)*
 	"}"
 ;
 
-Implements:
-	(",")? ID
-;
+
 Dependancy:
 	"->" name = ID
 ;
@@ -35,7 +33,7 @@ Interface:
 ;
 
 Abstract: 
-	ClassVisibility "a" classname = ID (":")? extension = ID? implements= Implements* '{'
+	ClassVisibility "a" classname = ID (":")? extension = ID? ((",") implements = ID)* '{'
 		body += (Attribute | Method)*
 	'}'
 ;
@@ -72,8 +70,12 @@ terminal number:
 ;
 
 Package:
-	name = ID? ("." ID)* "[["
+	name = PackageName "[["
 		classType += Elements*
 		subPackage += Package?
 	"]]" 
+;
+
+PackageName:
+	ID? ("." ID)*
 ;

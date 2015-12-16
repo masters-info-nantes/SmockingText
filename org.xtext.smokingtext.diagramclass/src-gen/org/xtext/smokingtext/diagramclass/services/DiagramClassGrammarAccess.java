@@ -71,8 +71,10 @@ public class DiagramClassGrammarAccess extends AbstractGrammarElementFinder {
 		private final Keyword cColonKeyword_2 = (Keyword)cGroup.eContents().get(2);
 		private final Assignment cExtensionAssignment_3 = (Assignment)cGroup.eContents().get(3);
 		private final RuleCall cExtensionIDTerminalRuleCall_3_0 = (RuleCall)cExtensionAssignment_3.eContents().get(0);
-		private final Assignment cImplementsAssignment_4 = (Assignment)cGroup.eContents().get(4);
-		private final RuleCall cImplementsImplementsParserRuleCall_4_0 = (RuleCall)cImplementsAssignment_4.eContents().get(0);
+		private final Group cGroup_4 = (Group)cGroup.eContents().get(4);
+		private final Keyword cCommaKeyword_4_0 = (Keyword)cGroup_4.eContents().get(0);
+		private final Assignment cImplementsAssignment_4_1 = (Assignment)cGroup_4.eContents().get(1);
+		private final RuleCall cImplementsIDTerminalRuleCall_4_1_0 = (RuleCall)cImplementsAssignment_4_1.eContents().get(0);
 		private final Keyword cLeftCurlyBracketKeyword_5 = (Keyword)cGroup.eContents().get(5);
 		private final Assignment cBodyAssignment_6 = (Assignment)cGroup.eContents().get(6);
 		private final Alternatives cBodyAlternatives_6_0 = (Alternatives)cBodyAssignment_6.eContents().get(0);
@@ -82,11 +84,10 @@ public class DiagramClassGrammarAccess extends AbstractGrammarElementFinder {
 		private final Keyword cRightCurlyBracketKeyword_7 = (Keyword)cGroup.eContents().get(7);
 		
 		//Class:
-		//	ClassVisibility classname=ID ":"? extension=ID? implements=Implements* "{" body+=(Attribute | Method | Dependancy)*
-		//	"}";
+		//	ClassVisibility classname=ID ":"? extension=ID? ("," implements=ID)* "{" body+=(Attribute | Method | Dependancy)* "}";
 		@Override public ParserRule getRule() { return rule; }
 
-		//ClassVisibility classname=ID ":"? extension=ID? implements=Implements* "{" body+=(Attribute | Method | Dependancy)* "}"
+		//ClassVisibility classname=ID ":"? extension=ID? ("," implements=ID)* "{" body+=(Attribute | Method | Dependancy)* "}"
 		public Group getGroup() { return cGroup; }
 
 		//ClassVisibility
@@ -107,11 +108,17 @@ public class DiagramClassGrammarAccess extends AbstractGrammarElementFinder {
 		//ID
 		public RuleCall getExtensionIDTerminalRuleCall_3_0() { return cExtensionIDTerminalRuleCall_3_0; }
 
-		//implements=Implements*
-		public Assignment getImplementsAssignment_4() { return cImplementsAssignment_4; }
+		//("," implements=ID)*
+		public Group getGroup_4() { return cGroup_4; }
 
-		//Implements
-		public RuleCall getImplementsImplementsParserRuleCall_4_0() { return cImplementsImplementsParserRuleCall_4_0; }
+		//","
+		public Keyword getCommaKeyword_4_0() { return cCommaKeyword_4_0; }
+
+		//implements=ID
+		public Assignment getImplementsAssignment_4_1() { return cImplementsAssignment_4_1; }
+
+		//ID
+		public RuleCall getImplementsIDTerminalRuleCall_4_1_0() { return cImplementsIDTerminalRuleCall_4_1_0; }
 
 		//"{"
 		public Keyword getLeftCurlyBracketKeyword_5() { return cLeftCurlyBracketKeyword_5; }
@@ -133,26 +140,6 @@ public class DiagramClassGrammarAccess extends AbstractGrammarElementFinder {
 
 		//"}"
 		public Keyword getRightCurlyBracketKeyword_7() { return cRightCurlyBracketKeyword_7; }
-	}
-
-	public class ImplementsElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Implements");
-		private final Group cGroup = (Group)rule.eContents().get(1);
-		private final Keyword cCommaKeyword_0 = (Keyword)cGroup.eContents().get(0);
-		private final RuleCall cIDTerminalRuleCall_1 = (RuleCall)cGroup.eContents().get(1);
-		
-		//Implements:
-		//	","? ID;
-		@Override public ParserRule getRule() { return rule; }
-
-		//","? ID
-		public Group getGroup() { return cGroup; }
-
-		//","?
-		public Keyword getCommaKeyword_0() { return cCommaKeyword_0; }
-
-		//ID
-		public RuleCall getIDTerminalRuleCall_1() { return cIDTerminalRuleCall_1; }
 	}
 
 	public class DependancyElements extends AbstractParserRuleElementFinder {
@@ -281,8 +268,10 @@ public class DiagramClassGrammarAccess extends AbstractGrammarElementFinder {
 		private final Keyword cColonKeyword_3 = (Keyword)cGroup.eContents().get(3);
 		private final Assignment cExtensionAssignment_4 = (Assignment)cGroup.eContents().get(4);
 		private final RuleCall cExtensionIDTerminalRuleCall_4_0 = (RuleCall)cExtensionAssignment_4.eContents().get(0);
-		private final Assignment cImplementsAssignment_5 = (Assignment)cGroup.eContents().get(5);
-		private final RuleCall cImplementsImplementsParserRuleCall_5_0 = (RuleCall)cImplementsAssignment_5.eContents().get(0);
+		private final Group cGroup_5 = (Group)cGroup.eContents().get(5);
+		private final Keyword cCommaKeyword_5_0 = (Keyword)cGroup_5.eContents().get(0);
+		private final Assignment cImplementsAssignment_5_1 = (Assignment)cGroup_5.eContents().get(1);
+		private final RuleCall cImplementsIDTerminalRuleCall_5_1_0 = (RuleCall)cImplementsAssignment_5_1.eContents().get(0);
 		private final Keyword cLeftCurlyBracketKeyword_6 = (Keyword)cGroup.eContents().get(6);
 		private final Assignment cBodyAssignment_7 = (Assignment)cGroup.eContents().get(7);
 		private final Alternatives cBodyAlternatives_7_0 = (Alternatives)cBodyAssignment_7.eContents().get(0);
@@ -291,10 +280,10 @@ public class DiagramClassGrammarAccess extends AbstractGrammarElementFinder {
 		private final Keyword cRightCurlyBracketKeyword_8 = (Keyword)cGroup.eContents().get(8);
 		
 		//Abstract:
-		//	ClassVisibility "a" classname=ID ":"? extension=ID? implements=Implements* "{" body+=(Attribute | Method)* "}";
+		//	ClassVisibility "a" classname=ID ":"? extension=ID? ("," implements=ID)* "{" body+=(Attribute | Method)* "}";
 		@Override public ParserRule getRule() { return rule; }
 
-		//ClassVisibility "a" classname=ID ":"? extension=ID? implements=Implements* "{" body+=(Attribute | Method)* "}"
+		//ClassVisibility "a" classname=ID ":"? extension=ID? ("," implements=ID)* "{" body+=(Attribute | Method)* "}"
 		public Group getGroup() { return cGroup; }
 
 		//ClassVisibility
@@ -318,11 +307,17 @@ public class DiagramClassGrammarAccess extends AbstractGrammarElementFinder {
 		//ID
 		public RuleCall getExtensionIDTerminalRuleCall_4_0() { return cExtensionIDTerminalRuleCall_4_0; }
 
-		//implements=Implements*
-		public Assignment getImplementsAssignment_5() { return cImplementsAssignment_5; }
+		//("," implements=ID)*
+		public Group getGroup_5() { return cGroup_5; }
 
-		//Implements
-		public RuleCall getImplementsImplementsParserRuleCall_5_0() { return cImplementsImplementsParserRuleCall_5_0; }
+		//","
+		public Keyword getCommaKeyword_5_0() { return cCommaKeyword_5_0; }
+
+		//implements=ID
+		public Assignment getImplementsAssignment_5_1() { return cImplementsAssignment_5_1; }
+
+		//ID
+		public RuleCall getImplementsIDTerminalRuleCall_5_1_0() { return cImplementsIDTerminalRuleCall_5_1_0; }
 
 		//"{"
 		public Keyword getLeftCurlyBracketKeyword_6() { return cLeftCurlyBracketKeyword_6; }
@@ -675,29 +670,63 @@ public class DiagramClassGrammarAccess extends AbstractGrammarElementFinder {
 		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Package");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Assignment cNameAssignment_0 = (Assignment)cGroup.eContents().get(0);
-		private final RuleCall cNameIDTerminalRuleCall_0_0 = (RuleCall)cNameAssignment_0.eContents().get(0);
+		private final RuleCall cNamePackageNameParserRuleCall_0_0 = (RuleCall)cNameAssignment_0.eContents().get(0);
+		private final Keyword cLeftSquareBracketLeftSquareBracketKeyword_1 = (Keyword)cGroup.eContents().get(1);
+		private final Assignment cClassTypeAssignment_2 = (Assignment)cGroup.eContents().get(2);
+		private final RuleCall cClassTypeElementsParserRuleCall_2_0 = (RuleCall)cClassTypeAssignment_2.eContents().get(0);
+		private final Assignment cSubPackageAssignment_3 = (Assignment)cGroup.eContents().get(3);
+		private final RuleCall cSubPackagePackageParserRuleCall_3_0 = (RuleCall)cSubPackageAssignment_3.eContents().get(0);
+		private final Keyword cRightSquareBracketRightSquareBracketKeyword_4 = (Keyword)cGroup.eContents().get(4);
+		
+		//Package:
+		//	name=PackageName "[[" classType+=Elements* subPackage+=Package? "]]";
+		@Override public ParserRule getRule() { return rule; }
+
+		//name=PackageName "[[" classType+=Elements* subPackage+=Package? "]]"
+		public Group getGroup() { return cGroup; }
+
+		//name=PackageName
+		public Assignment getNameAssignment_0() { return cNameAssignment_0; }
+
+		//PackageName
+		public RuleCall getNamePackageNameParserRuleCall_0_0() { return cNamePackageNameParserRuleCall_0_0; }
+
+		//"[["
+		public Keyword getLeftSquareBracketLeftSquareBracketKeyword_1() { return cLeftSquareBracketLeftSquareBracketKeyword_1; }
+
+		//classType+=Elements*
+		public Assignment getClassTypeAssignment_2() { return cClassTypeAssignment_2; }
+
+		//Elements
+		public RuleCall getClassTypeElementsParserRuleCall_2_0() { return cClassTypeElementsParserRuleCall_2_0; }
+
+		//subPackage+=Package?
+		public Assignment getSubPackageAssignment_3() { return cSubPackageAssignment_3; }
+
+		//Package
+		public RuleCall getSubPackagePackageParserRuleCall_3_0() { return cSubPackagePackageParserRuleCall_3_0; }
+
+		//"]]"
+		public Keyword getRightSquareBracketRightSquareBracketKeyword_4() { return cRightSquareBracketRightSquareBracketKeyword_4; }
+	}
+
+	public class PackageNameElements extends AbstractParserRuleElementFinder {
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "PackageName");
+		private final Group cGroup = (Group)rule.eContents().get(1);
+		private final RuleCall cIDTerminalRuleCall_0 = (RuleCall)cGroup.eContents().get(0);
 		private final Group cGroup_1 = (Group)cGroup.eContents().get(1);
 		private final Keyword cFullStopKeyword_1_0 = (Keyword)cGroup_1.eContents().get(0);
 		private final RuleCall cIDTerminalRuleCall_1_1 = (RuleCall)cGroup_1.eContents().get(1);
-		private final Keyword cLeftSquareBracketLeftSquareBracketKeyword_2 = (Keyword)cGroup.eContents().get(2);
-		private final Assignment cClassTypeAssignment_3 = (Assignment)cGroup.eContents().get(3);
-		private final RuleCall cClassTypeElementsParserRuleCall_3_0 = (RuleCall)cClassTypeAssignment_3.eContents().get(0);
-		private final Assignment cSubPackageAssignment_4 = (Assignment)cGroup.eContents().get(4);
-		private final RuleCall cSubPackagePackageParserRuleCall_4_0 = (RuleCall)cSubPackageAssignment_4.eContents().get(0);
-		private final Keyword cRightSquareBracketRightSquareBracketKeyword_5 = (Keyword)cGroup.eContents().get(5);
 		
-		//Package:
-		//	name=ID? ("." ID)* "[[" classType+=Elements* subPackage+=Package? "]]";
+		//PackageName:
+		//	ID? ("." ID)*;
 		@Override public ParserRule getRule() { return rule; }
 
-		//name=ID? ("." ID)* "[[" classType+=Elements* subPackage+=Package? "]]"
+		//ID? ("." ID)*
 		public Group getGroup() { return cGroup; }
 
-		//name=ID?
-		public Assignment getNameAssignment_0() { return cNameAssignment_0; }
-
-		//ID
-		public RuleCall getNameIDTerminalRuleCall_0_0() { return cNameIDTerminalRuleCall_0_0; }
+		//ID?
+		public RuleCall getIDTerminalRuleCall_0() { return cIDTerminalRuleCall_0; }
 
 		//("." ID)*
 		public Group getGroup_1() { return cGroup_1; }
@@ -707,31 +736,12 @@ public class DiagramClassGrammarAccess extends AbstractGrammarElementFinder {
 
 		//ID
 		public RuleCall getIDTerminalRuleCall_1_1() { return cIDTerminalRuleCall_1_1; }
-
-		//"[["
-		public Keyword getLeftSquareBracketLeftSquareBracketKeyword_2() { return cLeftSquareBracketLeftSquareBracketKeyword_2; }
-
-		//classType+=Elements*
-		public Assignment getClassTypeAssignment_3() { return cClassTypeAssignment_3; }
-
-		//Elements
-		public RuleCall getClassTypeElementsParserRuleCall_3_0() { return cClassTypeElementsParserRuleCall_3_0; }
-
-		//subPackage+=Package?
-		public Assignment getSubPackageAssignment_4() { return cSubPackageAssignment_4; }
-
-		//Package
-		public RuleCall getSubPackagePackageParserRuleCall_4_0() { return cSubPackagePackageParserRuleCall_4_0; }
-
-		//"]]"
-		public Keyword getRightSquareBracketRightSquareBracketKeyword_5() { return cRightSquareBracketRightSquareBracketKeyword_5; }
 	}
 	
 	
 	private final ModelElements pModel;
 	private final ElementsElements pElements;
 	private final ClassElements pClass;
-	private final ImplementsElements pImplements;
 	private final DependancyElements pDependancy;
 	private final EnumerationElements pEnumeration;
 	private final InterfaceElements pInterface;
@@ -744,6 +754,7 @@ public class DiagramClassGrammarAccess extends AbstractGrammarElementFinder {
 	private final ClassVisibilityElements pClassVisibility;
 	private final TerminalRule tNumber;
 	private final PackageElements pPackage;
+	private final PackageNameElements pPackageName;
 	
 	private final Grammar grammar;
 
@@ -757,7 +768,6 @@ public class DiagramClassGrammarAccess extends AbstractGrammarElementFinder {
 		this.pModel = new ModelElements();
 		this.pElements = new ElementsElements();
 		this.pClass = new ClassElements();
-		this.pImplements = new ImplementsElements();
 		this.pDependancy = new DependancyElements();
 		this.pEnumeration = new EnumerationElements();
 		this.pInterface = new InterfaceElements();
@@ -770,6 +780,7 @@ public class DiagramClassGrammarAccess extends AbstractGrammarElementFinder {
 		this.pClassVisibility = new ClassVisibilityElements();
 		this.tNumber = (TerminalRule) GrammarUtil.findRuleForName(getGrammar(), "number");
 		this.pPackage = new PackageElements();
+		this.pPackageName = new PackageNameElements();
 	}
 	
 	protected Grammar internalFindGrammar(GrammarProvider grammarProvider) {
@@ -820,24 +831,13 @@ public class DiagramClassGrammarAccess extends AbstractGrammarElementFinder {
 	}
 
 	//Class:
-	//	ClassVisibility classname=ID ":"? extension=ID? implements=Implements* "{" body+=(Attribute | Method | Dependancy)*
-	//	"}";
+	//	ClassVisibility classname=ID ":"? extension=ID? ("," implements=ID)* "{" body+=(Attribute | Method | Dependancy)* "}";
 	public ClassElements getClassAccess() {
 		return pClass;
 	}
 	
 	public ParserRule getClassRule() {
 		return getClassAccess().getRule();
-	}
-
-	//Implements:
-	//	","? ID;
-	public ImplementsElements getImplementsAccess() {
-		return pImplements;
-	}
-	
-	public ParserRule getImplementsRule() {
-		return getImplementsAccess().getRule();
 	}
 
 	//Dependancy:
@@ -871,7 +871,7 @@ public class DiagramClassGrammarAccess extends AbstractGrammarElementFinder {
 	}
 
 	//Abstract:
-	//	ClassVisibility "a" classname=ID ":"? extension=ID? implements=Implements* "{" body+=(Attribute | Method)* "}";
+	//	ClassVisibility "a" classname=ID ":"? extension=ID? ("," implements=ID)* "{" body+=(Attribute | Method)* "}";
 	public AbstractElements getAbstractAccess() {
 		return pAbstract;
 	}
@@ -947,13 +947,23 @@ public class DiagramClassGrammarAccess extends AbstractGrammarElementFinder {
 	} 
 
 	//Package:
-	//	name=ID? ("." ID)* "[[" classType+=Elements* subPackage+=Package? "]]";
+	//	name=PackageName "[[" classType+=Elements* subPackage+=Package? "]]";
 	public PackageElements getPackageAccess() {
 		return pPackage;
 	}
 	
 	public ParserRule getPackageRule() {
 		return getPackageAccess().getRule();
+	}
+
+	//PackageName:
+	//	ID? ("." ID)*;
+	public PackageNameElements getPackageNameAccess() {
+		return pPackageName;
+	}
+	
+	public ParserRule getPackageNameRule() {
+		return getPackageNameAccess().getRule();
 	}
 
 	//terminal ID:

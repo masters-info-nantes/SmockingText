@@ -1,23 +1,18 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<uml:Package xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" name="default">
-  <packagedElement xsi:type="uml:Enumeration" name="Marque"/>
-  <packagedElement xsi:type="uml:Class" name="Roue">
-    <ownedAttribute name="taille"/>
-    <ownedOperation name="tourne"/>
-  </packagedElement>
-  <packagedElement xsi:type="uml:Class" name="Moteur">
-    <ownedAttribute name="puissance"/>
-  </packagedElement>
-  <packagedElement xsi:type="uml:Interface" name="Vehicule">
-    <ownedOperation name="avance"/>
-  </packagedElement>
-  <packagedElement xsi:type="uml:Class" name="VehiculeMotorise" isAbstract="true">
-    <ownedAttribute name="marque"/>
-    <ownedAttribute name="moteur"/>
-  </packagedElement>
-  <packagedElement xsi:type="uml:Class" name="Voiture">
-    <ownedAttribute name="roues"/>
-    <ownedAttribute name="nbPorte"/>
-    <ownedOperation name="avance"/>
-  </packagedElement>
-</uml:Package>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML">
+  <uml:Package name="com.bookstore">
+    <packagedElement xsi:type="uml:Interface" name="Search"/>
+    <packagedElement xsi:type="uml:Interface" name="Manage"/>
+    <packagedElement xsi:type="uml:Class" name="Catalog"/>
+    <packagedElement xsi:type="uml:Class" name="Patron"/>
+    <packagedElement xsi:type="uml:Package" name="book">
+      <packagedElement xsi:type="uml:Class" name="Book">
+        <ownedAttribute name="title"/>
+      </packagedElement>
+      <packagedElement xsi:type="uml:Class" name="Author">
+        <ownedAttribute name="books"/>
+      </packagedElement>
+    </packagedElement>
+  </uml:Package>
+  <uml:Usage/>
+</xmi:XMI>

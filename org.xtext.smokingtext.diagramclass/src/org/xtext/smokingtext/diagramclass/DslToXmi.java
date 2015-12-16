@@ -12,9 +12,9 @@ public class DslToXmi {
 	 public static void main(String[] args) {
 	        DiagramClassStandaloneSetup.doSetup();
 	        XtextResourceSet resourceSet = new XtextResourceSet();
-	        URI uri = URI.createURI("/home/david/Documents/M2ALMA/MDE/Projet/runtime-EclipseApplication/DiagramClassInstance/voiture.st");
+	        URI uri = URI.createURI("/home/david/Documents/M2ALMA/MDE/Projet/runtime-EclipseApplication/DiagramClassInstance/books.st");
 	        Resource xtextResource = resourceSet.getResource(uri , true);
-	        Resource xmiResource = new EcoreResourceFactoryImpl().createResource(URI.createURI("model/generated/voitureDiagramClass.ecore"));
+	        Resource xmiResource = new EcoreResourceFactoryImpl().createResource(URI.createURI("model/generated/booksDiagramClass.ecore"));
 	        xmiResource.getContents().add(xtextResource.getContents().get(0));
 	        try {
 	            xmiResource.save(null);

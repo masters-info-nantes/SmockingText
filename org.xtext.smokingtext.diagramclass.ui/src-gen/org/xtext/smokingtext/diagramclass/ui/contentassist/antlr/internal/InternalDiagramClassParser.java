@@ -342,98 +342,21 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
     // $ANTLR end "ruleClass"
 
 
-    // $ANTLR start "entryRuleImplements"
-    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:144:1: entryRuleImplements : ruleImplements EOF ;
-    public final void entryRuleImplements() throws RecognitionException {
-        try {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:145:1: ( ruleImplements EOF )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:146:1: ruleImplements EOF
-            {
-             before(grammarAccess.getImplementsRule()); 
-            pushFollow(FOLLOW_ruleImplements_in_entryRuleImplements242);
-            ruleImplements();
-
-            state._fsp--;
-
-             after(grammarAccess.getImplementsRule()); 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleImplements249); 
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-        }
-        return ;
-    }
-    // $ANTLR end "entryRuleImplements"
-
-
-    // $ANTLR start "ruleImplements"
-    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:153:1: ruleImplements : ( ( rule__Implements__Group__0 ) ) ;
-    public final void ruleImplements() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:157:2: ( ( ( rule__Implements__Group__0 ) ) )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:158:1: ( ( rule__Implements__Group__0 ) )
-            {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:158:1: ( ( rule__Implements__Group__0 ) )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:159:1: ( rule__Implements__Group__0 )
-            {
-             before(grammarAccess.getImplementsAccess().getGroup()); 
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:160:1: ( rule__Implements__Group__0 )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:160:2: rule__Implements__Group__0
-            {
-            pushFollow(FOLLOW_rule__Implements__Group__0_in_ruleImplements275);
-            rule__Implements__Group__0();
-
-            state._fsp--;
-
-
-            }
-
-             after(grammarAccess.getImplementsAccess().getGroup()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "ruleImplements"
-
-
     // $ANTLR start "entryRuleDependancy"
-    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:172:1: entryRuleDependancy : ruleDependancy EOF ;
+    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:144:1: entryRuleDependancy : ruleDependancy EOF ;
     public final void entryRuleDependancy() throws RecognitionException {
         try {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:173:1: ( ruleDependancy EOF )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:174:1: ruleDependancy EOF
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:145:1: ( ruleDependancy EOF )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:146:1: ruleDependancy EOF
             {
              before(grammarAccess.getDependancyRule()); 
-            pushFollow(FOLLOW_ruleDependancy_in_entryRuleDependancy302);
+            pushFollow(FOLLOW_ruleDependancy_in_entryRuleDependancy242);
             ruleDependancy();
 
             state._fsp--;
 
              after(grammarAccess.getDependancyRule()); 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleDependancy309); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleDependancy249); 
 
             }
 
@@ -450,23 +373,23 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
 
 
     // $ANTLR start "ruleDependancy"
-    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:181:1: ruleDependancy : ( ( rule__Dependancy__Group__0 ) ) ;
+    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:153:1: ruleDependancy : ( ( rule__Dependancy__Group__0 ) ) ;
     public final void ruleDependancy() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:185:2: ( ( ( rule__Dependancy__Group__0 ) ) )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:186:1: ( ( rule__Dependancy__Group__0 ) )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:157:2: ( ( ( rule__Dependancy__Group__0 ) ) )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:158:1: ( ( rule__Dependancy__Group__0 ) )
             {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:186:1: ( ( rule__Dependancy__Group__0 ) )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:187:1: ( rule__Dependancy__Group__0 )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:158:1: ( ( rule__Dependancy__Group__0 ) )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:159:1: ( rule__Dependancy__Group__0 )
             {
              before(grammarAccess.getDependancyAccess().getGroup()); 
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:188:1: ( rule__Dependancy__Group__0 )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:188:2: rule__Dependancy__Group__0
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:160:1: ( rule__Dependancy__Group__0 )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:160:2: rule__Dependancy__Group__0
             {
-            pushFollow(FOLLOW_rule__Dependancy__Group__0_in_ruleDependancy335);
+            pushFollow(FOLLOW_rule__Dependancy__Group__0_in_ruleDependancy275);
             rule__Dependancy__Group__0();
 
             state._fsp--;
@@ -497,20 +420,20 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
 
 
     // $ANTLR start "entryRuleEnumeration"
-    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:200:1: entryRuleEnumeration : ruleEnumeration EOF ;
+    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:172:1: entryRuleEnumeration : ruleEnumeration EOF ;
     public final void entryRuleEnumeration() throws RecognitionException {
         try {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:201:1: ( ruleEnumeration EOF )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:202:1: ruleEnumeration EOF
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:173:1: ( ruleEnumeration EOF )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:174:1: ruleEnumeration EOF
             {
              before(grammarAccess.getEnumerationRule()); 
-            pushFollow(FOLLOW_ruleEnumeration_in_entryRuleEnumeration362);
+            pushFollow(FOLLOW_ruleEnumeration_in_entryRuleEnumeration302);
             ruleEnumeration();
 
             state._fsp--;
 
              after(grammarAccess.getEnumerationRule()); 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleEnumeration369); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleEnumeration309); 
 
             }
 
@@ -527,23 +450,23 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
 
 
     // $ANTLR start "ruleEnumeration"
-    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:209:1: ruleEnumeration : ( ( rule__Enumeration__Group__0 ) ) ;
+    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:181:1: ruleEnumeration : ( ( rule__Enumeration__Group__0 ) ) ;
     public final void ruleEnumeration() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:213:2: ( ( ( rule__Enumeration__Group__0 ) ) )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:214:1: ( ( rule__Enumeration__Group__0 ) )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:185:2: ( ( ( rule__Enumeration__Group__0 ) ) )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:186:1: ( ( rule__Enumeration__Group__0 ) )
             {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:214:1: ( ( rule__Enumeration__Group__0 ) )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:215:1: ( rule__Enumeration__Group__0 )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:186:1: ( ( rule__Enumeration__Group__0 ) )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:187:1: ( rule__Enumeration__Group__0 )
             {
              before(grammarAccess.getEnumerationAccess().getGroup()); 
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:216:1: ( rule__Enumeration__Group__0 )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:216:2: rule__Enumeration__Group__0
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:188:1: ( rule__Enumeration__Group__0 )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:188:2: rule__Enumeration__Group__0
             {
-            pushFollow(FOLLOW_rule__Enumeration__Group__0_in_ruleEnumeration395);
+            pushFollow(FOLLOW_rule__Enumeration__Group__0_in_ruleEnumeration335);
             rule__Enumeration__Group__0();
 
             state._fsp--;
@@ -574,20 +497,20 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
 
 
     // $ANTLR start "entryRuleInterface"
-    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:228:1: entryRuleInterface : ruleInterface EOF ;
+    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:200:1: entryRuleInterface : ruleInterface EOF ;
     public final void entryRuleInterface() throws RecognitionException {
         try {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:229:1: ( ruleInterface EOF )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:230:1: ruleInterface EOF
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:201:1: ( ruleInterface EOF )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:202:1: ruleInterface EOF
             {
              before(grammarAccess.getInterfaceRule()); 
-            pushFollow(FOLLOW_ruleInterface_in_entryRuleInterface422);
+            pushFollow(FOLLOW_ruleInterface_in_entryRuleInterface362);
             ruleInterface();
 
             state._fsp--;
 
              after(grammarAccess.getInterfaceRule()); 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleInterface429); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleInterface369); 
 
             }
 
@@ -604,23 +527,23 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
 
 
     // $ANTLR start "ruleInterface"
-    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:237:1: ruleInterface : ( ( rule__Interface__Group__0 ) ) ;
+    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:209:1: ruleInterface : ( ( rule__Interface__Group__0 ) ) ;
     public final void ruleInterface() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:241:2: ( ( ( rule__Interface__Group__0 ) ) )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:242:1: ( ( rule__Interface__Group__0 ) )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:213:2: ( ( ( rule__Interface__Group__0 ) ) )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:214:1: ( ( rule__Interface__Group__0 ) )
             {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:242:1: ( ( rule__Interface__Group__0 ) )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:243:1: ( rule__Interface__Group__0 )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:214:1: ( ( rule__Interface__Group__0 ) )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:215:1: ( rule__Interface__Group__0 )
             {
              before(grammarAccess.getInterfaceAccess().getGroup()); 
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:244:1: ( rule__Interface__Group__0 )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:244:2: rule__Interface__Group__0
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:216:1: ( rule__Interface__Group__0 )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:216:2: rule__Interface__Group__0
             {
-            pushFollow(FOLLOW_rule__Interface__Group__0_in_ruleInterface455);
+            pushFollow(FOLLOW_rule__Interface__Group__0_in_ruleInterface395);
             rule__Interface__Group__0();
 
             state._fsp--;
@@ -651,20 +574,20 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
 
 
     // $ANTLR start "entryRuleAbstract"
-    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:256:1: entryRuleAbstract : ruleAbstract EOF ;
+    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:228:1: entryRuleAbstract : ruleAbstract EOF ;
     public final void entryRuleAbstract() throws RecognitionException {
         try {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:257:1: ( ruleAbstract EOF )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:258:1: ruleAbstract EOF
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:229:1: ( ruleAbstract EOF )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:230:1: ruleAbstract EOF
             {
              before(grammarAccess.getAbstractRule()); 
-            pushFollow(FOLLOW_ruleAbstract_in_entryRuleAbstract482);
+            pushFollow(FOLLOW_ruleAbstract_in_entryRuleAbstract422);
             ruleAbstract();
 
             state._fsp--;
 
              after(grammarAccess.getAbstractRule()); 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleAbstract489); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleAbstract429); 
 
             }
 
@@ -681,23 +604,23 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
 
 
     // $ANTLR start "ruleAbstract"
-    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:265:1: ruleAbstract : ( ( rule__Abstract__Group__0 ) ) ;
+    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:237:1: ruleAbstract : ( ( rule__Abstract__Group__0 ) ) ;
     public final void ruleAbstract() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:269:2: ( ( ( rule__Abstract__Group__0 ) ) )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:270:1: ( ( rule__Abstract__Group__0 ) )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:241:2: ( ( ( rule__Abstract__Group__0 ) ) )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:242:1: ( ( rule__Abstract__Group__0 ) )
             {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:270:1: ( ( rule__Abstract__Group__0 ) )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:271:1: ( rule__Abstract__Group__0 )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:242:1: ( ( rule__Abstract__Group__0 ) )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:243:1: ( rule__Abstract__Group__0 )
             {
              before(grammarAccess.getAbstractAccess().getGroup()); 
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:272:1: ( rule__Abstract__Group__0 )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:272:2: rule__Abstract__Group__0
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:244:1: ( rule__Abstract__Group__0 )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:244:2: rule__Abstract__Group__0
             {
-            pushFollow(FOLLOW_rule__Abstract__Group__0_in_ruleAbstract515);
+            pushFollow(FOLLOW_rule__Abstract__Group__0_in_ruleAbstract455);
             rule__Abstract__Group__0();
 
             state._fsp--;
@@ -728,20 +651,20 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
 
 
     // $ANTLR start "entryRuleBiRelation"
-    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:284:1: entryRuleBiRelation : ruleBiRelation EOF ;
+    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:256:1: entryRuleBiRelation : ruleBiRelation EOF ;
     public final void entryRuleBiRelation() throws RecognitionException {
         try {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:285:1: ( ruleBiRelation EOF )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:286:1: ruleBiRelation EOF
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:257:1: ( ruleBiRelation EOF )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:258:1: ruleBiRelation EOF
             {
              before(grammarAccess.getBiRelationRule()); 
-            pushFollow(FOLLOW_ruleBiRelation_in_entryRuleBiRelation542);
+            pushFollow(FOLLOW_ruleBiRelation_in_entryRuleBiRelation482);
             ruleBiRelation();
 
             state._fsp--;
 
              after(grammarAccess.getBiRelationRule()); 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleBiRelation549); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleBiRelation489); 
 
             }
 
@@ -758,23 +681,23 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
 
 
     // $ANTLR start "ruleBiRelation"
-    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:293:1: ruleBiRelation : ( ( rule__BiRelation__Group__0 ) ) ;
+    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:265:1: ruleBiRelation : ( ( rule__BiRelation__Group__0 ) ) ;
     public final void ruleBiRelation() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:297:2: ( ( ( rule__BiRelation__Group__0 ) ) )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:298:1: ( ( rule__BiRelation__Group__0 ) )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:269:2: ( ( ( rule__BiRelation__Group__0 ) ) )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:270:1: ( ( rule__BiRelation__Group__0 ) )
             {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:298:1: ( ( rule__BiRelation__Group__0 ) )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:299:1: ( rule__BiRelation__Group__0 )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:270:1: ( ( rule__BiRelation__Group__0 ) )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:271:1: ( rule__BiRelation__Group__0 )
             {
              before(grammarAccess.getBiRelationAccess().getGroup()); 
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:300:1: ( rule__BiRelation__Group__0 )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:300:2: rule__BiRelation__Group__0
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:272:1: ( rule__BiRelation__Group__0 )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:272:2: rule__BiRelation__Group__0
             {
-            pushFollow(FOLLOW_rule__BiRelation__Group__0_in_ruleBiRelation575);
+            pushFollow(FOLLOW_rule__BiRelation__Group__0_in_ruleBiRelation515);
             rule__BiRelation__Group__0();
 
             state._fsp--;
@@ -805,20 +728,20 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
 
 
     // $ANTLR start "entryRuleAttribute"
-    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:312:1: entryRuleAttribute : ruleAttribute EOF ;
+    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:284:1: entryRuleAttribute : ruleAttribute EOF ;
     public final void entryRuleAttribute() throws RecognitionException {
         try {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:313:1: ( ruleAttribute EOF )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:314:1: ruleAttribute EOF
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:285:1: ( ruleAttribute EOF )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:286:1: ruleAttribute EOF
             {
              before(grammarAccess.getAttributeRule()); 
-            pushFollow(FOLLOW_ruleAttribute_in_entryRuleAttribute602);
+            pushFollow(FOLLOW_ruleAttribute_in_entryRuleAttribute542);
             ruleAttribute();
 
             state._fsp--;
 
              after(grammarAccess.getAttributeRule()); 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleAttribute609); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleAttribute549); 
 
             }
 
@@ -835,23 +758,23 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
 
 
     // $ANTLR start "ruleAttribute"
-    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:321:1: ruleAttribute : ( ( rule__Attribute__Group__0 ) ) ;
+    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:293:1: ruleAttribute : ( ( rule__Attribute__Group__0 ) ) ;
     public final void ruleAttribute() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:325:2: ( ( ( rule__Attribute__Group__0 ) ) )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:326:1: ( ( rule__Attribute__Group__0 ) )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:297:2: ( ( ( rule__Attribute__Group__0 ) ) )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:298:1: ( ( rule__Attribute__Group__0 ) )
             {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:326:1: ( ( rule__Attribute__Group__0 ) )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:327:1: ( rule__Attribute__Group__0 )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:298:1: ( ( rule__Attribute__Group__0 ) )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:299:1: ( rule__Attribute__Group__0 )
             {
              before(grammarAccess.getAttributeAccess().getGroup()); 
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:328:1: ( rule__Attribute__Group__0 )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:328:2: rule__Attribute__Group__0
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:300:1: ( rule__Attribute__Group__0 )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:300:2: rule__Attribute__Group__0
             {
-            pushFollow(FOLLOW_rule__Attribute__Group__0_in_ruleAttribute635);
+            pushFollow(FOLLOW_rule__Attribute__Group__0_in_ruleAttribute575);
             rule__Attribute__Group__0();
 
             state._fsp--;
@@ -882,20 +805,20 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
 
 
     // $ANTLR start "entryRuleparamIn"
-    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:340:1: entryRuleparamIn : ruleparamIn EOF ;
+    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:312:1: entryRuleparamIn : ruleparamIn EOF ;
     public final void entryRuleparamIn() throws RecognitionException {
         try {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:341:1: ( ruleparamIn EOF )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:342:1: ruleparamIn EOF
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:313:1: ( ruleparamIn EOF )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:314:1: ruleparamIn EOF
             {
              before(grammarAccess.getParamInRule()); 
-            pushFollow(FOLLOW_ruleparamIn_in_entryRuleparamIn662);
+            pushFollow(FOLLOW_ruleparamIn_in_entryRuleparamIn602);
             ruleparamIn();
 
             state._fsp--;
 
              after(grammarAccess.getParamInRule()); 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleparamIn669); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleparamIn609); 
 
             }
 
@@ -912,23 +835,23 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
 
 
     // $ANTLR start "ruleparamIn"
-    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:349:1: ruleparamIn : ( ( rule__ParamIn__Group__0 ) ) ;
+    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:321:1: ruleparamIn : ( ( rule__ParamIn__Group__0 ) ) ;
     public final void ruleparamIn() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:353:2: ( ( ( rule__ParamIn__Group__0 ) ) )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:354:1: ( ( rule__ParamIn__Group__0 ) )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:325:2: ( ( ( rule__ParamIn__Group__0 ) ) )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:326:1: ( ( rule__ParamIn__Group__0 ) )
             {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:354:1: ( ( rule__ParamIn__Group__0 ) )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:355:1: ( rule__ParamIn__Group__0 )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:326:1: ( ( rule__ParamIn__Group__0 ) )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:327:1: ( rule__ParamIn__Group__0 )
             {
              before(grammarAccess.getParamInAccess().getGroup()); 
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:356:1: ( rule__ParamIn__Group__0 )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:356:2: rule__ParamIn__Group__0
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:328:1: ( rule__ParamIn__Group__0 )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:328:2: rule__ParamIn__Group__0
             {
-            pushFollow(FOLLOW_rule__ParamIn__Group__0_in_ruleparamIn695);
+            pushFollow(FOLLOW_rule__ParamIn__Group__0_in_ruleparamIn635);
             rule__ParamIn__Group__0();
 
             state._fsp--;
@@ -959,20 +882,20 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
 
 
     // $ANTLR start "entryRuleMethod"
-    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:368:1: entryRuleMethod : ruleMethod EOF ;
+    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:340:1: entryRuleMethod : ruleMethod EOF ;
     public final void entryRuleMethod() throws RecognitionException {
         try {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:369:1: ( ruleMethod EOF )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:370:1: ruleMethod EOF
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:341:1: ( ruleMethod EOF )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:342:1: ruleMethod EOF
             {
              before(grammarAccess.getMethodRule()); 
-            pushFollow(FOLLOW_ruleMethod_in_entryRuleMethod722);
+            pushFollow(FOLLOW_ruleMethod_in_entryRuleMethod662);
             ruleMethod();
 
             state._fsp--;
 
              after(grammarAccess.getMethodRule()); 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleMethod729); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleMethod669); 
 
             }
 
@@ -989,23 +912,23 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
 
 
     // $ANTLR start "ruleMethod"
-    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:377:1: ruleMethod : ( ( rule__Method__Group__0 ) ) ;
+    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:349:1: ruleMethod : ( ( rule__Method__Group__0 ) ) ;
     public final void ruleMethod() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:381:2: ( ( ( rule__Method__Group__0 ) ) )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:382:1: ( ( rule__Method__Group__0 ) )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:353:2: ( ( ( rule__Method__Group__0 ) ) )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:354:1: ( ( rule__Method__Group__0 ) )
             {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:382:1: ( ( rule__Method__Group__0 ) )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:383:1: ( rule__Method__Group__0 )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:354:1: ( ( rule__Method__Group__0 ) )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:355:1: ( rule__Method__Group__0 )
             {
              before(grammarAccess.getMethodAccess().getGroup()); 
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:384:1: ( rule__Method__Group__0 )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:384:2: rule__Method__Group__0
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:356:1: ( rule__Method__Group__0 )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:356:2: rule__Method__Group__0
             {
-            pushFollow(FOLLOW_rule__Method__Group__0_in_ruleMethod755);
+            pushFollow(FOLLOW_rule__Method__Group__0_in_ruleMethod695);
             rule__Method__Group__0();
 
             state._fsp--;
@@ -1036,20 +959,20 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
 
 
     // $ANTLR start "entryRuleBodyVisibility"
-    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:396:1: entryRuleBodyVisibility : ruleBodyVisibility EOF ;
+    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:368:1: entryRuleBodyVisibility : ruleBodyVisibility EOF ;
     public final void entryRuleBodyVisibility() throws RecognitionException {
         try {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:397:1: ( ruleBodyVisibility EOF )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:398:1: ruleBodyVisibility EOF
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:369:1: ( ruleBodyVisibility EOF )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:370:1: ruleBodyVisibility EOF
             {
              before(grammarAccess.getBodyVisibilityRule()); 
-            pushFollow(FOLLOW_ruleBodyVisibility_in_entryRuleBodyVisibility782);
+            pushFollow(FOLLOW_ruleBodyVisibility_in_entryRuleBodyVisibility722);
             ruleBodyVisibility();
 
             state._fsp--;
 
              after(grammarAccess.getBodyVisibilityRule()); 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleBodyVisibility789); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleBodyVisibility729); 
 
             }
 
@@ -1066,23 +989,23 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
 
 
     // $ANTLR start "ruleBodyVisibility"
-    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:405:1: ruleBodyVisibility : ( ( rule__BodyVisibility__Alternatives ) ) ;
+    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:377:1: ruleBodyVisibility : ( ( rule__BodyVisibility__Alternatives ) ) ;
     public final void ruleBodyVisibility() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:409:2: ( ( ( rule__BodyVisibility__Alternatives ) ) )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:410:1: ( ( rule__BodyVisibility__Alternatives ) )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:381:2: ( ( ( rule__BodyVisibility__Alternatives ) ) )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:382:1: ( ( rule__BodyVisibility__Alternatives ) )
             {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:410:1: ( ( rule__BodyVisibility__Alternatives ) )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:411:1: ( rule__BodyVisibility__Alternatives )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:382:1: ( ( rule__BodyVisibility__Alternatives ) )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:383:1: ( rule__BodyVisibility__Alternatives )
             {
              before(grammarAccess.getBodyVisibilityAccess().getAlternatives()); 
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:412:1: ( rule__BodyVisibility__Alternatives )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:412:2: rule__BodyVisibility__Alternatives
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:384:1: ( rule__BodyVisibility__Alternatives )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:384:2: rule__BodyVisibility__Alternatives
             {
-            pushFollow(FOLLOW_rule__BodyVisibility__Alternatives_in_ruleBodyVisibility815);
+            pushFollow(FOLLOW_rule__BodyVisibility__Alternatives_in_ruleBodyVisibility755);
             rule__BodyVisibility__Alternatives();
 
             state._fsp--;
@@ -1113,20 +1036,20 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
 
 
     // $ANTLR start "entryRuleClassVisibility"
-    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:424:1: entryRuleClassVisibility : ruleClassVisibility EOF ;
+    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:396:1: entryRuleClassVisibility : ruleClassVisibility EOF ;
     public final void entryRuleClassVisibility() throws RecognitionException {
         try {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:425:1: ( ruleClassVisibility EOF )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:426:1: ruleClassVisibility EOF
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:397:1: ( ruleClassVisibility EOF )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:398:1: ruleClassVisibility EOF
             {
              before(grammarAccess.getClassVisibilityRule()); 
-            pushFollow(FOLLOW_ruleClassVisibility_in_entryRuleClassVisibility842);
+            pushFollow(FOLLOW_ruleClassVisibility_in_entryRuleClassVisibility782);
             ruleClassVisibility();
 
             state._fsp--;
 
              after(grammarAccess.getClassVisibilityRule()); 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleClassVisibility849); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleClassVisibility789); 
 
             }
 
@@ -1143,23 +1066,23 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
 
 
     // $ANTLR start "ruleClassVisibility"
-    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:433:1: ruleClassVisibility : ( ( rule__ClassVisibility__Alternatives ) ) ;
+    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:405:1: ruleClassVisibility : ( ( rule__ClassVisibility__Alternatives ) ) ;
     public final void ruleClassVisibility() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:437:2: ( ( ( rule__ClassVisibility__Alternatives ) ) )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:438:1: ( ( rule__ClassVisibility__Alternatives ) )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:409:2: ( ( ( rule__ClassVisibility__Alternatives ) ) )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:410:1: ( ( rule__ClassVisibility__Alternatives ) )
             {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:438:1: ( ( rule__ClassVisibility__Alternatives ) )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:439:1: ( rule__ClassVisibility__Alternatives )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:410:1: ( ( rule__ClassVisibility__Alternatives ) )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:411:1: ( rule__ClassVisibility__Alternatives )
             {
              before(grammarAccess.getClassVisibilityAccess().getAlternatives()); 
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:440:1: ( rule__ClassVisibility__Alternatives )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:440:2: rule__ClassVisibility__Alternatives
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:412:1: ( rule__ClassVisibility__Alternatives )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:412:2: rule__ClassVisibility__Alternatives
             {
-            pushFollow(FOLLOW_rule__ClassVisibility__Alternatives_in_ruleClassVisibility875);
+            pushFollow(FOLLOW_rule__ClassVisibility__Alternatives_in_ruleClassVisibility815);
             rule__ClassVisibility__Alternatives();
 
             state._fsp--;
@@ -1190,20 +1113,20 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
 
 
     // $ANTLR start "entryRulePackage"
-    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:452:1: entryRulePackage : rulePackage EOF ;
+    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:424:1: entryRulePackage : rulePackage EOF ;
     public final void entryRulePackage() throws RecognitionException {
         try {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:453:1: ( rulePackage EOF )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:454:1: rulePackage EOF
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:425:1: ( rulePackage EOF )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:426:1: rulePackage EOF
             {
              before(grammarAccess.getPackageRule()); 
-            pushFollow(FOLLOW_rulePackage_in_entryRulePackage902);
+            pushFollow(FOLLOW_rulePackage_in_entryRulePackage842);
             rulePackage();
 
             state._fsp--;
 
              after(grammarAccess.getPackageRule()); 
-            match(input,EOF,FOLLOW_EOF_in_entryRulePackage909); 
+            match(input,EOF,FOLLOW_EOF_in_entryRulePackage849); 
 
             }
 
@@ -1220,23 +1143,23 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
 
 
     // $ANTLR start "rulePackage"
-    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:461:1: rulePackage : ( ( rule__Package__Group__0 ) ) ;
+    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:433:1: rulePackage : ( ( rule__Package__Group__0 ) ) ;
     public final void rulePackage() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:465:2: ( ( ( rule__Package__Group__0 ) ) )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:466:1: ( ( rule__Package__Group__0 ) )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:437:2: ( ( ( rule__Package__Group__0 ) ) )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:438:1: ( ( rule__Package__Group__0 ) )
             {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:466:1: ( ( rule__Package__Group__0 ) )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:467:1: ( rule__Package__Group__0 )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:438:1: ( ( rule__Package__Group__0 ) )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:439:1: ( rule__Package__Group__0 )
             {
              before(grammarAccess.getPackageAccess().getGroup()); 
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:468:1: ( rule__Package__Group__0 )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:468:2: rule__Package__Group__0
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:440:1: ( rule__Package__Group__0 )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:440:2: rule__Package__Group__0
             {
-            pushFollow(FOLLOW_rule__Package__Group__0_in_rulePackage935);
+            pushFollow(FOLLOW_rule__Package__Group__0_in_rulePackage875);
             rule__Package__Group__0();
 
             state._fsp--;
@@ -1266,6 +1189,83 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
     // $ANTLR end "rulePackage"
 
 
+    // $ANTLR start "entryRulePackageName"
+    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:452:1: entryRulePackageName : rulePackageName EOF ;
+    public final void entryRulePackageName() throws RecognitionException {
+        try {
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:453:1: ( rulePackageName EOF )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:454:1: rulePackageName EOF
+            {
+             before(grammarAccess.getPackageNameRule()); 
+            pushFollow(FOLLOW_rulePackageName_in_entryRulePackageName902);
+            rulePackageName();
+
+            state._fsp--;
+
+             after(grammarAccess.getPackageNameRule()); 
+            match(input,EOF,FOLLOW_EOF_in_entryRulePackageName909); 
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+        }
+        return ;
+    }
+    // $ANTLR end "entryRulePackageName"
+
+
+    // $ANTLR start "rulePackageName"
+    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:461:1: rulePackageName : ( ( rule__PackageName__Group__0 ) ) ;
+    public final void rulePackageName() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:465:2: ( ( ( rule__PackageName__Group__0 ) ) )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:466:1: ( ( rule__PackageName__Group__0 ) )
+            {
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:466:1: ( ( rule__PackageName__Group__0 ) )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:467:1: ( rule__PackageName__Group__0 )
+            {
+             before(grammarAccess.getPackageNameAccess().getGroup()); 
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:468:1: ( rule__PackageName__Group__0 )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:468:2: rule__PackageName__Group__0
+            {
+            pushFollow(FOLLOW_rule__PackageName__Group__0_in_rulePackageName935);
+            rule__PackageName__Group__0();
+
+            state._fsp--;
+
+
+            }
+
+             after(grammarAccess.getPackageNameAccess().getGroup()); 
+
+            }
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rulePackageName"
+
+
     // $ANTLR start "rule__Elements__Alternatives"
     // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:480:1: rule__Elements__Alternatives : ( ( ruleClass ) | ( ruleInterface ) | ( ruleAbstract ) | ( ruleEnumeration ) );
     public final void rule__Elements__Alternatives() throws RecognitionException {
@@ -1284,6 +1284,11 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
                     alt2=3;
                     }
                     break;
+                case RULE_ID:
+                    {
+                    alt2=1;
+                    }
+                    break;
                 case 23:
                     {
                     alt2=4;
@@ -1292,11 +1297,6 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
                 case 24:
                     {
                     alt2=2;
-                    }
-                    break;
-                case RULE_ID:
-                    {
-                    alt2=1;
                     }
                     break;
                 default:
@@ -1314,14 +1314,14 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
                     alt2=2;
                     }
                     break;
-                case RULE_ID:
-                    {
-                    alt2=1;
-                    }
-                    break;
                 case 25:
                     {
                     alt2=3;
+                    }
+                    break;
+                case RULE_ID:
+                    {
+                    alt2=1;
                     }
                     break;
                 case 23:
@@ -1454,11 +1454,11 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
                 if ( (LA3_1==RULE_ID) ) {
                     int LA3_5 = input.LA(3);
 
-                    if ( (LA3_5==29) ) {
-                        alt3=2;
-                    }
-                    else if ( (LA3_5==18) ) {
+                    if ( (LA3_5==18) ) {
                         alt3=1;
+                    }
+                    else if ( (LA3_5==29) ) {
+                        alt3=2;
                     }
                     else {
                         NoViableAltException nvae =
@@ -1482,14 +1482,17 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
                 {
                 int LA3_2 = input.LA(2);
 
-                if ( (LA3_2==RULE_ID) ) {
+                if ( ((LA3_2>=13 && LA3_2<=14)) ) {
+                    alt3=1;
+                }
+                else if ( (LA3_2==RULE_ID) ) {
                     int LA3_5 = input.LA(3);
 
-                    if ( (LA3_5==29) ) {
-                        alt3=2;
-                    }
-                    else if ( (LA3_5==18) ) {
+                    if ( (LA3_5==18) ) {
                         alt3=1;
+                    }
+                    else if ( (LA3_5==29) ) {
+                        alt3=2;
                     }
                     else {
                         NoViableAltException nvae =
@@ -1497,9 +1500,6 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
 
                         throw nvae;
                     }
-                }
-                else if ( ((LA3_2>=13 && LA3_2<=14)) ) {
-                    alt3=1;
                 }
                 else {
                     NoViableAltException nvae =
@@ -1516,11 +1516,11 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
                 if ( (LA3_3==RULE_ID) ) {
                     int LA3_5 = input.LA(3);
 
-                    if ( (LA3_5==29) ) {
-                        alt3=2;
-                    }
-                    else if ( (LA3_5==18) ) {
+                    if ( (LA3_5==18) ) {
                         alt3=1;
+                    }
+                    else if ( (LA3_5==29) ) {
+                        alt3=2;
                     }
                     else {
                         NoViableAltException nvae =
@@ -1644,11 +1644,11 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
                 if ( (LA4_1==RULE_ID) ) {
                     int LA4_4 = input.LA(3);
 
-                    if ( (LA4_4==18) ) {
-                        alt4=1;
-                    }
-                    else if ( (LA4_4==29) ) {
+                    if ( (LA4_4==29) ) {
                         alt4=2;
+                    }
+                    else if ( (LA4_4==18) ) {
+                        alt4=1;
                     }
                     else {
                         NoViableAltException nvae =
@@ -1675,11 +1675,11 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
                 if ( (LA4_2==RULE_ID) ) {
                     int LA4_4 = input.LA(3);
 
-                    if ( (LA4_4==18) ) {
-                        alt4=1;
-                    }
-                    else if ( (LA4_4==29) ) {
+                    if ( (LA4_4==29) ) {
                         alt4=2;
+                    }
+                    else if ( (LA4_4==18) ) {
+                        alt4=1;
                     }
                     else {
                         NoViableAltException nvae =
@@ -1703,14 +1703,17 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
                 {
                 int LA4_3 = input.LA(2);
 
-                if ( (LA4_3==RULE_ID) ) {
+                if ( ((LA4_3>=13 && LA4_3<=14)) ) {
+                    alt4=1;
+                }
+                else if ( (LA4_3==RULE_ID) ) {
                     int LA4_4 = input.LA(3);
 
-                    if ( (LA4_4==18) ) {
-                        alt4=1;
-                    }
-                    else if ( (LA4_4==29) ) {
+                    if ( (LA4_4==29) ) {
                         alt4=2;
+                    }
+                    else if ( (LA4_4==18) ) {
+                        alt4=1;
                     }
                     else {
                         NoViableAltException nvae =
@@ -1718,9 +1721,6 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
 
                         throw nvae;
                     }
-                }
-                else if ( ((LA4_3>=13 && LA4_3<=14)) ) {
-                    alt4=1;
                 }
                 else {
                     NoViableAltException nvae =
@@ -2893,36 +2893,36 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
 
 
     // $ANTLR start "rule__Class__Group__4__Impl"
-    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:914:1: rule__Class__Group__4__Impl : ( ( rule__Class__ImplementsAssignment_4 )* ) ;
+    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:914:1: rule__Class__Group__4__Impl : ( ( rule__Class__Group_4__0 )* ) ;
     public final void rule__Class__Group__4__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:918:1: ( ( ( rule__Class__ImplementsAssignment_4 )* ) )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:919:1: ( ( rule__Class__ImplementsAssignment_4 )* )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:918:1: ( ( ( rule__Class__Group_4__0 )* ) )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:919:1: ( ( rule__Class__Group_4__0 )* )
             {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:919:1: ( ( rule__Class__ImplementsAssignment_4 )* )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:920:1: ( rule__Class__ImplementsAssignment_4 )*
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:919:1: ( ( rule__Class__Group_4__0 )* )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:920:1: ( rule__Class__Group_4__0 )*
             {
-             before(grammarAccess.getClassAccess().getImplementsAssignment_4()); 
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:921:1: ( rule__Class__ImplementsAssignment_4 )*
+             before(grammarAccess.getClassAccess().getGroup_4()); 
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:921:1: ( rule__Class__Group_4__0 )*
             loop17:
             do {
                 int alt17=2;
                 int LA17_0 = input.LA(1);
 
-                if ( (LA17_0==RULE_ID||LA17_0==21) ) {
+                if ( (LA17_0==21) ) {
                     alt17=1;
                 }
 
 
                 switch (alt17) {
             	case 1 :
-            	    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:921:2: rule__Class__ImplementsAssignment_4
+            	    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:921:2: rule__Class__Group_4__0
             	    {
-            	    pushFollow(FOLLOW_rule__Class__ImplementsAssignment_4_in_rule__Class__Group__4__Impl1928);
-            	    rule__Class__ImplementsAssignment_4();
+            	    pushFollow(FOLLOW_rule__Class__Group_4__0_in_rule__Class__Group__4__Impl1928);
+            	    rule__Class__Group_4__0();
 
             	    state._fsp--;
 
@@ -2935,7 +2935,7 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
                 }
             } while (true);
 
-             after(grammarAccess.getClassAccess().getImplementsAssignment_4()); 
+             after(grammarAccess.getClassAccess().getGroup_4()); 
 
             }
 
@@ -3205,110 +3205,23 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
     // $ANTLR end "rule__Class__Group__7__Impl"
 
 
-    // $ANTLR start "rule__Implements__Group__0"
-    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1037:1: rule__Implements__Group__0 : rule__Implements__Group__0__Impl rule__Implements__Group__1 ;
-    public final void rule__Implements__Group__0() throws RecognitionException {
+    // $ANTLR start "rule__Class__Group_4__0"
+    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1037:1: rule__Class__Group_4__0 : rule__Class__Group_4__0__Impl rule__Class__Group_4__1 ;
+    public final void rule__Class__Group_4__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1041:1: ( rule__Implements__Group__0__Impl rule__Implements__Group__1 )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1042:2: rule__Implements__Group__0__Impl rule__Implements__Group__1
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1041:1: ( rule__Class__Group_4__0__Impl rule__Class__Group_4__1 )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1042:2: rule__Class__Group_4__0__Impl rule__Class__Group_4__1
             {
-            pushFollow(FOLLOW_rule__Implements__Group__0__Impl_in_rule__Implements__Group__02157);
-            rule__Implements__Group__0__Impl();
+            pushFollow(FOLLOW_rule__Class__Group_4__0__Impl_in_rule__Class__Group_4__02157);
+            rule__Class__Group_4__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__Implements__Group__1_in_rule__Implements__Group__02160);
-            rule__Implements__Group__1();
-
-            state._fsp--;
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__Implements__Group__0"
-
-
-    // $ANTLR start "rule__Implements__Group__0__Impl"
-    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1049:1: rule__Implements__Group__0__Impl : ( ( ',' )? ) ;
-    public final void rule__Implements__Group__0__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1053:1: ( ( ( ',' )? ) )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1054:1: ( ( ',' )? )
-            {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1054:1: ( ( ',' )? )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1055:1: ( ',' )?
-            {
-             before(grammarAccess.getImplementsAccess().getCommaKeyword_0()); 
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1056:1: ( ',' )?
-            int alt19=2;
-            int LA19_0 = input.LA(1);
-
-            if ( (LA19_0==21) ) {
-                alt19=1;
-            }
-            switch (alt19) {
-                case 1 :
-                    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1057:2: ','
-                    {
-                    match(input,21,FOLLOW_21_in_rule__Implements__Group__0__Impl2189); 
-
-                    }
-                    break;
-
-            }
-
-             after(grammarAccess.getImplementsAccess().getCommaKeyword_0()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__Implements__Group__0__Impl"
-
-
-    // $ANTLR start "rule__Implements__Group__1"
-    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1068:1: rule__Implements__Group__1 : rule__Implements__Group__1__Impl ;
-    public final void rule__Implements__Group__1() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1072:1: ( rule__Implements__Group__1__Impl )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1073:2: rule__Implements__Group__1__Impl
-            {
-            pushFollow(FOLLOW_rule__Implements__Group__1__Impl_in_rule__Implements__Group__12222);
-            rule__Implements__Group__1__Impl();
+            pushFollow(FOLLOW_rule__Class__Group_4__1_in_rule__Class__Group_4__02160);
+            rule__Class__Group_4__1();
 
             state._fsp--;
 
@@ -3327,25 +3240,25 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
         }
         return ;
     }
-    // $ANTLR end "rule__Implements__Group__1"
+    // $ANTLR end "rule__Class__Group_4__0"
 
 
-    // $ANTLR start "rule__Implements__Group__1__Impl"
-    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1079:1: rule__Implements__Group__1__Impl : ( RULE_ID ) ;
-    public final void rule__Implements__Group__1__Impl() throws RecognitionException {
+    // $ANTLR start "rule__Class__Group_4__0__Impl"
+    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1049:1: rule__Class__Group_4__0__Impl : ( ',' ) ;
+    public final void rule__Class__Group_4__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1083:1: ( ( RULE_ID ) )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1084:1: ( RULE_ID )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1053:1: ( ( ',' ) )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1054:1: ( ',' )
             {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1084:1: ( RULE_ID )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1085:1: RULE_ID
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1054:1: ( ',' )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1055:1: ','
             {
-             before(grammarAccess.getImplementsAccess().getIDTerminalRuleCall_1()); 
-            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__Implements__Group__1__Impl2249); 
-             after(grammarAccess.getImplementsAccess().getIDTerminalRuleCall_1()); 
+             before(grammarAccess.getClassAccess().getCommaKeyword_4_0()); 
+            match(input,21,FOLLOW_21_in_rule__Class__Group_4__0__Impl2188); 
+             after(grammarAccess.getClassAccess().getCommaKeyword_4_0()); 
 
             }
 
@@ -3364,7 +3277,87 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
         }
         return ;
     }
-    // $ANTLR end "rule__Implements__Group__1__Impl"
+    // $ANTLR end "rule__Class__Group_4__0__Impl"
+
+
+    // $ANTLR start "rule__Class__Group_4__1"
+    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1068:1: rule__Class__Group_4__1 : rule__Class__Group_4__1__Impl ;
+    public final void rule__Class__Group_4__1() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1072:1: ( rule__Class__Group_4__1__Impl )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1073:2: rule__Class__Group_4__1__Impl
+            {
+            pushFollow(FOLLOW_rule__Class__Group_4__1__Impl_in_rule__Class__Group_4__12219);
+            rule__Class__Group_4__1__Impl();
+
+            state._fsp--;
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__Class__Group_4__1"
+
+
+    // $ANTLR start "rule__Class__Group_4__1__Impl"
+    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1079:1: rule__Class__Group_4__1__Impl : ( ( rule__Class__ImplementsAssignment_4_1 ) ) ;
+    public final void rule__Class__Group_4__1__Impl() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1083:1: ( ( ( rule__Class__ImplementsAssignment_4_1 ) ) )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1084:1: ( ( rule__Class__ImplementsAssignment_4_1 ) )
+            {
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1084:1: ( ( rule__Class__ImplementsAssignment_4_1 ) )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1085:1: ( rule__Class__ImplementsAssignment_4_1 )
+            {
+             before(grammarAccess.getClassAccess().getImplementsAssignment_4_1()); 
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1086:1: ( rule__Class__ImplementsAssignment_4_1 )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1086:2: rule__Class__ImplementsAssignment_4_1
+            {
+            pushFollow(FOLLOW_rule__Class__ImplementsAssignment_4_1_in_rule__Class__Group_4__1__Impl2246);
+            rule__Class__ImplementsAssignment_4_1();
+
+            state._fsp--;
+
+
+            }
+
+             after(grammarAccess.getClassAccess().getImplementsAssignment_4_1()); 
+
+            }
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__Class__Group_4__1__Impl"
 
 
     // $ANTLR start "rule__Dependancy__Group__0"
@@ -3377,12 +3370,12 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
             // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1104:1: ( rule__Dependancy__Group__0__Impl rule__Dependancy__Group__1 )
             // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1105:2: rule__Dependancy__Group__0__Impl rule__Dependancy__Group__1
             {
-            pushFollow(FOLLOW_rule__Dependancy__Group__0__Impl_in_rule__Dependancy__Group__02282);
+            pushFollow(FOLLOW_rule__Dependancy__Group__0__Impl_in_rule__Dependancy__Group__02280);
             rule__Dependancy__Group__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__Dependancy__Group__1_in_rule__Dependancy__Group__02285);
+            pushFollow(FOLLOW_rule__Dependancy__Group__1_in_rule__Dependancy__Group__02283);
             rule__Dependancy__Group__1();
 
             state._fsp--;
@@ -3419,7 +3412,7 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
             // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1118:1: '->'
             {
              before(grammarAccess.getDependancyAccess().getHyphenMinusGreaterThanSignKeyword_0()); 
-            match(input,22,FOLLOW_22_in_rule__Dependancy__Group__0__Impl2313); 
+            match(input,22,FOLLOW_22_in_rule__Dependancy__Group__0__Impl2311); 
              after(grammarAccess.getDependancyAccess().getHyphenMinusGreaterThanSignKeyword_0()); 
 
             }
@@ -3452,7 +3445,7 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
             // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1135:1: ( rule__Dependancy__Group__1__Impl )
             // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1136:2: rule__Dependancy__Group__1__Impl
             {
-            pushFollow(FOLLOW_rule__Dependancy__Group__1__Impl_in_rule__Dependancy__Group__12344);
+            pushFollow(FOLLOW_rule__Dependancy__Group__1__Impl_in_rule__Dependancy__Group__12342);
             rule__Dependancy__Group__1__Impl();
 
             state._fsp--;
@@ -3492,7 +3485,7 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
             // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1149:1: ( rule__Dependancy__NameAssignment_1 )
             // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1149:2: rule__Dependancy__NameAssignment_1
             {
-            pushFollow(FOLLOW_rule__Dependancy__NameAssignment_1_in_rule__Dependancy__Group__1__Impl2371);
+            pushFollow(FOLLOW_rule__Dependancy__NameAssignment_1_in_rule__Dependancy__Group__1__Impl2369);
             rule__Dependancy__NameAssignment_1();
 
             state._fsp--;
@@ -3532,12 +3525,12 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
             // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1167:1: ( rule__Enumeration__Group__0__Impl rule__Enumeration__Group__1 )
             // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1168:2: rule__Enumeration__Group__0__Impl rule__Enumeration__Group__1
             {
-            pushFollow(FOLLOW_rule__Enumeration__Group__0__Impl_in_rule__Enumeration__Group__02405);
+            pushFollow(FOLLOW_rule__Enumeration__Group__0__Impl_in_rule__Enumeration__Group__02403);
             rule__Enumeration__Group__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__Enumeration__Group__1_in_rule__Enumeration__Group__02408);
+            pushFollow(FOLLOW_rule__Enumeration__Group__1_in_rule__Enumeration__Group__02406);
             rule__Enumeration__Group__1();
 
             state._fsp--;
@@ -3574,7 +3567,7 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
             // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1181:1: ruleClassVisibility
             {
              before(grammarAccess.getEnumerationAccess().getClassVisibilityParserRuleCall_0()); 
-            pushFollow(FOLLOW_ruleClassVisibility_in_rule__Enumeration__Group__0__Impl2435);
+            pushFollow(FOLLOW_ruleClassVisibility_in_rule__Enumeration__Group__0__Impl2433);
             ruleClassVisibility();
 
             state._fsp--;
@@ -3611,12 +3604,12 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
             // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1196:1: ( rule__Enumeration__Group__1__Impl rule__Enumeration__Group__2 )
             // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1197:2: rule__Enumeration__Group__1__Impl rule__Enumeration__Group__2
             {
-            pushFollow(FOLLOW_rule__Enumeration__Group__1__Impl_in_rule__Enumeration__Group__12464);
+            pushFollow(FOLLOW_rule__Enumeration__Group__1__Impl_in_rule__Enumeration__Group__12462);
             rule__Enumeration__Group__1__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__Enumeration__Group__2_in_rule__Enumeration__Group__12467);
+            pushFollow(FOLLOW_rule__Enumeration__Group__2_in_rule__Enumeration__Group__12465);
             rule__Enumeration__Group__2();
 
             state._fsp--;
@@ -3653,7 +3646,7 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
             // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1210:1: 'e'
             {
              before(grammarAccess.getEnumerationAccess().getEKeyword_1()); 
-            match(input,23,FOLLOW_23_in_rule__Enumeration__Group__1__Impl2495); 
+            match(input,23,FOLLOW_23_in_rule__Enumeration__Group__1__Impl2493); 
              after(grammarAccess.getEnumerationAccess().getEKeyword_1()); 
 
             }
@@ -3686,12 +3679,12 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
             // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1227:1: ( rule__Enumeration__Group__2__Impl rule__Enumeration__Group__3 )
             // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1228:2: rule__Enumeration__Group__2__Impl rule__Enumeration__Group__3
             {
-            pushFollow(FOLLOW_rule__Enumeration__Group__2__Impl_in_rule__Enumeration__Group__22526);
+            pushFollow(FOLLOW_rule__Enumeration__Group__2__Impl_in_rule__Enumeration__Group__22524);
             rule__Enumeration__Group__2__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__Enumeration__Group__3_in_rule__Enumeration__Group__22529);
+            pushFollow(FOLLOW_rule__Enumeration__Group__3_in_rule__Enumeration__Group__22527);
             rule__Enumeration__Group__3();
 
             state._fsp--;
@@ -3731,7 +3724,7 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
             // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1242:1: ( rule__Enumeration__ClassnameAssignment_2 )
             // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1242:2: rule__Enumeration__ClassnameAssignment_2
             {
-            pushFollow(FOLLOW_rule__Enumeration__ClassnameAssignment_2_in_rule__Enumeration__Group__2__Impl2556);
+            pushFollow(FOLLOW_rule__Enumeration__ClassnameAssignment_2_in_rule__Enumeration__Group__2__Impl2554);
             rule__Enumeration__ClassnameAssignment_2();
 
             state._fsp--;
@@ -3771,12 +3764,12 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
             // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1256:1: ( rule__Enumeration__Group__3__Impl rule__Enumeration__Group__4 )
             // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1257:2: rule__Enumeration__Group__3__Impl rule__Enumeration__Group__4
             {
-            pushFollow(FOLLOW_rule__Enumeration__Group__3__Impl_in_rule__Enumeration__Group__32586);
+            pushFollow(FOLLOW_rule__Enumeration__Group__3__Impl_in_rule__Enumeration__Group__32584);
             rule__Enumeration__Group__3__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__Enumeration__Group__4_in_rule__Enumeration__Group__32589);
+            pushFollow(FOLLOW_rule__Enumeration__Group__4_in_rule__Enumeration__Group__32587);
             rule__Enumeration__Group__4();
 
             state._fsp--;
@@ -3813,7 +3806,7 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
             // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1270:1: '{'
             {
              before(grammarAccess.getEnumerationAccess().getLeftCurlyBracketKeyword_3()); 
-            match(input,19,FOLLOW_19_in_rule__Enumeration__Group__3__Impl2617); 
+            match(input,19,FOLLOW_19_in_rule__Enumeration__Group__3__Impl2615); 
              after(grammarAccess.getEnumerationAccess().getLeftCurlyBracketKeyword_3()); 
 
             }
@@ -3846,12 +3839,12 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
             // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1287:1: ( rule__Enumeration__Group__4__Impl rule__Enumeration__Group__5 )
             // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1288:2: rule__Enumeration__Group__4__Impl rule__Enumeration__Group__5
             {
-            pushFollow(FOLLOW_rule__Enumeration__Group__4__Impl_in_rule__Enumeration__Group__42648);
+            pushFollow(FOLLOW_rule__Enumeration__Group__4__Impl_in_rule__Enumeration__Group__42646);
             rule__Enumeration__Group__4__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__Enumeration__Group__5_in_rule__Enumeration__Group__42651);
+            pushFollow(FOLLOW_rule__Enumeration__Group__5_in_rule__Enumeration__Group__42649);
             rule__Enumeration__Group__5();
 
             state._fsp--;
@@ -3889,21 +3882,21 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
             {
              before(grammarAccess.getEnumerationAccess().getGroup_4()); 
             // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1302:1: ( rule__Enumeration__Group_4__0 )*
-            loop20:
+            loop19:
             do {
-                int alt20=2;
-                int LA20_0 = input.LA(1);
+                int alt19=2;
+                int LA19_0 = input.LA(1);
 
-                if ( (LA20_0==RULE_ID) ) {
-                    alt20=1;
+                if ( (LA19_0==RULE_ID) ) {
+                    alt19=1;
                 }
 
 
-                switch (alt20) {
+                switch (alt19) {
             	case 1 :
             	    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1302:2: rule__Enumeration__Group_4__0
             	    {
-            	    pushFollow(FOLLOW_rule__Enumeration__Group_4__0_in_rule__Enumeration__Group__4__Impl2678);
+            	    pushFollow(FOLLOW_rule__Enumeration__Group_4__0_in_rule__Enumeration__Group__4__Impl2676);
             	    rule__Enumeration__Group_4__0();
 
             	    state._fsp--;
@@ -3913,7 +3906,7 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
             	    break;
 
             	default :
-            	    break loop20;
+            	    break loop19;
                 }
             } while (true);
 
@@ -3949,7 +3942,7 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
             // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1316:1: ( rule__Enumeration__Group__5__Impl )
             // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1317:2: rule__Enumeration__Group__5__Impl
             {
-            pushFollow(FOLLOW_rule__Enumeration__Group__5__Impl_in_rule__Enumeration__Group__52709);
+            pushFollow(FOLLOW_rule__Enumeration__Group__5__Impl_in_rule__Enumeration__Group__52707);
             rule__Enumeration__Group__5__Impl();
 
             state._fsp--;
@@ -3986,7 +3979,7 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
             // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1329:1: '}'
             {
              before(grammarAccess.getEnumerationAccess().getRightCurlyBracketKeyword_5()); 
-            match(input,20,FOLLOW_20_in_rule__Enumeration__Group__5__Impl2737); 
+            match(input,20,FOLLOW_20_in_rule__Enumeration__Group__5__Impl2735); 
              after(grammarAccess.getEnumerationAccess().getRightCurlyBracketKeyword_5()); 
 
             }
@@ -4019,12 +4012,12 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
             // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1358:1: ( rule__Enumeration__Group_4__0__Impl rule__Enumeration__Group_4__1 )
             // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1359:2: rule__Enumeration__Group_4__0__Impl rule__Enumeration__Group_4__1
             {
-            pushFollow(FOLLOW_rule__Enumeration__Group_4__0__Impl_in_rule__Enumeration__Group_4__02780);
+            pushFollow(FOLLOW_rule__Enumeration__Group_4__0__Impl_in_rule__Enumeration__Group_4__02778);
             rule__Enumeration__Group_4__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__Enumeration__Group_4__1_in_rule__Enumeration__Group_4__02783);
+            pushFollow(FOLLOW_rule__Enumeration__Group_4__1_in_rule__Enumeration__Group_4__02781);
             rule__Enumeration__Group_4__1();
 
             state._fsp--;
@@ -4061,7 +4054,7 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
             // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1372:1: RULE_ID
             {
              before(grammarAccess.getEnumerationAccess().getIDTerminalRuleCall_4_0()); 
-            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__Enumeration__Group_4__0__Impl2810); 
+            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__Enumeration__Group_4__0__Impl2808); 
              after(grammarAccess.getEnumerationAccess().getIDTerminalRuleCall_4_0()); 
 
             }
@@ -4094,7 +4087,7 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
             // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1387:1: ( rule__Enumeration__Group_4__1__Impl )
             // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1388:2: rule__Enumeration__Group_4__1__Impl
             {
-            pushFollow(FOLLOW_rule__Enumeration__Group_4__1__Impl_in_rule__Enumeration__Group_4__12839);
+            pushFollow(FOLLOW_rule__Enumeration__Group_4__1__Impl_in_rule__Enumeration__Group_4__12837);
             rule__Enumeration__Group_4__1__Impl();
 
             state._fsp--;
@@ -4132,17 +4125,17 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
             {
              before(grammarAccess.getEnumerationAccess().getCommaKeyword_4_1()); 
             // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1401:1: ( ',' )?
-            int alt21=2;
-            int LA21_0 = input.LA(1);
+            int alt20=2;
+            int LA20_0 = input.LA(1);
 
-            if ( (LA21_0==21) ) {
-                alt21=1;
+            if ( (LA20_0==21) ) {
+                alt20=1;
             }
-            switch (alt21) {
+            switch (alt20) {
                 case 1 :
                     // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1402:2: ','
                     {
-                    match(input,21,FOLLOW_21_in_rule__Enumeration__Group_4__1__Impl2868); 
+                    match(input,21,FOLLOW_21_in_rule__Enumeration__Group_4__1__Impl2866); 
 
                     }
                     break;
@@ -4181,12 +4174,12 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
             // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1421:1: ( rule__Interface__Group__0__Impl rule__Interface__Group__1 )
             // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1422:2: rule__Interface__Group__0__Impl rule__Interface__Group__1
             {
-            pushFollow(FOLLOW_rule__Interface__Group__0__Impl_in_rule__Interface__Group__02905);
+            pushFollow(FOLLOW_rule__Interface__Group__0__Impl_in_rule__Interface__Group__02903);
             rule__Interface__Group__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__Interface__Group__1_in_rule__Interface__Group__02908);
+            pushFollow(FOLLOW_rule__Interface__Group__1_in_rule__Interface__Group__02906);
             rule__Interface__Group__1();
 
             state._fsp--;
@@ -4223,7 +4216,7 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
             // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1435:1: ruleClassVisibility
             {
              before(grammarAccess.getInterfaceAccess().getClassVisibilityParserRuleCall_0()); 
-            pushFollow(FOLLOW_ruleClassVisibility_in_rule__Interface__Group__0__Impl2935);
+            pushFollow(FOLLOW_ruleClassVisibility_in_rule__Interface__Group__0__Impl2933);
             ruleClassVisibility();
 
             state._fsp--;
@@ -4260,12 +4253,12 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
             // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1450:1: ( rule__Interface__Group__1__Impl rule__Interface__Group__2 )
             // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1451:2: rule__Interface__Group__1__Impl rule__Interface__Group__2
             {
-            pushFollow(FOLLOW_rule__Interface__Group__1__Impl_in_rule__Interface__Group__12964);
+            pushFollow(FOLLOW_rule__Interface__Group__1__Impl_in_rule__Interface__Group__12962);
             rule__Interface__Group__1__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__Interface__Group__2_in_rule__Interface__Group__12967);
+            pushFollow(FOLLOW_rule__Interface__Group__2_in_rule__Interface__Group__12965);
             rule__Interface__Group__2();
 
             state._fsp--;
@@ -4302,7 +4295,7 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
             // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1464:1: 'i'
             {
              before(grammarAccess.getInterfaceAccess().getIKeyword_1()); 
-            match(input,24,FOLLOW_24_in_rule__Interface__Group__1__Impl2995); 
+            match(input,24,FOLLOW_24_in_rule__Interface__Group__1__Impl2993); 
              after(grammarAccess.getInterfaceAccess().getIKeyword_1()); 
 
             }
@@ -4335,12 +4328,12 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
             // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1481:1: ( rule__Interface__Group__2__Impl rule__Interface__Group__3 )
             // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1482:2: rule__Interface__Group__2__Impl rule__Interface__Group__3
             {
-            pushFollow(FOLLOW_rule__Interface__Group__2__Impl_in_rule__Interface__Group__23026);
+            pushFollow(FOLLOW_rule__Interface__Group__2__Impl_in_rule__Interface__Group__23024);
             rule__Interface__Group__2__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__Interface__Group__3_in_rule__Interface__Group__23029);
+            pushFollow(FOLLOW_rule__Interface__Group__3_in_rule__Interface__Group__23027);
             rule__Interface__Group__3();
 
             state._fsp--;
@@ -4380,7 +4373,7 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
             // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1496:1: ( rule__Interface__InterfacenameAssignment_2 )
             // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1496:2: rule__Interface__InterfacenameAssignment_2
             {
-            pushFollow(FOLLOW_rule__Interface__InterfacenameAssignment_2_in_rule__Interface__Group__2__Impl3056);
+            pushFollow(FOLLOW_rule__Interface__InterfacenameAssignment_2_in_rule__Interface__Group__2__Impl3054);
             rule__Interface__InterfacenameAssignment_2();
 
             state._fsp--;
@@ -4420,12 +4413,12 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
             // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1510:1: ( rule__Interface__Group__3__Impl rule__Interface__Group__4 )
             // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1511:2: rule__Interface__Group__3__Impl rule__Interface__Group__4
             {
-            pushFollow(FOLLOW_rule__Interface__Group__3__Impl_in_rule__Interface__Group__33086);
+            pushFollow(FOLLOW_rule__Interface__Group__3__Impl_in_rule__Interface__Group__33084);
             rule__Interface__Group__3__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__Interface__Group__4_in_rule__Interface__Group__33089);
+            pushFollow(FOLLOW_rule__Interface__Group__4_in_rule__Interface__Group__33087);
             rule__Interface__Group__4();
 
             state._fsp--;
@@ -4462,7 +4455,7 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
             // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1524:1: '{'
             {
              before(grammarAccess.getInterfaceAccess().getLeftCurlyBracketKeyword_3()); 
-            match(input,19,FOLLOW_19_in_rule__Interface__Group__3__Impl3117); 
+            match(input,19,FOLLOW_19_in_rule__Interface__Group__3__Impl3115); 
              after(grammarAccess.getInterfaceAccess().getLeftCurlyBracketKeyword_3()); 
 
             }
@@ -4495,12 +4488,12 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
             // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1541:1: ( rule__Interface__Group__4__Impl rule__Interface__Group__5 )
             // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1542:2: rule__Interface__Group__4__Impl rule__Interface__Group__5
             {
-            pushFollow(FOLLOW_rule__Interface__Group__4__Impl_in_rule__Interface__Group__43148);
+            pushFollow(FOLLOW_rule__Interface__Group__4__Impl_in_rule__Interface__Group__43146);
             rule__Interface__Group__4__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__Interface__Group__5_in_rule__Interface__Group__43151);
+            pushFollow(FOLLOW_rule__Interface__Group__5_in_rule__Interface__Group__43149);
             rule__Interface__Group__5();
 
             state._fsp--;
@@ -4538,21 +4531,21 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
             {
              before(grammarAccess.getInterfaceAccess().getBodyAssignment_4()); 
             // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1556:1: ( rule__Interface__BodyAssignment_4 )*
-            loop22:
+            loop21:
             do {
-                int alt22=2;
-                int LA22_0 = input.LA(1);
+                int alt21=2;
+                int LA21_0 = input.LA(1);
 
-                if ( ((LA22_0>=15 && LA22_0<=17)) ) {
-                    alt22=1;
+                if ( ((LA21_0>=15 && LA21_0<=17)) ) {
+                    alt21=1;
                 }
 
 
-                switch (alt22) {
+                switch (alt21) {
             	case 1 :
             	    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1556:2: rule__Interface__BodyAssignment_4
             	    {
-            	    pushFollow(FOLLOW_rule__Interface__BodyAssignment_4_in_rule__Interface__Group__4__Impl3178);
+            	    pushFollow(FOLLOW_rule__Interface__BodyAssignment_4_in_rule__Interface__Group__4__Impl3176);
             	    rule__Interface__BodyAssignment_4();
 
             	    state._fsp--;
@@ -4562,7 +4555,7 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
             	    break;
 
             	default :
-            	    break loop22;
+            	    break loop21;
                 }
             } while (true);
 
@@ -4598,7 +4591,7 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
             // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1570:1: ( rule__Interface__Group__5__Impl )
             // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1571:2: rule__Interface__Group__5__Impl
             {
-            pushFollow(FOLLOW_rule__Interface__Group__5__Impl_in_rule__Interface__Group__53209);
+            pushFollow(FOLLOW_rule__Interface__Group__5__Impl_in_rule__Interface__Group__53207);
             rule__Interface__Group__5__Impl();
 
             state._fsp--;
@@ -4635,7 +4628,7 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
             // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1583:1: '}'
             {
              before(grammarAccess.getInterfaceAccess().getRightCurlyBracketKeyword_5()); 
-            match(input,20,FOLLOW_20_in_rule__Interface__Group__5__Impl3237); 
+            match(input,20,FOLLOW_20_in_rule__Interface__Group__5__Impl3235); 
              after(grammarAccess.getInterfaceAccess().getRightCurlyBracketKeyword_5()); 
 
             }
@@ -4668,12 +4661,12 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
             // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1612:1: ( rule__Abstract__Group__0__Impl rule__Abstract__Group__1 )
             // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1613:2: rule__Abstract__Group__0__Impl rule__Abstract__Group__1
             {
-            pushFollow(FOLLOW_rule__Abstract__Group__0__Impl_in_rule__Abstract__Group__03280);
+            pushFollow(FOLLOW_rule__Abstract__Group__0__Impl_in_rule__Abstract__Group__03278);
             rule__Abstract__Group__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__Abstract__Group__1_in_rule__Abstract__Group__03283);
+            pushFollow(FOLLOW_rule__Abstract__Group__1_in_rule__Abstract__Group__03281);
             rule__Abstract__Group__1();
 
             state._fsp--;
@@ -4710,7 +4703,7 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
             // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1626:1: ruleClassVisibility
             {
              before(grammarAccess.getAbstractAccess().getClassVisibilityParserRuleCall_0()); 
-            pushFollow(FOLLOW_ruleClassVisibility_in_rule__Abstract__Group__0__Impl3310);
+            pushFollow(FOLLOW_ruleClassVisibility_in_rule__Abstract__Group__0__Impl3308);
             ruleClassVisibility();
 
             state._fsp--;
@@ -4747,12 +4740,12 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
             // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1641:1: ( rule__Abstract__Group__1__Impl rule__Abstract__Group__2 )
             // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1642:2: rule__Abstract__Group__1__Impl rule__Abstract__Group__2
             {
-            pushFollow(FOLLOW_rule__Abstract__Group__1__Impl_in_rule__Abstract__Group__13339);
+            pushFollow(FOLLOW_rule__Abstract__Group__1__Impl_in_rule__Abstract__Group__13337);
             rule__Abstract__Group__1__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__Abstract__Group__2_in_rule__Abstract__Group__13342);
+            pushFollow(FOLLOW_rule__Abstract__Group__2_in_rule__Abstract__Group__13340);
             rule__Abstract__Group__2();
 
             state._fsp--;
@@ -4789,7 +4782,7 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
             // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1655:1: 'a'
             {
              before(grammarAccess.getAbstractAccess().getAKeyword_1()); 
-            match(input,25,FOLLOW_25_in_rule__Abstract__Group__1__Impl3370); 
+            match(input,25,FOLLOW_25_in_rule__Abstract__Group__1__Impl3368); 
              after(grammarAccess.getAbstractAccess().getAKeyword_1()); 
 
             }
@@ -4822,12 +4815,12 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
             // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1672:1: ( rule__Abstract__Group__2__Impl rule__Abstract__Group__3 )
             // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1673:2: rule__Abstract__Group__2__Impl rule__Abstract__Group__3
             {
-            pushFollow(FOLLOW_rule__Abstract__Group__2__Impl_in_rule__Abstract__Group__23401);
+            pushFollow(FOLLOW_rule__Abstract__Group__2__Impl_in_rule__Abstract__Group__23399);
             rule__Abstract__Group__2__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__Abstract__Group__3_in_rule__Abstract__Group__23404);
+            pushFollow(FOLLOW_rule__Abstract__Group__3_in_rule__Abstract__Group__23402);
             rule__Abstract__Group__3();
 
             state._fsp--;
@@ -4867,7 +4860,7 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
             // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1687:1: ( rule__Abstract__ClassnameAssignment_2 )
             // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1687:2: rule__Abstract__ClassnameAssignment_2
             {
-            pushFollow(FOLLOW_rule__Abstract__ClassnameAssignment_2_in_rule__Abstract__Group__2__Impl3431);
+            pushFollow(FOLLOW_rule__Abstract__ClassnameAssignment_2_in_rule__Abstract__Group__2__Impl3429);
             rule__Abstract__ClassnameAssignment_2();
 
             state._fsp--;
@@ -4907,12 +4900,12 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
             // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1701:1: ( rule__Abstract__Group__3__Impl rule__Abstract__Group__4 )
             // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1702:2: rule__Abstract__Group__3__Impl rule__Abstract__Group__4
             {
-            pushFollow(FOLLOW_rule__Abstract__Group__3__Impl_in_rule__Abstract__Group__33461);
+            pushFollow(FOLLOW_rule__Abstract__Group__3__Impl_in_rule__Abstract__Group__33459);
             rule__Abstract__Group__3__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__Abstract__Group__4_in_rule__Abstract__Group__33464);
+            pushFollow(FOLLOW_rule__Abstract__Group__4_in_rule__Abstract__Group__33462);
             rule__Abstract__Group__4();
 
             state._fsp--;
@@ -4950,17 +4943,17 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
             {
              before(grammarAccess.getAbstractAccess().getColonKeyword_3()); 
             // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1716:1: ( ':' )?
-            int alt23=2;
-            int LA23_0 = input.LA(1);
+            int alt22=2;
+            int LA22_0 = input.LA(1);
 
-            if ( (LA23_0==18) ) {
-                alt23=1;
+            if ( (LA22_0==18) ) {
+                alt22=1;
             }
-            switch (alt23) {
+            switch (alt22) {
                 case 1 :
                     // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1717:2: ':'
                     {
-                    match(input,18,FOLLOW_18_in_rule__Abstract__Group__3__Impl3493); 
+                    match(input,18,FOLLOW_18_in_rule__Abstract__Group__3__Impl3491); 
 
                     }
                     break;
@@ -4999,12 +4992,12 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
             // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1732:1: ( rule__Abstract__Group__4__Impl rule__Abstract__Group__5 )
             // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1733:2: rule__Abstract__Group__4__Impl rule__Abstract__Group__5
             {
-            pushFollow(FOLLOW_rule__Abstract__Group__4__Impl_in_rule__Abstract__Group__43526);
+            pushFollow(FOLLOW_rule__Abstract__Group__4__Impl_in_rule__Abstract__Group__43524);
             rule__Abstract__Group__4__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__Abstract__Group__5_in_rule__Abstract__Group__43529);
+            pushFollow(FOLLOW_rule__Abstract__Group__5_in_rule__Abstract__Group__43527);
             rule__Abstract__Group__5();
 
             state._fsp--;
@@ -5042,17 +5035,17 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
             {
              before(grammarAccess.getAbstractAccess().getExtensionAssignment_4()); 
             // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1747:1: ( rule__Abstract__ExtensionAssignment_4 )?
-            int alt24=2;
-            int LA24_0 = input.LA(1);
+            int alt23=2;
+            int LA23_0 = input.LA(1);
 
-            if ( (LA24_0==RULE_ID) ) {
-                alt24=1;
+            if ( (LA23_0==RULE_ID) ) {
+                alt23=1;
             }
-            switch (alt24) {
+            switch (alt23) {
                 case 1 :
                     // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1747:2: rule__Abstract__ExtensionAssignment_4
                     {
-                    pushFollow(FOLLOW_rule__Abstract__ExtensionAssignment_4_in_rule__Abstract__Group__4__Impl3556);
+                    pushFollow(FOLLOW_rule__Abstract__ExtensionAssignment_4_in_rule__Abstract__Group__4__Impl3554);
                     rule__Abstract__ExtensionAssignment_4();
 
                     state._fsp--;
@@ -5095,12 +5088,12 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
             // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1761:1: ( rule__Abstract__Group__5__Impl rule__Abstract__Group__6 )
             // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1762:2: rule__Abstract__Group__5__Impl rule__Abstract__Group__6
             {
-            pushFollow(FOLLOW_rule__Abstract__Group__5__Impl_in_rule__Abstract__Group__53587);
+            pushFollow(FOLLOW_rule__Abstract__Group__5__Impl_in_rule__Abstract__Group__53585);
             rule__Abstract__Group__5__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__Abstract__Group__6_in_rule__Abstract__Group__53590);
+            pushFollow(FOLLOW_rule__Abstract__Group__6_in_rule__Abstract__Group__53588);
             rule__Abstract__Group__6();
 
             state._fsp--;
@@ -5124,36 +5117,36 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
 
 
     // $ANTLR start "rule__Abstract__Group__5__Impl"
-    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1769:1: rule__Abstract__Group__5__Impl : ( ( rule__Abstract__ImplementsAssignment_5 )* ) ;
+    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1769:1: rule__Abstract__Group__5__Impl : ( ( rule__Abstract__Group_5__0 )* ) ;
     public final void rule__Abstract__Group__5__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1773:1: ( ( ( rule__Abstract__ImplementsAssignment_5 )* ) )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1774:1: ( ( rule__Abstract__ImplementsAssignment_5 )* )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1773:1: ( ( ( rule__Abstract__Group_5__0 )* ) )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1774:1: ( ( rule__Abstract__Group_5__0 )* )
             {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1774:1: ( ( rule__Abstract__ImplementsAssignment_5 )* )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1775:1: ( rule__Abstract__ImplementsAssignment_5 )*
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1774:1: ( ( rule__Abstract__Group_5__0 )* )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1775:1: ( rule__Abstract__Group_5__0 )*
             {
-             before(grammarAccess.getAbstractAccess().getImplementsAssignment_5()); 
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1776:1: ( rule__Abstract__ImplementsAssignment_5 )*
-            loop25:
+             before(grammarAccess.getAbstractAccess().getGroup_5()); 
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1776:1: ( rule__Abstract__Group_5__0 )*
+            loop24:
             do {
-                int alt25=2;
-                int LA25_0 = input.LA(1);
+                int alt24=2;
+                int LA24_0 = input.LA(1);
 
-                if ( (LA25_0==RULE_ID||LA25_0==21) ) {
-                    alt25=1;
+                if ( (LA24_0==21) ) {
+                    alt24=1;
                 }
 
 
-                switch (alt25) {
+                switch (alt24) {
             	case 1 :
-            	    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1776:2: rule__Abstract__ImplementsAssignment_5
+            	    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1776:2: rule__Abstract__Group_5__0
             	    {
-            	    pushFollow(FOLLOW_rule__Abstract__ImplementsAssignment_5_in_rule__Abstract__Group__5__Impl3617);
-            	    rule__Abstract__ImplementsAssignment_5();
+            	    pushFollow(FOLLOW_rule__Abstract__Group_5__0_in_rule__Abstract__Group__5__Impl3615);
+            	    rule__Abstract__Group_5__0();
 
             	    state._fsp--;
 
@@ -5162,11 +5155,11 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
             	    break;
 
             	default :
-            	    break loop25;
+            	    break loop24;
                 }
             } while (true);
 
-             after(grammarAccess.getAbstractAccess().getImplementsAssignment_5()); 
+             after(grammarAccess.getAbstractAccess().getGroup_5()); 
 
             }
 
@@ -5198,12 +5191,12 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
             // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1790:1: ( rule__Abstract__Group__6__Impl rule__Abstract__Group__7 )
             // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1791:2: rule__Abstract__Group__6__Impl rule__Abstract__Group__7
             {
-            pushFollow(FOLLOW_rule__Abstract__Group__6__Impl_in_rule__Abstract__Group__63648);
+            pushFollow(FOLLOW_rule__Abstract__Group__6__Impl_in_rule__Abstract__Group__63646);
             rule__Abstract__Group__6__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__Abstract__Group__7_in_rule__Abstract__Group__63651);
+            pushFollow(FOLLOW_rule__Abstract__Group__7_in_rule__Abstract__Group__63649);
             rule__Abstract__Group__7();
 
             state._fsp--;
@@ -5240,7 +5233,7 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
             // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1804:1: '{'
             {
              before(grammarAccess.getAbstractAccess().getLeftCurlyBracketKeyword_6()); 
-            match(input,19,FOLLOW_19_in_rule__Abstract__Group__6__Impl3679); 
+            match(input,19,FOLLOW_19_in_rule__Abstract__Group__6__Impl3677); 
              after(grammarAccess.getAbstractAccess().getLeftCurlyBracketKeyword_6()); 
 
             }
@@ -5273,12 +5266,12 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
             // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1821:1: ( rule__Abstract__Group__7__Impl rule__Abstract__Group__8 )
             // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1822:2: rule__Abstract__Group__7__Impl rule__Abstract__Group__8
             {
-            pushFollow(FOLLOW_rule__Abstract__Group__7__Impl_in_rule__Abstract__Group__73710);
+            pushFollow(FOLLOW_rule__Abstract__Group__7__Impl_in_rule__Abstract__Group__73708);
             rule__Abstract__Group__7__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__Abstract__Group__8_in_rule__Abstract__Group__73713);
+            pushFollow(FOLLOW_rule__Abstract__Group__8_in_rule__Abstract__Group__73711);
             rule__Abstract__Group__8();
 
             state._fsp--;
@@ -5316,21 +5309,21 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
             {
              before(grammarAccess.getAbstractAccess().getBodyAssignment_7()); 
             // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1836:1: ( rule__Abstract__BodyAssignment_7 )*
-            loop26:
+            loop25:
             do {
-                int alt26=2;
-                int LA26_0 = input.LA(1);
+                int alt25=2;
+                int LA25_0 = input.LA(1);
 
-                if ( ((LA26_0>=15 && LA26_0<=17)) ) {
-                    alt26=1;
+                if ( ((LA25_0>=15 && LA25_0<=17)) ) {
+                    alt25=1;
                 }
 
 
-                switch (alt26) {
+                switch (alt25) {
             	case 1 :
             	    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1836:2: rule__Abstract__BodyAssignment_7
             	    {
-            	    pushFollow(FOLLOW_rule__Abstract__BodyAssignment_7_in_rule__Abstract__Group__7__Impl3740);
+            	    pushFollow(FOLLOW_rule__Abstract__BodyAssignment_7_in_rule__Abstract__Group__7__Impl3738);
             	    rule__Abstract__BodyAssignment_7();
 
             	    state._fsp--;
@@ -5340,7 +5333,7 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
             	    break;
 
             	default :
-            	    break loop26;
+            	    break loop25;
                 }
             } while (true);
 
@@ -5376,7 +5369,7 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
             // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1850:1: ( rule__Abstract__Group__8__Impl )
             // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1851:2: rule__Abstract__Group__8__Impl
             {
-            pushFollow(FOLLOW_rule__Abstract__Group__8__Impl_in_rule__Abstract__Group__83771);
+            pushFollow(FOLLOW_rule__Abstract__Group__8__Impl_in_rule__Abstract__Group__83769);
             rule__Abstract__Group__8__Impl();
 
             state._fsp--;
@@ -5413,7 +5406,7 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
             // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1863:1: '}'
             {
              before(grammarAccess.getAbstractAccess().getRightCurlyBracketKeyword_8()); 
-            match(input,20,FOLLOW_20_in_rule__Abstract__Group__8__Impl3799); 
+            match(input,20,FOLLOW_20_in_rule__Abstract__Group__8__Impl3797); 
              after(grammarAccess.getAbstractAccess().getRightCurlyBracketKeyword_8()); 
 
             }
@@ -5436,22 +5429,177 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
     // $ANTLR end "rule__Abstract__Group__8__Impl"
 
 
+    // $ANTLR start "rule__Abstract__Group_5__0"
+    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1894:1: rule__Abstract__Group_5__0 : rule__Abstract__Group_5__0__Impl rule__Abstract__Group_5__1 ;
+    public final void rule__Abstract__Group_5__0() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1898:1: ( rule__Abstract__Group_5__0__Impl rule__Abstract__Group_5__1 )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1899:2: rule__Abstract__Group_5__0__Impl rule__Abstract__Group_5__1
+            {
+            pushFollow(FOLLOW_rule__Abstract__Group_5__0__Impl_in_rule__Abstract__Group_5__03846);
+            rule__Abstract__Group_5__0__Impl();
+
+            state._fsp--;
+
+            pushFollow(FOLLOW_rule__Abstract__Group_5__1_in_rule__Abstract__Group_5__03849);
+            rule__Abstract__Group_5__1();
+
+            state._fsp--;
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__Abstract__Group_5__0"
+
+
+    // $ANTLR start "rule__Abstract__Group_5__0__Impl"
+    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1906:1: rule__Abstract__Group_5__0__Impl : ( ',' ) ;
+    public final void rule__Abstract__Group_5__0__Impl() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1910:1: ( ( ',' ) )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1911:1: ( ',' )
+            {
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1911:1: ( ',' )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1912:1: ','
+            {
+             before(grammarAccess.getAbstractAccess().getCommaKeyword_5_0()); 
+            match(input,21,FOLLOW_21_in_rule__Abstract__Group_5__0__Impl3877); 
+             after(grammarAccess.getAbstractAccess().getCommaKeyword_5_0()); 
+
+            }
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__Abstract__Group_5__0__Impl"
+
+
+    // $ANTLR start "rule__Abstract__Group_5__1"
+    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1925:1: rule__Abstract__Group_5__1 : rule__Abstract__Group_5__1__Impl ;
+    public final void rule__Abstract__Group_5__1() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1929:1: ( rule__Abstract__Group_5__1__Impl )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1930:2: rule__Abstract__Group_5__1__Impl
+            {
+            pushFollow(FOLLOW_rule__Abstract__Group_5__1__Impl_in_rule__Abstract__Group_5__13908);
+            rule__Abstract__Group_5__1__Impl();
+
+            state._fsp--;
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__Abstract__Group_5__1"
+
+
+    // $ANTLR start "rule__Abstract__Group_5__1__Impl"
+    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1936:1: rule__Abstract__Group_5__1__Impl : ( ( rule__Abstract__ImplementsAssignment_5_1 ) ) ;
+    public final void rule__Abstract__Group_5__1__Impl() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1940:1: ( ( ( rule__Abstract__ImplementsAssignment_5_1 ) ) )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1941:1: ( ( rule__Abstract__ImplementsAssignment_5_1 ) )
+            {
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1941:1: ( ( rule__Abstract__ImplementsAssignment_5_1 ) )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1942:1: ( rule__Abstract__ImplementsAssignment_5_1 )
+            {
+             before(grammarAccess.getAbstractAccess().getImplementsAssignment_5_1()); 
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1943:1: ( rule__Abstract__ImplementsAssignment_5_1 )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1943:2: rule__Abstract__ImplementsAssignment_5_1
+            {
+            pushFollow(FOLLOW_rule__Abstract__ImplementsAssignment_5_1_in_rule__Abstract__Group_5__1__Impl3935);
+            rule__Abstract__ImplementsAssignment_5_1();
+
+            state._fsp--;
+
+
+            }
+
+             after(grammarAccess.getAbstractAccess().getImplementsAssignment_5_1()); 
+
+            }
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__Abstract__Group_5__1__Impl"
+
+
     // $ANTLR start "rule__BiRelation__Group__0"
-    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1894:1: rule__BiRelation__Group__0 : rule__BiRelation__Group__0__Impl rule__BiRelation__Group__1 ;
+    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1957:1: rule__BiRelation__Group__0 : rule__BiRelation__Group__0__Impl rule__BiRelation__Group__1 ;
     public final void rule__BiRelation__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1898:1: ( rule__BiRelation__Group__0__Impl rule__BiRelation__Group__1 )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1899:2: rule__BiRelation__Group__0__Impl rule__BiRelation__Group__1
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1961:1: ( rule__BiRelation__Group__0__Impl rule__BiRelation__Group__1 )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1962:2: rule__BiRelation__Group__0__Impl rule__BiRelation__Group__1
             {
-            pushFollow(FOLLOW_rule__BiRelation__Group__0__Impl_in_rule__BiRelation__Group__03848);
+            pushFollow(FOLLOW_rule__BiRelation__Group__0__Impl_in_rule__BiRelation__Group__03969);
             rule__BiRelation__Group__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__BiRelation__Group__1_in_rule__BiRelation__Group__03851);
+            pushFollow(FOLLOW_rule__BiRelation__Group__1_in_rule__BiRelation__Group__03972);
             rule__BiRelation__Group__1();
 
             state._fsp--;
@@ -5475,20 +5623,20 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
 
 
     // $ANTLR start "rule__BiRelation__Group__0__Impl"
-    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1906:1: rule__BiRelation__Group__0__Impl : ( '[' ) ;
+    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1969:1: rule__BiRelation__Group__0__Impl : ( '[' ) ;
     public final void rule__BiRelation__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1910:1: ( ( '[' ) )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1911:1: ( '[' )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1973:1: ( ( '[' ) )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1974:1: ( '[' )
             {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1911:1: ( '[' )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1912:1: '['
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1974:1: ( '[' )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1975:1: '['
             {
              before(grammarAccess.getBiRelationAccess().getLeftSquareBracketKeyword_0()); 
-            match(input,26,FOLLOW_26_in_rule__BiRelation__Group__0__Impl3879); 
+            match(input,26,FOLLOW_26_in_rule__BiRelation__Group__0__Impl4000); 
              after(grammarAccess.getBiRelationAccess().getLeftSquareBracketKeyword_0()); 
 
             }
@@ -5512,21 +5660,21 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
 
 
     // $ANTLR start "rule__BiRelation__Group__1"
-    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1925:1: rule__BiRelation__Group__1 : rule__BiRelation__Group__1__Impl rule__BiRelation__Group__2 ;
+    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1988:1: rule__BiRelation__Group__1 : rule__BiRelation__Group__1__Impl rule__BiRelation__Group__2 ;
     public final void rule__BiRelation__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1929:1: ( rule__BiRelation__Group__1__Impl rule__BiRelation__Group__2 )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1930:2: rule__BiRelation__Group__1__Impl rule__BiRelation__Group__2
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1992:1: ( rule__BiRelation__Group__1__Impl rule__BiRelation__Group__2 )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1993:2: rule__BiRelation__Group__1__Impl rule__BiRelation__Group__2
             {
-            pushFollow(FOLLOW_rule__BiRelation__Group__1__Impl_in_rule__BiRelation__Group__13910);
+            pushFollow(FOLLOW_rule__BiRelation__Group__1__Impl_in_rule__BiRelation__Group__14031);
             rule__BiRelation__Group__1__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__BiRelation__Group__2_in_rule__BiRelation__Group__13913);
+            pushFollow(FOLLOW_rule__BiRelation__Group__2_in_rule__BiRelation__Group__14034);
             rule__BiRelation__Group__2();
 
             state._fsp--;
@@ -5550,31 +5698,31 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
 
 
     // $ANTLR start "rule__BiRelation__Group__1__Impl"
-    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1937:1: rule__BiRelation__Group__1__Impl : ( ( rule__BiRelation__Alternatives_1 )? ) ;
+    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2000:1: rule__BiRelation__Group__1__Impl : ( ( rule__BiRelation__Alternatives_1 )? ) ;
     public final void rule__BiRelation__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1941:1: ( ( ( rule__BiRelation__Alternatives_1 )? ) )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1942:1: ( ( rule__BiRelation__Alternatives_1 )? )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2004:1: ( ( ( rule__BiRelation__Alternatives_1 )? ) )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2005:1: ( ( rule__BiRelation__Alternatives_1 )? )
             {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1942:1: ( ( rule__BiRelation__Alternatives_1 )? )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1943:1: ( rule__BiRelation__Alternatives_1 )?
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2005:1: ( ( rule__BiRelation__Alternatives_1 )? )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2006:1: ( rule__BiRelation__Alternatives_1 )?
             {
              before(grammarAccess.getBiRelationAccess().getAlternatives_1()); 
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1944:1: ( rule__BiRelation__Alternatives_1 )?
-            int alt27=2;
-            int LA27_0 = input.LA(1);
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2007:1: ( rule__BiRelation__Alternatives_1 )?
+            int alt26=2;
+            int LA26_0 = input.LA(1);
 
-            if ( (LA27_0==RULE_NUMBER||LA27_0==12) ) {
-                alt27=1;
+            if ( (LA26_0==RULE_NUMBER||LA26_0==12) ) {
+                alt26=1;
             }
-            switch (alt27) {
+            switch (alt26) {
                 case 1 :
-                    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1944:2: rule__BiRelation__Alternatives_1
+                    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2007:2: rule__BiRelation__Alternatives_1
                     {
-                    pushFollow(FOLLOW_rule__BiRelation__Alternatives_1_in_rule__BiRelation__Group__1__Impl3940);
+                    pushFollow(FOLLOW_rule__BiRelation__Alternatives_1_in_rule__BiRelation__Group__1__Impl4061);
                     rule__BiRelation__Alternatives_1();
 
                     state._fsp--;
@@ -5608,21 +5756,21 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
 
 
     // $ANTLR start "rule__BiRelation__Group__2"
-    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1954:1: rule__BiRelation__Group__2 : rule__BiRelation__Group__2__Impl rule__BiRelation__Group__3 ;
+    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2017:1: rule__BiRelation__Group__2 : rule__BiRelation__Group__2__Impl rule__BiRelation__Group__3 ;
     public final void rule__BiRelation__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1958:1: ( rule__BiRelation__Group__2__Impl rule__BiRelation__Group__3 )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1959:2: rule__BiRelation__Group__2__Impl rule__BiRelation__Group__3
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2021:1: ( rule__BiRelation__Group__2__Impl rule__BiRelation__Group__3 )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2022:2: rule__BiRelation__Group__2__Impl rule__BiRelation__Group__3
             {
-            pushFollow(FOLLOW_rule__BiRelation__Group__2__Impl_in_rule__BiRelation__Group__23971);
+            pushFollow(FOLLOW_rule__BiRelation__Group__2__Impl_in_rule__BiRelation__Group__24092);
             rule__BiRelation__Group__2__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__BiRelation__Group__3_in_rule__BiRelation__Group__23974);
+            pushFollow(FOLLOW_rule__BiRelation__Group__3_in_rule__BiRelation__Group__24095);
             rule__BiRelation__Group__3();
 
             state._fsp--;
@@ -5646,20 +5794,20 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
 
 
     // $ANTLR start "rule__BiRelation__Group__2__Impl"
-    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1966:1: rule__BiRelation__Group__2__Impl : ( ']' ) ;
+    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2029:1: rule__BiRelation__Group__2__Impl : ( ']' ) ;
     public final void rule__BiRelation__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1970:1: ( ( ']' ) )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1971:1: ( ']' )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2033:1: ( ( ']' ) )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2034:1: ( ']' )
             {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1971:1: ( ']' )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1972:1: ']'
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2034:1: ( ']' )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2035:1: ']'
             {
              before(grammarAccess.getBiRelationAccess().getRightSquareBracketKeyword_2()); 
-            match(input,27,FOLLOW_27_in_rule__BiRelation__Group__2__Impl4002); 
+            match(input,27,FOLLOW_27_in_rule__BiRelation__Group__2__Impl4123); 
              after(grammarAccess.getBiRelationAccess().getRightSquareBracketKeyword_2()); 
 
             }
@@ -5683,21 +5831,21 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
 
 
     // $ANTLR start "rule__BiRelation__Group__3"
-    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1985:1: rule__BiRelation__Group__3 : rule__BiRelation__Group__3__Impl rule__BiRelation__Group__4 ;
+    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2048:1: rule__BiRelation__Group__3 : rule__BiRelation__Group__3__Impl rule__BiRelation__Group__4 ;
     public final void rule__BiRelation__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1989:1: ( rule__BiRelation__Group__3__Impl rule__BiRelation__Group__4 )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1990:2: rule__BiRelation__Group__3__Impl rule__BiRelation__Group__4
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2052:1: ( rule__BiRelation__Group__3__Impl rule__BiRelation__Group__4 )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2053:2: rule__BiRelation__Group__3__Impl rule__BiRelation__Group__4
             {
-            pushFollow(FOLLOW_rule__BiRelation__Group__3__Impl_in_rule__BiRelation__Group__34033);
+            pushFollow(FOLLOW_rule__BiRelation__Group__3__Impl_in_rule__BiRelation__Group__34154);
             rule__BiRelation__Group__3__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__BiRelation__Group__4_in_rule__BiRelation__Group__34036);
+            pushFollow(FOLLOW_rule__BiRelation__Group__4_in_rule__BiRelation__Group__34157);
             rule__BiRelation__Group__4();
 
             state._fsp--;
@@ -5721,20 +5869,20 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
 
 
     // $ANTLR start "rule__BiRelation__Group__3__Impl"
-    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:1997:1: rule__BiRelation__Group__3__Impl : ( '-' ) ;
+    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2060:1: rule__BiRelation__Group__3__Impl : ( '-' ) ;
     public final void rule__BiRelation__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2001:1: ( ( '-' ) )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2002:1: ( '-' )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2064:1: ( ( '-' ) )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2065:1: ( '-' )
             {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2002:1: ( '-' )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2003:1: '-'
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2065:1: ( '-' )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2066:1: '-'
             {
              before(grammarAccess.getBiRelationAccess().getHyphenMinusKeyword_3()); 
-            match(input,16,FOLLOW_16_in_rule__BiRelation__Group__3__Impl4064); 
+            match(input,16,FOLLOW_16_in_rule__BiRelation__Group__3__Impl4185); 
              after(grammarAccess.getBiRelationAccess().getHyphenMinusKeyword_3()); 
 
             }
@@ -5758,21 +5906,21 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
 
 
     // $ANTLR start "rule__BiRelation__Group__4"
-    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2016:1: rule__BiRelation__Group__4 : rule__BiRelation__Group__4__Impl rule__BiRelation__Group__5 ;
+    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2079:1: rule__BiRelation__Group__4 : rule__BiRelation__Group__4__Impl rule__BiRelation__Group__5 ;
     public final void rule__BiRelation__Group__4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2020:1: ( rule__BiRelation__Group__4__Impl rule__BiRelation__Group__5 )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2021:2: rule__BiRelation__Group__4__Impl rule__BiRelation__Group__5
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2083:1: ( rule__BiRelation__Group__4__Impl rule__BiRelation__Group__5 )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2084:2: rule__BiRelation__Group__4__Impl rule__BiRelation__Group__5
             {
-            pushFollow(FOLLOW_rule__BiRelation__Group__4__Impl_in_rule__BiRelation__Group__44095);
+            pushFollow(FOLLOW_rule__BiRelation__Group__4__Impl_in_rule__BiRelation__Group__44216);
             rule__BiRelation__Group__4__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__BiRelation__Group__5_in_rule__BiRelation__Group__44098);
+            pushFollow(FOLLOW_rule__BiRelation__Group__5_in_rule__BiRelation__Group__44219);
             rule__BiRelation__Group__5();
 
             state._fsp--;
@@ -5796,23 +5944,23 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
 
 
     // $ANTLR start "rule__BiRelation__Group__4__Impl"
-    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2028:1: rule__BiRelation__Group__4__Impl : ( ( rule__BiRelation__LinkNameAssignment_4 ) ) ;
+    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2091:1: rule__BiRelation__Group__4__Impl : ( ( rule__BiRelation__LinkNameAssignment_4 ) ) ;
     public final void rule__BiRelation__Group__4__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2032:1: ( ( ( rule__BiRelation__LinkNameAssignment_4 ) ) )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2033:1: ( ( rule__BiRelation__LinkNameAssignment_4 ) )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2095:1: ( ( ( rule__BiRelation__LinkNameAssignment_4 ) ) )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2096:1: ( ( rule__BiRelation__LinkNameAssignment_4 ) )
             {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2033:1: ( ( rule__BiRelation__LinkNameAssignment_4 ) )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2034:1: ( rule__BiRelation__LinkNameAssignment_4 )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2096:1: ( ( rule__BiRelation__LinkNameAssignment_4 ) )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2097:1: ( rule__BiRelation__LinkNameAssignment_4 )
             {
              before(grammarAccess.getBiRelationAccess().getLinkNameAssignment_4()); 
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2035:1: ( rule__BiRelation__LinkNameAssignment_4 )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2035:2: rule__BiRelation__LinkNameAssignment_4
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2098:1: ( rule__BiRelation__LinkNameAssignment_4 )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2098:2: rule__BiRelation__LinkNameAssignment_4
             {
-            pushFollow(FOLLOW_rule__BiRelation__LinkNameAssignment_4_in_rule__BiRelation__Group__4__Impl4125);
+            pushFollow(FOLLOW_rule__BiRelation__LinkNameAssignment_4_in_rule__BiRelation__Group__4__Impl4246);
             rule__BiRelation__LinkNameAssignment_4();
 
             state._fsp--;
@@ -5843,21 +5991,21 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
 
 
     // $ANTLR start "rule__BiRelation__Group__5"
-    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2045:1: rule__BiRelation__Group__5 : rule__BiRelation__Group__5__Impl rule__BiRelation__Group__6 ;
+    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2108:1: rule__BiRelation__Group__5 : rule__BiRelation__Group__5__Impl rule__BiRelation__Group__6 ;
     public final void rule__BiRelation__Group__5() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2049:1: ( rule__BiRelation__Group__5__Impl rule__BiRelation__Group__6 )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2050:2: rule__BiRelation__Group__5__Impl rule__BiRelation__Group__6
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2112:1: ( rule__BiRelation__Group__5__Impl rule__BiRelation__Group__6 )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2113:2: rule__BiRelation__Group__5__Impl rule__BiRelation__Group__6
             {
-            pushFollow(FOLLOW_rule__BiRelation__Group__5__Impl_in_rule__BiRelation__Group__54155);
+            pushFollow(FOLLOW_rule__BiRelation__Group__5__Impl_in_rule__BiRelation__Group__54276);
             rule__BiRelation__Group__5__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__BiRelation__Group__6_in_rule__BiRelation__Group__54158);
+            pushFollow(FOLLOW_rule__BiRelation__Group__6_in_rule__BiRelation__Group__54279);
             rule__BiRelation__Group__6();
 
             state._fsp--;
@@ -5881,20 +6029,20 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
 
 
     // $ANTLR start "rule__BiRelation__Group__5__Impl"
-    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2057:1: rule__BiRelation__Group__5__Impl : ( '->' ) ;
+    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2120:1: rule__BiRelation__Group__5__Impl : ( '->' ) ;
     public final void rule__BiRelation__Group__5__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2061:1: ( ( '->' ) )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2062:1: ( '->' )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2124:1: ( ( '->' ) )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2125:1: ( '->' )
             {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2062:1: ( '->' )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2063:1: '->'
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2125:1: ( '->' )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2126:1: '->'
             {
              before(grammarAccess.getBiRelationAccess().getHyphenMinusGreaterThanSignKeyword_5()); 
-            match(input,22,FOLLOW_22_in_rule__BiRelation__Group__5__Impl4186); 
+            match(input,22,FOLLOW_22_in_rule__BiRelation__Group__5__Impl4307); 
              after(grammarAccess.getBiRelationAccess().getHyphenMinusGreaterThanSignKeyword_5()); 
 
             }
@@ -5918,21 +6066,21 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
 
 
     // $ANTLR start "rule__BiRelation__Group__6"
-    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2076:1: rule__BiRelation__Group__6 : rule__BiRelation__Group__6__Impl rule__BiRelation__Group__7 ;
+    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2139:1: rule__BiRelation__Group__6 : rule__BiRelation__Group__6__Impl rule__BiRelation__Group__7 ;
     public final void rule__BiRelation__Group__6() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2080:1: ( rule__BiRelation__Group__6__Impl rule__BiRelation__Group__7 )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2081:2: rule__BiRelation__Group__6__Impl rule__BiRelation__Group__7
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2143:1: ( rule__BiRelation__Group__6__Impl rule__BiRelation__Group__7 )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2144:2: rule__BiRelation__Group__6__Impl rule__BiRelation__Group__7
             {
-            pushFollow(FOLLOW_rule__BiRelation__Group__6__Impl_in_rule__BiRelation__Group__64217);
+            pushFollow(FOLLOW_rule__BiRelation__Group__6__Impl_in_rule__BiRelation__Group__64338);
             rule__BiRelation__Group__6__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__BiRelation__Group__7_in_rule__BiRelation__Group__64220);
+            pushFollow(FOLLOW_rule__BiRelation__Group__7_in_rule__BiRelation__Group__64341);
             rule__BiRelation__Group__7();
 
             state._fsp--;
@@ -5956,20 +6104,20 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
 
 
     // $ANTLR start "rule__BiRelation__Group__6__Impl"
-    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2088:1: rule__BiRelation__Group__6__Impl : ( '[' ) ;
+    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2151:1: rule__BiRelation__Group__6__Impl : ( '[' ) ;
     public final void rule__BiRelation__Group__6__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2092:1: ( ( '[' ) )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2093:1: ( '[' )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2155:1: ( ( '[' ) )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2156:1: ( '[' )
             {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2093:1: ( '[' )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2094:1: '['
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2156:1: ( '[' )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2157:1: '['
             {
              before(grammarAccess.getBiRelationAccess().getLeftSquareBracketKeyword_6()); 
-            match(input,26,FOLLOW_26_in_rule__BiRelation__Group__6__Impl4248); 
+            match(input,26,FOLLOW_26_in_rule__BiRelation__Group__6__Impl4369); 
              after(grammarAccess.getBiRelationAccess().getLeftSquareBracketKeyword_6()); 
 
             }
@@ -5993,21 +6141,21 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
 
 
     // $ANTLR start "rule__BiRelation__Group__7"
-    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2107:1: rule__BiRelation__Group__7 : rule__BiRelation__Group__7__Impl rule__BiRelation__Group__8 ;
+    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2170:1: rule__BiRelation__Group__7 : rule__BiRelation__Group__7__Impl rule__BiRelation__Group__8 ;
     public final void rule__BiRelation__Group__7() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2111:1: ( rule__BiRelation__Group__7__Impl rule__BiRelation__Group__8 )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2112:2: rule__BiRelation__Group__7__Impl rule__BiRelation__Group__8
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2174:1: ( rule__BiRelation__Group__7__Impl rule__BiRelation__Group__8 )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2175:2: rule__BiRelation__Group__7__Impl rule__BiRelation__Group__8
             {
-            pushFollow(FOLLOW_rule__BiRelation__Group__7__Impl_in_rule__BiRelation__Group__74279);
+            pushFollow(FOLLOW_rule__BiRelation__Group__7__Impl_in_rule__BiRelation__Group__74400);
             rule__BiRelation__Group__7__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__BiRelation__Group__8_in_rule__BiRelation__Group__74282);
+            pushFollow(FOLLOW_rule__BiRelation__Group__8_in_rule__BiRelation__Group__74403);
             rule__BiRelation__Group__8();
 
             state._fsp--;
@@ -6031,31 +6179,31 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
 
 
     // $ANTLR start "rule__BiRelation__Group__7__Impl"
-    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2119:1: rule__BiRelation__Group__7__Impl : ( ( rule__BiRelation__Alternatives_7 )? ) ;
+    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2182:1: rule__BiRelation__Group__7__Impl : ( ( rule__BiRelation__Alternatives_7 )? ) ;
     public final void rule__BiRelation__Group__7__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2123:1: ( ( ( rule__BiRelation__Alternatives_7 )? ) )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2124:1: ( ( rule__BiRelation__Alternatives_7 )? )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2186:1: ( ( ( rule__BiRelation__Alternatives_7 )? ) )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2187:1: ( ( rule__BiRelation__Alternatives_7 )? )
             {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2124:1: ( ( rule__BiRelation__Alternatives_7 )? )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2125:1: ( rule__BiRelation__Alternatives_7 )?
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2187:1: ( ( rule__BiRelation__Alternatives_7 )? )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2188:1: ( rule__BiRelation__Alternatives_7 )?
             {
              before(grammarAccess.getBiRelationAccess().getAlternatives_7()); 
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2126:1: ( rule__BiRelation__Alternatives_7 )?
-            int alt28=2;
-            int LA28_0 = input.LA(1);
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2189:1: ( rule__BiRelation__Alternatives_7 )?
+            int alt27=2;
+            int LA27_0 = input.LA(1);
 
-            if ( (LA28_0==RULE_NUMBER||LA28_0==12) ) {
-                alt28=1;
+            if ( (LA27_0==RULE_NUMBER||LA27_0==12) ) {
+                alt27=1;
             }
-            switch (alt28) {
+            switch (alt27) {
                 case 1 :
-                    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2126:2: rule__BiRelation__Alternatives_7
+                    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2189:2: rule__BiRelation__Alternatives_7
                     {
-                    pushFollow(FOLLOW_rule__BiRelation__Alternatives_7_in_rule__BiRelation__Group__7__Impl4309);
+                    pushFollow(FOLLOW_rule__BiRelation__Alternatives_7_in_rule__BiRelation__Group__7__Impl4430);
                     rule__BiRelation__Alternatives_7();
 
                     state._fsp--;
@@ -6089,16 +6237,16 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
 
 
     // $ANTLR start "rule__BiRelation__Group__8"
-    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2136:1: rule__BiRelation__Group__8 : rule__BiRelation__Group__8__Impl ;
+    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2199:1: rule__BiRelation__Group__8 : rule__BiRelation__Group__8__Impl ;
     public final void rule__BiRelation__Group__8() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2140:1: ( rule__BiRelation__Group__8__Impl )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2141:2: rule__BiRelation__Group__8__Impl
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2203:1: ( rule__BiRelation__Group__8__Impl )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2204:2: rule__BiRelation__Group__8__Impl
             {
-            pushFollow(FOLLOW_rule__BiRelation__Group__8__Impl_in_rule__BiRelation__Group__84340);
+            pushFollow(FOLLOW_rule__BiRelation__Group__8__Impl_in_rule__BiRelation__Group__84461);
             rule__BiRelation__Group__8__Impl();
 
             state._fsp--;
@@ -6122,20 +6270,20 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
 
 
     // $ANTLR start "rule__BiRelation__Group__8__Impl"
-    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2147:1: rule__BiRelation__Group__8__Impl : ( ']' ) ;
+    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2210:1: rule__BiRelation__Group__8__Impl : ( ']' ) ;
     public final void rule__BiRelation__Group__8__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2151:1: ( ( ']' ) )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2152:1: ( ']' )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2214:1: ( ( ']' ) )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2215:1: ( ']' )
             {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2152:1: ( ']' )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2153:1: ']'
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2215:1: ( ']' )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2216:1: ']'
             {
              before(grammarAccess.getBiRelationAccess().getRightSquareBracketKeyword_8()); 
-            match(input,27,FOLLOW_27_in_rule__BiRelation__Group__8__Impl4368); 
+            match(input,27,FOLLOW_27_in_rule__BiRelation__Group__8__Impl4489); 
              after(grammarAccess.getBiRelationAccess().getRightSquareBracketKeyword_8()); 
 
             }
@@ -6159,21 +6307,21 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
 
 
     // $ANTLR start "rule__BiRelation__Group_1_0__0"
-    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2184:1: rule__BiRelation__Group_1_0__0 : rule__BiRelation__Group_1_0__0__Impl rule__BiRelation__Group_1_0__1 ;
+    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2247:1: rule__BiRelation__Group_1_0__0 : rule__BiRelation__Group_1_0__0__Impl rule__BiRelation__Group_1_0__1 ;
     public final void rule__BiRelation__Group_1_0__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2188:1: ( rule__BiRelation__Group_1_0__0__Impl rule__BiRelation__Group_1_0__1 )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2189:2: rule__BiRelation__Group_1_0__0__Impl rule__BiRelation__Group_1_0__1
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2251:1: ( rule__BiRelation__Group_1_0__0__Impl rule__BiRelation__Group_1_0__1 )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2252:2: rule__BiRelation__Group_1_0__0__Impl rule__BiRelation__Group_1_0__1
             {
-            pushFollow(FOLLOW_rule__BiRelation__Group_1_0__0__Impl_in_rule__BiRelation__Group_1_0__04417);
+            pushFollow(FOLLOW_rule__BiRelation__Group_1_0__0__Impl_in_rule__BiRelation__Group_1_0__04538);
             rule__BiRelation__Group_1_0__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__BiRelation__Group_1_0__1_in_rule__BiRelation__Group_1_0__04420);
+            pushFollow(FOLLOW_rule__BiRelation__Group_1_0__1_in_rule__BiRelation__Group_1_0__04541);
             rule__BiRelation__Group_1_0__1();
 
             state._fsp--;
@@ -6197,26 +6345,26 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
 
 
     // $ANTLR start "rule__BiRelation__Group_1_0__0__Impl"
-    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2196:1: rule__BiRelation__Group_1_0__0__Impl : ( ( ( RULE_NUMBER ) ) ( ( RULE_NUMBER )* ) ) ;
+    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2259:1: rule__BiRelation__Group_1_0__0__Impl : ( ( ( RULE_NUMBER ) ) ( ( RULE_NUMBER )* ) ) ;
     public final void rule__BiRelation__Group_1_0__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2200:1: ( ( ( ( RULE_NUMBER ) ) ( ( RULE_NUMBER )* ) ) )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2201:1: ( ( ( RULE_NUMBER ) ) ( ( RULE_NUMBER )* ) )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2263:1: ( ( ( ( RULE_NUMBER ) ) ( ( RULE_NUMBER )* ) ) )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2264:1: ( ( ( RULE_NUMBER ) ) ( ( RULE_NUMBER )* ) )
             {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2201:1: ( ( ( RULE_NUMBER ) ) ( ( RULE_NUMBER )* ) )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2202:1: ( ( RULE_NUMBER ) ) ( ( RULE_NUMBER )* )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2264:1: ( ( ( RULE_NUMBER ) ) ( ( RULE_NUMBER )* ) )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2265:1: ( ( RULE_NUMBER ) ) ( ( RULE_NUMBER )* )
             {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2202:1: ( ( RULE_NUMBER ) )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2203:1: ( RULE_NUMBER )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2265:1: ( ( RULE_NUMBER ) )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2266:1: ( RULE_NUMBER )
             {
              before(grammarAccess.getBiRelationAccess().getNumberTerminalRuleCall_1_0_0()); 
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2204:1: ( RULE_NUMBER )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2204:3: RULE_NUMBER
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2267:1: ( RULE_NUMBER )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2267:3: RULE_NUMBER
             {
-            match(input,RULE_NUMBER,FOLLOW_RULE_NUMBER_in_rule__BiRelation__Group_1_0__0__Impl4450); 
+            match(input,RULE_NUMBER,FOLLOW_RULE_NUMBER_in_rule__BiRelation__Group_1_0__0__Impl4571); 
 
             }
 
@@ -6224,32 +6372,32 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
 
             }
 
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2207:1: ( ( RULE_NUMBER )* )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2208:1: ( RULE_NUMBER )*
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2270:1: ( ( RULE_NUMBER )* )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2271:1: ( RULE_NUMBER )*
             {
              before(grammarAccess.getBiRelationAccess().getNumberTerminalRuleCall_1_0_0()); 
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2209:1: ( RULE_NUMBER )*
-            loop29:
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2272:1: ( RULE_NUMBER )*
+            loop28:
             do {
-                int alt29=2;
-                int LA29_0 = input.LA(1);
+                int alt28=2;
+                int LA28_0 = input.LA(1);
 
-                if ( (LA29_0==RULE_NUMBER) ) {
-                    alt29=1;
+                if ( (LA28_0==RULE_NUMBER) ) {
+                    alt28=1;
                 }
 
 
-                switch (alt29) {
+                switch (alt28) {
             	case 1 :
-            	    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2209:3: RULE_NUMBER
+            	    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2272:3: RULE_NUMBER
             	    {
-            	    match(input,RULE_NUMBER,FOLLOW_RULE_NUMBER_in_rule__BiRelation__Group_1_0__0__Impl4463); 
+            	    match(input,RULE_NUMBER,FOLLOW_RULE_NUMBER_in_rule__BiRelation__Group_1_0__0__Impl4584); 
 
             	    }
             	    break;
 
             	default :
-            	    break loop29;
+            	    break loop28;
                 }
             } while (true);
 
@@ -6279,16 +6427,16 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
 
 
     // $ANTLR start "rule__BiRelation__Group_1_0__1"
-    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2220:1: rule__BiRelation__Group_1_0__1 : rule__BiRelation__Group_1_0__1__Impl ;
+    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2283:1: rule__BiRelation__Group_1_0__1 : rule__BiRelation__Group_1_0__1__Impl ;
     public final void rule__BiRelation__Group_1_0__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2224:1: ( rule__BiRelation__Group_1_0__1__Impl )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2225:2: rule__BiRelation__Group_1_0__1__Impl
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2287:1: ( rule__BiRelation__Group_1_0__1__Impl )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2288:2: rule__BiRelation__Group_1_0__1__Impl
             {
-            pushFollow(FOLLOW_rule__BiRelation__Group_1_0__1__Impl_in_rule__BiRelation__Group_1_0__14496);
+            pushFollow(FOLLOW_rule__BiRelation__Group_1_0__1__Impl_in_rule__BiRelation__Group_1_0__14617);
             rule__BiRelation__Group_1_0__1__Impl();
 
             state._fsp--;
@@ -6312,23 +6460,23 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
 
 
     // $ANTLR start "rule__BiRelation__Group_1_0__1__Impl"
-    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2231:1: rule__BiRelation__Group_1_0__1__Impl : ( ( rule__BiRelation__Group_1_0_1__0 ) ) ;
+    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2294:1: rule__BiRelation__Group_1_0__1__Impl : ( ( rule__BiRelation__Group_1_0_1__0 ) ) ;
     public final void rule__BiRelation__Group_1_0__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2235:1: ( ( ( rule__BiRelation__Group_1_0_1__0 ) ) )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2236:1: ( ( rule__BiRelation__Group_1_0_1__0 ) )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2298:1: ( ( ( rule__BiRelation__Group_1_0_1__0 ) ) )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2299:1: ( ( rule__BiRelation__Group_1_0_1__0 ) )
             {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2236:1: ( ( rule__BiRelation__Group_1_0_1__0 ) )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2237:1: ( rule__BiRelation__Group_1_0_1__0 )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2299:1: ( ( rule__BiRelation__Group_1_0_1__0 ) )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2300:1: ( rule__BiRelation__Group_1_0_1__0 )
             {
              before(grammarAccess.getBiRelationAccess().getGroup_1_0_1()); 
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2238:1: ( rule__BiRelation__Group_1_0_1__0 )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2238:2: rule__BiRelation__Group_1_0_1__0
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2301:1: ( rule__BiRelation__Group_1_0_1__0 )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2301:2: rule__BiRelation__Group_1_0_1__0
             {
-            pushFollow(FOLLOW_rule__BiRelation__Group_1_0_1__0_in_rule__BiRelation__Group_1_0__1__Impl4523);
+            pushFollow(FOLLOW_rule__BiRelation__Group_1_0_1__0_in_rule__BiRelation__Group_1_0__1__Impl4644);
             rule__BiRelation__Group_1_0_1__0();
 
             state._fsp--;
@@ -6359,21 +6507,21 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
 
 
     // $ANTLR start "rule__BiRelation__Group_1_0_1__0"
-    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2252:1: rule__BiRelation__Group_1_0_1__0 : rule__BiRelation__Group_1_0_1__0__Impl rule__BiRelation__Group_1_0_1__1 ;
+    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2315:1: rule__BiRelation__Group_1_0_1__0 : rule__BiRelation__Group_1_0_1__0__Impl rule__BiRelation__Group_1_0_1__1 ;
     public final void rule__BiRelation__Group_1_0_1__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2256:1: ( rule__BiRelation__Group_1_0_1__0__Impl rule__BiRelation__Group_1_0_1__1 )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2257:2: rule__BiRelation__Group_1_0_1__0__Impl rule__BiRelation__Group_1_0_1__1
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2319:1: ( rule__BiRelation__Group_1_0_1__0__Impl rule__BiRelation__Group_1_0_1__1 )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2320:2: rule__BiRelation__Group_1_0_1__0__Impl rule__BiRelation__Group_1_0_1__1
             {
-            pushFollow(FOLLOW_rule__BiRelation__Group_1_0_1__0__Impl_in_rule__BiRelation__Group_1_0_1__04557);
+            pushFollow(FOLLOW_rule__BiRelation__Group_1_0_1__0__Impl_in_rule__BiRelation__Group_1_0_1__04678);
             rule__BiRelation__Group_1_0_1__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__BiRelation__Group_1_0_1__1_in_rule__BiRelation__Group_1_0_1__04560);
+            pushFollow(FOLLOW_rule__BiRelation__Group_1_0_1__1_in_rule__BiRelation__Group_1_0_1__04681);
             rule__BiRelation__Group_1_0_1__1();
 
             state._fsp--;
@@ -6397,20 +6545,20 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
 
 
     // $ANTLR start "rule__BiRelation__Group_1_0_1__0__Impl"
-    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2264:1: rule__BiRelation__Group_1_0_1__0__Impl : ( '..' ) ;
+    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2327:1: rule__BiRelation__Group_1_0_1__0__Impl : ( '..' ) ;
     public final void rule__BiRelation__Group_1_0_1__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2268:1: ( ( '..' ) )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2269:1: ( '..' )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2331:1: ( ( '..' ) )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2332:1: ( '..' )
             {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2269:1: ( '..' )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2270:1: '..'
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2332:1: ( '..' )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2333:1: '..'
             {
              before(grammarAccess.getBiRelationAccess().getFullStopFullStopKeyword_1_0_1_0()); 
-            match(input,28,FOLLOW_28_in_rule__BiRelation__Group_1_0_1__0__Impl4588); 
+            match(input,28,FOLLOW_28_in_rule__BiRelation__Group_1_0_1__0__Impl4709); 
              after(grammarAccess.getBiRelationAccess().getFullStopFullStopKeyword_1_0_1_0()); 
 
             }
@@ -6434,16 +6582,16 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
 
 
     // $ANTLR start "rule__BiRelation__Group_1_0_1__1"
-    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2283:1: rule__BiRelation__Group_1_0_1__1 : rule__BiRelation__Group_1_0_1__1__Impl ;
+    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2346:1: rule__BiRelation__Group_1_0_1__1 : rule__BiRelation__Group_1_0_1__1__Impl ;
     public final void rule__BiRelation__Group_1_0_1__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2287:1: ( rule__BiRelation__Group_1_0_1__1__Impl )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2288:2: rule__BiRelation__Group_1_0_1__1__Impl
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2350:1: ( rule__BiRelation__Group_1_0_1__1__Impl )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2351:2: rule__BiRelation__Group_1_0_1__1__Impl
             {
-            pushFollow(FOLLOW_rule__BiRelation__Group_1_0_1__1__Impl_in_rule__BiRelation__Group_1_0_1__14619);
+            pushFollow(FOLLOW_rule__BiRelation__Group_1_0_1__1__Impl_in_rule__BiRelation__Group_1_0_1__14740);
             rule__BiRelation__Group_1_0_1__1__Impl();
 
             state._fsp--;
@@ -6467,23 +6615,23 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
 
 
     // $ANTLR start "rule__BiRelation__Group_1_0_1__1__Impl"
-    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2294:1: rule__BiRelation__Group_1_0_1__1__Impl : ( ( rule__BiRelation__Alternatives_1_0_1_1 ) ) ;
+    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2357:1: rule__BiRelation__Group_1_0_1__1__Impl : ( ( rule__BiRelation__Alternatives_1_0_1_1 ) ) ;
     public final void rule__BiRelation__Group_1_0_1__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2298:1: ( ( ( rule__BiRelation__Alternatives_1_0_1_1 ) ) )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2299:1: ( ( rule__BiRelation__Alternatives_1_0_1_1 ) )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2361:1: ( ( ( rule__BiRelation__Alternatives_1_0_1_1 ) ) )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2362:1: ( ( rule__BiRelation__Alternatives_1_0_1_1 ) )
             {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2299:1: ( ( rule__BiRelation__Alternatives_1_0_1_1 ) )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2300:1: ( rule__BiRelation__Alternatives_1_0_1_1 )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2362:1: ( ( rule__BiRelation__Alternatives_1_0_1_1 ) )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2363:1: ( rule__BiRelation__Alternatives_1_0_1_1 )
             {
              before(grammarAccess.getBiRelationAccess().getAlternatives_1_0_1_1()); 
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2301:1: ( rule__BiRelation__Alternatives_1_0_1_1 )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2301:2: rule__BiRelation__Alternatives_1_0_1_1
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2364:1: ( rule__BiRelation__Alternatives_1_0_1_1 )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2364:2: rule__BiRelation__Alternatives_1_0_1_1
             {
-            pushFollow(FOLLOW_rule__BiRelation__Alternatives_1_0_1_1_in_rule__BiRelation__Group_1_0_1__1__Impl4646);
+            pushFollow(FOLLOW_rule__BiRelation__Alternatives_1_0_1_1_in_rule__BiRelation__Group_1_0_1__1__Impl4767);
             rule__BiRelation__Alternatives_1_0_1_1();
 
             state._fsp--;
@@ -6514,21 +6662,21 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
 
 
     // $ANTLR start "rule__BiRelation__Group_7_0__0"
-    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2315:1: rule__BiRelation__Group_7_0__0 : rule__BiRelation__Group_7_0__0__Impl rule__BiRelation__Group_7_0__1 ;
+    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2378:1: rule__BiRelation__Group_7_0__0 : rule__BiRelation__Group_7_0__0__Impl rule__BiRelation__Group_7_0__1 ;
     public final void rule__BiRelation__Group_7_0__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2319:1: ( rule__BiRelation__Group_7_0__0__Impl rule__BiRelation__Group_7_0__1 )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2320:2: rule__BiRelation__Group_7_0__0__Impl rule__BiRelation__Group_7_0__1
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2382:1: ( rule__BiRelation__Group_7_0__0__Impl rule__BiRelation__Group_7_0__1 )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2383:2: rule__BiRelation__Group_7_0__0__Impl rule__BiRelation__Group_7_0__1
             {
-            pushFollow(FOLLOW_rule__BiRelation__Group_7_0__0__Impl_in_rule__BiRelation__Group_7_0__04680);
+            pushFollow(FOLLOW_rule__BiRelation__Group_7_0__0__Impl_in_rule__BiRelation__Group_7_0__04801);
             rule__BiRelation__Group_7_0__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__BiRelation__Group_7_0__1_in_rule__BiRelation__Group_7_0__04683);
+            pushFollow(FOLLOW_rule__BiRelation__Group_7_0__1_in_rule__BiRelation__Group_7_0__04804);
             rule__BiRelation__Group_7_0__1();
 
             state._fsp--;
@@ -6552,26 +6700,26 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
 
 
     // $ANTLR start "rule__BiRelation__Group_7_0__0__Impl"
-    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2327:1: rule__BiRelation__Group_7_0__0__Impl : ( ( ( RULE_NUMBER ) ) ( ( RULE_NUMBER )* ) ) ;
+    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2390:1: rule__BiRelation__Group_7_0__0__Impl : ( ( ( RULE_NUMBER ) ) ( ( RULE_NUMBER )* ) ) ;
     public final void rule__BiRelation__Group_7_0__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2331:1: ( ( ( ( RULE_NUMBER ) ) ( ( RULE_NUMBER )* ) ) )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2332:1: ( ( ( RULE_NUMBER ) ) ( ( RULE_NUMBER )* ) )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2394:1: ( ( ( ( RULE_NUMBER ) ) ( ( RULE_NUMBER )* ) ) )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2395:1: ( ( ( RULE_NUMBER ) ) ( ( RULE_NUMBER )* ) )
             {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2332:1: ( ( ( RULE_NUMBER ) ) ( ( RULE_NUMBER )* ) )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2333:1: ( ( RULE_NUMBER ) ) ( ( RULE_NUMBER )* )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2395:1: ( ( ( RULE_NUMBER ) ) ( ( RULE_NUMBER )* ) )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2396:1: ( ( RULE_NUMBER ) ) ( ( RULE_NUMBER )* )
             {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2333:1: ( ( RULE_NUMBER ) )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2334:1: ( RULE_NUMBER )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2396:1: ( ( RULE_NUMBER ) )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2397:1: ( RULE_NUMBER )
             {
              before(grammarAccess.getBiRelationAccess().getNumberTerminalRuleCall_7_0_0()); 
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2335:1: ( RULE_NUMBER )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2335:3: RULE_NUMBER
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2398:1: ( RULE_NUMBER )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2398:3: RULE_NUMBER
             {
-            match(input,RULE_NUMBER,FOLLOW_RULE_NUMBER_in_rule__BiRelation__Group_7_0__0__Impl4713); 
+            match(input,RULE_NUMBER,FOLLOW_RULE_NUMBER_in_rule__BiRelation__Group_7_0__0__Impl4834); 
 
             }
 
@@ -6579,32 +6727,32 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
 
             }
 
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2338:1: ( ( RULE_NUMBER )* )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2339:1: ( RULE_NUMBER )*
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2401:1: ( ( RULE_NUMBER )* )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2402:1: ( RULE_NUMBER )*
             {
              before(grammarAccess.getBiRelationAccess().getNumberTerminalRuleCall_7_0_0()); 
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2340:1: ( RULE_NUMBER )*
-            loop30:
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2403:1: ( RULE_NUMBER )*
+            loop29:
             do {
-                int alt30=2;
-                int LA30_0 = input.LA(1);
+                int alt29=2;
+                int LA29_0 = input.LA(1);
 
-                if ( (LA30_0==RULE_NUMBER) ) {
-                    alt30=1;
+                if ( (LA29_0==RULE_NUMBER) ) {
+                    alt29=1;
                 }
 
 
-                switch (alt30) {
+                switch (alt29) {
             	case 1 :
-            	    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2340:3: RULE_NUMBER
+            	    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2403:3: RULE_NUMBER
             	    {
-            	    match(input,RULE_NUMBER,FOLLOW_RULE_NUMBER_in_rule__BiRelation__Group_7_0__0__Impl4726); 
+            	    match(input,RULE_NUMBER,FOLLOW_RULE_NUMBER_in_rule__BiRelation__Group_7_0__0__Impl4847); 
 
             	    }
             	    break;
 
             	default :
-            	    break loop30;
+            	    break loop29;
                 }
             } while (true);
 
@@ -6634,16 +6782,16 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
 
 
     // $ANTLR start "rule__BiRelation__Group_7_0__1"
-    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2351:1: rule__BiRelation__Group_7_0__1 : rule__BiRelation__Group_7_0__1__Impl ;
+    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2414:1: rule__BiRelation__Group_7_0__1 : rule__BiRelation__Group_7_0__1__Impl ;
     public final void rule__BiRelation__Group_7_0__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2355:1: ( rule__BiRelation__Group_7_0__1__Impl )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2356:2: rule__BiRelation__Group_7_0__1__Impl
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2418:1: ( rule__BiRelation__Group_7_0__1__Impl )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2419:2: rule__BiRelation__Group_7_0__1__Impl
             {
-            pushFollow(FOLLOW_rule__BiRelation__Group_7_0__1__Impl_in_rule__BiRelation__Group_7_0__14759);
+            pushFollow(FOLLOW_rule__BiRelation__Group_7_0__1__Impl_in_rule__BiRelation__Group_7_0__14880);
             rule__BiRelation__Group_7_0__1__Impl();
 
             state._fsp--;
@@ -6667,23 +6815,23 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
 
 
     // $ANTLR start "rule__BiRelation__Group_7_0__1__Impl"
-    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2362:1: rule__BiRelation__Group_7_0__1__Impl : ( ( rule__BiRelation__Group_7_0_1__0 ) ) ;
+    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2425:1: rule__BiRelation__Group_7_0__1__Impl : ( ( rule__BiRelation__Group_7_0_1__0 ) ) ;
     public final void rule__BiRelation__Group_7_0__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2366:1: ( ( ( rule__BiRelation__Group_7_0_1__0 ) ) )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2367:1: ( ( rule__BiRelation__Group_7_0_1__0 ) )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2429:1: ( ( ( rule__BiRelation__Group_7_0_1__0 ) ) )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2430:1: ( ( rule__BiRelation__Group_7_0_1__0 ) )
             {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2367:1: ( ( rule__BiRelation__Group_7_0_1__0 ) )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2368:1: ( rule__BiRelation__Group_7_0_1__0 )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2430:1: ( ( rule__BiRelation__Group_7_0_1__0 ) )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2431:1: ( rule__BiRelation__Group_7_0_1__0 )
             {
              before(grammarAccess.getBiRelationAccess().getGroup_7_0_1()); 
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2369:1: ( rule__BiRelation__Group_7_0_1__0 )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2369:2: rule__BiRelation__Group_7_0_1__0
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2432:1: ( rule__BiRelation__Group_7_0_1__0 )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2432:2: rule__BiRelation__Group_7_0_1__0
             {
-            pushFollow(FOLLOW_rule__BiRelation__Group_7_0_1__0_in_rule__BiRelation__Group_7_0__1__Impl4786);
+            pushFollow(FOLLOW_rule__BiRelation__Group_7_0_1__0_in_rule__BiRelation__Group_7_0__1__Impl4907);
             rule__BiRelation__Group_7_0_1__0();
 
             state._fsp--;
@@ -6714,21 +6862,21 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
 
 
     // $ANTLR start "rule__BiRelation__Group_7_0_1__0"
-    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2383:1: rule__BiRelation__Group_7_0_1__0 : rule__BiRelation__Group_7_0_1__0__Impl rule__BiRelation__Group_7_0_1__1 ;
+    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2446:1: rule__BiRelation__Group_7_0_1__0 : rule__BiRelation__Group_7_0_1__0__Impl rule__BiRelation__Group_7_0_1__1 ;
     public final void rule__BiRelation__Group_7_0_1__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2387:1: ( rule__BiRelation__Group_7_0_1__0__Impl rule__BiRelation__Group_7_0_1__1 )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2388:2: rule__BiRelation__Group_7_0_1__0__Impl rule__BiRelation__Group_7_0_1__1
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2450:1: ( rule__BiRelation__Group_7_0_1__0__Impl rule__BiRelation__Group_7_0_1__1 )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2451:2: rule__BiRelation__Group_7_0_1__0__Impl rule__BiRelation__Group_7_0_1__1
             {
-            pushFollow(FOLLOW_rule__BiRelation__Group_7_0_1__0__Impl_in_rule__BiRelation__Group_7_0_1__04820);
+            pushFollow(FOLLOW_rule__BiRelation__Group_7_0_1__0__Impl_in_rule__BiRelation__Group_7_0_1__04941);
             rule__BiRelation__Group_7_0_1__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__BiRelation__Group_7_0_1__1_in_rule__BiRelation__Group_7_0_1__04823);
+            pushFollow(FOLLOW_rule__BiRelation__Group_7_0_1__1_in_rule__BiRelation__Group_7_0_1__04944);
             rule__BiRelation__Group_7_0_1__1();
 
             state._fsp--;
@@ -6752,20 +6900,20 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
 
 
     // $ANTLR start "rule__BiRelation__Group_7_0_1__0__Impl"
-    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2395:1: rule__BiRelation__Group_7_0_1__0__Impl : ( '..' ) ;
+    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2458:1: rule__BiRelation__Group_7_0_1__0__Impl : ( '..' ) ;
     public final void rule__BiRelation__Group_7_0_1__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2399:1: ( ( '..' ) )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2400:1: ( '..' )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2462:1: ( ( '..' ) )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2463:1: ( '..' )
             {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2400:1: ( '..' )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2401:1: '..'
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2463:1: ( '..' )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2464:1: '..'
             {
              before(grammarAccess.getBiRelationAccess().getFullStopFullStopKeyword_7_0_1_0()); 
-            match(input,28,FOLLOW_28_in_rule__BiRelation__Group_7_0_1__0__Impl4851); 
+            match(input,28,FOLLOW_28_in_rule__BiRelation__Group_7_0_1__0__Impl4972); 
              after(grammarAccess.getBiRelationAccess().getFullStopFullStopKeyword_7_0_1_0()); 
 
             }
@@ -6789,16 +6937,16 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
 
 
     // $ANTLR start "rule__BiRelation__Group_7_0_1__1"
-    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2414:1: rule__BiRelation__Group_7_0_1__1 : rule__BiRelation__Group_7_0_1__1__Impl ;
+    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2477:1: rule__BiRelation__Group_7_0_1__1 : rule__BiRelation__Group_7_0_1__1__Impl ;
     public final void rule__BiRelation__Group_7_0_1__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2418:1: ( rule__BiRelation__Group_7_0_1__1__Impl )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2419:2: rule__BiRelation__Group_7_0_1__1__Impl
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2481:1: ( rule__BiRelation__Group_7_0_1__1__Impl )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2482:2: rule__BiRelation__Group_7_0_1__1__Impl
             {
-            pushFollow(FOLLOW_rule__BiRelation__Group_7_0_1__1__Impl_in_rule__BiRelation__Group_7_0_1__14882);
+            pushFollow(FOLLOW_rule__BiRelation__Group_7_0_1__1__Impl_in_rule__BiRelation__Group_7_0_1__15003);
             rule__BiRelation__Group_7_0_1__1__Impl();
 
             state._fsp--;
@@ -6822,23 +6970,23 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
 
 
     // $ANTLR start "rule__BiRelation__Group_7_0_1__1__Impl"
-    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2425:1: rule__BiRelation__Group_7_0_1__1__Impl : ( ( rule__BiRelation__Alternatives_7_0_1_1 ) ) ;
+    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2488:1: rule__BiRelation__Group_7_0_1__1__Impl : ( ( rule__BiRelation__Alternatives_7_0_1_1 ) ) ;
     public final void rule__BiRelation__Group_7_0_1__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2429:1: ( ( ( rule__BiRelation__Alternatives_7_0_1_1 ) ) )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2430:1: ( ( rule__BiRelation__Alternatives_7_0_1_1 ) )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2492:1: ( ( ( rule__BiRelation__Alternatives_7_0_1_1 ) ) )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2493:1: ( ( rule__BiRelation__Alternatives_7_0_1_1 ) )
             {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2430:1: ( ( rule__BiRelation__Alternatives_7_0_1_1 ) )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2431:1: ( rule__BiRelation__Alternatives_7_0_1_1 )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2493:1: ( ( rule__BiRelation__Alternatives_7_0_1_1 ) )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2494:1: ( rule__BiRelation__Alternatives_7_0_1_1 )
             {
              before(grammarAccess.getBiRelationAccess().getAlternatives_7_0_1_1()); 
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2432:1: ( rule__BiRelation__Alternatives_7_0_1_1 )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2432:2: rule__BiRelation__Alternatives_7_0_1_1
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2495:1: ( rule__BiRelation__Alternatives_7_0_1_1 )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2495:2: rule__BiRelation__Alternatives_7_0_1_1
             {
-            pushFollow(FOLLOW_rule__BiRelation__Alternatives_7_0_1_1_in_rule__BiRelation__Group_7_0_1__1__Impl4909);
+            pushFollow(FOLLOW_rule__BiRelation__Alternatives_7_0_1_1_in_rule__BiRelation__Group_7_0_1__1__Impl5030);
             rule__BiRelation__Alternatives_7_0_1_1();
 
             state._fsp--;
@@ -6869,21 +7017,21 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
 
 
     // $ANTLR start "rule__Attribute__Group__0"
-    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2446:1: rule__Attribute__Group__0 : rule__Attribute__Group__0__Impl rule__Attribute__Group__1 ;
+    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2509:1: rule__Attribute__Group__0 : rule__Attribute__Group__0__Impl rule__Attribute__Group__1 ;
     public final void rule__Attribute__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2450:1: ( rule__Attribute__Group__0__Impl rule__Attribute__Group__1 )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2451:2: rule__Attribute__Group__0__Impl rule__Attribute__Group__1
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2513:1: ( rule__Attribute__Group__0__Impl rule__Attribute__Group__1 )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2514:2: rule__Attribute__Group__0__Impl rule__Attribute__Group__1
             {
-            pushFollow(FOLLOW_rule__Attribute__Group__0__Impl_in_rule__Attribute__Group__04943);
+            pushFollow(FOLLOW_rule__Attribute__Group__0__Impl_in_rule__Attribute__Group__05064);
             rule__Attribute__Group__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__Attribute__Group__1_in_rule__Attribute__Group__04946);
+            pushFollow(FOLLOW_rule__Attribute__Group__1_in_rule__Attribute__Group__05067);
             rule__Attribute__Group__1();
 
             state._fsp--;
@@ -6907,20 +7055,20 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
 
 
     // $ANTLR start "rule__Attribute__Group__0__Impl"
-    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2458:1: rule__Attribute__Group__0__Impl : ( ruleBodyVisibility ) ;
+    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2521:1: rule__Attribute__Group__0__Impl : ( ruleBodyVisibility ) ;
     public final void rule__Attribute__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2462:1: ( ( ruleBodyVisibility ) )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2463:1: ( ruleBodyVisibility )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2525:1: ( ( ruleBodyVisibility ) )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2526:1: ( ruleBodyVisibility )
             {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2463:1: ( ruleBodyVisibility )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2464:1: ruleBodyVisibility
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2526:1: ( ruleBodyVisibility )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2527:1: ruleBodyVisibility
             {
              before(grammarAccess.getAttributeAccess().getBodyVisibilityParserRuleCall_0()); 
-            pushFollow(FOLLOW_ruleBodyVisibility_in_rule__Attribute__Group__0__Impl4973);
+            pushFollow(FOLLOW_ruleBodyVisibility_in_rule__Attribute__Group__0__Impl5094);
             ruleBodyVisibility();
 
             state._fsp--;
@@ -6948,21 +7096,21 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
 
 
     // $ANTLR start "rule__Attribute__Group__1"
-    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2475:1: rule__Attribute__Group__1 : rule__Attribute__Group__1__Impl rule__Attribute__Group__2 ;
+    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2538:1: rule__Attribute__Group__1 : rule__Attribute__Group__1__Impl rule__Attribute__Group__2 ;
     public final void rule__Attribute__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2479:1: ( rule__Attribute__Group__1__Impl rule__Attribute__Group__2 )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2480:2: rule__Attribute__Group__1__Impl rule__Attribute__Group__2
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2542:1: ( rule__Attribute__Group__1__Impl rule__Attribute__Group__2 )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2543:2: rule__Attribute__Group__1__Impl rule__Attribute__Group__2
             {
-            pushFollow(FOLLOW_rule__Attribute__Group__1__Impl_in_rule__Attribute__Group__15002);
+            pushFollow(FOLLOW_rule__Attribute__Group__1__Impl_in_rule__Attribute__Group__15123);
             rule__Attribute__Group__1__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__Attribute__Group__2_in_rule__Attribute__Group__15005);
+            pushFollow(FOLLOW_rule__Attribute__Group__2_in_rule__Attribute__Group__15126);
             rule__Attribute__Group__2();
 
             state._fsp--;
@@ -6986,31 +7134,31 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
 
 
     // $ANTLR start "rule__Attribute__Group__1__Impl"
-    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2487:1: rule__Attribute__Group__1__Impl : ( ( rule__Attribute__Alternatives_1 )? ) ;
+    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2550:1: rule__Attribute__Group__1__Impl : ( ( rule__Attribute__Alternatives_1 )? ) ;
     public final void rule__Attribute__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2491:1: ( ( ( rule__Attribute__Alternatives_1 )? ) )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2492:1: ( ( rule__Attribute__Alternatives_1 )? )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2554:1: ( ( ( rule__Attribute__Alternatives_1 )? ) )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2555:1: ( ( rule__Attribute__Alternatives_1 )? )
             {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2492:1: ( ( rule__Attribute__Alternatives_1 )? )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2493:1: ( rule__Attribute__Alternatives_1 )?
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2555:1: ( ( rule__Attribute__Alternatives_1 )? )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2556:1: ( rule__Attribute__Alternatives_1 )?
             {
              before(grammarAccess.getAttributeAccess().getAlternatives_1()); 
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2494:1: ( rule__Attribute__Alternatives_1 )?
-            int alt31=2;
-            int LA31_0 = input.LA(1);
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2557:1: ( rule__Attribute__Alternatives_1 )?
+            int alt30=2;
+            int LA30_0 = input.LA(1);
 
-            if ( ((LA31_0>=13 && LA31_0<=14)) ) {
-                alt31=1;
+            if ( ((LA30_0>=13 && LA30_0<=14)) ) {
+                alt30=1;
             }
-            switch (alt31) {
+            switch (alt30) {
                 case 1 :
-                    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2494:2: rule__Attribute__Alternatives_1
+                    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2557:2: rule__Attribute__Alternatives_1
                     {
-                    pushFollow(FOLLOW_rule__Attribute__Alternatives_1_in_rule__Attribute__Group__1__Impl5032);
+                    pushFollow(FOLLOW_rule__Attribute__Alternatives_1_in_rule__Attribute__Group__1__Impl5153);
                     rule__Attribute__Alternatives_1();
 
                     state._fsp--;
@@ -7044,21 +7192,21 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
 
 
     // $ANTLR start "rule__Attribute__Group__2"
-    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2504:1: rule__Attribute__Group__2 : rule__Attribute__Group__2__Impl rule__Attribute__Group__3 ;
+    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2567:1: rule__Attribute__Group__2 : rule__Attribute__Group__2__Impl rule__Attribute__Group__3 ;
     public final void rule__Attribute__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2508:1: ( rule__Attribute__Group__2__Impl rule__Attribute__Group__3 )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2509:2: rule__Attribute__Group__2__Impl rule__Attribute__Group__3
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2571:1: ( rule__Attribute__Group__2__Impl rule__Attribute__Group__3 )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2572:2: rule__Attribute__Group__2__Impl rule__Attribute__Group__3
             {
-            pushFollow(FOLLOW_rule__Attribute__Group__2__Impl_in_rule__Attribute__Group__25063);
+            pushFollow(FOLLOW_rule__Attribute__Group__2__Impl_in_rule__Attribute__Group__25184);
             rule__Attribute__Group__2__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__Attribute__Group__3_in_rule__Attribute__Group__25066);
+            pushFollow(FOLLOW_rule__Attribute__Group__3_in_rule__Attribute__Group__25187);
             rule__Attribute__Group__3();
 
             state._fsp--;
@@ -7082,23 +7230,23 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
 
 
     // $ANTLR start "rule__Attribute__Group__2__Impl"
-    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2516:1: rule__Attribute__Group__2__Impl : ( ( rule__Attribute__AttributenameAssignment_2 ) ) ;
+    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2579:1: rule__Attribute__Group__2__Impl : ( ( rule__Attribute__AttributenameAssignment_2 ) ) ;
     public final void rule__Attribute__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2520:1: ( ( ( rule__Attribute__AttributenameAssignment_2 ) ) )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2521:1: ( ( rule__Attribute__AttributenameAssignment_2 ) )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2583:1: ( ( ( rule__Attribute__AttributenameAssignment_2 ) ) )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2584:1: ( ( rule__Attribute__AttributenameAssignment_2 ) )
             {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2521:1: ( ( rule__Attribute__AttributenameAssignment_2 ) )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2522:1: ( rule__Attribute__AttributenameAssignment_2 )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2584:1: ( ( rule__Attribute__AttributenameAssignment_2 ) )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2585:1: ( rule__Attribute__AttributenameAssignment_2 )
             {
              before(grammarAccess.getAttributeAccess().getAttributenameAssignment_2()); 
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2523:1: ( rule__Attribute__AttributenameAssignment_2 )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2523:2: rule__Attribute__AttributenameAssignment_2
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2586:1: ( rule__Attribute__AttributenameAssignment_2 )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2586:2: rule__Attribute__AttributenameAssignment_2
             {
-            pushFollow(FOLLOW_rule__Attribute__AttributenameAssignment_2_in_rule__Attribute__Group__2__Impl5093);
+            pushFollow(FOLLOW_rule__Attribute__AttributenameAssignment_2_in_rule__Attribute__Group__2__Impl5214);
             rule__Attribute__AttributenameAssignment_2();
 
             state._fsp--;
@@ -7129,21 +7277,21 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
 
 
     // $ANTLR start "rule__Attribute__Group__3"
-    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2533:1: rule__Attribute__Group__3 : rule__Attribute__Group__3__Impl rule__Attribute__Group__4 ;
+    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2596:1: rule__Attribute__Group__3 : rule__Attribute__Group__3__Impl rule__Attribute__Group__4 ;
     public final void rule__Attribute__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2537:1: ( rule__Attribute__Group__3__Impl rule__Attribute__Group__4 )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2538:2: rule__Attribute__Group__3__Impl rule__Attribute__Group__4
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2600:1: ( rule__Attribute__Group__3__Impl rule__Attribute__Group__4 )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2601:2: rule__Attribute__Group__3__Impl rule__Attribute__Group__4
             {
-            pushFollow(FOLLOW_rule__Attribute__Group__3__Impl_in_rule__Attribute__Group__35123);
+            pushFollow(FOLLOW_rule__Attribute__Group__3__Impl_in_rule__Attribute__Group__35244);
             rule__Attribute__Group__3__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__Attribute__Group__4_in_rule__Attribute__Group__35126);
+            pushFollow(FOLLOW_rule__Attribute__Group__4_in_rule__Attribute__Group__35247);
             rule__Attribute__Group__4();
 
             state._fsp--;
@@ -7167,20 +7315,20 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
 
 
     // $ANTLR start "rule__Attribute__Group__3__Impl"
-    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2545:1: rule__Attribute__Group__3__Impl : ( ':' ) ;
+    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2608:1: rule__Attribute__Group__3__Impl : ( ':' ) ;
     public final void rule__Attribute__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2549:1: ( ( ':' ) )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2550:1: ( ':' )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2612:1: ( ( ':' ) )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2613:1: ( ':' )
             {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2550:1: ( ':' )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2551:1: ':'
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2613:1: ( ':' )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2614:1: ':'
             {
              before(grammarAccess.getAttributeAccess().getColonKeyword_3()); 
-            match(input,18,FOLLOW_18_in_rule__Attribute__Group__3__Impl5154); 
+            match(input,18,FOLLOW_18_in_rule__Attribute__Group__3__Impl5275); 
              after(grammarAccess.getAttributeAccess().getColonKeyword_3()); 
 
             }
@@ -7204,21 +7352,21 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
 
 
     // $ANTLR start "rule__Attribute__Group__4"
-    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2564:1: rule__Attribute__Group__4 : rule__Attribute__Group__4__Impl rule__Attribute__Group__5 ;
+    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2627:1: rule__Attribute__Group__4 : rule__Attribute__Group__4__Impl rule__Attribute__Group__5 ;
     public final void rule__Attribute__Group__4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2568:1: ( rule__Attribute__Group__4__Impl rule__Attribute__Group__5 )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2569:2: rule__Attribute__Group__4__Impl rule__Attribute__Group__5
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2631:1: ( rule__Attribute__Group__4__Impl rule__Attribute__Group__5 )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2632:2: rule__Attribute__Group__4__Impl rule__Attribute__Group__5
             {
-            pushFollow(FOLLOW_rule__Attribute__Group__4__Impl_in_rule__Attribute__Group__45185);
+            pushFollow(FOLLOW_rule__Attribute__Group__4__Impl_in_rule__Attribute__Group__45306);
             rule__Attribute__Group__4__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__Attribute__Group__5_in_rule__Attribute__Group__45188);
+            pushFollow(FOLLOW_rule__Attribute__Group__5_in_rule__Attribute__Group__45309);
             rule__Attribute__Group__5();
 
             state._fsp--;
@@ -7242,23 +7390,23 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
 
 
     // $ANTLR start "rule__Attribute__Group__4__Impl"
-    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2576:1: rule__Attribute__Group__4__Impl : ( ( rule__Attribute__TypeAssignment_4 ) ) ;
+    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2639:1: rule__Attribute__Group__4__Impl : ( ( rule__Attribute__TypeAssignment_4 ) ) ;
     public final void rule__Attribute__Group__4__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2580:1: ( ( ( rule__Attribute__TypeAssignment_4 ) ) )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2581:1: ( ( rule__Attribute__TypeAssignment_4 ) )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2643:1: ( ( ( rule__Attribute__TypeAssignment_4 ) ) )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2644:1: ( ( rule__Attribute__TypeAssignment_4 ) )
             {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2581:1: ( ( rule__Attribute__TypeAssignment_4 ) )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2582:1: ( rule__Attribute__TypeAssignment_4 )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2644:1: ( ( rule__Attribute__TypeAssignment_4 ) )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2645:1: ( rule__Attribute__TypeAssignment_4 )
             {
              before(grammarAccess.getAttributeAccess().getTypeAssignment_4()); 
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2583:1: ( rule__Attribute__TypeAssignment_4 )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2583:2: rule__Attribute__TypeAssignment_4
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2646:1: ( rule__Attribute__TypeAssignment_4 )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2646:2: rule__Attribute__TypeAssignment_4
             {
-            pushFollow(FOLLOW_rule__Attribute__TypeAssignment_4_in_rule__Attribute__Group__4__Impl5215);
+            pushFollow(FOLLOW_rule__Attribute__TypeAssignment_4_in_rule__Attribute__Group__4__Impl5336);
             rule__Attribute__TypeAssignment_4();
 
             state._fsp--;
@@ -7289,16 +7437,16 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
 
 
     // $ANTLR start "rule__Attribute__Group__5"
-    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2593:1: rule__Attribute__Group__5 : rule__Attribute__Group__5__Impl ;
+    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2656:1: rule__Attribute__Group__5 : rule__Attribute__Group__5__Impl ;
     public final void rule__Attribute__Group__5() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2597:1: ( rule__Attribute__Group__5__Impl )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2598:2: rule__Attribute__Group__5__Impl
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2660:1: ( rule__Attribute__Group__5__Impl )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2661:2: rule__Attribute__Group__5__Impl
             {
-            pushFollow(FOLLOW_rule__Attribute__Group__5__Impl_in_rule__Attribute__Group__55245);
+            pushFollow(FOLLOW_rule__Attribute__Group__5__Impl_in_rule__Attribute__Group__55366);
             rule__Attribute__Group__5__Impl();
 
             state._fsp--;
@@ -7322,31 +7470,31 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
 
 
     // $ANTLR start "rule__Attribute__Group__5__Impl"
-    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2604:1: rule__Attribute__Group__5__Impl : ( ( rule__Attribute__Alternatives_5 )? ) ;
+    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2667:1: rule__Attribute__Group__5__Impl : ( ( rule__Attribute__Alternatives_5 )? ) ;
     public final void rule__Attribute__Group__5__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2608:1: ( ( ( rule__Attribute__Alternatives_5 )? ) )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2609:1: ( ( rule__Attribute__Alternatives_5 )? )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2671:1: ( ( ( rule__Attribute__Alternatives_5 )? ) )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2672:1: ( ( rule__Attribute__Alternatives_5 )? )
             {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2609:1: ( ( rule__Attribute__Alternatives_5 )? )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2610:1: ( rule__Attribute__Alternatives_5 )?
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2672:1: ( ( rule__Attribute__Alternatives_5 )? )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2673:1: ( rule__Attribute__Alternatives_5 )?
             {
              before(grammarAccess.getAttributeAccess().getAlternatives_5()); 
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2611:1: ( rule__Attribute__Alternatives_5 )?
-            int alt32=2;
-            int LA32_0 = input.LA(1);
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2674:1: ( rule__Attribute__Alternatives_5 )?
+            int alt31=2;
+            int LA31_0 = input.LA(1);
 
-            if ( (LA32_0==26) ) {
-                alt32=1;
+            if ( (LA31_0==26) ) {
+                alt31=1;
             }
-            switch (alt32) {
+            switch (alt31) {
                 case 1 :
-                    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2611:2: rule__Attribute__Alternatives_5
+                    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2674:2: rule__Attribute__Alternatives_5
                     {
-                    pushFollow(FOLLOW_rule__Attribute__Alternatives_5_in_rule__Attribute__Group__5__Impl5272);
+                    pushFollow(FOLLOW_rule__Attribute__Alternatives_5_in_rule__Attribute__Group__5__Impl5393);
                     rule__Attribute__Alternatives_5();
 
                     state._fsp--;
@@ -7380,21 +7528,21 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
 
 
     // $ANTLR start "rule__Attribute__Group_5_0__0"
-    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2633:1: rule__Attribute__Group_5_0__0 : rule__Attribute__Group_5_0__0__Impl rule__Attribute__Group_5_0__1 ;
+    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2696:1: rule__Attribute__Group_5_0__0 : rule__Attribute__Group_5_0__0__Impl rule__Attribute__Group_5_0__1 ;
     public final void rule__Attribute__Group_5_0__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2637:1: ( rule__Attribute__Group_5_0__0__Impl rule__Attribute__Group_5_0__1 )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2638:2: rule__Attribute__Group_5_0__0__Impl rule__Attribute__Group_5_0__1
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2700:1: ( rule__Attribute__Group_5_0__0__Impl rule__Attribute__Group_5_0__1 )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2701:2: rule__Attribute__Group_5_0__0__Impl rule__Attribute__Group_5_0__1
             {
-            pushFollow(FOLLOW_rule__Attribute__Group_5_0__0__Impl_in_rule__Attribute__Group_5_0__05315);
+            pushFollow(FOLLOW_rule__Attribute__Group_5_0__0__Impl_in_rule__Attribute__Group_5_0__05436);
             rule__Attribute__Group_5_0__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__Attribute__Group_5_0__1_in_rule__Attribute__Group_5_0__05318);
+            pushFollow(FOLLOW_rule__Attribute__Group_5_0__1_in_rule__Attribute__Group_5_0__05439);
             rule__Attribute__Group_5_0__1();
 
             state._fsp--;
@@ -7418,20 +7566,20 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
 
 
     // $ANTLR start "rule__Attribute__Group_5_0__0__Impl"
-    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2645:1: rule__Attribute__Group_5_0__0__Impl : ( '[' ) ;
+    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2708:1: rule__Attribute__Group_5_0__0__Impl : ( '[' ) ;
     public final void rule__Attribute__Group_5_0__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2649:1: ( ( '[' ) )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2650:1: ( '[' )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2712:1: ( ( '[' ) )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2713:1: ( '[' )
             {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2650:1: ( '[' )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2651:1: '['
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2713:1: ( '[' )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2714:1: '['
             {
              before(grammarAccess.getAttributeAccess().getLeftSquareBracketKeyword_5_0_0()); 
-            match(input,26,FOLLOW_26_in_rule__Attribute__Group_5_0__0__Impl5346); 
+            match(input,26,FOLLOW_26_in_rule__Attribute__Group_5_0__0__Impl5467); 
              after(grammarAccess.getAttributeAccess().getLeftSquareBracketKeyword_5_0_0()); 
 
             }
@@ -7455,21 +7603,21 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
 
 
     // $ANTLR start "rule__Attribute__Group_5_0__1"
-    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2664:1: rule__Attribute__Group_5_0__1 : rule__Attribute__Group_5_0__1__Impl rule__Attribute__Group_5_0__2 ;
+    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2727:1: rule__Attribute__Group_5_0__1 : rule__Attribute__Group_5_0__1__Impl rule__Attribute__Group_5_0__2 ;
     public final void rule__Attribute__Group_5_0__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2668:1: ( rule__Attribute__Group_5_0__1__Impl rule__Attribute__Group_5_0__2 )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2669:2: rule__Attribute__Group_5_0__1__Impl rule__Attribute__Group_5_0__2
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2731:1: ( rule__Attribute__Group_5_0__1__Impl rule__Attribute__Group_5_0__2 )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2732:2: rule__Attribute__Group_5_0__1__Impl rule__Attribute__Group_5_0__2
             {
-            pushFollow(FOLLOW_rule__Attribute__Group_5_0__1__Impl_in_rule__Attribute__Group_5_0__15377);
+            pushFollow(FOLLOW_rule__Attribute__Group_5_0__1__Impl_in_rule__Attribute__Group_5_0__15498);
             rule__Attribute__Group_5_0__1__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__Attribute__Group_5_0__2_in_rule__Attribute__Group_5_0__15380);
+            pushFollow(FOLLOW_rule__Attribute__Group_5_0__2_in_rule__Attribute__Group_5_0__15501);
             rule__Attribute__Group_5_0__2();
 
             state._fsp--;
@@ -7493,41 +7641,41 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
 
 
     // $ANTLR start "rule__Attribute__Group_5_0__1__Impl"
-    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2676:1: rule__Attribute__Group_5_0__1__Impl : ( ( RULE_NUMBER )* ) ;
+    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2739:1: rule__Attribute__Group_5_0__1__Impl : ( ( RULE_NUMBER )* ) ;
     public final void rule__Attribute__Group_5_0__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2680:1: ( ( ( RULE_NUMBER )* ) )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2681:1: ( ( RULE_NUMBER )* )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2743:1: ( ( ( RULE_NUMBER )* ) )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2744:1: ( ( RULE_NUMBER )* )
             {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2681:1: ( ( RULE_NUMBER )* )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2682:1: ( RULE_NUMBER )*
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2744:1: ( ( RULE_NUMBER )* )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2745:1: ( RULE_NUMBER )*
             {
              before(grammarAccess.getAttributeAccess().getNumberTerminalRuleCall_5_0_1()); 
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2683:1: ( RULE_NUMBER )*
-            loop33:
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2746:1: ( RULE_NUMBER )*
+            loop32:
             do {
-                int alt33=2;
-                int LA33_0 = input.LA(1);
+                int alt32=2;
+                int LA32_0 = input.LA(1);
 
-                if ( (LA33_0==RULE_NUMBER) ) {
-                    alt33=1;
+                if ( (LA32_0==RULE_NUMBER) ) {
+                    alt32=1;
                 }
 
 
-                switch (alt33) {
+                switch (alt32) {
             	case 1 :
-            	    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2683:3: RULE_NUMBER
+            	    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2746:3: RULE_NUMBER
             	    {
-            	    match(input,RULE_NUMBER,FOLLOW_RULE_NUMBER_in_rule__Attribute__Group_5_0__1__Impl5408); 
+            	    match(input,RULE_NUMBER,FOLLOW_RULE_NUMBER_in_rule__Attribute__Group_5_0__1__Impl5529); 
 
             	    }
             	    break;
 
             	default :
-            	    break loop33;
+            	    break loop32;
                 }
             } while (true);
 
@@ -7554,16 +7702,16 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
 
 
     // $ANTLR start "rule__Attribute__Group_5_0__2"
-    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2693:1: rule__Attribute__Group_5_0__2 : rule__Attribute__Group_5_0__2__Impl ;
+    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2756:1: rule__Attribute__Group_5_0__2 : rule__Attribute__Group_5_0__2__Impl ;
     public final void rule__Attribute__Group_5_0__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2697:1: ( rule__Attribute__Group_5_0__2__Impl )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2698:2: rule__Attribute__Group_5_0__2__Impl
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2760:1: ( rule__Attribute__Group_5_0__2__Impl )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2761:2: rule__Attribute__Group_5_0__2__Impl
             {
-            pushFollow(FOLLOW_rule__Attribute__Group_5_0__2__Impl_in_rule__Attribute__Group_5_0__25439);
+            pushFollow(FOLLOW_rule__Attribute__Group_5_0__2__Impl_in_rule__Attribute__Group_5_0__25560);
             rule__Attribute__Group_5_0__2__Impl();
 
             state._fsp--;
@@ -7587,20 +7735,20 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
 
 
     // $ANTLR start "rule__Attribute__Group_5_0__2__Impl"
-    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2704:1: rule__Attribute__Group_5_0__2__Impl : ( ']' ) ;
+    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2767:1: rule__Attribute__Group_5_0__2__Impl : ( ']' ) ;
     public final void rule__Attribute__Group_5_0__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2708:1: ( ( ']' ) )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2709:1: ( ']' )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2771:1: ( ( ']' ) )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2772:1: ( ']' )
             {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2709:1: ( ']' )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2710:1: ']'
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2772:1: ( ']' )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2773:1: ']'
             {
              before(grammarAccess.getAttributeAccess().getRightSquareBracketKeyword_5_0_2()); 
-            match(input,27,FOLLOW_27_in_rule__Attribute__Group_5_0__2__Impl5467); 
+            match(input,27,FOLLOW_27_in_rule__Attribute__Group_5_0__2__Impl5588); 
              after(grammarAccess.getAttributeAccess().getRightSquareBracketKeyword_5_0_2()); 
 
             }
@@ -7624,21 +7772,21 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
 
 
     // $ANTLR start "rule__ParamIn__Group__0"
-    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2729:1: rule__ParamIn__Group__0 : rule__ParamIn__Group__0__Impl rule__ParamIn__Group__1 ;
+    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2792:1: rule__ParamIn__Group__0 : rule__ParamIn__Group__0__Impl rule__ParamIn__Group__1 ;
     public final void rule__ParamIn__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2733:1: ( rule__ParamIn__Group__0__Impl rule__ParamIn__Group__1 )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2734:2: rule__ParamIn__Group__0__Impl rule__ParamIn__Group__1
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2796:1: ( rule__ParamIn__Group__0__Impl rule__ParamIn__Group__1 )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2797:2: rule__ParamIn__Group__0__Impl rule__ParamIn__Group__1
             {
-            pushFollow(FOLLOW_rule__ParamIn__Group__0__Impl_in_rule__ParamIn__Group__05504);
+            pushFollow(FOLLOW_rule__ParamIn__Group__0__Impl_in_rule__ParamIn__Group__05625);
             rule__ParamIn__Group__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__ParamIn__Group__1_in_rule__ParamIn__Group__05507);
+            pushFollow(FOLLOW_rule__ParamIn__Group__1_in_rule__ParamIn__Group__05628);
             rule__ParamIn__Group__1();
 
             state._fsp--;
@@ -7662,23 +7810,23 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
 
 
     // $ANTLR start "rule__ParamIn__Group__0__Impl"
-    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2741:1: rule__ParamIn__Group__0__Impl : ( ( rule__ParamIn__NameAssignment_0 ) ) ;
+    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2804:1: rule__ParamIn__Group__0__Impl : ( ( rule__ParamIn__NameAssignment_0 ) ) ;
     public final void rule__ParamIn__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2745:1: ( ( ( rule__ParamIn__NameAssignment_0 ) ) )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2746:1: ( ( rule__ParamIn__NameAssignment_0 ) )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2808:1: ( ( ( rule__ParamIn__NameAssignment_0 ) ) )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2809:1: ( ( rule__ParamIn__NameAssignment_0 ) )
             {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2746:1: ( ( rule__ParamIn__NameAssignment_0 ) )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2747:1: ( rule__ParamIn__NameAssignment_0 )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2809:1: ( ( rule__ParamIn__NameAssignment_0 ) )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2810:1: ( rule__ParamIn__NameAssignment_0 )
             {
              before(grammarAccess.getParamInAccess().getNameAssignment_0()); 
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2748:1: ( rule__ParamIn__NameAssignment_0 )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2748:2: rule__ParamIn__NameAssignment_0
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2811:1: ( rule__ParamIn__NameAssignment_0 )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2811:2: rule__ParamIn__NameAssignment_0
             {
-            pushFollow(FOLLOW_rule__ParamIn__NameAssignment_0_in_rule__ParamIn__Group__0__Impl5534);
+            pushFollow(FOLLOW_rule__ParamIn__NameAssignment_0_in_rule__ParamIn__Group__0__Impl5655);
             rule__ParamIn__NameAssignment_0();
 
             state._fsp--;
@@ -7709,21 +7857,21 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
 
 
     // $ANTLR start "rule__ParamIn__Group__1"
-    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2758:1: rule__ParamIn__Group__1 : rule__ParamIn__Group__1__Impl rule__ParamIn__Group__2 ;
+    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2821:1: rule__ParamIn__Group__1 : rule__ParamIn__Group__1__Impl rule__ParamIn__Group__2 ;
     public final void rule__ParamIn__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2762:1: ( rule__ParamIn__Group__1__Impl rule__ParamIn__Group__2 )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2763:2: rule__ParamIn__Group__1__Impl rule__ParamIn__Group__2
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2825:1: ( rule__ParamIn__Group__1__Impl rule__ParamIn__Group__2 )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2826:2: rule__ParamIn__Group__1__Impl rule__ParamIn__Group__2
             {
-            pushFollow(FOLLOW_rule__ParamIn__Group__1__Impl_in_rule__ParamIn__Group__15564);
+            pushFollow(FOLLOW_rule__ParamIn__Group__1__Impl_in_rule__ParamIn__Group__15685);
             rule__ParamIn__Group__1__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__ParamIn__Group__2_in_rule__ParamIn__Group__15567);
+            pushFollow(FOLLOW_rule__ParamIn__Group__2_in_rule__ParamIn__Group__15688);
             rule__ParamIn__Group__2();
 
             state._fsp--;
@@ -7747,20 +7895,20 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
 
 
     // $ANTLR start "rule__ParamIn__Group__1__Impl"
-    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2770:1: rule__ParamIn__Group__1__Impl : ( ':' ) ;
+    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2833:1: rule__ParamIn__Group__1__Impl : ( ':' ) ;
     public final void rule__ParamIn__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2774:1: ( ( ':' ) )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2775:1: ( ':' )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2837:1: ( ( ':' ) )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2838:1: ( ':' )
             {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2775:1: ( ':' )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2776:1: ':'
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2838:1: ( ':' )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2839:1: ':'
             {
              before(grammarAccess.getParamInAccess().getColonKeyword_1()); 
-            match(input,18,FOLLOW_18_in_rule__ParamIn__Group__1__Impl5595); 
+            match(input,18,FOLLOW_18_in_rule__ParamIn__Group__1__Impl5716); 
              after(grammarAccess.getParamInAccess().getColonKeyword_1()); 
 
             }
@@ -7784,21 +7932,21 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
 
 
     // $ANTLR start "rule__ParamIn__Group__2"
-    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2789:1: rule__ParamIn__Group__2 : rule__ParamIn__Group__2__Impl rule__ParamIn__Group__3 ;
+    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2852:1: rule__ParamIn__Group__2 : rule__ParamIn__Group__2__Impl rule__ParamIn__Group__3 ;
     public final void rule__ParamIn__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2793:1: ( rule__ParamIn__Group__2__Impl rule__ParamIn__Group__3 )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2794:2: rule__ParamIn__Group__2__Impl rule__ParamIn__Group__3
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2856:1: ( rule__ParamIn__Group__2__Impl rule__ParamIn__Group__3 )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2857:2: rule__ParamIn__Group__2__Impl rule__ParamIn__Group__3
             {
-            pushFollow(FOLLOW_rule__ParamIn__Group__2__Impl_in_rule__ParamIn__Group__25626);
+            pushFollow(FOLLOW_rule__ParamIn__Group__2__Impl_in_rule__ParamIn__Group__25747);
             rule__ParamIn__Group__2__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__ParamIn__Group__3_in_rule__ParamIn__Group__25629);
+            pushFollow(FOLLOW_rule__ParamIn__Group__3_in_rule__ParamIn__Group__25750);
             rule__ParamIn__Group__3();
 
             state._fsp--;
@@ -7822,23 +7970,23 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
 
 
     // $ANTLR start "rule__ParamIn__Group__2__Impl"
-    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2801:1: rule__ParamIn__Group__2__Impl : ( ( rule__ParamIn__TypeAssignment_2 ) ) ;
+    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2864:1: rule__ParamIn__Group__2__Impl : ( ( rule__ParamIn__TypeAssignment_2 ) ) ;
     public final void rule__ParamIn__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2805:1: ( ( ( rule__ParamIn__TypeAssignment_2 ) ) )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2806:1: ( ( rule__ParamIn__TypeAssignment_2 ) )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2868:1: ( ( ( rule__ParamIn__TypeAssignment_2 ) ) )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2869:1: ( ( rule__ParamIn__TypeAssignment_2 ) )
             {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2806:1: ( ( rule__ParamIn__TypeAssignment_2 ) )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2807:1: ( rule__ParamIn__TypeAssignment_2 )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2869:1: ( ( rule__ParamIn__TypeAssignment_2 ) )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2870:1: ( rule__ParamIn__TypeAssignment_2 )
             {
              before(grammarAccess.getParamInAccess().getTypeAssignment_2()); 
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2808:1: ( rule__ParamIn__TypeAssignment_2 )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2808:2: rule__ParamIn__TypeAssignment_2
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2871:1: ( rule__ParamIn__TypeAssignment_2 )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2871:2: rule__ParamIn__TypeAssignment_2
             {
-            pushFollow(FOLLOW_rule__ParamIn__TypeAssignment_2_in_rule__ParamIn__Group__2__Impl5656);
+            pushFollow(FOLLOW_rule__ParamIn__TypeAssignment_2_in_rule__ParamIn__Group__2__Impl5777);
             rule__ParamIn__TypeAssignment_2();
 
             state._fsp--;
@@ -7869,16 +8017,16 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
 
 
     // $ANTLR start "rule__ParamIn__Group__3"
-    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2818:1: rule__ParamIn__Group__3 : rule__ParamIn__Group__3__Impl ;
+    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2881:1: rule__ParamIn__Group__3 : rule__ParamIn__Group__3__Impl ;
     public final void rule__ParamIn__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2822:1: ( rule__ParamIn__Group__3__Impl )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2823:2: rule__ParamIn__Group__3__Impl
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2885:1: ( rule__ParamIn__Group__3__Impl )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2886:2: rule__ParamIn__Group__3__Impl
             {
-            pushFollow(FOLLOW_rule__ParamIn__Group__3__Impl_in_rule__ParamIn__Group__35686);
+            pushFollow(FOLLOW_rule__ParamIn__Group__3__Impl_in_rule__ParamIn__Group__35807);
             rule__ParamIn__Group__3__Impl();
 
             state._fsp--;
@@ -7902,31 +8050,31 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
 
 
     // $ANTLR start "rule__ParamIn__Group__3__Impl"
-    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2829:1: rule__ParamIn__Group__3__Impl : ( ( ',' )? ) ;
+    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2892:1: rule__ParamIn__Group__3__Impl : ( ( ',' )? ) ;
     public final void rule__ParamIn__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2833:1: ( ( ( ',' )? ) )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2834:1: ( ( ',' )? )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2896:1: ( ( ( ',' )? ) )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2897:1: ( ( ',' )? )
             {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2834:1: ( ( ',' )? )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2835:1: ( ',' )?
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2897:1: ( ( ',' )? )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2898:1: ( ',' )?
             {
              before(grammarAccess.getParamInAccess().getCommaKeyword_3()); 
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2836:1: ( ',' )?
-            int alt34=2;
-            int LA34_0 = input.LA(1);
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2899:1: ( ',' )?
+            int alt33=2;
+            int LA33_0 = input.LA(1);
 
-            if ( (LA34_0==21) ) {
-                alt34=1;
+            if ( (LA33_0==21) ) {
+                alt33=1;
             }
-            switch (alt34) {
+            switch (alt33) {
                 case 1 :
-                    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2837:2: ','
+                    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2900:2: ','
                     {
-                    match(input,21,FOLLOW_21_in_rule__ParamIn__Group__3__Impl5715); 
+                    match(input,21,FOLLOW_21_in_rule__ParamIn__Group__3__Impl5836); 
 
                     }
                     break;
@@ -7956,21 +8104,21 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
 
 
     // $ANTLR start "rule__Method__Group__0"
-    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2856:1: rule__Method__Group__0 : rule__Method__Group__0__Impl rule__Method__Group__1 ;
+    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2919:1: rule__Method__Group__0 : rule__Method__Group__0__Impl rule__Method__Group__1 ;
     public final void rule__Method__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2860:1: ( rule__Method__Group__0__Impl rule__Method__Group__1 )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2861:2: rule__Method__Group__0__Impl rule__Method__Group__1
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2923:1: ( rule__Method__Group__0__Impl rule__Method__Group__1 )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2924:2: rule__Method__Group__0__Impl rule__Method__Group__1
             {
-            pushFollow(FOLLOW_rule__Method__Group__0__Impl_in_rule__Method__Group__05756);
+            pushFollow(FOLLOW_rule__Method__Group__0__Impl_in_rule__Method__Group__05877);
             rule__Method__Group__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__Method__Group__1_in_rule__Method__Group__05759);
+            pushFollow(FOLLOW_rule__Method__Group__1_in_rule__Method__Group__05880);
             rule__Method__Group__1();
 
             state._fsp--;
@@ -7994,20 +8142,20 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
 
 
     // $ANTLR start "rule__Method__Group__0__Impl"
-    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2868:1: rule__Method__Group__0__Impl : ( ruleBodyVisibility ) ;
+    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2931:1: rule__Method__Group__0__Impl : ( ruleBodyVisibility ) ;
     public final void rule__Method__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2872:1: ( ( ruleBodyVisibility ) )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2873:1: ( ruleBodyVisibility )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2935:1: ( ( ruleBodyVisibility ) )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2936:1: ( ruleBodyVisibility )
             {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2873:1: ( ruleBodyVisibility )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2874:1: ruleBodyVisibility
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2936:1: ( ruleBodyVisibility )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2937:1: ruleBodyVisibility
             {
              before(grammarAccess.getMethodAccess().getBodyVisibilityParserRuleCall_0()); 
-            pushFollow(FOLLOW_ruleBodyVisibility_in_rule__Method__Group__0__Impl5786);
+            pushFollow(FOLLOW_ruleBodyVisibility_in_rule__Method__Group__0__Impl5907);
             ruleBodyVisibility();
 
             state._fsp--;
@@ -8035,21 +8183,21 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
 
 
     // $ANTLR start "rule__Method__Group__1"
-    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2885:1: rule__Method__Group__1 : rule__Method__Group__1__Impl rule__Method__Group__2 ;
+    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2948:1: rule__Method__Group__1 : rule__Method__Group__1__Impl rule__Method__Group__2 ;
     public final void rule__Method__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2889:1: ( rule__Method__Group__1__Impl rule__Method__Group__2 )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2890:2: rule__Method__Group__1__Impl rule__Method__Group__2
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2952:1: ( rule__Method__Group__1__Impl rule__Method__Group__2 )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2953:2: rule__Method__Group__1__Impl rule__Method__Group__2
             {
-            pushFollow(FOLLOW_rule__Method__Group__1__Impl_in_rule__Method__Group__15815);
+            pushFollow(FOLLOW_rule__Method__Group__1__Impl_in_rule__Method__Group__15936);
             rule__Method__Group__1__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__Method__Group__2_in_rule__Method__Group__15818);
+            pushFollow(FOLLOW_rule__Method__Group__2_in_rule__Method__Group__15939);
             rule__Method__Group__2();
 
             state._fsp--;
@@ -8073,23 +8221,23 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
 
 
     // $ANTLR start "rule__Method__Group__1__Impl"
-    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2897:1: rule__Method__Group__1__Impl : ( ( rule__Method__NameAssignment_1 ) ) ;
+    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2960:1: rule__Method__Group__1__Impl : ( ( rule__Method__NameAssignment_1 ) ) ;
     public final void rule__Method__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2901:1: ( ( ( rule__Method__NameAssignment_1 ) ) )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2902:1: ( ( rule__Method__NameAssignment_1 ) )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2964:1: ( ( ( rule__Method__NameAssignment_1 ) ) )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2965:1: ( ( rule__Method__NameAssignment_1 ) )
             {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2902:1: ( ( rule__Method__NameAssignment_1 ) )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2903:1: ( rule__Method__NameAssignment_1 )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2965:1: ( ( rule__Method__NameAssignment_1 ) )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2966:1: ( rule__Method__NameAssignment_1 )
             {
              before(grammarAccess.getMethodAccess().getNameAssignment_1()); 
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2904:1: ( rule__Method__NameAssignment_1 )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2904:2: rule__Method__NameAssignment_1
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2967:1: ( rule__Method__NameAssignment_1 )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2967:2: rule__Method__NameAssignment_1
             {
-            pushFollow(FOLLOW_rule__Method__NameAssignment_1_in_rule__Method__Group__1__Impl5845);
+            pushFollow(FOLLOW_rule__Method__NameAssignment_1_in_rule__Method__Group__1__Impl5966);
             rule__Method__NameAssignment_1();
 
             state._fsp--;
@@ -8120,21 +8268,21 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
 
 
     // $ANTLR start "rule__Method__Group__2"
-    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2914:1: rule__Method__Group__2 : rule__Method__Group__2__Impl rule__Method__Group__3 ;
+    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2977:1: rule__Method__Group__2 : rule__Method__Group__2__Impl rule__Method__Group__3 ;
     public final void rule__Method__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2918:1: ( rule__Method__Group__2__Impl rule__Method__Group__3 )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2919:2: rule__Method__Group__2__Impl rule__Method__Group__3
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2981:1: ( rule__Method__Group__2__Impl rule__Method__Group__3 )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2982:2: rule__Method__Group__2__Impl rule__Method__Group__3
             {
-            pushFollow(FOLLOW_rule__Method__Group__2__Impl_in_rule__Method__Group__25875);
+            pushFollow(FOLLOW_rule__Method__Group__2__Impl_in_rule__Method__Group__25996);
             rule__Method__Group__2__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__Method__Group__3_in_rule__Method__Group__25878);
+            pushFollow(FOLLOW_rule__Method__Group__3_in_rule__Method__Group__25999);
             rule__Method__Group__3();
 
             state._fsp--;
@@ -8158,20 +8306,20 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
 
 
     // $ANTLR start "rule__Method__Group__2__Impl"
-    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2926:1: rule__Method__Group__2__Impl : ( '(' ) ;
+    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2989:1: rule__Method__Group__2__Impl : ( '(' ) ;
     public final void rule__Method__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2930:1: ( ( '(' ) )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2931:1: ( '(' )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2993:1: ( ( '(' ) )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2994:1: ( '(' )
             {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2931:1: ( '(' )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2932:1: '('
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2994:1: ( '(' )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2995:1: '('
             {
              before(grammarAccess.getMethodAccess().getLeftParenthesisKeyword_2()); 
-            match(input,29,FOLLOW_29_in_rule__Method__Group__2__Impl5906); 
+            match(input,29,FOLLOW_29_in_rule__Method__Group__2__Impl6027); 
              after(grammarAccess.getMethodAccess().getLeftParenthesisKeyword_2()); 
 
             }
@@ -8195,21 +8343,21 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
 
 
     // $ANTLR start "rule__Method__Group__3"
-    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2945:1: rule__Method__Group__3 : rule__Method__Group__3__Impl rule__Method__Group__4 ;
+    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3008:1: rule__Method__Group__3 : rule__Method__Group__3__Impl rule__Method__Group__4 ;
     public final void rule__Method__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2949:1: ( rule__Method__Group__3__Impl rule__Method__Group__4 )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2950:2: rule__Method__Group__3__Impl rule__Method__Group__4
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3012:1: ( rule__Method__Group__3__Impl rule__Method__Group__4 )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3013:2: rule__Method__Group__3__Impl rule__Method__Group__4
             {
-            pushFollow(FOLLOW_rule__Method__Group__3__Impl_in_rule__Method__Group__35937);
+            pushFollow(FOLLOW_rule__Method__Group__3__Impl_in_rule__Method__Group__36058);
             rule__Method__Group__3__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__Method__Group__4_in_rule__Method__Group__35940);
+            pushFollow(FOLLOW_rule__Method__Group__4_in_rule__Method__Group__36061);
             rule__Method__Group__4();
 
             state._fsp--;
@@ -8233,35 +8381,35 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
 
 
     // $ANTLR start "rule__Method__Group__3__Impl"
-    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2957:1: rule__Method__Group__3__Impl : ( ( rule__Method__ParamAssignment_3 )* ) ;
+    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3020:1: rule__Method__Group__3__Impl : ( ( rule__Method__ParamAssignment_3 )* ) ;
     public final void rule__Method__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2961:1: ( ( ( rule__Method__ParamAssignment_3 )* ) )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2962:1: ( ( rule__Method__ParamAssignment_3 )* )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3024:1: ( ( ( rule__Method__ParamAssignment_3 )* ) )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3025:1: ( ( rule__Method__ParamAssignment_3 )* )
             {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2962:1: ( ( rule__Method__ParamAssignment_3 )* )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2963:1: ( rule__Method__ParamAssignment_3 )*
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3025:1: ( ( rule__Method__ParamAssignment_3 )* )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3026:1: ( rule__Method__ParamAssignment_3 )*
             {
              before(grammarAccess.getMethodAccess().getParamAssignment_3()); 
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2964:1: ( rule__Method__ParamAssignment_3 )*
-            loop35:
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3027:1: ( rule__Method__ParamAssignment_3 )*
+            loop34:
             do {
-                int alt35=2;
-                int LA35_0 = input.LA(1);
+                int alt34=2;
+                int LA34_0 = input.LA(1);
 
-                if ( (LA35_0==RULE_ID) ) {
-                    alt35=1;
+                if ( (LA34_0==RULE_ID) ) {
+                    alt34=1;
                 }
 
 
-                switch (alt35) {
+                switch (alt34) {
             	case 1 :
-            	    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2964:2: rule__Method__ParamAssignment_3
+            	    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3027:2: rule__Method__ParamAssignment_3
             	    {
-            	    pushFollow(FOLLOW_rule__Method__ParamAssignment_3_in_rule__Method__Group__3__Impl5967);
+            	    pushFollow(FOLLOW_rule__Method__ParamAssignment_3_in_rule__Method__Group__3__Impl6088);
             	    rule__Method__ParamAssignment_3();
 
             	    state._fsp--;
@@ -8271,7 +8419,7 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
             	    break;
 
             	default :
-            	    break loop35;
+            	    break loop34;
                 }
             } while (true);
 
@@ -8298,21 +8446,21 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
 
 
     // $ANTLR start "rule__Method__Group__4"
-    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2974:1: rule__Method__Group__4 : rule__Method__Group__4__Impl rule__Method__Group__5 ;
+    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3037:1: rule__Method__Group__4 : rule__Method__Group__4__Impl rule__Method__Group__5 ;
     public final void rule__Method__Group__4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2978:1: ( rule__Method__Group__4__Impl rule__Method__Group__5 )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2979:2: rule__Method__Group__4__Impl rule__Method__Group__5
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3041:1: ( rule__Method__Group__4__Impl rule__Method__Group__5 )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3042:2: rule__Method__Group__4__Impl rule__Method__Group__5
             {
-            pushFollow(FOLLOW_rule__Method__Group__4__Impl_in_rule__Method__Group__45998);
+            pushFollow(FOLLOW_rule__Method__Group__4__Impl_in_rule__Method__Group__46119);
             rule__Method__Group__4__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__Method__Group__5_in_rule__Method__Group__46001);
+            pushFollow(FOLLOW_rule__Method__Group__5_in_rule__Method__Group__46122);
             rule__Method__Group__5();
 
             state._fsp--;
@@ -8336,20 +8484,20 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
 
 
     // $ANTLR start "rule__Method__Group__4__Impl"
-    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2986:1: rule__Method__Group__4__Impl : ( ')' ) ;
+    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3049:1: rule__Method__Group__4__Impl : ( ')' ) ;
     public final void rule__Method__Group__4__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2990:1: ( ( ')' ) )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2991:1: ( ')' )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3053:1: ( ( ')' ) )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3054:1: ( ')' )
             {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2991:1: ( ')' )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:2992:1: ')'
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3054:1: ( ')' )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3055:1: ')'
             {
              before(grammarAccess.getMethodAccess().getRightParenthesisKeyword_4()); 
-            match(input,30,FOLLOW_30_in_rule__Method__Group__4__Impl6029); 
+            match(input,30,FOLLOW_30_in_rule__Method__Group__4__Impl6150); 
              after(grammarAccess.getMethodAccess().getRightParenthesisKeyword_4()); 
 
             }
@@ -8373,16 +8521,16 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
 
 
     // $ANTLR start "rule__Method__Group__5"
-    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3005:1: rule__Method__Group__5 : rule__Method__Group__5__Impl ;
+    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3068:1: rule__Method__Group__5 : rule__Method__Group__5__Impl ;
     public final void rule__Method__Group__5() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3009:1: ( rule__Method__Group__5__Impl )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3010:2: rule__Method__Group__5__Impl
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3072:1: ( rule__Method__Group__5__Impl )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3073:2: rule__Method__Group__5__Impl
             {
-            pushFollow(FOLLOW_rule__Method__Group__5__Impl_in_rule__Method__Group__56060);
+            pushFollow(FOLLOW_rule__Method__Group__5__Impl_in_rule__Method__Group__56181);
             rule__Method__Group__5__Impl();
 
             state._fsp--;
@@ -8406,31 +8554,31 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
 
 
     // $ANTLR start "rule__Method__Group__5__Impl"
-    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3016:1: rule__Method__Group__5__Impl : ( ( rule__Method__Group_5__0 )? ) ;
+    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3079:1: rule__Method__Group__5__Impl : ( ( rule__Method__Group_5__0 )? ) ;
     public final void rule__Method__Group__5__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3020:1: ( ( ( rule__Method__Group_5__0 )? ) )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3021:1: ( ( rule__Method__Group_5__0 )? )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3083:1: ( ( ( rule__Method__Group_5__0 )? ) )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3084:1: ( ( rule__Method__Group_5__0 )? )
             {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3021:1: ( ( rule__Method__Group_5__0 )? )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3022:1: ( rule__Method__Group_5__0 )?
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3084:1: ( ( rule__Method__Group_5__0 )? )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3085:1: ( rule__Method__Group_5__0 )?
             {
              before(grammarAccess.getMethodAccess().getGroup_5()); 
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3023:1: ( rule__Method__Group_5__0 )?
-            int alt36=2;
-            int LA36_0 = input.LA(1);
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3086:1: ( rule__Method__Group_5__0 )?
+            int alt35=2;
+            int LA35_0 = input.LA(1);
 
-            if ( (LA36_0==18) ) {
-                alt36=1;
+            if ( (LA35_0==18) ) {
+                alt35=1;
             }
-            switch (alt36) {
+            switch (alt35) {
                 case 1 :
-                    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3023:2: rule__Method__Group_5__0
+                    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3086:2: rule__Method__Group_5__0
                     {
-                    pushFollow(FOLLOW_rule__Method__Group_5__0_in_rule__Method__Group__5__Impl6087);
+                    pushFollow(FOLLOW_rule__Method__Group_5__0_in_rule__Method__Group__5__Impl6208);
                     rule__Method__Group_5__0();
 
                     state._fsp--;
@@ -8464,21 +8612,21 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
 
 
     // $ANTLR start "rule__Method__Group_5__0"
-    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3045:1: rule__Method__Group_5__0 : rule__Method__Group_5__0__Impl rule__Method__Group_5__1 ;
+    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3108:1: rule__Method__Group_5__0 : rule__Method__Group_5__0__Impl rule__Method__Group_5__1 ;
     public final void rule__Method__Group_5__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3049:1: ( rule__Method__Group_5__0__Impl rule__Method__Group_5__1 )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3050:2: rule__Method__Group_5__0__Impl rule__Method__Group_5__1
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3112:1: ( rule__Method__Group_5__0__Impl rule__Method__Group_5__1 )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3113:2: rule__Method__Group_5__0__Impl rule__Method__Group_5__1
             {
-            pushFollow(FOLLOW_rule__Method__Group_5__0__Impl_in_rule__Method__Group_5__06130);
+            pushFollow(FOLLOW_rule__Method__Group_5__0__Impl_in_rule__Method__Group_5__06251);
             rule__Method__Group_5__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__Method__Group_5__1_in_rule__Method__Group_5__06133);
+            pushFollow(FOLLOW_rule__Method__Group_5__1_in_rule__Method__Group_5__06254);
             rule__Method__Group_5__1();
 
             state._fsp--;
@@ -8502,20 +8650,20 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
 
 
     // $ANTLR start "rule__Method__Group_5__0__Impl"
-    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3057:1: rule__Method__Group_5__0__Impl : ( ':' ) ;
+    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3120:1: rule__Method__Group_5__0__Impl : ( ':' ) ;
     public final void rule__Method__Group_5__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3061:1: ( ( ':' ) )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3062:1: ( ':' )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3124:1: ( ( ':' ) )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3125:1: ( ':' )
             {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3062:1: ( ':' )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3063:1: ':'
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3125:1: ( ':' )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3126:1: ':'
             {
              before(grammarAccess.getMethodAccess().getColonKeyword_5_0()); 
-            match(input,18,FOLLOW_18_in_rule__Method__Group_5__0__Impl6161); 
+            match(input,18,FOLLOW_18_in_rule__Method__Group_5__0__Impl6282); 
              after(grammarAccess.getMethodAccess().getColonKeyword_5_0()); 
 
             }
@@ -8539,16 +8687,16 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
 
 
     // $ANTLR start "rule__Method__Group_5__1"
-    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3076:1: rule__Method__Group_5__1 : rule__Method__Group_5__1__Impl ;
+    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3139:1: rule__Method__Group_5__1 : rule__Method__Group_5__1__Impl ;
     public final void rule__Method__Group_5__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3080:1: ( rule__Method__Group_5__1__Impl )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3081:2: rule__Method__Group_5__1__Impl
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3143:1: ( rule__Method__Group_5__1__Impl )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3144:2: rule__Method__Group_5__1__Impl
             {
-            pushFollow(FOLLOW_rule__Method__Group_5__1__Impl_in_rule__Method__Group_5__16192);
+            pushFollow(FOLLOW_rule__Method__Group_5__1__Impl_in_rule__Method__Group_5__16313);
             rule__Method__Group_5__1__Impl();
 
             state._fsp--;
@@ -8572,23 +8720,23 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
 
 
     // $ANTLR start "rule__Method__Group_5__1__Impl"
-    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3087:1: rule__Method__Group_5__1__Impl : ( ( rule__Method__ReturnTypeAssignment_5_1 ) ) ;
+    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3150:1: rule__Method__Group_5__1__Impl : ( ( rule__Method__ReturnTypeAssignment_5_1 ) ) ;
     public final void rule__Method__Group_5__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3091:1: ( ( ( rule__Method__ReturnTypeAssignment_5_1 ) ) )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3092:1: ( ( rule__Method__ReturnTypeAssignment_5_1 ) )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3154:1: ( ( ( rule__Method__ReturnTypeAssignment_5_1 ) ) )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3155:1: ( ( rule__Method__ReturnTypeAssignment_5_1 ) )
             {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3092:1: ( ( rule__Method__ReturnTypeAssignment_5_1 ) )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3093:1: ( rule__Method__ReturnTypeAssignment_5_1 )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3155:1: ( ( rule__Method__ReturnTypeAssignment_5_1 ) )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3156:1: ( rule__Method__ReturnTypeAssignment_5_1 )
             {
              before(grammarAccess.getMethodAccess().getReturnTypeAssignment_5_1()); 
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3094:1: ( rule__Method__ReturnTypeAssignment_5_1 )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3094:2: rule__Method__ReturnTypeAssignment_5_1
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3157:1: ( rule__Method__ReturnTypeAssignment_5_1 )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3157:2: rule__Method__ReturnTypeAssignment_5_1
             {
-            pushFollow(FOLLOW_rule__Method__ReturnTypeAssignment_5_1_in_rule__Method__Group_5__1__Impl6219);
+            pushFollow(FOLLOW_rule__Method__ReturnTypeAssignment_5_1_in_rule__Method__Group_5__1__Impl6340);
             rule__Method__ReturnTypeAssignment_5_1();
 
             state._fsp--;
@@ -8619,21 +8767,21 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
 
 
     // $ANTLR start "rule__Package__Group__0"
-    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3108:1: rule__Package__Group__0 : rule__Package__Group__0__Impl rule__Package__Group__1 ;
+    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3171:1: rule__Package__Group__0 : rule__Package__Group__0__Impl rule__Package__Group__1 ;
     public final void rule__Package__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3112:1: ( rule__Package__Group__0__Impl rule__Package__Group__1 )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3113:2: rule__Package__Group__0__Impl rule__Package__Group__1
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3175:1: ( rule__Package__Group__0__Impl rule__Package__Group__1 )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3176:2: rule__Package__Group__0__Impl rule__Package__Group__1
             {
-            pushFollow(FOLLOW_rule__Package__Group__0__Impl_in_rule__Package__Group__06253);
+            pushFollow(FOLLOW_rule__Package__Group__0__Impl_in_rule__Package__Group__06374);
             rule__Package__Group__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__Package__Group__1_in_rule__Package__Group__06256);
+            pushFollow(FOLLOW_rule__Package__Group__1_in_rule__Package__Group__06377);
             rule__Package__Group__1();
 
             state._fsp--;
@@ -8657,38 +8805,27 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
 
 
     // $ANTLR start "rule__Package__Group__0__Impl"
-    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3120:1: rule__Package__Group__0__Impl : ( ( rule__Package__NameAssignment_0 )? ) ;
+    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3183:1: rule__Package__Group__0__Impl : ( ( rule__Package__NameAssignment_0 ) ) ;
     public final void rule__Package__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3124:1: ( ( ( rule__Package__NameAssignment_0 )? ) )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3125:1: ( ( rule__Package__NameAssignment_0 )? )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3187:1: ( ( ( rule__Package__NameAssignment_0 ) ) )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3188:1: ( ( rule__Package__NameAssignment_0 ) )
             {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3125:1: ( ( rule__Package__NameAssignment_0 )? )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3126:1: ( rule__Package__NameAssignment_0 )?
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3188:1: ( ( rule__Package__NameAssignment_0 ) )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3189:1: ( rule__Package__NameAssignment_0 )
             {
              before(grammarAccess.getPackageAccess().getNameAssignment_0()); 
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3127:1: ( rule__Package__NameAssignment_0 )?
-            int alt37=2;
-            int LA37_0 = input.LA(1);
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3190:1: ( rule__Package__NameAssignment_0 )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3190:2: rule__Package__NameAssignment_0
+            {
+            pushFollow(FOLLOW_rule__Package__NameAssignment_0_in_rule__Package__Group__0__Impl6404);
+            rule__Package__NameAssignment_0();
 
-            if ( (LA37_0==RULE_ID) ) {
-                alt37=1;
-            }
-            switch (alt37) {
-                case 1 :
-                    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3127:2: rule__Package__NameAssignment_0
-                    {
-                    pushFollow(FOLLOW_rule__Package__NameAssignment_0_in_rule__Package__Group__0__Impl6283);
-                    rule__Package__NameAssignment_0();
+            state._fsp--;
 
-                    state._fsp--;
-
-
-                    }
-                    break;
 
             }
 
@@ -8715,21 +8852,21 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
 
 
     // $ANTLR start "rule__Package__Group__1"
-    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3137:1: rule__Package__Group__1 : rule__Package__Group__1__Impl rule__Package__Group__2 ;
+    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3200:1: rule__Package__Group__1 : rule__Package__Group__1__Impl rule__Package__Group__2 ;
     public final void rule__Package__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3141:1: ( rule__Package__Group__1__Impl rule__Package__Group__2 )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3142:2: rule__Package__Group__1__Impl rule__Package__Group__2
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3204:1: ( rule__Package__Group__1__Impl rule__Package__Group__2 )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3205:2: rule__Package__Group__1__Impl rule__Package__Group__2
             {
-            pushFollow(FOLLOW_rule__Package__Group__1__Impl_in_rule__Package__Group__16314);
+            pushFollow(FOLLOW_rule__Package__Group__1__Impl_in_rule__Package__Group__16434);
             rule__Package__Group__1__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__Package__Group__2_in_rule__Package__Group__16317);
+            pushFollow(FOLLOW_rule__Package__Group__2_in_rule__Package__Group__16437);
             rule__Package__Group__2();
 
             state._fsp--;
@@ -8753,49 +8890,21 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
 
 
     // $ANTLR start "rule__Package__Group__1__Impl"
-    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3149:1: rule__Package__Group__1__Impl : ( ( rule__Package__Group_1__0 )* ) ;
+    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3212:1: rule__Package__Group__1__Impl : ( '[[' ) ;
     public final void rule__Package__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3153:1: ( ( ( rule__Package__Group_1__0 )* ) )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3154:1: ( ( rule__Package__Group_1__0 )* )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3216:1: ( ( '[[' ) )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3217:1: ( '[[' )
             {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3154:1: ( ( rule__Package__Group_1__0 )* )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3155:1: ( rule__Package__Group_1__0 )*
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3217:1: ( '[[' )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3218:1: '[['
             {
-             before(grammarAccess.getPackageAccess().getGroup_1()); 
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3156:1: ( rule__Package__Group_1__0 )*
-            loop38:
-            do {
-                int alt38=2;
-                int LA38_0 = input.LA(1);
-
-                if ( (LA38_0==33) ) {
-                    alt38=1;
-                }
-
-
-                switch (alt38) {
-            	case 1 :
-            	    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3156:2: rule__Package__Group_1__0
-            	    {
-            	    pushFollow(FOLLOW_rule__Package__Group_1__0_in_rule__Package__Group__1__Impl6344);
-            	    rule__Package__Group_1__0();
-
-            	    state._fsp--;
-
-
-            	    }
-            	    break;
-
-            	default :
-            	    break loop38;
-                }
-            } while (true);
-
-             after(grammarAccess.getPackageAccess().getGroup_1()); 
+             before(grammarAccess.getPackageAccess().getLeftSquareBracketLeftSquareBracketKeyword_1()); 
+            match(input,31,FOLLOW_31_in_rule__Package__Group__1__Impl6465); 
+             after(grammarAccess.getPackageAccess().getLeftSquareBracketLeftSquareBracketKeyword_1()); 
 
             }
 
@@ -8818,21 +8927,21 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
 
 
     // $ANTLR start "rule__Package__Group__2"
-    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3166:1: rule__Package__Group__2 : rule__Package__Group__2__Impl rule__Package__Group__3 ;
+    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3231:1: rule__Package__Group__2 : rule__Package__Group__2__Impl rule__Package__Group__3 ;
     public final void rule__Package__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3170:1: ( rule__Package__Group__2__Impl rule__Package__Group__3 )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3171:2: rule__Package__Group__2__Impl rule__Package__Group__3
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3235:1: ( rule__Package__Group__2__Impl rule__Package__Group__3 )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3236:2: rule__Package__Group__2__Impl rule__Package__Group__3
             {
-            pushFollow(FOLLOW_rule__Package__Group__2__Impl_in_rule__Package__Group__26375);
+            pushFollow(FOLLOW_rule__Package__Group__2__Impl_in_rule__Package__Group__26496);
             rule__Package__Group__2__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__Package__Group__3_in_rule__Package__Group__26378);
+            pushFollow(FOLLOW_rule__Package__Group__3_in_rule__Package__Group__26499);
             rule__Package__Group__3();
 
             state._fsp--;
@@ -8856,21 +8965,49 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
 
 
     // $ANTLR start "rule__Package__Group__2__Impl"
-    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3178:1: rule__Package__Group__2__Impl : ( '[[' ) ;
+    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3243:1: rule__Package__Group__2__Impl : ( ( rule__Package__ClassTypeAssignment_2 )* ) ;
     public final void rule__Package__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3182:1: ( ( '[[' ) )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3183:1: ( '[[' )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3247:1: ( ( ( rule__Package__ClassTypeAssignment_2 )* ) )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3248:1: ( ( rule__Package__ClassTypeAssignment_2 )* )
             {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3183:1: ( '[[' )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3184:1: '[['
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3248:1: ( ( rule__Package__ClassTypeAssignment_2 )* )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3249:1: ( rule__Package__ClassTypeAssignment_2 )*
             {
-             before(grammarAccess.getPackageAccess().getLeftSquareBracketLeftSquareBracketKeyword_2()); 
-            match(input,31,FOLLOW_31_in_rule__Package__Group__2__Impl6406); 
-             after(grammarAccess.getPackageAccess().getLeftSquareBracketLeftSquareBracketKeyword_2()); 
+             before(grammarAccess.getPackageAccess().getClassTypeAssignment_2()); 
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3250:1: ( rule__Package__ClassTypeAssignment_2 )*
+            loop36:
+            do {
+                int alt36=2;
+                int LA36_0 = input.LA(1);
+
+                if ( ((LA36_0>=15 && LA36_0<=16)) ) {
+                    alt36=1;
+                }
+
+
+                switch (alt36) {
+            	case 1 :
+            	    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3250:2: rule__Package__ClassTypeAssignment_2
+            	    {
+            	    pushFollow(FOLLOW_rule__Package__ClassTypeAssignment_2_in_rule__Package__Group__2__Impl6526);
+            	    rule__Package__ClassTypeAssignment_2();
+
+            	    state._fsp--;
+
+
+            	    }
+            	    break;
+
+            	default :
+            	    break loop36;
+                }
+            } while (true);
+
+             after(grammarAccess.getPackageAccess().getClassTypeAssignment_2()); 
 
             }
 
@@ -8893,21 +9030,21 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
 
 
     // $ANTLR start "rule__Package__Group__3"
-    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3197:1: rule__Package__Group__3 : rule__Package__Group__3__Impl rule__Package__Group__4 ;
+    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3260:1: rule__Package__Group__3 : rule__Package__Group__3__Impl rule__Package__Group__4 ;
     public final void rule__Package__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3201:1: ( rule__Package__Group__3__Impl rule__Package__Group__4 )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3202:2: rule__Package__Group__3__Impl rule__Package__Group__4
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3264:1: ( rule__Package__Group__3__Impl rule__Package__Group__4 )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3265:2: rule__Package__Group__3__Impl rule__Package__Group__4
             {
-            pushFollow(FOLLOW_rule__Package__Group__3__Impl_in_rule__Package__Group__36437);
+            pushFollow(FOLLOW_rule__Package__Group__3__Impl_in_rule__Package__Group__36557);
             rule__Package__Group__3__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__Package__Group__4_in_rule__Package__Group__36440);
+            pushFollow(FOLLOW_rule__Package__Group__4_in_rule__Package__Group__36560);
             rule__Package__Group__4();
 
             state._fsp--;
@@ -8931,49 +9068,42 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
 
 
     // $ANTLR start "rule__Package__Group__3__Impl"
-    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3209:1: rule__Package__Group__3__Impl : ( ( rule__Package__ClassTypeAssignment_3 )* ) ;
+    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3272:1: rule__Package__Group__3__Impl : ( ( rule__Package__SubPackageAssignment_3 )? ) ;
     public final void rule__Package__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3213:1: ( ( ( rule__Package__ClassTypeAssignment_3 )* ) )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3214:1: ( ( rule__Package__ClassTypeAssignment_3 )* )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3276:1: ( ( ( rule__Package__SubPackageAssignment_3 )? ) )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3277:1: ( ( rule__Package__SubPackageAssignment_3 )? )
             {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3214:1: ( ( rule__Package__ClassTypeAssignment_3 )* )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3215:1: ( rule__Package__ClassTypeAssignment_3 )*
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3277:1: ( ( rule__Package__SubPackageAssignment_3 )? )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3278:1: ( rule__Package__SubPackageAssignment_3 )?
             {
-             before(grammarAccess.getPackageAccess().getClassTypeAssignment_3()); 
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3216:1: ( rule__Package__ClassTypeAssignment_3 )*
-            loop39:
-            do {
-                int alt39=2;
-                int LA39_0 = input.LA(1);
+             before(grammarAccess.getPackageAccess().getSubPackageAssignment_3()); 
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3279:1: ( rule__Package__SubPackageAssignment_3 )?
+            int alt37=2;
+            int LA37_0 = input.LA(1);
 
-                if ( ((LA39_0>=15 && LA39_0<=16)) ) {
-                    alt39=1;
-                }
+            if ( (LA37_0==EOF||LA37_0==RULE_ID||LA37_0==31||LA37_0==33) ) {
+                alt37=1;
+            }
+            switch (alt37) {
+                case 1 :
+                    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3279:2: rule__Package__SubPackageAssignment_3
+                    {
+                    pushFollow(FOLLOW_rule__Package__SubPackageAssignment_3_in_rule__Package__Group__3__Impl6587);
+                    rule__Package__SubPackageAssignment_3();
 
-
-                switch (alt39) {
-            	case 1 :
-            	    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3216:2: rule__Package__ClassTypeAssignment_3
-            	    {
-            	    pushFollow(FOLLOW_rule__Package__ClassTypeAssignment_3_in_rule__Package__Group__3__Impl6467);
-            	    rule__Package__ClassTypeAssignment_3();
-
-            	    state._fsp--;
+                    state._fsp--;
 
 
-            	    }
-            	    break;
+                    }
+                    break;
 
-            	default :
-            	    break loop39;
-                }
-            } while (true);
+            }
 
-             after(grammarAccess.getPackageAccess().getClassTypeAssignment_3()); 
+             after(grammarAccess.getPackageAccess().getSubPackageAssignment_3()); 
 
             }
 
@@ -8996,22 +9126,17 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
 
 
     // $ANTLR start "rule__Package__Group__4"
-    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3226:1: rule__Package__Group__4 : rule__Package__Group__4__Impl rule__Package__Group__5 ;
+    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3289:1: rule__Package__Group__4 : rule__Package__Group__4__Impl ;
     public final void rule__Package__Group__4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3230:1: ( rule__Package__Group__4__Impl rule__Package__Group__5 )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3231:2: rule__Package__Group__4__Impl rule__Package__Group__5
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3293:1: ( rule__Package__Group__4__Impl )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3294:2: rule__Package__Group__4__Impl
             {
-            pushFollow(FOLLOW_rule__Package__Group__4__Impl_in_rule__Package__Group__46498);
+            pushFollow(FOLLOW_rule__Package__Group__4__Impl_in_rule__Package__Group__46618);
             rule__Package__Group__4__Impl();
-
-            state._fsp--;
-
-            pushFollow(FOLLOW_rule__Package__Group__5_in_rule__Package__Group__46501);
-            rule__Package__Group__5();
 
             state._fsp--;
 
@@ -9034,42 +9159,21 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
 
 
     // $ANTLR start "rule__Package__Group__4__Impl"
-    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3238:1: rule__Package__Group__4__Impl : ( ( rule__Package__SubPackageAssignment_4 )? ) ;
+    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3300:1: rule__Package__Group__4__Impl : ( ']]' ) ;
     public final void rule__Package__Group__4__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3242:1: ( ( ( rule__Package__SubPackageAssignment_4 )? ) )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3243:1: ( ( rule__Package__SubPackageAssignment_4 )? )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3304:1: ( ( ']]' ) )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3305:1: ( ']]' )
             {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3243:1: ( ( rule__Package__SubPackageAssignment_4 )? )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3244:1: ( rule__Package__SubPackageAssignment_4 )?
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3305:1: ( ']]' )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3306:1: ']]'
             {
-             before(grammarAccess.getPackageAccess().getSubPackageAssignment_4()); 
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3245:1: ( rule__Package__SubPackageAssignment_4 )?
-            int alt40=2;
-            int LA40_0 = input.LA(1);
-
-            if ( (LA40_0==RULE_ID||LA40_0==31||LA40_0==33) ) {
-                alt40=1;
-            }
-            switch (alt40) {
-                case 1 :
-                    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3245:2: rule__Package__SubPackageAssignment_4
-                    {
-                    pushFollow(FOLLOW_rule__Package__SubPackageAssignment_4_in_rule__Package__Group__4__Impl6528);
-                    rule__Package__SubPackageAssignment_4();
-
-                    state._fsp--;
-
-
-                    }
-                    break;
-
-            }
-
-             after(grammarAccess.getPackageAccess().getSubPackageAssignment_4()); 
+             before(grammarAccess.getPackageAccess().getRightSquareBracketRightSquareBracketKeyword_4()); 
+            match(input,32,FOLLOW_32_in_rule__Package__Group__4__Impl6646); 
+             after(grammarAccess.getPackageAccess().getRightSquareBracketRightSquareBracketKeyword_4()); 
 
             }
 
@@ -9091,18 +9195,23 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
     // $ANTLR end "rule__Package__Group__4__Impl"
 
 
-    // $ANTLR start "rule__Package__Group__5"
-    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3255:1: rule__Package__Group__5 : rule__Package__Group__5__Impl ;
-    public final void rule__Package__Group__5() throws RecognitionException {
+    // $ANTLR start "rule__PackageName__Group__0"
+    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3329:1: rule__PackageName__Group__0 : rule__PackageName__Group__0__Impl rule__PackageName__Group__1 ;
+    public final void rule__PackageName__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3259:1: ( rule__Package__Group__5__Impl )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3260:2: rule__Package__Group__5__Impl
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3333:1: ( rule__PackageName__Group__0__Impl rule__PackageName__Group__1 )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3334:2: rule__PackageName__Group__0__Impl rule__PackageName__Group__1
             {
-            pushFollow(FOLLOW_rule__Package__Group__5__Impl_in_rule__Package__Group__56559);
-            rule__Package__Group__5__Impl();
+            pushFollow(FOLLOW_rule__PackageName__Group__0__Impl_in_rule__PackageName__Group__06687);
+            rule__PackageName__Group__0__Impl();
+
+            state._fsp--;
+
+            pushFollow(FOLLOW_rule__PackageName__Group__1_in_rule__PackageName__Group__06690);
+            rule__PackageName__Group__1();
 
             state._fsp--;
 
@@ -9121,25 +9230,42 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
         }
         return ;
     }
-    // $ANTLR end "rule__Package__Group__5"
+    // $ANTLR end "rule__PackageName__Group__0"
 
 
-    // $ANTLR start "rule__Package__Group__5__Impl"
-    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3266:1: rule__Package__Group__5__Impl : ( ']]' ) ;
-    public final void rule__Package__Group__5__Impl() throws RecognitionException {
+    // $ANTLR start "rule__PackageName__Group__0__Impl"
+    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3341:1: rule__PackageName__Group__0__Impl : ( ( RULE_ID )? ) ;
+    public final void rule__PackageName__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3270:1: ( ( ']]' ) )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3271:1: ( ']]' )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3345:1: ( ( ( RULE_ID )? ) )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3346:1: ( ( RULE_ID )? )
             {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3271:1: ( ']]' )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3272:1: ']]'
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3346:1: ( ( RULE_ID )? )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3347:1: ( RULE_ID )?
             {
-             before(grammarAccess.getPackageAccess().getRightSquareBracketRightSquareBracketKeyword_5()); 
-            match(input,32,FOLLOW_32_in_rule__Package__Group__5__Impl6587); 
-             after(grammarAccess.getPackageAccess().getRightSquareBracketRightSquareBracketKeyword_5()); 
+             before(grammarAccess.getPackageNameAccess().getIDTerminalRuleCall_0()); 
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3348:1: ( RULE_ID )?
+            int alt38=2;
+            int LA38_0 = input.LA(1);
+
+            if ( (LA38_0==RULE_ID) ) {
+                alt38=1;
+            }
+            switch (alt38) {
+                case 1 :
+                    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3348:3: RULE_ID
+                    {
+                    match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__PackageName__Group__0__Impl6718); 
+
+                    }
+                    break;
+
+            }
+
+             after(grammarAccess.getPackageNameAccess().getIDTerminalRuleCall_0()); 
 
             }
 
@@ -9158,96 +9284,21 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
         }
         return ;
     }
-    // $ANTLR end "rule__Package__Group__5__Impl"
+    // $ANTLR end "rule__PackageName__Group__0__Impl"
 
 
-    // $ANTLR start "rule__Package__Group_1__0"
-    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3297:1: rule__Package__Group_1__0 : rule__Package__Group_1__0__Impl rule__Package__Group_1__1 ;
-    public final void rule__Package__Group_1__0() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3301:1: ( rule__Package__Group_1__0__Impl rule__Package__Group_1__1 )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3302:2: rule__Package__Group_1__0__Impl rule__Package__Group_1__1
-            {
-            pushFollow(FOLLOW_rule__Package__Group_1__0__Impl_in_rule__Package__Group_1__06630);
-            rule__Package__Group_1__0__Impl();
-
-            state._fsp--;
-
-            pushFollow(FOLLOW_rule__Package__Group_1__1_in_rule__Package__Group_1__06633);
-            rule__Package__Group_1__1();
-
-            state._fsp--;
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__Package__Group_1__0"
-
-
-    // $ANTLR start "rule__Package__Group_1__0__Impl"
-    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3309:1: rule__Package__Group_1__0__Impl : ( '.' ) ;
-    public final void rule__Package__Group_1__0__Impl() throws RecognitionException {
+    // $ANTLR start "rule__PackageName__Group__1"
+    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3358:1: rule__PackageName__Group__1 : rule__PackageName__Group__1__Impl ;
+    public final void rule__PackageName__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3313:1: ( ( '.' ) )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3314:1: ( '.' )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3362:1: ( rule__PackageName__Group__1__Impl )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3363:2: rule__PackageName__Group__1__Impl
             {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3314:1: ( '.' )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3315:1: '.'
-            {
-             before(grammarAccess.getPackageAccess().getFullStopKeyword_1_0()); 
-            match(input,33,FOLLOW_33_in_rule__Package__Group_1__0__Impl6661); 
-             after(grammarAccess.getPackageAccess().getFullStopKeyword_1_0()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__Package__Group_1__0__Impl"
-
-
-    // $ANTLR start "rule__Package__Group_1__1"
-    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3328:1: rule__Package__Group_1__1 : rule__Package__Group_1__1__Impl ;
-    public final void rule__Package__Group_1__1() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3332:1: ( rule__Package__Group_1__1__Impl )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3333:2: rule__Package__Group_1__1__Impl
-            {
-            pushFollow(FOLLOW_rule__Package__Group_1__1__Impl_in_rule__Package__Group_1__16692);
-            rule__Package__Group_1__1__Impl();
+            pushFollow(FOLLOW_rule__PackageName__Group__1__Impl_in_rule__PackageName__Group__16749);
+            rule__PackageName__Group__1__Impl();
 
             state._fsp--;
 
@@ -9266,25 +9317,53 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
         }
         return ;
     }
-    // $ANTLR end "rule__Package__Group_1__1"
+    // $ANTLR end "rule__PackageName__Group__1"
 
 
-    // $ANTLR start "rule__Package__Group_1__1__Impl"
-    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3339:1: rule__Package__Group_1__1__Impl : ( RULE_ID ) ;
-    public final void rule__Package__Group_1__1__Impl() throws RecognitionException {
+    // $ANTLR start "rule__PackageName__Group__1__Impl"
+    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3369:1: rule__PackageName__Group__1__Impl : ( ( rule__PackageName__Group_1__0 )* ) ;
+    public final void rule__PackageName__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3343:1: ( ( RULE_ID ) )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3344:1: ( RULE_ID )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3373:1: ( ( ( rule__PackageName__Group_1__0 )* ) )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3374:1: ( ( rule__PackageName__Group_1__0 )* )
             {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3344:1: ( RULE_ID )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3345:1: RULE_ID
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3374:1: ( ( rule__PackageName__Group_1__0 )* )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3375:1: ( rule__PackageName__Group_1__0 )*
             {
-             before(grammarAccess.getPackageAccess().getIDTerminalRuleCall_1_1()); 
-            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__Package__Group_1__1__Impl6719); 
-             after(grammarAccess.getPackageAccess().getIDTerminalRuleCall_1_1()); 
+             before(grammarAccess.getPackageNameAccess().getGroup_1()); 
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3376:1: ( rule__PackageName__Group_1__0 )*
+            loop39:
+            do {
+                int alt39=2;
+                int LA39_0 = input.LA(1);
+
+                if ( (LA39_0==33) ) {
+                    alt39=1;
+                }
+
+
+                switch (alt39) {
+            	case 1 :
+            	    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3376:2: rule__PackageName__Group_1__0
+            	    {
+            	    pushFollow(FOLLOW_rule__PackageName__Group_1__0_in_rule__PackageName__Group__1__Impl6776);
+            	    rule__PackageName__Group_1__0();
+
+            	    state._fsp--;
+
+
+            	    }
+            	    break;
+
+            	default :
+            	    break loop39;
+                }
+            } while (true);
+
+             after(grammarAccess.getPackageNameAccess().getGroup_1()); 
 
             }
 
@@ -9303,24 +9382,169 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
         }
         return ;
     }
-    // $ANTLR end "rule__Package__Group_1__1__Impl"
+    // $ANTLR end "rule__PackageName__Group__1__Impl"
+
+
+    // $ANTLR start "rule__PackageName__Group_1__0"
+    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3390:1: rule__PackageName__Group_1__0 : rule__PackageName__Group_1__0__Impl rule__PackageName__Group_1__1 ;
+    public final void rule__PackageName__Group_1__0() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3394:1: ( rule__PackageName__Group_1__0__Impl rule__PackageName__Group_1__1 )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3395:2: rule__PackageName__Group_1__0__Impl rule__PackageName__Group_1__1
+            {
+            pushFollow(FOLLOW_rule__PackageName__Group_1__0__Impl_in_rule__PackageName__Group_1__06811);
+            rule__PackageName__Group_1__0__Impl();
+
+            state._fsp--;
+
+            pushFollow(FOLLOW_rule__PackageName__Group_1__1_in_rule__PackageName__Group_1__06814);
+            rule__PackageName__Group_1__1();
+
+            state._fsp--;
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__PackageName__Group_1__0"
+
+
+    // $ANTLR start "rule__PackageName__Group_1__0__Impl"
+    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3402:1: rule__PackageName__Group_1__0__Impl : ( '.' ) ;
+    public final void rule__PackageName__Group_1__0__Impl() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3406:1: ( ( '.' ) )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3407:1: ( '.' )
+            {
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3407:1: ( '.' )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3408:1: '.'
+            {
+             before(grammarAccess.getPackageNameAccess().getFullStopKeyword_1_0()); 
+            match(input,33,FOLLOW_33_in_rule__PackageName__Group_1__0__Impl6842); 
+             after(grammarAccess.getPackageNameAccess().getFullStopKeyword_1_0()); 
+
+            }
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__PackageName__Group_1__0__Impl"
+
+
+    // $ANTLR start "rule__PackageName__Group_1__1"
+    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3421:1: rule__PackageName__Group_1__1 : rule__PackageName__Group_1__1__Impl ;
+    public final void rule__PackageName__Group_1__1() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3425:1: ( rule__PackageName__Group_1__1__Impl )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3426:2: rule__PackageName__Group_1__1__Impl
+            {
+            pushFollow(FOLLOW_rule__PackageName__Group_1__1__Impl_in_rule__PackageName__Group_1__16873);
+            rule__PackageName__Group_1__1__Impl();
+
+            state._fsp--;
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__PackageName__Group_1__1"
+
+
+    // $ANTLR start "rule__PackageName__Group_1__1__Impl"
+    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3432:1: rule__PackageName__Group_1__1__Impl : ( RULE_ID ) ;
+    public final void rule__PackageName__Group_1__1__Impl() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3436:1: ( ( RULE_ID ) )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3437:1: ( RULE_ID )
+            {
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3437:1: ( RULE_ID )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3438:1: RULE_ID
+            {
+             before(grammarAccess.getPackageNameAccess().getIDTerminalRuleCall_1_1()); 
+            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__PackageName__Group_1__1__Impl6900); 
+             after(grammarAccess.getPackageNameAccess().getIDTerminalRuleCall_1_1()); 
+
+            }
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__PackageName__Group_1__1__Impl"
 
 
     // $ANTLR start "rule__Model__PackageAssignment"
-    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3361:1: rule__Model__PackageAssignment : ( rulePackage ) ;
+    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3454:1: rule__Model__PackageAssignment : ( rulePackage ) ;
     public final void rule__Model__PackageAssignment() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3365:1: ( ( rulePackage ) )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3366:1: ( rulePackage )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3458:1: ( ( rulePackage ) )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3459:1: ( rulePackage )
             {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3366:1: ( rulePackage )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3367:1: rulePackage
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3459:1: ( rulePackage )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3460:1: rulePackage
             {
              before(grammarAccess.getModelAccess().getPackagePackageParserRuleCall_0()); 
-            pushFollow(FOLLOW_rulePackage_in_rule__Model__PackageAssignment6757);
+            pushFollow(FOLLOW_rulePackage_in_rule__Model__PackageAssignment6938);
             rulePackage();
 
             state._fsp--;
@@ -9348,20 +9572,20 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
 
 
     // $ANTLR start "rule__Class__ClassnameAssignment_1"
-    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3376:1: rule__Class__ClassnameAssignment_1 : ( RULE_ID ) ;
+    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3469:1: rule__Class__ClassnameAssignment_1 : ( RULE_ID ) ;
     public final void rule__Class__ClassnameAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3380:1: ( ( RULE_ID ) )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3381:1: ( RULE_ID )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3473:1: ( ( RULE_ID ) )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3474:1: ( RULE_ID )
             {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3381:1: ( RULE_ID )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3382:1: RULE_ID
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3474:1: ( RULE_ID )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3475:1: RULE_ID
             {
              before(grammarAccess.getClassAccess().getClassnameIDTerminalRuleCall_1_0()); 
-            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__Class__ClassnameAssignment_16788); 
+            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__Class__ClassnameAssignment_16969); 
              after(grammarAccess.getClassAccess().getClassnameIDTerminalRuleCall_1_0()); 
 
             }
@@ -9385,20 +9609,20 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
 
 
     // $ANTLR start "rule__Class__ExtensionAssignment_3"
-    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3391:1: rule__Class__ExtensionAssignment_3 : ( RULE_ID ) ;
+    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3484:1: rule__Class__ExtensionAssignment_3 : ( RULE_ID ) ;
     public final void rule__Class__ExtensionAssignment_3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3395:1: ( ( RULE_ID ) )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3396:1: ( RULE_ID )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3488:1: ( ( RULE_ID ) )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3489:1: ( RULE_ID )
             {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3396:1: ( RULE_ID )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3397:1: RULE_ID
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3489:1: ( RULE_ID )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3490:1: RULE_ID
             {
              before(grammarAccess.getClassAccess().getExtensionIDTerminalRuleCall_3_0()); 
-            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__Class__ExtensionAssignment_36819); 
+            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__Class__ExtensionAssignment_37000); 
              after(grammarAccess.getClassAccess().getExtensionIDTerminalRuleCall_3_0()); 
 
             }
@@ -9421,26 +9645,22 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
     // $ANTLR end "rule__Class__ExtensionAssignment_3"
 
 
-    // $ANTLR start "rule__Class__ImplementsAssignment_4"
-    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3406:1: rule__Class__ImplementsAssignment_4 : ( ruleImplements ) ;
-    public final void rule__Class__ImplementsAssignment_4() throws RecognitionException {
+    // $ANTLR start "rule__Class__ImplementsAssignment_4_1"
+    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3499:1: rule__Class__ImplementsAssignment_4_1 : ( RULE_ID ) ;
+    public final void rule__Class__ImplementsAssignment_4_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3410:1: ( ( ruleImplements ) )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3411:1: ( ruleImplements )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3503:1: ( ( RULE_ID ) )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3504:1: ( RULE_ID )
             {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3411:1: ( ruleImplements )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3412:1: ruleImplements
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3504:1: ( RULE_ID )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3505:1: RULE_ID
             {
-             before(grammarAccess.getClassAccess().getImplementsImplementsParserRuleCall_4_0()); 
-            pushFollow(FOLLOW_ruleImplements_in_rule__Class__ImplementsAssignment_46850);
-            ruleImplements();
-
-            state._fsp--;
-
-             after(grammarAccess.getClassAccess().getImplementsImplementsParserRuleCall_4_0()); 
+             before(grammarAccess.getClassAccess().getImplementsIDTerminalRuleCall_4_1_0()); 
+            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__Class__ImplementsAssignment_4_17031); 
+             after(grammarAccess.getClassAccess().getImplementsIDTerminalRuleCall_4_1_0()); 
 
             }
 
@@ -9459,27 +9679,27 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
         }
         return ;
     }
-    // $ANTLR end "rule__Class__ImplementsAssignment_4"
+    // $ANTLR end "rule__Class__ImplementsAssignment_4_1"
 
 
     // $ANTLR start "rule__Class__BodyAssignment_6"
-    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3421:1: rule__Class__BodyAssignment_6 : ( ( rule__Class__BodyAlternatives_6_0 ) ) ;
+    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3514:1: rule__Class__BodyAssignment_6 : ( ( rule__Class__BodyAlternatives_6_0 ) ) ;
     public final void rule__Class__BodyAssignment_6() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3425:1: ( ( ( rule__Class__BodyAlternatives_6_0 ) ) )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3426:1: ( ( rule__Class__BodyAlternatives_6_0 ) )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3518:1: ( ( ( rule__Class__BodyAlternatives_6_0 ) ) )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3519:1: ( ( rule__Class__BodyAlternatives_6_0 ) )
             {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3426:1: ( ( rule__Class__BodyAlternatives_6_0 ) )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3427:1: ( rule__Class__BodyAlternatives_6_0 )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3519:1: ( ( rule__Class__BodyAlternatives_6_0 ) )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3520:1: ( rule__Class__BodyAlternatives_6_0 )
             {
              before(grammarAccess.getClassAccess().getBodyAlternatives_6_0()); 
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3428:1: ( rule__Class__BodyAlternatives_6_0 )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3428:2: rule__Class__BodyAlternatives_6_0
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3521:1: ( rule__Class__BodyAlternatives_6_0 )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3521:2: rule__Class__BodyAlternatives_6_0
             {
-            pushFollow(FOLLOW_rule__Class__BodyAlternatives_6_0_in_rule__Class__BodyAssignment_66881);
+            pushFollow(FOLLOW_rule__Class__BodyAlternatives_6_0_in_rule__Class__BodyAssignment_67062);
             rule__Class__BodyAlternatives_6_0();
 
             state._fsp--;
@@ -9510,20 +9730,20 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
 
 
     // $ANTLR start "rule__Dependancy__NameAssignment_1"
-    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3437:1: rule__Dependancy__NameAssignment_1 : ( RULE_ID ) ;
+    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3530:1: rule__Dependancy__NameAssignment_1 : ( RULE_ID ) ;
     public final void rule__Dependancy__NameAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3441:1: ( ( RULE_ID ) )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3442:1: ( RULE_ID )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3534:1: ( ( RULE_ID ) )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3535:1: ( RULE_ID )
             {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3442:1: ( RULE_ID )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3443:1: RULE_ID
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3535:1: ( RULE_ID )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3536:1: RULE_ID
             {
              before(grammarAccess.getDependancyAccess().getNameIDTerminalRuleCall_1_0()); 
-            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__Dependancy__NameAssignment_16914); 
+            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__Dependancy__NameAssignment_17095); 
              after(grammarAccess.getDependancyAccess().getNameIDTerminalRuleCall_1_0()); 
 
             }
@@ -9547,20 +9767,20 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
 
 
     // $ANTLR start "rule__Enumeration__ClassnameAssignment_2"
-    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3452:1: rule__Enumeration__ClassnameAssignment_2 : ( RULE_ID ) ;
+    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3545:1: rule__Enumeration__ClassnameAssignment_2 : ( RULE_ID ) ;
     public final void rule__Enumeration__ClassnameAssignment_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3456:1: ( ( RULE_ID ) )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3457:1: ( RULE_ID )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3549:1: ( ( RULE_ID ) )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3550:1: ( RULE_ID )
             {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3457:1: ( RULE_ID )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3458:1: RULE_ID
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3550:1: ( RULE_ID )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3551:1: RULE_ID
             {
              before(grammarAccess.getEnumerationAccess().getClassnameIDTerminalRuleCall_2_0()); 
-            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__Enumeration__ClassnameAssignment_26945); 
+            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__Enumeration__ClassnameAssignment_27126); 
              after(grammarAccess.getEnumerationAccess().getClassnameIDTerminalRuleCall_2_0()); 
 
             }
@@ -9584,20 +9804,20 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
 
 
     // $ANTLR start "rule__Interface__InterfacenameAssignment_2"
-    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3467:1: rule__Interface__InterfacenameAssignment_2 : ( RULE_ID ) ;
+    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3560:1: rule__Interface__InterfacenameAssignment_2 : ( RULE_ID ) ;
     public final void rule__Interface__InterfacenameAssignment_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3471:1: ( ( RULE_ID ) )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3472:1: ( RULE_ID )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3564:1: ( ( RULE_ID ) )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3565:1: ( RULE_ID )
             {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3472:1: ( RULE_ID )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3473:1: RULE_ID
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3565:1: ( RULE_ID )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3566:1: RULE_ID
             {
              before(grammarAccess.getInterfaceAccess().getInterfacenameIDTerminalRuleCall_2_0()); 
-            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__Interface__InterfacenameAssignment_26976); 
+            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__Interface__InterfacenameAssignment_27157); 
              after(grammarAccess.getInterfaceAccess().getInterfacenameIDTerminalRuleCall_2_0()); 
 
             }
@@ -9621,20 +9841,20 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
 
 
     // $ANTLR start "rule__Interface__BodyAssignment_4"
-    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3482:1: rule__Interface__BodyAssignment_4 : ( ruleMethod ) ;
+    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3575:1: rule__Interface__BodyAssignment_4 : ( ruleMethod ) ;
     public final void rule__Interface__BodyAssignment_4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3486:1: ( ( ruleMethod ) )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3487:1: ( ruleMethod )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3579:1: ( ( ruleMethod ) )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3580:1: ( ruleMethod )
             {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3487:1: ( ruleMethod )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3488:1: ruleMethod
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3580:1: ( ruleMethod )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3581:1: ruleMethod
             {
              before(grammarAccess.getInterfaceAccess().getBodyMethodParserRuleCall_4_0()); 
-            pushFollow(FOLLOW_ruleMethod_in_rule__Interface__BodyAssignment_47007);
+            pushFollow(FOLLOW_ruleMethod_in_rule__Interface__BodyAssignment_47188);
             ruleMethod();
 
             state._fsp--;
@@ -9662,20 +9882,20 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
 
 
     // $ANTLR start "rule__Abstract__ClassnameAssignment_2"
-    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3497:1: rule__Abstract__ClassnameAssignment_2 : ( RULE_ID ) ;
+    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3590:1: rule__Abstract__ClassnameAssignment_2 : ( RULE_ID ) ;
     public final void rule__Abstract__ClassnameAssignment_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3501:1: ( ( RULE_ID ) )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3502:1: ( RULE_ID )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3594:1: ( ( RULE_ID ) )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3595:1: ( RULE_ID )
             {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3502:1: ( RULE_ID )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3503:1: RULE_ID
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3595:1: ( RULE_ID )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3596:1: RULE_ID
             {
              before(grammarAccess.getAbstractAccess().getClassnameIDTerminalRuleCall_2_0()); 
-            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__Abstract__ClassnameAssignment_27038); 
+            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__Abstract__ClassnameAssignment_27219); 
              after(grammarAccess.getAbstractAccess().getClassnameIDTerminalRuleCall_2_0()); 
 
             }
@@ -9699,20 +9919,20 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
 
 
     // $ANTLR start "rule__Abstract__ExtensionAssignment_4"
-    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3512:1: rule__Abstract__ExtensionAssignment_4 : ( RULE_ID ) ;
+    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3605:1: rule__Abstract__ExtensionAssignment_4 : ( RULE_ID ) ;
     public final void rule__Abstract__ExtensionAssignment_4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3516:1: ( ( RULE_ID ) )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3517:1: ( RULE_ID )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3609:1: ( ( RULE_ID ) )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3610:1: ( RULE_ID )
             {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3517:1: ( RULE_ID )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3518:1: RULE_ID
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3610:1: ( RULE_ID )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3611:1: RULE_ID
             {
              before(grammarAccess.getAbstractAccess().getExtensionIDTerminalRuleCall_4_0()); 
-            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__Abstract__ExtensionAssignment_47069); 
+            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__Abstract__ExtensionAssignment_47250); 
              after(grammarAccess.getAbstractAccess().getExtensionIDTerminalRuleCall_4_0()); 
 
             }
@@ -9735,26 +9955,22 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
     // $ANTLR end "rule__Abstract__ExtensionAssignment_4"
 
 
-    // $ANTLR start "rule__Abstract__ImplementsAssignment_5"
-    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3527:1: rule__Abstract__ImplementsAssignment_5 : ( ruleImplements ) ;
-    public final void rule__Abstract__ImplementsAssignment_5() throws RecognitionException {
+    // $ANTLR start "rule__Abstract__ImplementsAssignment_5_1"
+    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3620:1: rule__Abstract__ImplementsAssignment_5_1 : ( RULE_ID ) ;
+    public final void rule__Abstract__ImplementsAssignment_5_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3531:1: ( ( ruleImplements ) )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3532:1: ( ruleImplements )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3624:1: ( ( RULE_ID ) )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3625:1: ( RULE_ID )
             {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3532:1: ( ruleImplements )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3533:1: ruleImplements
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3625:1: ( RULE_ID )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3626:1: RULE_ID
             {
-             before(grammarAccess.getAbstractAccess().getImplementsImplementsParserRuleCall_5_0()); 
-            pushFollow(FOLLOW_ruleImplements_in_rule__Abstract__ImplementsAssignment_57100);
-            ruleImplements();
-
-            state._fsp--;
-
-             after(grammarAccess.getAbstractAccess().getImplementsImplementsParserRuleCall_5_0()); 
+             before(grammarAccess.getAbstractAccess().getImplementsIDTerminalRuleCall_5_1_0()); 
+            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__Abstract__ImplementsAssignment_5_17281); 
+             after(grammarAccess.getAbstractAccess().getImplementsIDTerminalRuleCall_5_1_0()); 
 
             }
 
@@ -9773,27 +9989,27 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
         }
         return ;
     }
-    // $ANTLR end "rule__Abstract__ImplementsAssignment_5"
+    // $ANTLR end "rule__Abstract__ImplementsAssignment_5_1"
 
 
     // $ANTLR start "rule__Abstract__BodyAssignment_7"
-    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3542:1: rule__Abstract__BodyAssignment_7 : ( ( rule__Abstract__BodyAlternatives_7_0 ) ) ;
+    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3635:1: rule__Abstract__BodyAssignment_7 : ( ( rule__Abstract__BodyAlternatives_7_0 ) ) ;
     public final void rule__Abstract__BodyAssignment_7() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3546:1: ( ( ( rule__Abstract__BodyAlternatives_7_0 ) ) )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3547:1: ( ( rule__Abstract__BodyAlternatives_7_0 ) )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3639:1: ( ( ( rule__Abstract__BodyAlternatives_7_0 ) ) )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3640:1: ( ( rule__Abstract__BodyAlternatives_7_0 ) )
             {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3547:1: ( ( rule__Abstract__BodyAlternatives_7_0 ) )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3548:1: ( rule__Abstract__BodyAlternatives_7_0 )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3640:1: ( ( rule__Abstract__BodyAlternatives_7_0 ) )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3641:1: ( rule__Abstract__BodyAlternatives_7_0 )
             {
              before(grammarAccess.getAbstractAccess().getBodyAlternatives_7_0()); 
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3549:1: ( rule__Abstract__BodyAlternatives_7_0 )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3549:2: rule__Abstract__BodyAlternatives_7_0
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3642:1: ( rule__Abstract__BodyAlternatives_7_0 )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3642:2: rule__Abstract__BodyAlternatives_7_0
             {
-            pushFollow(FOLLOW_rule__Abstract__BodyAlternatives_7_0_in_rule__Abstract__BodyAssignment_77131);
+            pushFollow(FOLLOW_rule__Abstract__BodyAlternatives_7_0_in_rule__Abstract__BodyAssignment_77312);
             rule__Abstract__BodyAlternatives_7_0();
 
             state._fsp--;
@@ -9824,20 +10040,20 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
 
 
     // $ANTLR start "rule__BiRelation__LinkNameAssignment_4"
-    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3558:1: rule__BiRelation__LinkNameAssignment_4 : ( RULE_ID ) ;
+    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3651:1: rule__BiRelation__LinkNameAssignment_4 : ( RULE_ID ) ;
     public final void rule__BiRelation__LinkNameAssignment_4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3562:1: ( ( RULE_ID ) )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3563:1: ( RULE_ID )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3655:1: ( ( RULE_ID ) )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3656:1: ( RULE_ID )
             {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3563:1: ( RULE_ID )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3564:1: RULE_ID
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3656:1: ( RULE_ID )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3657:1: RULE_ID
             {
              before(grammarAccess.getBiRelationAccess().getLinkNameIDTerminalRuleCall_4_0()); 
-            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__BiRelation__LinkNameAssignment_47164); 
+            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__BiRelation__LinkNameAssignment_47345); 
              after(grammarAccess.getBiRelationAccess().getLinkNameIDTerminalRuleCall_4_0()); 
 
             }
@@ -9861,20 +10077,20 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
 
 
     // $ANTLR start "rule__Attribute__AttributenameAssignment_2"
-    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3573:1: rule__Attribute__AttributenameAssignment_2 : ( RULE_ID ) ;
+    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3666:1: rule__Attribute__AttributenameAssignment_2 : ( RULE_ID ) ;
     public final void rule__Attribute__AttributenameAssignment_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3577:1: ( ( RULE_ID ) )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3578:1: ( RULE_ID )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3670:1: ( ( RULE_ID ) )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3671:1: ( RULE_ID )
             {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3578:1: ( RULE_ID )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3579:1: RULE_ID
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3671:1: ( RULE_ID )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3672:1: RULE_ID
             {
              before(grammarAccess.getAttributeAccess().getAttributenameIDTerminalRuleCall_2_0()); 
-            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__Attribute__AttributenameAssignment_27195); 
+            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__Attribute__AttributenameAssignment_27376); 
              after(grammarAccess.getAttributeAccess().getAttributenameIDTerminalRuleCall_2_0()); 
 
             }
@@ -9898,20 +10114,20 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
 
 
     // $ANTLR start "rule__Attribute__TypeAssignment_4"
-    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3588:1: rule__Attribute__TypeAssignment_4 : ( RULE_ID ) ;
+    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3681:1: rule__Attribute__TypeAssignment_4 : ( RULE_ID ) ;
     public final void rule__Attribute__TypeAssignment_4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3592:1: ( ( RULE_ID ) )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3593:1: ( RULE_ID )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3685:1: ( ( RULE_ID ) )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3686:1: ( RULE_ID )
             {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3593:1: ( RULE_ID )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3594:1: RULE_ID
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3686:1: ( RULE_ID )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3687:1: RULE_ID
             {
              before(grammarAccess.getAttributeAccess().getTypeIDTerminalRuleCall_4_0()); 
-            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__Attribute__TypeAssignment_47226); 
+            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__Attribute__TypeAssignment_47407); 
              after(grammarAccess.getAttributeAccess().getTypeIDTerminalRuleCall_4_0()); 
 
             }
@@ -9935,20 +10151,20 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
 
 
     // $ANTLR start "rule__Attribute__BirelationAssignment_5_1"
-    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3603:1: rule__Attribute__BirelationAssignment_5_1 : ( ruleBiRelation ) ;
+    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3696:1: rule__Attribute__BirelationAssignment_5_1 : ( ruleBiRelation ) ;
     public final void rule__Attribute__BirelationAssignment_5_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3607:1: ( ( ruleBiRelation ) )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3608:1: ( ruleBiRelation )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3700:1: ( ( ruleBiRelation ) )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3701:1: ( ruleBiRelation )
             {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3608:1: ( ruleBiRelation )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3609:1: ruleBiRelation
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3701:1: ( ruleBiRelation )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3702:1: ruleBiRelation
             {
              before(grammarAccess.getAttributeAccess().getBirelationBiRelationParserRuleCall_5_1_0()); 
-            pushFollow(FOLLOW_ruleBiRelation_in_rule__Attribute__BirelationAssignment_5_17257);
+            pushFollow(FOLLOW_ruleBiRelation_in_rule__Attribute__BirelationAssignment_5_17438);
             ruleBiRelation();
 
             state._fsp--;
@@ -9976,20 +10192,20 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
 
 
     // $ANTLR start "rule__ParamIn__NameAssignment_0"
-    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3618:1: rule__ParamIn__NameAssignment_0 : ( RULE_ID ) ;
+    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3711:1: rule__ParamIn__NameAssignment_0 : ( RULE_ID ) ;
     public final void rule__ParamIn__NameAssignment_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3622:1: ( ( RULE_ID ) )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3623:1: ( RULE_ID )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3715:1: ( ( RULE_ID ) )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3716:1: ( RULE_ID )
             {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3623:1: ( RULE_ID )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3624:1: RULE_ID
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3716:1: ( RULE_ID )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3717:1: RULE_ID
             {
              before(grammarAccess.getParamInAccess().getNameIDTerminalRuleCall_0_0()); 
-            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__ParamIn__NameAssignment_07288); 
+            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__ParamIn__NameAssignment_07469); 
              after(grammarAccess.getParamInAccess().getNameIDTerminalRuleCall_0_0()); 
 
             }
@@ -10013,20 +10229,20 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
 
 
     // $ANTLR start "rule__ParamIn__TypeAssignment_2"
-    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3633:1: rule__ParamIn__TypeAssignment_2 : ( RULE_ID ) ;
+    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3726:1: rule__ParamIn__TypeAssignment_2 : ( RULE_ID ) ;
     public final void rule__ParamIn__TypeAssignment_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3637:1: ( ( RULE_ID ) )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3638:1: ( RULE_ID )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3730:1: ( ( RULE_ID ) )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3731:1: ( RULE_ID )
             {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3638:1: ( RULE_ID )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3639:1: RULE_ID
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3731:1: ( RULE_ID )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3732:1: RULE_ID
             {
              before(grammarAccess.getParamInAccess().getTypeIDTerminalRuleCall_2_0()); 
-            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__ParamIn__TypeAssignment_27319); 
+            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__ParamIn__TypeAssignment_27500); 
              after(grammarAccess.getParamInAccess().getTypeIDTerminalRuleCall_2_0()); 
 
             }
@@ -10050,20 +10266,20 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
 
 
     // $ANTLR start "rule__Method__NameAssignment_1"
-    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3648:1: rule__Method__NameAssignment_1 : ( RULE_ID ) ;
+    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3741:1: rule__Method__NameAssignment_1 : ( RULE_ID ) ;
     public final void rule__Method__NameAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3652:1: ( ( RULE_ID ) )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3653:1: ( RULE_ID )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3745:1: ( ( RULE_ID ) )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3746:1: ( RULE_ID )
             {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3653:1: ( RULE_ID )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3654:1: RULE_ID
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3746:1: ( RULE_ID )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3747:1: RULE_ID
             {
              before(grammarAccess.getMethodAccess().getNameIDTerminalRuleCall_1_0()); 
-            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__Method__NameAssignment_17350); 
+            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__Method__NameAssignment_17531); 
              after(grammarAccess.getMethodAccess().getNameIDTerminalRuleCall_1_0()); 
 
             }
@@ -10087,20 +10303,20 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
 
 
     // $ANTLR start "rule__Method__ParamAssignment_3"
-    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3663:1: rule__Method__ParamAssignment_3 : ( ruleparamIn ) ;
+    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3756:1: rule__Method__ParamAssignment_3 : ( ruleparamIn ) ;
     public final void rule__Method__ParamAssignment_3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3667:1: ( ( ruleparamIn ) )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3668:1: ( ruleparamIn )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3760:1: ( ( ruleparamIn ) )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3761:1: ( ruleparamIn )
             {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3668:1: ( ruleparamIn )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3669:1: ruleparamIn
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3761:1: ( ruleparamIn )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3762:1: ruleparamIn
             {
              before(grammarAccess.getMethodAccess().getParamParamInParserRuleCall_3_0()); 
-            pushFollow(FOLLOW_ruleparamIn_in_rule__Method__ParamAssignment_37381);
+            pushFollow(FOLLOW_ruleparamIn_in_rule__Method__ParamAssignment_37562);
             ruleparamIn();
 
             state._fsp--;
@@ -10128,20 +10344,20 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
 
 
     // $ANTLR start "rule__Method__ReturnTypeAssignment_5_1"
-    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3678:1: rule__Method__ReturnTypeAssignment_5_1 : ( RULE_ID ) ;
+    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3771:1: rule__Method__ReturnTypeAssignment_5_1 : ( RULE_ID ) ;
     public final void rule__Method__ReturnTypeAssignment_5_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3682:1: ( ( RULE_ID ) )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3683:1: ( RULE_ID )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3775:1: ( ( RULE_ID ) )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3776:1: ( RULE_ID )
             {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3683:1: ( RULE_ID )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3684:1: RULE_ID
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3776:1: ( RULE_ID )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3777:1: RULE_ID
             {
              before(grammarAccess.getMethodAccess().getReturnTypeIDTerminalRuleCall_5_1_0()); 
-            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__Method__ReturnTypeAssignment_5_17412); 
+            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__Method__ReturnTypeAssignment_5_17593); 
              after(grammarAccess.getMethodAccess().getReturnTypeIDTerminalRuleCall_5_1_0()); 
 
             }
@@ -10165,21 +10381,25 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
 
 
     // $ANTLR start "rule__Package__NameAssignment_0"
-    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3693:1: rule__Package__NameAssignment_0 : ( RULE_ID ) ;
+    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3786:1: rule__Package__NameAssignment_0 : ( rulePackageName ) ;
     public final void rule__Package__NameAssignment_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3697:1: ( ( RULE_ID ) )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3698:1: ( RULE_ID )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3790:1: ( ( rulePackageName ) )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3791:1: ( rulePackageName )
             {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3698:1: ( RULE_ID )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3699:1: RULE_ID
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3791:1: ( rulePackageName )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3792:1: rulePackageName
             {
-             before(grammarAccess.getPackageAccess().getNameIDTerminalRuleCall_0_0()); 
-            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__Package__NameAssignment_07443); 
-             after(grammarAccess.getPackageAccess().getNameIDTerminalRuleCall_0_0()); 
+             before(grammarAccess.getPackageAccess().getNamePackageNameParserRuleCall_0_0()); 
+            pushFollow(FOLLOW_rulePackageName_in_rule__Package__NameAssignment_07624);
+            rulePackageName();
+
+            state._fsp--;
+
+             after(grammarAccess.getPackageAccess().getNamePackageNameParserRuleCall_0_0()); 
 
             }
 
@@ -10201,26 +10421,26 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
     // $ANTLR end "rule__Package__NameAssignment_0"
 
 
-    // $ANTLR start "rule__Package__ClassTypeAssignment_3"
-    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3708:1: rule__Package__ClassTypeAssignment_3 : ( ruleElements ) ;
-    public final void rule__Package__ClassTypeAssignment_3() throws RecognitionException {
+    // $ANTLR start "rule__Package__ClassTypeAssignment_2"
+    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3801:1: rule__Package__ClassTypeAssignment_2 : ( ruleElements ) ;
+    public final void rule__Package__ClassTypeAssignment_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3712:1: ( ( ruleElements ) )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3713:1: ( ruleElements )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3805:1: ( ( ruleElements ) )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3806:1: ( ruleElements )
             {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3713:1: ( ruleElements )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3714:1: ruleElements
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3806:1: ( ruleElements )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3807:1: ruleElements
             {
-             before(grammarAccess.getPackageAccess().getClassTypeElementsParserRuleCall_3_0()); 
-            pushFollow(FOLLOW_ruleElements_in_rule__Package__ClassTypeAssignment_37474);
+             before(grammarAccess.getPackageAccess().getClassTypeElementsParserRuleCall_2_0()); 
+            pushFollow(FOLLOW_ruleElements_in_rule__Package__ClassTypeAssignment_27655);
             ruleElements();
 
             state._fsp--;
 
-             after(grammarAccess.getPackageAccess().getClassTypeElementsParserRuleCall_3_0()); 
+             after(grammarAccess.getPackageAccess().getClassTypeElementsParserRuleCall_2_0()); 
 
             }
 
@@ -10239,29 +10459,29 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
         }
         return ;
     }
-    // $ANTLR end "rule__Package__ClassTypeAssignment_3"
+    // $ANTLR end "rule__Package__ClassTypeAssignment_2"
 
 
-    // $ANTLR start "rule__Package__SubPackageAssignment_4"
-    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3723:1: rule__Package__SubPackageAssignment_4 : ( rulePackage ) ;
-    public final void rule__Package__SubPackageAssignment_4() throws RecognitionException {
+    // $ANTLR start "rule__Package__SubPackageAssignment_3"
+    // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3816:1: rule__Package__SubPackageAssignment_3 : ( rulePackage ) ;
+    public final void rule__Package__SubPackageAssignment_3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3727:1: ( ( rulePackage ) )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3728:1: ( rulePackage )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3820:1: ( ( rulePackage ) )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3821:1: ( rulePackage )
             {
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3728:1: ( rulePackage )
-            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3729:1: rulePackage
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3821:1: ( rulePackage )
+            // ../org.xtext.smokingtext.diagramclass.ui/src-gen/org/xtext/smokingtext/diagramclass/ui/contentassist/antlr/internal/InternalDiagramClass.g:3822:1: rulePackage
             {
-             before(grammarAccess.getPackageAccess().getSubPackagePackageParserRuleCall_4_0()); 
-            pushFollow(FOLLOW_rulePackage_in_rule__Package__SubPackageAssignment_47505);
+             before(grammarAccess.getPackageAccess().getSubPackagePackageParserRuleCall_3_0()); 
+            pushFollow(FOLLOW_rulePackage_in_rule__Package__SubPackageAssignment_37686);
             rulePackage();
 
             state._fsp--;
 
-             after(grammarAccess.getPackageAccess().getSubPackagePackageParserRuleCall_4_0()); 
+             after(grammarAccess.getPackageAccess().getSubPackagePackageParserRuleCall_3_0()); 
 
             }
 
@@ -10280,7 +10500,7 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
         }
         return ;
     }
-    // $ANTLR end "rule__Package__SubPackageAssignment_4"
+    // $ANTLR end "rule__Package__SubPackageAssignment_3"
 
     // Delegated rules
 
@@ -10347,49 +10567,49 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
 
     public static final BitSet FOLLOW_ruleModel_in_entryRuleModel61 = new BitSet(new long[]{0x0000000000000000L});
     public static final BitSet FOLLOW_EOF_in_entryRuleModel68 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Model__PackageAssignment_in_ruleModel94 = new BitSet(new long[]{0x0000000280000022L});
+    public static final BitSet FOLLOW_rule__Model__PackageAssignment_in_ruleModel94 = new BitSet(new long[]{0x0000000200000022L});
     public static final BitSet FOLLOW_ruleElements_in_entryRuleElements122 = new BitSet(new long[]{0x0000000000000000L});
     public static final BitSet FOLLOW_EOF_in_entryRuleElements129 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_rule__Elements__Alternatives_in_ruleElements155 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_ruleClass_in_entryRuleClass182 = new BitSet(new long[]{0x0000000000000000L});
     public static final BitSet FOLLOW_EOF_in_entryRuleClass189 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_rule__Class__Group__0_in_ruleClass215 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleImplements_in_entryRuleImplements242 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleImplements249 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Implements__Group__0_in_ruleImplements275 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleDependancy_in_entryRuleDependancy302 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleDependancy309 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Dependancy__Group__0_in_ruleDependancy335 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleEnumeration_in_entryRuleEnumeration362 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleEnumeration369 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Enumeration__Group__0_in_ruleEnumeration395 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleInterface_in_entryRuleInterface422 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleInterface429 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Interface__Group__0_in_ruleInterface455 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleAbstract_in_entryRuleAbstract482 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleAbstract489 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Abstract__Group__0_in_ruleAbstract515 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleBiRelation_in_entryRuleBiRelation542 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleBiRelation549 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__BiRelation__Group__0_in_ruleBiRelation575 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleAttribute_in_entryRuleAttribute602 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleAttribute609 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Attribute__Group__0_in_ruleAttribute635 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleparamIn_in_entryRuleparamIn662 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleparamIn669 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ParamIn__Group__0_in_ruleparamIn695 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleMethod_in_entryRuleMethod722 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleMethod729 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Method__Group__0_in_ruleMethod755 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleBodyVisibility_in_entryRuleBodyVisibility782 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleBodyVisibility789 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__BodyVisibility__Alternatives_in_ruleBodyVisibility815 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleClassVisibility_in_entryRuleClassVisibility842 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleClassVisibility849 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ClassVisibility__Alternatives_in_ruleClassVisibility875 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rulePackage_in_entryRulePackage902 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRulePackage909 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Package__Group__0_in_rulePackage935 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleDependancy_in_entryRuleDependancy242 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleDependancy249 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Dependancy__Group__0_in_ruleDependancy275 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleEnumeration_in_entryRuleEnumeration302 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleEnumeration309 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Enumeration__Group__0_in_ruleEnumeration335 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleInterface_in_entryRuleInterface362 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleInterface369 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Interface__Group__0_in_ruleInterface395 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleAbstract_in_entryRuleAbstract422 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleAbstract429 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Abstract__Group__0_in_ruleAbstract455 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleBiRelation_in_entryRuleBiRelation482 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleBiRelation489 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__BiRelation__Group__0_in_ruleBiRelation515 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleAttribute_in_entryRuleAttribute542 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleAttribute549 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Attribute__Group__0_in_ruleAttribute575 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleparamIn_in_entryRuleparamIn602 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleparamIn609 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__ParamIn__Group__0_in_ruleparamIn635 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleMethod_in_entryRuleMethod662 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleMethod669 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Method__Group__0_in_ruleMethod695 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleBodyVisibility_in_entryRuleBodyVisibility722 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleBodyVisibility729 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__BodyVisibility__Alternatives_in_ruleBodyVisibility755 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleClassVisibility_in_entryRuleClassVisibility782 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleClassVisibility789 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__ClassVisibility__Alternatives_in_ruleClassVisibility815 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rulePackage_in_entryRulePackage842 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRulePackage849 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Package__Group__0_in_rulePackage875 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rulePackageName_in_entryRulePackageName902 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRulePackageName909 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__PackageName__Group__0_in_rulePackageName935 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_ruleClass_in_rule__Elements__Alternatives971 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_ruleInterface_in_rule__Elements__Alternatives988 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_ruleAbstract_in_rule__Elements__Alternatives1005 = new BitSet(new long[]{0x0000000000000002L});
@@ -10432,7 +10652,7 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
     public static final BitSet FOLLOW_rule__Class__ExtensionAssignment_3_in_rule__Class__Group__3__Impl1867 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_rule__Class__Group__4__Impl_in_rule__Class__Group__41898 = new BitSet(new long[]{0x00000000002C0020L});
     public static final BitSet FOLLOW_rule__Class__Group__5_in_rule__Class__Group__41901 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Class__ImplementsAssignment_4_in_rule__Class__Group__4__Impl1928 = new BitSet(new long[]{0x0000000000200022L});
+    public static final BitSet FOLLOW_rule__Class__Group_4__0_in_rule__Class__Group__4__Impl1928 = new BitSet(new long[]{0x0000000000200002L});
     public static final BitSet FOLLOW_rule__Class__Group__5__Impl_in_rule__Class__Group__51959 = new BitSet(new long[]{0x0000000000538000L});
     public static final BitSet FOLLOW_rule__Class__Group__6_in_rule__Class__Group__51962 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_19_in_rule__Class__Group__5__Impl1990 = new BitSet(new long[]{0x0000000000000002L});
@@ -10441,233 +10661,240 @@ public class InternalDiagramClassParser extends AbstractInternalContentAssistPar
     public static final BitSet FOLLOW_rule__Class__BodyAssignment_6_in_rule__Class__Group__6__Impl2051 = new BitSet(new long[]{0x0000000000438002L});
     public static final BitSet FOLLOW_rule__Class__Group__7__Impl_in_rule__Class__Group__72082 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_20_in_rule__Class__Group__7__Impl2110 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Implements__Group__0__Impl_in_rule__Implements__Group__02157 = new BitSet(new long[]{0x0000000000200020L});
-    public static final BitSet FOLLOW_rule__Implements__Group__1_in_rule__Implements__Group__02160 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_21_in_rule__Implements__Group__0__Impl2189 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Implements__Group__1__Impl_in_rule__Implements__Group__12222 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ID_in_rule__Implements__Group__1__Impl2249 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Dependancy__Group__0__Impl_in_rule__Dependancy__Group__02282 = new BitSet(new long[]{0x0000000000000020L});
-    public static final BitSet FOLLOW_rule__Dependancy__Group__1_in_rule__Dependancy__Group__02285 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_22_in_rule__Dependancy__Group__0__Impl2313 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Dependancy__Group__1__Impl_in_rule__Dependancy__Group__12344 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Dependancy__NameAssignment_1_in_rule__Dependancy__Group__1__Impl2371 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Enumeration__Group__0__Impl_in_rule__Enumeration__Group__02405 = new BitSet(new long[]{0x0000000000800000L});
-    public static final BitSet FOLLOW_rule__Enumeration__Group__1_in_rule__Enumeration__Group__02408 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleClassVisibility_in_rule__Enumeration__Group__0__Impl2435 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Enumeration__Group__1__Impl_in_rule__Enumeration__Group__12464 = new BitSet(new long[]{0x0000000000000020L});
-    public static final BitSet FOLLOW_rule__Enumeration__Group__2_in_rule__Enumeration__Group__12467 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_23_in_rule__Enumeration__Group__1__Impl2495 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Enumeration__Group__2__Impl_in_rule__Enumeration__Group__22526 = new BitSet(new long[]{0x0000000000080000L});
-    public static final BitSet FOLLOW_rule__Enumeration__Group__3_in_rule__Enumeration__Group__22529 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Enumeration__ClassnameAssignment_2_in_rule__Enumeration__Group__2__Impl2556 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Enumeration__Group__3__Impl_in_rule__Enumeration__Group__32586 = new BitSet(new long[]{0x0000000000100020L});
-    public static final BitSet FOLLOW_rule__Enumeration__Group__4_in_rule__Enumeration__Group__32589 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_19_in_rule__Enumeration__Group__3__Impl2617 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Enumeration__Group__4__Impl_in_rule__Enumeration__Group__42648 = new BitSet(new long[]{0x0000000000100020L});
-    public static final BitSet FOLLOW_rule__Enumeration__Group__5_in_rule__Enumeration__Group__42651 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Enumeration__Group_4__0_in_rule__Enumeration__Group__4__Impl2678 = new BitSet(new long[]{0x0000000000000022L});
-    public static final BitSet FOLLOW_rule__Enumeration__Group__5__Impl_in_rule__Enumeration__Group__52709 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_20_in_rule__Enumeration__Group__5__Impl2737 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Enumeration__Group_4__0__Impl_in_rule__Enumeration__Group_4__02780 = new BitSet(new long[]{0x0000000000200000L});
-    public static final BitSet FOLLOW_rule__Enumeration__Group_4__1_in_rule__Enumeration__Group_4__02783 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ID_in_rule__Enumeration__Group_4__0__Impl2810 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Enumeration__Group_4__1__Impl_in_rule__Enumeration__Group_4__12839 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_21_in_rule__Enumeration__Group_4__1__Impl2868 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Interface__Group__0__Impl_in_rule__Interface__Group__02905 = new BitSet(new long[]{0x0000000001000000L});
-    public static final BitSet FOLLOW_rule__Interface__Group__1_in_rule__Interface__Group__02908 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleClassVisibility_in_rule__Interface__Group__0__Impl2935 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Interface__Group__1__Impl_in_rule__Interface__Group__12964 = new BitSet(new long[]{0x0000000000000020L});
-    public static final BitSet FOLLOW_rule__Interface__Group__2_in_rule__Interface__Group__12967 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_24_in_rule__Interface__Group__1__Impl2995 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Interface__Group__2__Impl_in_rule__Interface__Group__23026 = new BitSet(new long[]{0x0000000000080000L});
-    public static final BitSet FOLLOW_rule__Interface__Group__3_in_rule__Interface__Group__23029 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Interface__InterfacenameAssignment_2_in_rule__Interface__Group__2__Impl3056 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Interface__Group__3__Impl_in_rule__Interface__Group__33086 = new BitSet(new long[]{0x0000000000138000L});
-    public static final BitSet FOLLOW_rule__Interface__Group__4_in_rule__Interface__Group__33089 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_19_in_rule__Interface__Group__3__Impl3117 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Interface__Group__4__Impl_in_rule__Interface__Group__43148 = new BitSet(new long[]{0x0000000000138000L});
-    public static final BitSet FOLLOW_rule__Interface__Group__5_in_rule__Interface__Group__43151 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Interface__BodyAssignment_4_in_rule__Interface__Group__4__Impl3178 = new BitSet(new long[]{0x0000000000038002L});
-    public static final BitSet FOLLOW_rule__Interface__Group__5__Impl_in_rule__Interface__Group__53209 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_20_in_rule__Interface__Group__5__Impl3237 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Abstract__Group__0__Impl_in_rule__Abstract__Group__03280 = new BitSet(new long[]{0x0000000002000000L});
-    public static final BitSet FOLLOW_rule__Abstract__Group__1_in_rule__Abstract__Group__03283 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleClassVisibility_in_rule__Abstract__Group__0__Impl3310 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Abstract__Group__1__Impl_in_rule__Abstract__Group__13339 = new BitSet(new long[]{0x0000000000000020L});
-    public static final BitSet FOLLOW_rule__Abstract__Group__2_in_rule__Abstract__Group__13342 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_25_in_rule__Abstract__Group__1__Impl3370 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Abstract__Group__2__Impl_in_rule__Abstract__Group__23401 = new BitSet(new long[]{0x00000000002C0020L});
-    public static final BitSet FOLLOW_rule__Abstract__Group__3_in_rule__Abstract__Group__23404 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Abstract__ClassnameAssignment_2_in_rule__Abstract__Group__2__Impl3431 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Abstract__Group__3__Impl_in_rule__Abstract__Group__33461 = new BitSet(new long[]{0x00000000002C0020L});
-    public static final BitSet FOLLOW_rule__Abstract__Group__4_in_rule__Abstract__Group__33464 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_18_in_rule__Abstract__Group__3__Impl3493 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Abstract__Group__4__Impl_in_rule__Abstract__Group__43526 = new BitSet(new long[]{0x00000000002C0020L});
-    public static final BitSet FOLLOW_rule__Abstract__Group__5_in_rule__Abstract__Group__43529 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Abstract__ExtensionAssignment_4_in_rule__Abstract__Group__4__Impl3556 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Abstract__Group__5__Impl_in_rule__Abstract__Group__53587 = new BitSet(new long[]{0x00000000002C0020L});
-    public static final BitSet FOLLOW_rule__Abstract__Group__6_in_rule__Abstract__Group__53590 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Abstract__ImplementsAssignment_5_in_rule__Abstract__Group__5__Impl3617 = new BitSet(new long[]{0x0000000000200022L});
-    public static final BitSet FOLLOW_rule__Abstract__Group__6__Impl_in_rule__Abstract__Group__63648 = new BitSet(new long[]{0x0000000000138000L});
-    public static final BitSet FOLLOW_rule__Abstract__Group__7_in_rule__Abstract__Group__63651 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_19_in_rule__Abstract__Group__6__Impl3679 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Abstract__Group__7__Impl_in_rule__Abstract__Group__73710 = new BitSet(new long[]{0x0000000000138000L});
-    public static final BitSet FOLLOW_rule__Abstract__Group__8_in_rule__Abstract__Group__73713 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Abstract__BodyAssignment_7_in_rule__Abstract__Group__7__Impl3740 = new BitSet(new long[]{0x0000000000038002L});
-    public static final BitSet FOLLOW_rule__Abstract__Group__8__Impl_in_rule__Abstract__Group__83771 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_20_in_rule__Abstract__Group__8__Impl3799 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__BiRelation__Group__0__Impl_in_rule__BiRelation__Group__03848 = new BitSet(new long[]{0x0000000008001010L});
-    public static final BitSet FOLLOW_rule__BiRelation__Group__1_in_rule__BiRelation__Group__03851 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_26_in_rule__BiRelation__Group__0__Impl3879 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__BiRelation__Group__1__Impl_in_rule__BiRelation__Group__13910 = new BitSet(new long[]{0x0000000008001010L});
-    public static final BitSet FOLLOW_rule__BiRelation__Group__2_in_rule__BiRelation__Group__13913 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__BiRelation__Alternatives_1_in_rule__BiRelation__Group__1__Impl3940 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__BiRelation__Group__2__Impl_in_rule__BiRelation__Group__23971 = new BitSet(new long[]{0x0000000000010000L});
-    public static final BitSet FOLLOW_rule__BiRelation__Group__3_in_rule__BiRelation__Group__23974 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_27_in_rule__BiRelation__Group__2__Impl4002 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__BiRelation__Group__3__Impl_in_rule__BiRelation__Group__34033 = new BitSet(new long[]{0x0000000000000020L});
-    public static final BitSet FOLLOW_rule__BiRelation__Group__4_in_rule__BiRelation__Group__34036 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_16_in_rule__BiRelation__Group__3__Impl4064 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__BiRelation__Group__4__Impl_in_rule__BiRelation__Group__44095 = new BitSet(new long[]{0x0000000000400000L});
-    public static final BitSet FOLLOW_rule__BiRelation__Group__5_in_rule__BiRelation__Group__44098 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__BiRelation__LinkNameAssignment_4_in_rule__BiRelation__Group__4__Impl4125 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__BiRelation__Group__5__Impl_in_rule__BiRelation__Group__54155 = new BitSet(new long[]{0x0000000004000000L});
-    public static final BitSet FOLLOW_rule__BiRelation__Group__6_in_rule__BiRelation__Group__54158 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_22_in_rule__BiRelation__Group__5__Impl4186 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__BiRelation__Group__6__Impl_in_rule__BiRelation__Group__64217 = new BitSet(new long[]{0x0000000008001010L});
-    public static final BitSet FOLLOW_rule__BiRelation__Group__7_in_rule__BiRelation__Group__64220 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_26_in_rule__BiRelation__Group__6__Impl4248 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__BiRelation__Group__7__Impl_in_rule__BiRelation__Group__74279 = new BitSet(new long[]{0x0000000008001010L});
-    public static final BitSet FOLLOW_rule__BiRelation__Group__8_in_rule__BiRelation__Group__74282 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__BiRelation__Alternatives_7_in_rule__BiRelation__Group__7__Impl4309 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__BiRelation__Group__8__Impl_in_rule__BiRelation__Group__84340 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_27_in_rule__BiRelation__Group__8__Impl4368 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__BiRelation__Group_1_0__0__Impl_in_rule__BiRelation__Group_1_0__04417 = new BitSet(new long[]{0x0000000010000000L});
-    public static final BitSet FOLLOW_rule__BiRelation__Group_1_0__1_in_rule__BiRelation__Group_1_0__04420 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_NUMBER_in_rule__BiRelation__Group_1_0__0__Impl4450 = new BitSet(new long[]{0x0000000000000012L});
-    public static final BitSet FOLLOW_RULE_NUMBER_in_rule__BiRelation__Group_1_0__0__Impl4463 = new BitSet(new long[]{0x0000000000000012L});
-    public static final BitSet FOLLOW_rule__BiRelation__Group_1_0__1__Impl_in_rule__BiRelation__Group_1_0__14496 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__BiRelation__Group_1_0_1__0_in_rule__BiRelation__Group_1_0__1__Impl4523 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__BiRelation__Group_1_0_1__0__Impl_in_rule__BiRelation__Group_1_0_1__04557 = new BitSet(new long[]{0x0000000000001010L});
-    public static final BitSet FOLLOW_rule__BiRelation__Group_1_0_1__1_in_rule__BiRelation__Group_1_0_1__04560 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_28_in_rule__BiRelation__Group_1_0_1__0__Impl4588 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__BiRelation__Group_1_0_1__1__Impl_in_rule__BiRelation__Group_1_0_1__14619 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__BiRelation__Alternatives_1_0_1_1_in_rule__BiRelation__Group_1_0_1__1__Impl4646 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__BiRelation__Group_7_0__0__Impl_in_rule__BiRelation__Group_7_0__04680 = new BitSet(new long[]{0x0000000010000000L});
-    public static final BitSet FOLLOW_rule__BiRelation__Group_7_0__1_in_rule__BiRelation__Group_7_0__04683 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_NUMBER_in_rule__BiRelation__Group_7_0__0__Impl4713 = new BitSet(new long[]{0x0000000000000012L});
-    public static final BitSet FOLLOW_RULE_NUMBER_in_rule__BiRelation__Group_7_0__0__Impl4726 = new BitSet(new long[]{0x0000000000000012L});
-    public static final BitSet FOLLOW_rule__BiRelation__Group_7_0__1__Impl_in_rule__BiRelation__Group_7_0__14759 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__BiRelation__Group_7_0_1__0_in_rule__BiRelation__Group_7_0__1__Impl4786 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__BiRelation__Group_7_0_1__0__Impl_in_rule__BiRelation__Group_7_0_1__04820 = new BitSet(new long[]{0x0000000000001010L});
-    public static final BitSet FOLLOW_rule__BiRelation__Group_7_0_1__1_in_rule__BiRelation__Group_7_0_1__04823 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_28_in_rule__BiRelation__Group_7_0_1__0__Impl4851 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__BiRelation__Group_7_0_1__1__Impl_in_rule__BiRelation__Group_7_0_1__14882 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__BiRelation__Alternatives_7_0_1_1_in_rule__BiRelation__Group_7_0_1__1__Impl4909 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Attribute__Group__0__Impl_in_rule__Attribute__Group__04943 = new BitSet(new long[]{0x0000000000006020L});
-    public static final BitSet FOLLOW_rule__Attribute__Group__1_in_rule__Attribute__Group__04946 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleBodyVisibility_in_rule__Attribute__Group__0__Impl4973 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Attribute__Group__1__Impl_in_rule__Attribute__Group__15002 = new BitSet(new long[]{0x0000000000006020L});
-    public static final BitSet FOLLOW_rule__Attribute__Group__2_in_rule__Attribute__Group__15005 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Attribute__Alternatives_1_in_rule__Attribute__Group__1__Impl5032 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Attribute__Group__2__Impl_in_rule__Attribute__Group__25063 = new BitSet(new long[]{0x0000000000040000L});
-    public static final BitSet FOLLOW_rule__Attribute__Group__3_in_rule__Attribute__Group__25066 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Attribute__AttributenameAssignment_2_in_rule__Attribute__Group__2__Impl5093 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Attribute__Group__3__Impl_in_rule__Attribute__Group__35123 = new BitSet(new long[]{0x0000000000000020L});
-    public static final BitSet FOLLOW_rule__Attribute__Group__4_in_rule__Attribute__Group__35126 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_18_in_rule__Attribute__Group__3__Impl5154 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Attribute__Group__4__Impl_in_rule__Attribute__Group__45185 = new BitSet(new long[]{0x0000000004000000L});
-    public static final BitSet FOLLOW_rule__Attribute__Group__5_in_rule__Attribute__Group__45188 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Attribute__TypeAssignment_4_in_rule__Attribute__Group__4__Impl5215 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Attribute__Group__5__Impl_in_rule__Attribute__Group__55245 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Attribute__Alternatives_5_in_rule__Attribute__Group__5__Impl5272 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Attribute__Group_5_0__0__Impl_in_rule__Attribute__Group_5_0__05315 = new BitSet(new long[]{0x0000000008000010L});
-    public static final BitSet FOLLOW_rule__Attribute__Group_5_0__1_in_rule__Attribute__Group_5_0__05318 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_26_in_rule__Attribute__Group_5_0__0__Impl5346 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Attribute__Group_5_0__1__Impl_in_rule__Attribute__Group_5_0__15377 = new BitSet(new long[]{0x0000000008000010L});
-    public static final BitSet FOLLOW_rule__Attribute__Group_5_0__2_in_rule__Attribute__Group_5_0__15380 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_NUMBER_in_rule__Attribute__Group_5_0__1__Impl5408 = new BitSet(new long[]{0x0000000000000012L});
-    public static final BitSet FOLLOW_rule__Attribute__Group_5_0__2__Impl_in_rule__Attribute__Group_5_0__25439 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_27_in_rule__Attribute__Group_5_0__2__Impl5467 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ParamIn__Group__0__Impl_in_rule__ParamIn__Group__05504 = new BitSet(new long[]{0x0000000000040000L});
-    public static final BitSet FOLLOW_rule__ParamIn__Group__1_in_rule__ParamIn__Group__05507 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ParamIn__NameAssignment_0_in_rule__ParamIn__Group__0__Impl5534 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ParamIn__Group__1__Impl_in_rule__ParamIn__Group__15564 = new BitSet(new long[]{0x0000000000000020L});
-    public static final BitSet FOLLOW_rule__ParamIn__Group__2_in_rule__ParamIn__Group__15567 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_18_in_rule__ParamIn__Group__1__Impl5595 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ParamIn__Group__2__Impl_in_rule__ParamIn__Group__25626 = new BitSet(new long[]{0x0000000000200000L});
-    public static final BitSet FOLLOW_rule__ParamIn__Group__3_in_rule__ParamIn__Group__25629 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ParamIn__TypeAssignment_2_in_rule__ParamIn__Group__2__Impl5656 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ParamIn__Group__3__Impl_in_rule__ParamIn__Group__35686 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_21_in_rule__ParamIn__Group__3__Impl5715 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Method__Group__0__Impl_in_rule__Method__Group__05756 = new BitSet(new long[]{0x0000000000000020L});
-    public static final BitSet FOLLOW_rule__Method__Group__1_in_rule__Method__Group__05759 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleBodyVisibility_in_rule__Method__Group__0__Impl5786 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Method__Group__1__Impl_in_rule__Method__Group__15815 = new BitSet(new long[]{0x0000000020000000L});
-    public static final BitSet FOLLOW_rule__Method__Group__2_in_rule__Method__Group__15818 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Method__NameAssignment_1_in_rule__Method__Group__1__Impl5845 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Method__Group__2__Impl_in_rule__Method__Group__25875 = new BitSet(new long[]{0x0000000040000020L});
-    public static final BitSet FOLLOW_rule__Method__Group__3_in_rule__Method__Group__25878 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_29_in_rule__Method__Group__2__Impl5906 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Method__Group__3__Impl_in_rule__Method__Group__35937 = new BitSet(new long[]{0x0000000040000020L});
-    public static final BitSet FOLLOW_rule__Method__Group__4_in_rule__Method__Group__35940 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Method__ParamAssignment_3_in_rule__Method__Group__3__Impl5967 = new BitSet(new long[]{0x0000000000000022L});
-    public static final BitSet FOLLOW_rule__Method__Group__4__Impl_in_rule__Method__Group__45998 = new BitSet(new long[]{0x0000000000040000L});
-    public static final BitSet FOLLOW_rule__Method__Group__5_in_rule__Method__Group__46001 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_30_in_rule__Method__Group__4__Impl6029 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Method__Group__5__Impl_in_rule__Method__Group__56060 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Method__Group_5__0_in_rule__Method__Group__5__Impl6087 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Method__Group_5__0__Impl_in_rule__Method__Group_5__06130 = new BitSet(new long[]{0x0000000000000020L});
-    public static final BitSet FOLLOW_rule__Method__Group_5__1_in_rule__Method__Group_5__06133 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_18_in_rule__Method__Group_5__0__Impl6161 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Method__Group_5__1__Impl_in_rule__Method__Group_5__16192 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Method__ReturnTypeAssignment_5_1_in_rule__Method__Group_5__1__Impl6219 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Package__Group__0__Impl_in_rule__Package__Group__06253 = new BitSet(new long[]{0x0000000280000020L});
-    public static final BitSet FOLLOW_rule__Package__Group__1_in_rule__Package__Group__06256 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Package__NameAssignment_0_in_rule__Package__Group__0__Impl6283 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Package__Group__1__Impl_in_rule__Package__Group__16314 = new BitSet(new long[]{0x0000000280000020L});
-    public static final BitSet FOLLOW_rule__Package__Group__2_in_rule__Package__Group__16317 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Package__Group_1__0_in_rule__Package__Group__1__Impl6344 = new BitSet(new long[]{0x0000000200000002L});
-    public static final BitSet FOLLOW_rule__Package__Group__2__Impl_in_rule__Package__Group__26375 = new BitSet(new long[]{0x0000000380018020L});
-    public static final BitSet FOLLOW_rule__Package__Group__3_in_rule__Package__Group__26378 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_31_in_rule__Package__Group__2__Impl6406 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Package__Group__3__Impl_in_rule__Package__Group__36437 = new BitSet(new long[]{0x0000000380018020L});
-    public static final BitSet FOLLOW_rule__Package__Group__4_in_rule__Package__Group__36440 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Package__ClassTypeAssignment_3_in_rule__Package__Group__3__Impl6467 = new BitSet(new long[]{0x0000000000018002L});
-    public static final BitSet FOLLOW_rule__Package__Group__4__Impl_in_rule__Package__Group__46498 = new BitSet(new long[]{0x0000000380018020L});
-    public static final BitSet FOLLOW_rule__Package__Group__5_in_rule__Package__Group__46501 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Package__SubPackageAssignment_4_in_rule__Package__Group__4__Impl6528 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Package__Group__5__Impl_in_rule__Package__Group__56559 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_32_in_rule__Package__Group__5__Impl6587 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Package__Group_1__0__Impl_in_rule__Package__Group_1__06630 = new BitSet(new long[]{0x0000000000000020L});
-    public static final BitSet FOLLOW_rule__Package__Group_1__1_in_rule__Package__Group_1__06633 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_33_in_rule__Package__Group_1__0__Impl6661 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Package__Group_1__1__Impl_in_rule__Package__Group_1__16692 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ID_in_rule__Package__Group_1__1__Impl6719 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rulePackage_in_rule__Model__PackageAssignment6757 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ID_in_rule__Class__ClassnameAssignment_16788 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ID_in_rule__Class__ExtensionAssignment_36819 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleImplements_in_rule__Class__ImplementsAssignment_46850 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Class__BodyAlternatives_6_0_in_rule__Class__BodyAssignment_66881 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ID_in_rule__Dependancy__NameAssignment_16914 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ID_in_rule__Enumeration__ClassnameAssignment_26945 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ID_in_rule__Interface__InterfacenameAssignment_26976 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleMethod_in_rule__Interface__BodyAssignment_47007 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ID_in_rule__Abstract__ClassnameAssignment_27038 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ID_in_rule__Abstract__ExtensionAssignment_47069 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleImplements_in_rule__Abstract__ImplementsAssignment_57100 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Abstract__BodyAlternatives_7_0_in_rule__Abstract__BodyAssignment_77131 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ID_in_rule__BiRelation__LinkNameAssignment_47164 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ID_in_rule__Attribute__AttributenameAssignment_27195 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ID_in_rule__Attribute__TypeAssignment_47226 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleBiRelation_in_rule__Attribute__BirelationAssignment_5_17257 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ID_in_rule__ParamIn__NameAssignment_07288 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ID_in_rule__ParamIn__TypeAssignment_27319 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ID_in_rule__Method__NameAssignment_17350 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleparamIn_in_rule__Method__ParamAssignment_37381 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ID_in_rule__Method__ReturnTypeAssignment_5_17412 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ID_in_rule__Package__NameAssignment_07443 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleElements_in_rule__Package__ClassTypeAssignment_37474 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rulePackage_in_rule__Package__SubPackageAssignment_47505 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Class__Group_4__0__Impl_in_rule__Class__Group_4__02157 = new BitSet(new long[]{0x0000000000000020L});
+    public static final BitSet FOLLOW_rule__Class__Group_4__1_in_rule__Class__Group_4__02160 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_21_in_rule__Class__Group_4__0__Impl2188 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Class__Group_4__1__Impl_in_rule__Class__Group_4__12219 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Class__ImplementsAssignment_4_1_in_rule__Class__Group_4__1__Impl2246 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Dependancy__Group__0__Impl_in_rule__Dependancy__Group__02280 = new BitSet(new long[]{0x0000000000000020L});
+    public static final BitSet FOLLOW_rule__Dependancy__Group__1_in_rule__Dependancy__Group__02283 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_22_in_rule__Dependancy__Group__0__Impl2311 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Dependancy__Group__1__Impl_in_rule__Dependancy__Group__12342 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Dependancy__NameAssignment_1_in_rule__Dependancy__Group__1__Impl2369 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Enumeration__Group__0__Impl_in_rule__Enumeration__Group__02403 = new BitSet(new long[]{0x0000000000800000L});
+    public static final BitSet FOLLOW_rule__Enumeration__Group__1_in_rule__Enumeration__Group__02406 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleClassVisibility_in_rule__Enumeration__Group__0__Impl2433 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Enumeration__Group__1__Impl_in_rule__Enumeration__Group__12462 = new BitSet(new long[]{0x0000000000000020L});
+    public static final BitSet FOLLOW_rule__Enumeration__Group__2_in_rule__Enumeration__Group__12465 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_23_in_rule__Enumeration__Group__1__Impl2493 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Enumeration__Group__2__Impl_in_rule__Enumeration__Group__22524 = new BitSet(new long[]{0x0000000000080000L});
+    public static final BitSet FOLLOW_rule__Enumeration__Group__3_in_rule__Enumeration__Group__22527 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Enumeration__ClassnameAssignment_2_in_rule__Enumeration__Group__2__Impl2554 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Enumeration__Group__3__Impl_in_rule__Enumeration__Group__32584 = new BitSet(new long[]{0x0000000000100020L});
+    public static final BitSet FOLLOW_rule__Enumeration__Group__4_in_rule__Enumeration__Group__32587 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_19_in_rule__Enumeration__Group__3__Impl2615 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Enumeration__Group__4__Impl_in_rule__Enumeration__Group__42646 = new BitSet(new long[]{0x0000000000100020L});
+    public static final BitSet FOLLOW_rule__Enumeration__Group__5_in_rule__Enumeration__Group__42649 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Enumeration__Group_4__0_in_rule__Enumeration__Group__4__Impl2676 = new BitSet(new long[]{0x0000000000000022L});
+    public static final BitSet FOLLOW_rule__Enumeration__Group__5__Impl_in_rule__Enumeration__Group__52707 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_20_in_rule__Enumeration__Group__5__Impl2735 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Enumeration__Group_4__0__Impl_in_rule__Enumeration__Group_4__02778 = new BitSet(new long[]{0x0000000000200000L});
+    public static final BitSet FOLLOW_rule__Enumeration__Group_4__1_in_rule__Enumeration__Group_4__02781 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_rule__Enumeration__Group_4__0__Impl2808 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Enumeration__Group_4__1__Impl_in_rule__Enumeration__Group_4__12837 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_21_in_rule__Enumeration__Group_4__1__Impl2866 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Interface__Group__0__Impl_in_rule__Interface__Group__02903 = new BitSet(new long[]{0x0000000001000000L});
+    public static final BitSet FOLLOW_rule__Interface__Group__1_in_rule__Interface__Group__02906 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleClassVisibility_in_rule__Interface__Group__0__Impl2933 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Interface__Group__1__Impl_in_rule__Interface__Group__12962 = new BitSet(new long[]{0x0000000000000020L});
+    public static final BitSet FOLLOW_rule__Interface__Group__2_in_rule__Interface__Group__12965 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_24_in_rule__Interface__Group__1__Impl2993 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Interface__Group__2__Impl_in_rule__Interface__Group__23024 = new BitSet(new long[]{0x0000000000080000L});
+    public static final BitSet FOLLOW_rule__Interface__Group__3_in_rule__Interface__Group__23027 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Interface__InterfacenameAssignment_2_in_rule__Interface__Group__2__Impl3054 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Interface__Group__3__Impl_in_rule__Interface__Group__33084 = new BitSet(new long[]{0x0000000000138000L});
+    public static final BitSet FOLLOW_rule__Interface__Group__4_in_rule__Interface__Group__33087 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_19_in_rule__Interface__Group__3__Impl3115 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Interface__Group__4__Impl_in_rule__Interface__Group__43146 = new BitSet(new long[]{0x0000000000138000L});
+    public static final BitSet FOLLOW_rule__Interface__Group__5_in_rule__Interface__Group__43149 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Interface__BodyAssignment_4_in_rule__Interface__Group__4__Impl3176 = new BitSet(new long[]{0x0000000000038002L});
+    public static final BitSet FOLLOW_rule__Interface__Group__5__Impl_in_rule__Interface__Group__53207 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_20_in_rule__Interface__Group__5__Impl3235 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Abstract__Group__0__Impl_in_rule__Abstract__Group__03278 = new BitSet(new long[]{0x0000000002000000L});
+    public static final BitSet FOLLOW_rule__Abstract__Group__1_in_rule__Abstract__Group__03281 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleClassVisibility_in_rule__Abstract__Group__0__Impl3308 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Abstract__Group__1__Impl_in_rule__Abstract__Group__13337 = new BitSet(new long[]{0x0000000000000020L});
+    public static final BitSet FOLLOW_rule__Abstract__Group__2_in_rule__Abstract__Group__13340 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_25_in_rule__Abstract__Group__1__Impl3368 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Abstract__Group__2__Impl_in_rule__Abstract__Group__23399 = new BitSet(new long[]{0x00000000002C0020L});
+    public static final BitSet FOLLOW_rule__Abstract__Group__3_in_rule__Abstract__Group__23402 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Abstract__ClassnameAssignment_2_in_rule__Abstract__Group__2__Impl3429 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Abstract__Group__3__Impl_in_rule__Abstract__Group__33459 = new BitSet(new long[]{0x00000000002C0020L});
+    public static final BitSet FOLLOW_rule__Abstract__Group__4_in_rule__Abstract__Group__33462 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_18_in_rule__Abstract__Group__3__Impl3491 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Abstract__Group__4__Impl_in_rule__Abstract__Group__43524 = new BitSet(new long[]{0x00000000002C0020L});
+    public static final BitSet FOLLOW_rule__Abstract__Group__5_in_rule__Abstract__Group__43527 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Abstract__ExtensionAssignment_4_in_rule__Abstract__Group__4__Impl3554 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Abstract__Group__5__Impl_in_rule__Abstract__Group__53585 = new BitSet(new long[]{0x00000000002C0020L});
+    public static final BitSet FOLLOW_rule__Abstract__Group__6_in_rule__Abstract__Group__53588 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Abstract__Group_5__0_in_rule__Abstract__Group__5__Impl3615 = new BitSet(new long[]{0x0000000000200002L});
+    public static final BitSet FOLLOW_rule__Abstract__Group__6__Impl_in_rule__Abstract__Group__63646 = new BitSet(new long[]{0x0000000000138000L});
+    public static final BitSet FOLLOW_rule__Abstract__Group__7_in_rule__Abstract__Group__63649 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_19_in_rule__Abstract__Group__6__Impl3677 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Abstract__Group__7__Impl_in_rule__Abstract__Group__73708 = new BitSet(new long[]{0x0000000000138000L});
+    public static final BitSet FOLLOW_rule__Abstract__Group__8_in_rule__Abstract__Group__73711 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Abstract__BodyAssignment_7_in_rule__Abstract__Group__7__Impl3738 = new BitSet(new long[]{0x0000000000038002L});
+    public static final BitSet FOLLOW_rule__Abstract__Group__8__Impl_in_rule__Abstract__Group__83769 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_20_in_rule__Abstract__Group__8__Impl3797 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Abstract__Group_5__0__Impl_in_rule__Abstract__Group_5__03846 = new BitSet(new long[]{0x0000000000000020L});
+    public static final BitSet FOLLOW_rule__Abstract__Group_5__1_in_rule__Abstract__Group_5__03849 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_21_in_rule__Abstract__Group_5__0__Impl3877 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Abstract__Group_5__1__Impl_in_rule__Abstract__Group_5__13908 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Abstract__ImplementsAssignment_5_1_in_rule__Abstract__Group_5__1__Impl3935 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__BiRelation__Group__0__Impl_in_rule__BiRelation__Group__03969 = new BitSet(new long[]{0x0000000008001010L});
+    public static final BitSet FOLLOW_rule__BiRelation__Group__1_in_rule__BiRelation__Group__03972 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_26_in_rule__BiRelation__Group__0__Impl4000 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__BiRelation__Group__1__Impl_in_rule__BiRelation__Group__14031 = new BitSet(new long[]{0x0000000008001010L});
+    public static final BitSet FOLLOW_rule__BiRelation__Group__2_in_rule__BiRelation__Group__14034 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__BiRelation__Alternatives_1_in_rule__BiRelation__Group__1__Impl4061 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__BiRelation__Group__2__Impl_in_rule__BiRelation__Group__24092 = new BitSet(new long[]{0x0000000000010000L});
+    public static final BitSet FOLLOW_rule__BiRelation__Group__3_in_rule__BiRelation__Group__24095 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_27_in_rule__BiRelation__Group__2__Impl4123 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__BiRelation__Group__3__Impl_in_rule__BiRelation__Group__34154 = new BitSet(new long[]{0x0000000000000020L});
+    public static final BitSet FOLLOW_rule__BiRelation__Group__4_in_rule__BiRelation__Group__34157 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_16_in_rule__BiRelation__Group__3__Impl4185 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__BiRelation__Group__4__Impl_in_rule__BiRelation__Group__44216 = new BitSet(new long[]{0x0000000000400000L});
+    public static final BitSet FOLLOW_rule__BiRelation__Group__5_in_rule__BiRelation__Group__44219 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__BiRelation__LinkNameAssignment_4_in_rule__BiRelation__Group__4__Impl4246 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__BiRelation__Group__5__Impl_in_rule__BiRelation__Group__54276 = new BitSet(new long[]{0x0000000004000000L});
+    public static final BitSet FOLLOW_rule__BiRelation__Group__6_in_rule__BiRelation__Group__54279 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_22_in_rule__BiRelation__Group__5__Impl4307 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__BiRelation__Group__6__Impl_in_rule__BiRelation__Group__64338 = new BitSet(new long[]{0x0000000008001010L});
+    public static final BitSet FOLLOW_rule__BiRelation__Group__7_in_rule__BiRelation__Group__64341 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_26_in_rule__BiRelation__Group__6__Impl4369 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__BiRelation__Group__7__Impl_in_rule__BiRelation__Group__74400 = new BitSet(new long[]{0x0000000008001010L});
+    public static final BitSet FOLLOW_rule__BiRelation__Group__8_in_rule__BiRelation__Group__74403 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__BiRelation__Alternatives_7_in_rule__BiRelation__Group__7__Impl4430 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__BiRelation__Group__8__Impl_in_rule__BiRelation__Group__84461 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_27_in_rule__BiRelation__Group__8__Impl4489 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__BiRelation__Group_1_0__0__Impl_in_rule__BiRelation__Group_1_0__04538 = new BitSet(new long[]{0x0000000010000000L});
+    public static final BitSet FOLLOW_rule__BiRelation__Group_1_0__1_in_rule__BiRelation__Group_1_0__04541 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_NUMBER_in_rule__BiRelation__Group_1_0__0__Impl4571 = new BitSet(new long[]{0x0000000000000012L});
+    public static final BitSet FOLLOW_RULE_NUMBER_in_rule__BiRelation__Group_1_0__0__Impl4584 = new BitSet(new long[]{0x0000000000000012L});
+    public static final BitSet FOLLOW_rule__BiRelation__Group_1_0__1__Impl_in_rule__BiRelation__Group_1_0__14617 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__BiRelation__Group_1_0_1__0_in_rule__BiRelation__Group_1_0__1__Impl4644 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__BiRelation__Group_1_0_1__0__Impl_in_rule__BiRelation__Group_1_0_1__04678 = new BitSet(new long[]{0x0000000000001010L});
+    public static final BitSet FOLLOW_rule__BiRelation__Group_1_0_1__1_in_rule__BiRelation__Group_1_0_1__04681 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_28_in_rule__BiRelation__Group_1_0_1__0__Impl4709 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__BiRelation__Group_1_0_1__1__Impl_in_rule__BiRelation__Group_1_0_1__14740 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__BiRelation__Alternatives_1_0_1_1_in_rule__BiRelation__Group_1_0_1__1__Impl4767 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__BiRelation__Group_7_0__0__Impl_in_rule__BiRelation__Group_7_0__04801 = new BitSet(new long[]{0x0000000010000000L});
+    public static final BitSet FOLLOW_rule__BiRelation__Group_7_0__1_in_rule__BiRelation__Group_7_0__04804 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_NUMBER_in_rule__BiRelation__Group_7_0__0__Impl4834 = new BitSet(new long[]{0x0000000000000012L});
+    public static final BitSet FOLLOW_RULE_NUMBER_in_rule__BiRelation__Group_7_0__0__Impl4847 = new BitSet(new long[]{0x0000000000000012L});
+    public static final BitSet FOLLOW_rule__BiRelation__Group_7_0__1__Impl_in_rule__BiRelation__Group_7_0__14880 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__BiRelation__Group_7_0_1__0_in_rule__BiRelation__Group_7_0__1__Impl4907 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__BiRelation__Group_7_0_1__0__Impl_in_rule__BiRelation__Group_7_0_1__04941 = new BitSet(new long[]{0x0000000000001010L});
+    public static final BitSet FOLLOW_rule__BiRelation__Group_7_0_1__1_in_rule__BiRelation__Group_7_0_1__04944 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_28_in_rule__BiRelation__Group_7_0_1__0__Impl4972 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__BiRelation__Group_7_0_1__1__Impl_in_rule__BiRelation__Group_7_0_1__15003 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__BiRelation__Alternatives_7_0_1_1_in_rule__BiRelation__Group_7_0_1__1__Impl5030 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Attribute__Group__0__Impl_in_rule__Attribute__Group__05064 = new BitSet(new long[]{0x0000000000006020L});
+    public static final BitSet FOLLOW_rule__Attribute__Group__1_in_rule__Attribute__Group__05067 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleBodyVisibility_in_rule__Attribute__Group__0__Impl5094 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Attribute__Group__1__Impl_in_rule__Attribute__Group__15123 = new BitSet(new long[]{0x0000000000006020L});
+    public static final BitSet FOLLOW_rule__Attribute__Group__2_in_rule__Attribute__Group__15126 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Attribute__Alternatives_1_in_rule__Attribute__Group__1__Impl5153 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Attribute__Group__2__Impl_in_rule__Attribute__Group__25184 = new BitSet(new long[]{0x0000000000040000L});
+    public static final BitSet FOLLOW_rule__Attribute__Group__3_in_rule__Attribute__Group__25187 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Attribute__AttributenameAssignment_2_in_rule__Attribute__Group__2__Impl5214 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Attribute__Group__3__Impl_in_rule__Attribute__Group__35244 = new BitSet(new long[]{0x0000000000000020L});
+    public static final BitSet FOLLOW_rule__Attribute__Group__4_in_rule__Attribute__Group__35247 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_18_in_rule__Attribute__Group__3__Impl5275 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Attribute__Group__4__Impl_in_rule__Attribute__Group__45306 = new BitSet(new long[]{0x0000000004000000L});
+    public static final BitSet FOLLOW_rule__Attribute__Group__5_in_rule__Attribute__Group__45309 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Attribute__TypeAssignment_4_in_rule__Attribute__Group__4__Impl5336 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Attribute__Group__5__Impl_in_rule__Attribute__Group__55366 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Attribute__Alternatives_5_in_rule__Attribute__Group__5__Impl5393 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Attribute__Group_5_0__0__Impl_in_rule__Attribute__Group_5_0__05436 = new BitSet(new long[]{0x0000000008000010L});
+    public static final BitSet FOLLOW_rule__Attribute__Group_5_0__1_in_rule__Attribute__Group_5_0__05439 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_26_in_rule__Attribute__Group_5_0__0__Impl5467 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Attribute__Group_5_0__1__Impl_in_rule__Attribute__Group_5_0__15498 = new BitSet(new long[]{0x0000000008000010L});
+    public static final BitSet FOLLOW_rule__Attribute__Group_5_0__2_in_rule__Attribute__Group_5_0__15501 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_NUMBER_in_rule__Attribute__Group_5_0__1__Impl5529 = new BitSet(new long[]{0x0000000000000012L});
+    public static final BitSet FOLLOW_rule__Attribute__Group_5_0__2__Impl_in_rule__Attribute__Group_5_0__25560 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_27_in_rule__Attribute__Group_5_0__2__Impl5588 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__ParamIn__Group__0__Impl_in_rule__ParamIn__Group__05625 = new BitSet(new long[]{0x0000000000040000L});
+    public static final BitSet FOLLOW_rule__ParamIn__Group__1_in_rule__ParamIn__Group__05628 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__ParamIn__NameAssignment_0_in_rule__ParamIn__Group__0__Impl5655 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__ParamIn__Group__1__Impl_in_rule__ParamIn__Group__15685 = new BitSet(new long[]{0x0000000000000020L});
+    public static final BitSet FOLLOW_rule__ParamIn__Group__2_in_rule__ParamIn__Group__15688 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_18_in_rule__ParamIn__Group__1__Impl5716 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__ParamIn__Group__2__Impl_in_rule__ParamIn__Group__25747 = new BitSet(new long[]{0x0000000000200000L});
+    public static final BitSet FOLLOW_rule__ParamIn__Group__3_in_rule__ParamIn__Group__25750 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__ParamIn__TypeAssignment_2_in_rule__ParamIn__Group__2__Impl5777 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__ParamIn__Group__3__Impl_in_rule__ParamIn__Group__35807 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_21_in_rule__ParamIn__Group__3__Impl5836 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Method__Group__0__Impl_in_rule__Method__Group__05877 = new BitSet(new long[]{0x0000000000000020L});
+    public static final BitSet FOLLOW_rule__Method__Group__1_in_rule__Method__Group__05880 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleBodyVisibility_in_rule__Method__Group__0__Impl5907 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Method__Group__1__Impl_in_rule__Method__Group__15936 = new BitSet(new long[]{0x0000000020000000L});
+    public static final BitSet FOLLOW_rule__Method__Group__2_in_rule__Method__Group__15939 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Method__NameAssignment_1_in_rule__Method__Group__1__Impl5966 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Method__Group__2__Impl_in_rule__Method__Group__25996 = new BitSet(new long[]{0x0000000040000020L});
+    public static final BitSet FOLLOW_rule__Method__Group__3_in_rule__Method__Group__25999 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_29_in_rule__Method__Group__2__Impl6027 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Method__Group__3__Impl_in_rule__Method__Group__36058 = new BitSet(new long[]{0x0000000040000020L});
+    public static final BitSet FOLLOW_rule__Method__Group__4_in_rule__Method__Group__36061 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Method__ParamAssignment_3_in_rule__Method__Group__3__Impl6088 = new BitSet(new long[]{0x0000000000000022L});
+    public static final BitSet FOLLOW_rule__Method__Group__4__Impl_in_rule__Method__Group__46119 = new BitSet(new long[]{0x0000000000040000L});
+    public static final BitSet FOLLOW_rule__Method__Group__5_in_rule__Method__Group__46122 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_30_in_rule__Method__Group__4__Impl6150 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Method__Group__5__Impl_in_rule__Method__Group__56181 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Method__Group_5__0_in_rule__Method__Group__5__Impl6208 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Method__Group_5__0__Impl_in_rule__Method__Group_5__06251 = new BitSet(new long[]{0x0000000000000020L});
+    public static final BitSet FOLLOW_rule__Method__Group_5__1_in_rule__Method__Group_5__06254 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_18_in_rule__Method__Group_5__0__Impl6282 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Method__Group_5__1__Impl_in_rule__Method__Group_5__16313 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Method__ReturnTypeAssignment_5_1_in_rule__Method__Group_5__1__Impl6340 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Package__Group__0__Impl_in_rule__Package__Group__06374 = new BitSet(new long[]{0x0000000080000000L});
+    public static final BitSet FOLLOW_rule__Package__Group__1_in_rule__Package__Group__06377 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Package__NameAssignment_0_in_rule__Package__Group__0__Impl6404 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Package__Group__1__Impl_in_rule__Package__Group__16434 = new BitSet(new long[]{0x0000000300018020L});
+    public static final BitSet FOLLOW_rule__Package__Group__2_in_rule__Package__Group__16437 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_31_in_rule__Package__Group__1__Impl6465 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Package__Group__2__Impl_in_rule__Package__Group__26496 = new BitSet(new long[]{0x0000000300018020L});
+    public static final BitSet FOLLOW_rule__Package__Group__3_in_rule__Package__Group__26499 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Package__ClassTypeAssignment_2_in_rule__Package__Group__2__Impl6526 = new BitSet(new long[]{0x0000000000018002L});
+    public static final BitSet FOLLOW_rule__Package__Group__3__Impl_in_rule__Package__Group__36557 = new BitSet(new long[]{0x0000000300018020L});
+    public static final BitSet FOLLOW_rule__Package__Group__4_in_rule__Package__Group__36560 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Package__SubPackageAssignment_3_in_rule__Package__Group__3__Impl6587 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Package__Group__4__Impl_in_rule__Package__Group__46618 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_32_in_rule__Package__Group__4__Impl6646 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__PackageName__Group__0__Impl_in_rule__PackageName__Group__06687 = new BitSet(new long[]{0x0000000200000020L});
+    public static final BitSet FOLLOW_rule__PackageName__Group__1_in_rule__PackageName__Group__06690 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_rule__PackageName__Group__0__Impl6718 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__PackageName__Group__1__Impl_in_rule__PackageName__Group__16749 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__PackageName__Group_1__0_in_rule__PackageName__Group__1__Impl6776 = new BitSet(new long[]{0x0000000200000002L});
+    public static final BitSet FOLLOW_rule__PackageName__Group_1__0__Impl_in_rule__PackageName__Group_1__06811 = new BitSet(new long[]{0x0000000000000020L});
+    public static final BitSet FOLLOW_rule__PackageName__Group_1__1_in_rule__PackageName__Group_1__06814 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_33_in_rule__PackageName__Group_1__0__Impl6842 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__PackageName__Group_1__1__Impl_in_rule__PackageName__Group_1__16873 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_rule__PackageName__Group_1__1__Impl6900 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rulePackage_in_rule__Model__PackageAssignment6938 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_rule__Class__ClassnameAssignment_16969 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_rule__Class__ExtensionAssignment_37000 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_rule__Class__ImplementsAssignment_4_17031 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Class__BodyAlternatives_6_0_in_rule__Class__BodyAssignment_67062 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_rule__Dependancy__NameAssignment_17095 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_rule__Enumeration__ClassnameAssignment_27126 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_rule__Interface__InterfacenameAssignment_27157 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleMethod_in_rule__Interface__BodyAssignment_47188 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_rule__Abstract__ClassnameAssignment_27219 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_rule__Abstract__ExtensionAssignment_47250 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_rule__Abstract__ImplementsAssignment_5_17281 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Abstract__BodyAlternatives_7_0_in_rule__Abstract__BodyAssignment_77312 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_rule__BiRelation__LinkNameAssignment_47345 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_rule__Attribute__AttributenameAssignment_27376 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_rule__Attribute__TypeAssignment_47407 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleBiRelation_in_rule__Attribute__BirelationAssignment_5_17438 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_rule__ParamIn__NameAssignment_07469 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_rule__ParamIn__TypeAssignment_27500 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_rule__Method__NameAssignment_17531 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleparamIn_in_rule__Method__ParamAssignment_37562 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_rule__Method__ReturnTypeAssignment_5_17593 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rulePackageName_in_rule__Package__NameAssignment_07624 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleElements_in_rule__Package__ClassTypeAssignment_27655 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rulePackage_in_rule__Package__SubPackageAssignment_37686 = new BitSet(new long[]{0x0000000000000002L});
 
 }

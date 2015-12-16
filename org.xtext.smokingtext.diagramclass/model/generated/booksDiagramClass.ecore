@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<diagramClass:Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:diagramClass="http://www.xtext.org/smokingtext/diagramclass/DiagramClass">
+  <package name="com.bookstore">
+    <classType xsi:type="diagramClass:Interface" interfacename="Search"/>
+    <classType xsi:type="diagramClass:Interface" interfacename="Manage"/>
+    <classType xsi:type="diagramClass:Class" classname="Catalog" extension="Search"
+        implements="Manage"/>
+    <classType xsi:type="diagramClass:Class" classname="Patron">
+      <body xsi:type="diagramClass:Dependancy" name="Search"/>
+    </classType>
+    <subPackage name="book">
+      <classType xsi:type="diagramClass:Class" classname="Book">
+        <body xsi:type="diagramClass:Attribute" attributename="title" type="String"/>
+      </classType>
+      <classType xsi:type="diagramClass:Class" classname="Author">
+        <body xsi:type="diagramClass:Attribute" attributename="books" type="Book">
+          <birelation linkName="wrote"/>
+        </body>
+      </classType>
+    </subPackage>
+  </package>
+</diagramClass:Model>

@@ -29,7 +29,6 @@ public class DiagramClassSyntacticSequencer extends AbstractSyntacticSequencer {
 	protected AbstractElementAlias match_BiRelation_AsteriskKeyword_7_1_q_or___NumberTerminalRuleCall_7_0_0_p_FullStopFullStopKeyword_7_0_1_0___AsteriskKeyword_7_0_1_1_1_or_NumberTerminalRuleCall_7_0_1_1_0_p____;
 	protected AbstractElementAlias match_Class_ColonKeyword_2_q;
 	protected AbstractElementAlias match_Enumeration___IDTerminalRuleCall_4_0_CommaKeyword_4_1_q__a;
-	protected AbstractElementAlias match_Package___FullStopKeyword_1_0_IDTerminalRuleCall_1_1__a;
 	protected AbstractElementAlias match_paramIn_CommaKeyword_3_q;
 	
 	@Inject
@@ -42,7 +41,6 @@ public class DiagramClassSyntacticSequencer extends AbstractSyntacticSequencer {
 		match_BiRelation_AsteriskKeyword_7_1_q_or___NumberTerminalRuleCall_7_0_0_p_FullStopFullStopKeyword_7_0_1_0___AsteriskKeyword_7_0_1_1_1_or_NumberTerminalRuleCall_7_0_1_1_0_p____ = new AlternativeAlias(false, false, new GroupAlias(false, false, new TokenAlias(true, false, grammarAccess.getBiRelationAccess().getNumberTerminalRuleCall_7_0_0()), new TokenAlias(false, false, grammarAccess.getBiRelationAccess().getFullStopFullStopKeyword_7_0_1_0()), new AlternativeAlias(false, false, new TokenAlias(false, false, grammarAccess.getBiRelationAccess().getAsteriskKeyword_7_0_1_1_1()), new TokenAlias(true, false, grammarAccess.getBiRelationAccess().getNumberTerminalRuleCall_7_0_1_1_0()))), new TokenAlias(false, true, grammarAccess.getBiRelationAccess().getAsteriskKeyword_7_1()));
 		match_Class_ColonKeyword_2_q = new TokenAlias(false, true, grammarAccess.getClassAccess().getColonKeyword_2());
 		match_Enumeration___IDTerminalRuleCall_4_0_CommaKeyword_4_1_q__a = new GroupAlias(true, true, new TokenAlias(false, false, grammarAccess.getEnumerationAccess().getIDTerminalRuleCall_4_0()), new TokenAlias(false, true, grammarAccess.getEnumerationAccess().getCommaKeyword_4_1()));
-		match_Package___FullStopKeyword_1_0_IDTerminalRuleCall_1_1__a = new GroupAlias(true, true, new TokenAlias(false, false, grammarAccess.getPackageAccess().getFullStopKeyword_1_0()), new TokenAlias(false, false, grammarAccess.getPackageAccess().getIDTerminalRuleCall_1_1()));
 		match_paramIn_CommaKeyword_3_q = new TokenAlias(false, true, grammarAccess.getParamInAccess().getCommaKeyword_3());
 	}
 	
@@ -121,8 +119,6 @@ public class DiagramClassSyntacticSequencer extends AbstractSyntacticSequencer {
 				emit_Class_ColonKeyword_2_q(semanticObject, getLastNavigableState(), syntaxNodes);
 			else if(match_Enumeration___IDTerminalRuleCall_4_0_CommaKeyword_4_1_q__a.equals(syntax))
 				emit_Enumeration___IDTerminalRuleCall_4_0_CommaKeyword_4_1_q__a(semanticObject, getLastNavigableState(), syntaxNodes);
-			else if(match_Package___FullStopKeyword_1_0_IDTerminalRuleCall_1_1__a.equals(syntax))
-				emit_Package___FullStopKeyword_1_0_IDTerminalRuleCall_1_1__a(semanticObject, getLastNavigableState(), syntaxNodes);
 			else if(match_paramIn_CommaKeyword_3_q.equals(syntax))
 				emit_paramIn_CommaKeyword_3_q(semanticObject, getLastNavigableState(), syntaxNodes);
 			else acceptNodes(getLastNavigableState(), syntaxNodes);
@@ -134,11 +130,11 @@ public class DiagramClassSyntacticSequencer extends AbstractSyntacticSequencer {
 	 *     ':'?
 	 *
 	 * This ambiguous syntax occurs at:
+	 *     classname=ID (ambiguity) ',' implements=ID
 	 *     classname=ID (ambiguity) '{' '}' (rule end)
 	 *     classname=ID (ambiguity) '{' body+=Attribute
 	 *     classname=ID (ambiguity) '{' body+=Method
 	 *     classname=ID (ambiguity) extension=ID
-	 *     classname=ID (ambiguity) implements=Implements
 	 */
 	protected void emit_Abstract_ColonKeyword_3_q(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
 		acceptNodes(transition, nodes);
@@ -193,12 +189,12 @@ public class DiagramClassSyntacticSequencer extends AbstractSyntacticSequencer {
 	 *     ':'?
 	 *
 	 * This ambiguous syntax occurs at:
+	 *     classname=ID (ambiguity) ',' implements=ID
 	 *     classname=ID (ambiguity) '{' '}' (rule end)
 	 *     classname=ID (ambiguity) '{' body+=Attribute
 	 *     classname=ID (ambiguity) '{' body+=Dependancy
 	 *     classname=ID (ambiguity) '{' body+=Method
 	 *     classname=ID (ambiguity) extension=ID
-	 *     classname=ID (ambiguity) implements=Implements
 	 */
 	protected void emit_Class_ColonKeyword_2_q(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
 		acceptNodes(transition, nodes);
@@ -212,22 +208,6 @@ public class DiagramClassSyntacticSequencer extends AbstractSyntacticSequencer {
 	 *     classname=ID '{' (ambiguity) '}' (rule end)
 	 */
 	protected void emit_Enumeration___IDTerminalRuleCall_4_0_CommaKeyword_4_1_q__a(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
-		acceptNodes(transition, nodes);
-	}
-	
-	/**
-	 * Ambiguous syntax:
-	 *     ('.' ID)*
-	 *
-	 * This ambiguous syntax occurs at:
-	 *     (rule start) (ambiguity) '[[' ']]' (rule start)
-	 *     (rule start) (ambiguity) '[[' classType+=Elements
-	 *     (rule start) (ambiguity) '[[' subPackage+=Package
-	 *     name=ID (ambiguity) '[[' ']]' (rule end)
-	 *     name=ID (ambiguity) '[[' classType+=Elements
-	 *     name=ID (ambiguity) '[[' subPackage+=Package
-	 */
-	protected void emit_Package___FullStopKeyword_1_0_IDTerminalRuleCall_1_1__a(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
 		acceptNodes(transition, nodes);
 	}
 	

@@ -21,7 +21,7 @@ import java.util.ArrayList;
 @SuppressWarnings("all")
 public class InternalDiagramClassParser extends AbstractInternalAntlrParser {
     public static final String[] tokenNames = new String[] {
-        "<invalid>", "<EOR>", "<DOWN>", "<UP>", "RULE_ID", "RULE_NUMBER", "RULE_INT", "RULE_STRING", "RULE_ML_COMMENT", "RULE_SL_COMMENT", "RULE_WS", "RULE_ANY_OTHER", "':'", "'{'", "'}'", "','", "'->'", "'e'", "'i'", "'a'", "'['", "'..'", "'*'", "']'", "'-'", "'<>'", "'<!>'", "'('", "')'", "'+'", "'#'", "'.'", "'[['", "']]'"
+        "<invalid>", "<EOR>", "<DOWN>", "<UP>", "RULE_ID", "RULE_NUMBER", "RULE_INT", "RULE_STRING", "RULE_ML_COMMENT", "RULE_SL_COMMENT", "RULE_WS", "RULE_ANY_OTHER", "':'", "','", "'{'", "'}'", "'->'", "'e'", "'i'", "'a'", "'['", "'..'", "'*'", "']'", "'-'", "'<>'", "'<!>'", "'('", "')'", "'+'", "'#'", "'[['", "']]'", "'.'"
     };
     public static final int RULE_ID=4;
     public static final int T__29=29;
@@ -149,7 +149,7 @@ public class InternalDiagramClassParser extends AbstractInternalAntlrParser {
                 int alt1=2;
                 int LA1_0 = input.LA(1);
 
-                if ( (LA1_0==RULE_ID||(LA1_0>=31 && LA1_0<=32)) ) {
+                if ( (LA1_0==RULE_ID||LA1_0==31||LA1_0==33) ) {
                     alt1=1;
                 }
 
@@ -271,16 +271,6 @@ public class InternalDiagramClassParser extends AbstractInternalAntlrParser {
 
             if ( (LA2_0==29) ) {
                 switch ( input.LA(2) ) {
-                case 19:
-                    {
-                    alt2=3;
-                    }
-                    break;
-                case RULE_ID:
-                    {
-                    alt2=1;
-                    }
-                    break;
                 case 18:
                     {
                     alt2=2;
@@ -289,6 +279,16 @@ public class InternalDiagramClassParser extends AbstractInternalAntlrParser {
                 case 17:
                     {
                     alt2=4;
+                    }
+                    break;
+                case RULE_ID:
+                    {
+                    alt2=1;
+                    }
+                    break;
+                case 19:
+                    {
+                    alt2=3;
                     }
                     break;
                 default:
@@ -301,24 +301,24 @@ public class InternalDiagramClassParser extends AbstractInternalAntlrParser {
             }
             else if ( (LA2_0==24) ) {
                 switch ( input.LA(2) ) {
-                case 19:
-                    {
-                    alt2=3;
-                    }
-                    break;
                 case 17:
                     {
                     alt2=4;
                     }
                     break;
-                case RULE_ID:
+                case 19:
                     {
-                    alt2=1;
+                    alt2=3;
                     }
                     break;
                 case 18:
                     {
                     alt2=2;
+                    }
+                    break;
+                case RULE_ID:
+                    {
+                    alt2=1;
                     }
                     break;
                 default:
@@ -465,32 +465,32 @@ public class InternalDiagramClassParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleClass"
-    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:175:1: ruleClass returns [EObject current=null] : ( ruleClassVisibility ( (lv_classname_1_0= RULE_ID ) ) (otherlv_2= ':' )? ( (lv_extension_3_0= RULE_ID ) )? ( (lv_implements_4_0= ruleImplements ) )* otherlv_5= '{' ( ( (lv_body_6_1= ruleAttribute | lv_body_6_2= ruleMethod | lv_body_6_3= ruleDependancy ) ) )* otherlv_7= '}' ) ;
+    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:175:1: ruleClass returns [EObject current=null] : ( ruleClassVisibility ( (lv_classname_1_0= RULE_ID ) ) (otherlv_2= ':' )? ( (lv_extension_3_0= RULE_ID ) )? (otherlv_4= ',' ( (lv_implements_5_0= RULE_ID ) ) )* otherlv_6= '{' ( ( (lv_body_7_1= ruleAttribute | lv_body_7_2= ruleMethod | lv_body_7_3= ruleDependancy ) ) )* otherlv_8= '}' ) ;
     public final EObject ruleClass() throws RecognitionException {
         EObject current = null;
 
         Token lv_classname_1_0=null;
         Token otherlv_2=null;
         Token lv_extension_3_0=null;
-        Token otherlv_5=null;
-        Token otherlv_7=null;
-        AntlrDatatypeRuleToken lv_implements_4_0 = null;
+        Token otherlv_4=null;
+        Token lv_implements_5_0=null;
+        Token otherlv_6=null;
+        Token otherlv_8=null;
+        EObject lv_body_7_1 = null;
 
-        EObject lv_body_6_1 = null;
+        EObject lv_body_7_2 = null;
 
-        EObject lv_body_6_2 = null;
-
-        EObject lv_body_6_3 = null;
+        EObject lv_body_7_3 = null;
 
 
          enterRule(); 
             
         try {
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:178:28: ( ( ruleClassVisibility ( (lv_classname_1_0= RULE_ID ) ) (otherlv_2= ':' )? ( (lv_extension_3_0= RULE_ID ) )? ( (lv_implements_4_0= ruleImplements ) )* otherlv_5= '{' ( ( (lv_body_6_1= ruleAttribute | lv_body_6_2= ruleMethod | lv_body_6_3= ruleDependancy ) ) )* otherlv_7= '}' ) )
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:179:1: ( ruleClassVisibility ( (lv_classname_1_0= RULE_ID ) ) (otherlv_2= ':' )? ( (lv_extension_3_0= RULE_ID ) )? ( (lv_implements_4_0= ruleImplements ) )* otherlv_5= '{' ( ( (lv_body_6_1= ruleAttribute | lv_body_6_2= ruleMethod | lv_body_6_3= ruleDependancy ) ) )* otherlv_7= '}' )
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:178:28: ( ( ruleClassVisibility ( (lv_classname_1_0= RULE_ID ) ) (otherlv_2= ':' )? ( (lv_extension_3_0= RULE_ID ) )? (otherlv_4= ',' ( (lv_implements_5_0= RULE_ID ) ) )* otherlv_6= '{' ( ( (lv_body_7_1= ruleAttribute | lv_body_7_2= ruleMethod | lv_body_7_3= ruleDependancy ) ) )* otherlv_8= '}' ) )
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:179:1: ( ruleClassVisibility ( (lv_classname_1_0= RULE_ID ) ) (otherlv_2= ':' )? ( (lv_extension_3_0= RULE_ID ) )? (otherlv_4= ',' ( (lv_implements_5_0= RULE_ID ) ) )* otherlv_6= '{' ( ( (lv_body_7_1= ruleAttribute | lv_body_7_2= ruleMethod | lv_body_7_3= ruleDependancy ) ) )* otherlv_8= '}' )
             {
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:179:1: ( ruleClassVisibility ( (lv_classname_1_0= RULE_ID ) ) (otherlv_2= ':' )? ( (lv_extension_3_0= RULE_ID ) )? ( (lv_implements_4_0= ruleImplements ) )* otherlv_5= '{' ( ( (lv_body_6_1= ruleAttribute | lv_body_6_2= ruleMethod | lv_body_6_3= ruleDependancy ) ) )* otherlv_7= '}' )
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:180:5: ruleClassVisibility ( (lv_classname_1_0= RULE_ID ) ) (otherlv_2= ':' )? ( (lv_extension_3_0= RULE_ID ) )? ( (lv_implements_4_0= ruleImplements ) )* otherlv_5= '{' ( ( (lv_body_6_1= ruleAttribute | lv_body_6_2= ruleMethod | lv_body_6_3= ruleDependancy ) ) )* otherlv_7= '}'
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:179:1: ( ruleClassVisibility ( (lv_classname_1_0= RULE_ID ) ) (otherlv_2= ':' )? ( (lv_extension_3_0= RULE_ID ) )? (otherlv_4= ',' ( (lv_implements_5_0= RULE_ID ) ) )* otherlv_6= '{' ( ( (lv_body_7_1= ruleAttribute | lv_body_7_2= ruleMethod | lv_body_7_3= ruleDependancy ) ) )* otherlv_8= '}' )
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:180:5: ruleClassVisibility ( (lv_classname_1_0= RULE_ID ) ) (otherlv_2= ':' )? ( (lv_extension_3_0= RULE_ID ) )? (otherlv_4= ',' ( (lv_implements_5_0= RULE_ID ) ) )* otherlv_6= '{' ( ( (lv_body_7_1= ruleAttribute | lv_body_7_2= ruleMethod | lv_body_7_3= ruleDependancy ) ) )* otherlv_8= '}'
             {
              
                     newCompositeNode(grammarAccess.getClassAccess().getClassVisibilityParserRuleCall_0()); 
@@ -587,43 +587,48 @@ public class InternalDiagramClassParser extends AbstractInternalAntlrParser {
 
             }
 
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:227:3: ( (lv_implements_4_0= ruleImplements ) )*
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:227:3: (otherlv_4= ',' ( (lv_implements_5_0= RULE_ID ) ) )*
             loop5:
             do {
                 int alt5=2;
                 int LA5_0 = input.LA(1);
 
-                if ( (LA5_0==RULE_ID||LA5_0==15) ) {
+                if ( (LA5_0==13) ) {
                     alt5=1;
                 }
 
 
                 switch (alt5) {
             	case 1 :
-            	    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:228:1: (lv_implements_4_0= ruleImplements )
+            	    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:227:5: otherlv_4= ',' ( (lv_implements_5_0= RULE_ID ) )
             	    {
-            	    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:228:1: (lv_implements_4_0= ruleImplements )
-            	    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:229:3: lv_implements_4_0= ruleImplements
+            	    otherlv_4=(Token)match(input,13,FOLLOW_13_in_ruleClass462); 
+
+            	        	newLeafNode(otherlv_4, grammarAccess.getClassAccess().getCommaKeyword_4_0());
+            	        
+            	    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:231:1: ( (lv_implements_5_0= RULE_ID ) )
+            	    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:232:1: (lv_implements_5_0= RULE_ID )
             	    {
-            	     
-            	    	        newCompositeNode(grammarAccess.getClassAccess().getImplementsImplementsParserRuleCall_4_0()); 
-            	    	    
-            	    pushFollow(FOLLOW_ruleImplements_in_ruleClass470);
-            	    lv_implements_4_0=ruleImplements();
+            	    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:232:1: (lv_implements_5_0= RULE_ID )
+            	    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:233:3: lv_implements_5_0= RULE_ID
+            	    {
+            	    lv_implements_5_0=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleClass479); 
 
-            	    state._fsp--;
-
+            	    			newLeafNode(lv_implements_5_0, grammarAccess.getClassAccess().getImplementsIDTerminalRuleCall_4_1_0()); 
+            	    		
 
             	    	        if (current==null) {
-            	    	            current = createModelElementForParent(grammarAccess.getClassRule());
+            	    	            current = createModelElement(grammarAccess.getClassRule());
             	    	        }
-            	           		set(
+            	           		setWithLastConsumed(
             	           			current, 
             	           			"implements",
-            	            		lv_implements_4_0, 
-            	            		"Implements");
-            	    	        afterParserOrEnumRuleCall();
+            	            		lv_implements_5_0, 
+            	            		"ID");
             	    	    
+
+            	    }
+
 
             	    }
 
@@ -636,11 +641,11 @@ public class InternalDiagramClassParser extends AbstractInternalAntlrParser {
                 }
             } while (true);
 
-            otherlv_5=(Token)match(input,13,FOLLOW_13_in_ruleClass483); 
+            otherlv_6=(Token)match(input,14,FOLLOW_14_in_ruleClass498); 
 
-                	newLeafNode(otherlv_5, grammarAccess.getClassAccess().getLeftCurlyBracketKeyword_5());
+                	newLeafNode(otherlv_6, grammarAccess.getClassAccess().getLeftCurlyBracketKeyword_5());
                 
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:249:1: ( ( (lv_body_6_1= ruleAttribute | lv_body_6_2= ruleMethod | lv_body_6_3= ruleDependancy ) ) )*
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:253:1: ( ( (lv_body_7_1= ruleAttribute | lv_body_7_2= ruleMethod | lv_body_7_3= ruleDependancy ) ) )*
             loop7:
             do {
                 int alt7=2;
@@ -653,12 +658,12 @@ public class InternalDiagramClassParser extends AbstractInternalAntlrParser {
 
                 switch (alt7) {
             	case 1 :
-            	    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:250:1: ( (lv_body_6_1= ruleAttribute | lv_body_6_2= ruleMethod | lv_body_6_3= ruleDependancy ) )
+            	    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:254:1: ( (lv_body_7_1= ruleAttribute | lv_body_7_2= ruleMethod | lv_body_7_3= ruleDependancy ) )
             	    {
-            	    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:250:1: ( (lv_body_6_1= ruleAttribute | lv_body_6_2= ruleMethod | lv_body_6_3= ruleDependancy ) )
-            	    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:251:1: (lv_body_6_1= ruleAttribute | lv_body_6_2= ruleMethod | lv_body_6_3= ruleDependancy )
+            	    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:254:1: ( (lv_body_7_1= ruleAttribute | lv_body_7_2= ruleMethod | lv_body_7_3= ruleDependancy ) )
+            	    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:255:1: (lv_body_7_1= ruleAttribute | lv_body_7_2= ruleMethod | lv_body_7_3= ruleDependancy )
             	    {
-            	    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:251:1: (lv_body_6_1= ruleAttribute | lv_body_6_2= ruleMethod | lv_body_6_3= ruleDependancy )
+            	    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:255:1: (lv_body_7_1= ruleAttribute | lv_body_7_2= ruleMethod | lv_body_7_3= ruleDependancy )
             	    int alt6=3;
             	    switch ( input.LA(1) ) {
             	    case 29:
@@ -696,7 +701,10 @@ public class InternalDiagramClassParser extends AbstractInternalAntlrParser {
             	        {
             	        int LA6_2 = input.LA(2);
 
-            	        if ( (LA6_2==RULE_ID) ) {
+            	        if ( ((LA6_2>=25 && LA6_2<=26)) ) {
+            	            alt6=1;
+            	        }
+            	        else if ( (LA6_2==RULE_ID) ) {
             	            int LA6_5 = input.LA(3);
 
             	            if ( (LA6_5==12) ) {
@@ -711,9 +719,6 @@ public class InternalDiagramClassParser extends AbstractInternalAntlrParser {
 
             	                throw nvae;
             	            }
-            	        }
-            	        else if ( ((LA6_2>=25 && LA6_2<=26)) ) {
-            	            alt6=1;
             	        }
             	        else {
             	            NoViableAltException nvae =
@@ -727,7 +732,10 @@ public class InternalDiagramClassParser extends AbstractInternalAntlrParser {
             	        {
             	        int LA6_3 = input.LA(2);
 
-            	        if ( (LA6_3==RULE_ID) ) {
+            	        if ( ((LA6_3>=25 && LA6_3<=26)) ) {
+            	            alt6=1;
+            	        }
+            	        else if ( (LA6_3==RULE_ID) ) {
             	            int LA6_5 = input.LA(3);
 
             	            if ( (LA6_5==12) ) {
@@ -742,9 +750,6 @@ public class InternalDiagramClassParser extends AbstractInternalAntlrParser {
 
             	                throw nvae;
             	            }
-            	        }
-            	        else if ( ((LA6_3>=25 && LA6_3<=26)) ) {
-            	            alt6=1;
             	        }
             	        else {
             	            NoViableAltException nvae =
@@ -768,13 +773,13 @@ public class InternalDiagramClassParser extends AbstractInternalAntlrParser {
 
             	    switch (alt6) {
             	        case 1 :
-            	            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:252:3: lv_body_6_1= ruleAttribute
+            	            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:256:3: lv_body_7_1= ruleAttribute
             	            {
             	             
             	            	        newCompositeNode(grammarAccess.getClassAccess().getBodyAttributeParserRuleCall_6_0_0()); 
             	            	    
-            	            pushFollow(FOLLOW_ruleAttribute_in_ruleClass506);
-            	            lv_body_6_1=ruleAttribute();
+            	            pushFollow(FOLLOW_ruleAttribute_in_ruleClass521);
+            	            lv_body_7_1=ruleAttribute();
 
             	            state._fsp--;
 
@@ -785,7 +790,7 @@ public class InternalDiagramClassParser extends AbstractInternalAntlrParser {
             	                   		add(
             	                   			current, 
             	                   			"body",
-            	                    		lv_body_6_1, 
+            	                    		lv_body_7_1, 
             	                    		"Attribute");
             	            	        afterParserOrEnumRuleCall();
             	            	    
@@ -793,13 +798,13 @@ public class InternalDiagramClassParser extends AbstractInternalAntlrParser {
             	            }
             	            break;
             	        case 2 :
-            	            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:267:8: lv_body_6_2= ruleMethod
+            	            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:271:8: lv_body_7_2= ruleMethod
             	            {
             	             
             	            	        newCompositeNode(grammarAccess.getClassAccess().getBodyMethodParserRuleCall_6_0_1()); 
             	            	    
-            	            pushFollow(FOLLOW_ruleMethod_in_ruleClass525);
-            	            lv_body_6_2=ruleMethod();
+            	            pushFollow(FOLLOW_ruleMethod_in_ruleClass540);
+            	            lv_body_7_2=ruleMethod();
 
             	            state._fsp--;
 
@@ -810,7 +815,7 @@ public class InternalDiagramClassParser extends AbstractInternalAntlrParser {
             	                   		add(
             	                   			current, 
             	                   			"body",
-            	                    		lv_body_6_2, 
+            	                    		lv_body_7_2, 
             	                    		"Method");
             	            	        afterParserOrEnumRuleCall();
             	            	    
@@ -818,13 +823,13 @@ public class InternalDiagramClassParser extends AbstractInternalAntlrParser {
             	            }
             	            break;
             	        case 3 :
-            	            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:282:8: lv_body_6_3= ruleDependancy
+            	            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:286:8: lv_body_7_3= ruleDependancy
             	            {
             	             
             	            	        newCompositeNode(grammarAccess.getClassAccess().getBodyDependancyParserRuleCall_6_0_2()); 
             	            	    
-            	            pushFollow(FOLLOW_ruleDependancy_in_ruleClass544);
-            	            lv_body_6_3=ruleDependancy();
+            	            pushFollow(FOLLOW_ruleDependancy_in_ruleClass559);
+            	            lv_body_7_3=ruleDependancy();
 
             	            state._fsp--;
 
@@ -835,7 +840,7 @@ public class InternalDiagramClassParser extends AbstractInternalAntlrParser {
             	                   		add(
             	                   			current, 
             	                   			"body",
-            	                    		lv_body_6_3, 
+            	                    		lv_body_7_3, 
             	                    		"Dependancy");
             	            	        afterParserOrEnumRuleCall();
             	            	    
@@ -857,9 +862,9 @@ public class InternalDiagramClassParser extends AbstractInternalAntlrParser {
                 }
             } while (true);
 
-            otherlv_7=(Token)match(input,14,FOLLOW_14_in_ruleClass560); 
+            otherlv_8=(Token)match(input,15,FOLLOW_15_in_ruleClass575); 
 
-                	newLeafNode(otherlv_7, grammarAccess.getClassAccess().getRightCurlyBracketKeyword_7());
+                	newLeafNode(otherlv_8, grammarAccess.getClassAccess().getRightCurlyBracketKeyword_7());
                 
 
             }
@@ -881,110 +886,8 @@ public class InternalDiagramClassParser extends AbstractInternalAntlrParser {
     // $ANTLR end "ruleClass"
 
 
-    // $ANTLR start "entryRuleImplements"
-    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:312:1: entryRuleImplements returns [String current=null] : iv_ruleImplements= ruleImplements EOF ;
-    public final String entryRuleImplements() throws RecognitionException {
-        String current = null;
-
-        AntlrDatatypeRuleToken iv_ruleImplements = null;
-
-
-        try {
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:313:2: (iv_ruleImplements= ruleImplements EOF )
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:314:2: iv_ruleImplements= ruleImplements EOF
-            {
-             newCompositeNode(grammarAccess.getImplementsRule()); 
-            pushFollow(FOLLOW_ruleImplements_in_entryRuleImplements597);
-            iv_ruleImplements=ruleImplements();
-
-            state._fsp--;
-
-             current =iv_ruleImplements.getText(); 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleImplements608); 
-
-            }
-
-        }
-         
-            catch (RecognitionException re) { 
-                recover(input,re); 
-                appendSkippedTokens();
-            } 
-        finally {
-        }
-        return current;
-    }
-    // $ANTLR end "entryRuleImplements"
-
-
-    // $ANTLR start "ruleImplements"
-    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:321:1: ruleImplements returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()] : ( (kw= ',' )? this_ID_1= RULE_ID ) ;
-    public final AntlrDatatypeRuleToken ruleImplements() throws RecognitionException {
-        AntlrDatatypeRuleToken current = new AntlrDatatypeRuleToken();
-
-        Token kw=null;
-        Token this_ID_1=null;
-
-         enterRule(); 
-            
-        try {
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:324:28: ( ( (kw= ',' )? this_ID_1= RULE_ID ) )
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:325:1: ( (kw= ',' )? this_ID_1= RULE_ID )
-            {
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:325:1: ( (kw= ',' )? this_ID_1= RULE_ID )
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:325:2: (kw= ',' )? this_ID_1= RULE_ID
-            {
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:325:2: (kw= ',' )?
-            int alt8=2;
-            int LA8_0 = input.LA(1);
-
-            if ( (LA8_0==15) ) {
-                alt8=1;
-            }
-            switch (alt8) {
-                case 1 :
-                    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:326:2: kw= ','
-                    {
-                    kw=(Token)match(input,15,FOLLOW_15_in_ruleImplements647); 
-
-                            current.merge(kw);
-                            newLeafNode(kw, grammarAccess.getImplementsAccess().getCommaKeyword_0()); 
-                        
-
-                    }
-                    break;
-
-            }
-
-            this_ID_1=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleImplements664); 
-
-            		current.merge(this_ID_1);
-                
-             
-                newLeafNode(this_ID_1, grammarAccess.getImplementsAccess().getIDTerminalRuleCall_1()); 
-                
-
-            }
-
-
-            }
-
-             leaveRule(); 
-        }
-         
-            catch (RecognitionException re) { 
-                recover(input,re); 
-                appendSkippedTokens();
-            } 
-        finally {
-        }
-        return current;
-    }
-    // $ANTLR end "ruleImplements"
-
-
     // $ANTLR start "entryRuleDependancy"
-    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:346:1: entryRuleDependancy returns [EObject current=null] : iv_ruleDependancy= ruleDependancy EOF ;
+    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:316:1: entryRuleDependancy returns [EObject current=null] : iv_ruleDependancy= ruleDependancy EOF ;
     public final EObject entryRuleDependancy() throws RecognitionException {
         EObject current = null;
 
@@ -992,17 +895,17 @@ public class InternalDiagramClassParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:347:2: (iv_ruleDependancy= ruleDependancy EOF )
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:348:2: iv_ruleDependancy= ruleDependancy EOF
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:317:2: (iv_ruleDependancy= ruleDependancy EOF )
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:318:2: iv_ruleDependancy= ruleDependancy EOF
             {
              newCompositeNode(grammarAccess.getDependancyRule()); 
-            pushFollow(FOLLOW_ruleDependancy_in_entryRuleDependancy709);
+            pushFollow(FOLLOW_ruleDependancy_in_entryRuleDependancy611);
             iv_ruleDependancy=ruleDependancy();
 
             state._fsp--;
 
              current =iv_ruleDependancy; 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleDependancy719); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleDependancy621); 
 
             }
 
@@ -1020,7 +923,7 @@ public class InternalDiagramClassParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleDependancy"
-    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:355:1: ruleDependancy returns [EObject current=null] : (otherlv_0= '->' ( (lv_name_1_0= RULE_ID ) ) ) ;
+    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:325:1: ruleDependancy returns [EObject current=null] : (otherlv_0= '->' ( (lv_name_1_0= RULE_ID ) ) ) ;
     public final EObject ruleDependancy() throws RecognitionException {
         EObject current = null;
 
@@ -1030,23 +933,23 @@ public class InternalDiagramClassParser extends AbstractInternalAntlrParser {
          enterRule(); 
             
         try {
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:358:28: ( (otherlv_0= '->' ( (lv_name_1_0= RULE_ID ) ) ) )
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:359:1: (otherlv_0= '->' ( (lv_name_1_0= RULE_ID ) ) )
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:328:28: ( (otherlv_0= '->' ( (lv_name_1_0= RULE_ID ) ) ) )
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:329:1: (otherlv_0= '->' ( (lv_name_1_0= RULE_ID ) ) )
             {
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:359:1: (otherlv_0= '->' ( (lv_name_1_0= RULE_ID ) ) )
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:359:3: otherlv_0= '->' ( (lv_name_1_0= RULE_ID ) )
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:329:1: (otherlv_0= '->' ( (lv_name_1_0= RULE_ID ) ) )
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:329:3: otherlv_0= '->' ( (lv_name_1_0= RULE_ID ) )
             {
-            otherlv_0=(Token)match(input,16,FOLLOW_16_in_ruleDependancy756); 
+            otherlv_0=(Token)match(input,16,FOLLOW_16_in_ruleDependancy658); 
 
                 	newLeafNode(otherlv_0, grammarAccess.getDependancyAccess().getHyphenMinusGreaterThanSignKeyword_0());
                 
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:363:1: ( (lv_name_1_0= RULE_ID ) )
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:364:1: (lv_name_1_0= RULE_ID )
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:333:1: ( (lv_name_1_0= RULE_ID ) )
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:334:1: (lv_name_1_0= RULE_ID )
             {
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:364:1: (lv_name_1_0= RULE_ID )
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:365:3: lv_name_1_0= RULE_ID
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:334:1: (lv_name_1_0= RULE_ID )
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:335:3: lv_name_1_0= RULE_ID
             {
-            lv_name_1_0=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleDependancy773); 
+            lv_name_1_0=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleDependancy675); 
 
             			newLeafNode(lv_name_1_0, grammarAccess.getDependancyAccess().getNameIDTerminalRuleCall_1_0()); 
             		
@@ -1087,7 +990,7 @@ public class InternalDiagramClassParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleEnumeration"
-    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:389:1: entryRuleEnumeration returns [EObject current=null] : iv_ruleEnumeration= ruleEnumeration EOF ;
+    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:359:1: entryRuleEnumeration returns [EObject current=null] : iv_ruleEnumeration= ruleEnumeration EOF ;
     public final EObject entryRuleEnumeration() throws RecognitionException {
         EObject current = null;
 
@@ -1095,17 +998,17 @@ public class InternalDiagramClassParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:390:2: (iv_ruleEnumeration= ruleEnumeration EOF )
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:391:2: iv_ruleEnumeration= ruleEnumeration EOF
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:360:2: (iv_ruleEnumeration= ruleEnumeration EOF )
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:361:2: iv_ruleEnumeration= ruleEnumeration EOF
             {
              newCompositeNode(grammarAccess.getEnumerationRule()); 
-            pushFollow(FOLLOW_ruleEnumeration_in_entryRuleEnumeration814);
+            pushFollow(FOLLOW_ruleEnumeration_in_entryRuleEnumeration716);
             iv_ruleEnumeration=ruleEnumeration();
 
             state._fsp--;
 
              current =iv_ruleEnumeration; 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleEnumeration824); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleEnumeration726); 
 
             }
 
@@ -1123,7 +1026,7 @@ public class InternalDiagramClassParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleEnumeration"
-    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:398:1: ruleEnumeration returns [EObject current=null] : ( ruleClassVisibility otherlv_1= 'e' ( (lv_classname_2_0= RULE_ID ) ) otherlv_3= '{' (this_ID_4= RULE_ID (otherlv_5= ',' )? )* otherlv_6= '}' ) ;
+    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:368:1: ruleEnumeration returns [EObject current=null] : ( ruleClassVisibility otherlv_1= 'e' ( (lv_classname_2_0= RULE_ID ) ) otherlv_3= '{' (this_ID_4= RULE_ID (otherlv_5= ',' )? )* otherlv_6= '}' ) ;
     public final EObject ruleEnumeration() throws RecognitionException {
         EObject current = null;
 
@@ -1137,16 +1040,16 @@ public class InternalDiagramClassParser extends AbstractInternalAntlrParser {
          enterRule(); 
             
         try {
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:401:28: ( ( ruleClassVisibility otherlv_1= 'e' ( (lv_classname_2_0= RULE_ID ) ) otherlv_3= '{' (this_ID_4= RULE_ID (otherlv_5= ',' )? )* otherlv_6= '}' ) )
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:402:1: ( ruleClassVisibility otherlv_1= 'e' ( (lv_classname_2_0= RULE_ID ) ) otherlv_3= '{' (this_ID_4= RULE_ID (otherlv_5= ',' )? )* otherlv_6= '}' )
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:371:28: ( ( ruleClassVisibility otherlv_1= 'e' ( (lv_classname_2_0= RULE_ID ) ) otherlv_3= '{' (this_ID_4= RULE_ID (otherlv_5= ',' )? )* otherlv_6= '}' ) )
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:372:1: ( ruleClassVisibility otherlv_1= 'e' ( (lv_classname_2_0= RULE_ID ) ) otherlv_3= '{' (this_ID_4= RULE_ID (otherlv_5= ',' )? )* otherlv_6= '}' )
             {
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:402:1: ( ruleClassVisibility otherlv_1= 'e' ( (lv_classname_2_0= RULE_ID ) ) otherlv_3= '{' (this_ID_4= RULE_ID (otherlv_5= ',' )? )* otherlv_6= '}' )
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:403:5: ruleClassVisibility otherlv_1= 'e' ( (lv_classname_2_0= RULE_ID ) ) otherlv_3= '{' (this_ID_4= RULE_ID (otherlv_5= ',' )? )* otherlv_6= '}'
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:372:1: ( ruleClassVisibility otherlv_1= 'e' ( (lv_classname_2_0= RULE_ID ) ) otherlv_3= '{' (this_ID_4= RULE_ID (otherlv_5= ',' )? )* otherlv_6= '}' )
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:373:5: ruleClassVisibility otherlv_1= 'e' ( (lv_classname_2_0= RULE_ID ) ) otherlv_3= '{' (this_ID_4= RULE_ID (otherlv_5= ',' )? )* otherlv_6= '}'
             {
              
                     newCompositeNode(grammarAccess.getEnumerationAccess().getClassVisibilityParserRuleCall_0()); 
                 
-            pushFollow(FOLLOW_ruleClassVisibility_in_ruleEnumeration865);
+            pushFollow(FOLLOW_ruleClassVisibility_in_ruleEnumeration767);
             ruleClassVisibility();
 
             state._fsp--;
@@ -1154,17 +1057,17 @@ public class InternalDiagramClassParser extends AbstractInternalAntlrParser {
              
                     afterParserOrEnumRuleCall();
                 
-            otherlv_1=(Token)match(input,17,FOLLOW_17_in_ruleEnumeration876); 
+            otherlv_1=(Token)match(input,17,FOLLOW_17_in_ruleEnumeration778); 
 
                 	newLeafNode(otherlv_1, grammarAccess.getEnumerationAccess().getEKeyword_1());
                 
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:414:1: ( (lv_classname_2_0= RULE_ID ) )
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:415:1: (lv_classname_2_0= RULE_ID )
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:384:1: ( (lv_classname_2_0= RULE_ID ) )
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:385:1: (lv_classname_2_0= RULE_ID )
             {
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:415:1: (lv_classname_2_0= RULE_ID )
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:416:3: lv_classname_2_0= RULE_ID
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:385:1: (lv_classname_2_0= RULE_ID )
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:386:3: lv_classname_2_0= RULE_ID
             {
-            lv_classname_2_0=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleEnumeration893); 
+            lv_classname_2_0=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleEnumeration795); 
 
             			newLeafNode(lv_classname_2_0, grammarAccess.getEnumerationAccess().getClassnameIDTerminalRuleCall_2_0()); 
             		
@@ -1184,41 +1087,41 @@ public class InternalDiagramClassParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_3=(Token)match(input,13,FOLLOW_13_in_ruleEnumeration910); 
+            otherlv_3=(Token)match(input,14,FOLLOW_14_in_ruleEnumeration812); 
 
                 	newLeafNode(otherlv_3, grammarAccess.getEnumerationAccess().getLeftCurlyBracketKeyword_3());
                 
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:436:1: (this_ID_4= RULE_ID (otherlv_5= ',' )? )*
-            loop10:
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:406:1: (this_ID_4= RULE_ID (otherlv_5= ',' )? )*
+            loop9:
             do {
-                int alt10=2;
-                int LA10_0 = input.LA(1);
+                int alt9=2;
+                int LA9_0 = input.LA(1);
 
-                if ( (LA10_0==RULE_ID) ) {
-                    alt10=1;
+                if ( (LA9_0==RULE_ID) ) {
+                    alt9=1;
                 }
 
 
-                switch (alt10) {
+                switch (alt9) {
             	case 1 :
-            	    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:436:2: this_ID_4= RULE_ID (otherlv_5= ',' )?
+            	    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:406:2: this_ID_4= RULE_ID (otherlv_5= ',' )?
             	    {
-            	    this_ID_4=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleEnumeration922); 
+            	    this_ID_4=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleEnumeration824); 
             	     
             	        newLeafNode(this_ID_4, grammarAccess.getEnumerationAccess().getIDTerminalRuleCall_4_0()); 
             	        
-            	    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:440:1: (otherlv_5= ',' )?
-            	    int alt9=2;
-            	    int LA9_0 = input.LA(1);
+            	    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:410:1: (otherlv_5= ',' )?
+            	    int alt8=2;
+            	    int LA8_0 = input.LA(1);
 
-            	    if ( (LA9_0==15) ) {
-            	        alt9=1;
+            	    if ( (LA8_0==13) ) {
+            	        alt8=1;
             	    }
-            	    switch (alt9) {
+            	    switch (alt8) {
             	        case 1 :
-            	            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:440:3: otherlv_5= ','
+            	            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:410:3: otherlv_5= ','
             	            {
-            	            otherlv_5=(Token)match(input,15,FOLLOW_15_in_ruleEnumeration934); 
+            	            otherlv_5=(Token)match(input,13,FOLLOW_13_in_ruleEnumeration836); 
 
             	                	newLeafNode(otherlv_5, grammarAccess.getEnumerationAccess().getCommaKeyword_4_1());
             	                
@@ -1233,11 +1136,11 @@ public class InternalDiagramClassParser extends AbstractInternalAntlrParser {
             	    break;
 
             	default :
-            	    break loop10;
+            	    break loop9;
                 }
             } while (true);
 
-            otherlv_6=(Token)match(input,14,FOLLOW_14_in_ruleEnumeration950); 
+            otherlv_6=(Token)match(input,15,FOLLOW_15_in_ruleEnumeration852); 
 
                 	newLeafNode(otherlv_6, grammarAccess.getEnumerationAccess().getRightCurlyBracketKeyword_5());
                 
@@ -1262,7 +1165,7 @@ public class InternalDiagramClassParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleInterface"
-    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:456:1: entryRuleInterface returns [EObject current=null] : iv_ruleInterface= ruleInterface EOF ;
+    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:426:1: entryRuleInterface returns [EObject current=null] : iv_ruleInterface= ruleInterface EOF ;
     public final EObject entryRuleInterface() throws RecognitionException {
         EObject current = null;
 
@@ -1270,17 +1173,17 @@ public class InternalDiagramClassParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:457:2: (iv_ruleInterface= ruleInterface EOF )
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:458:2: iv_ruleInterface= ruleInterface EOF
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:427:2: (iv_ruleInterface= ruleInterface EOF )
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:428:2: iv_ruleInterface= ruleInterface EOF
             {
              newCompositeNode(grammarAccess.getInterfaceRule()); 
-            pushFollow(FOLLOW_ruleInterface_in_entryRuleInterface986);
+            pushFollow(FOLLOW_ruleInterface_in_entryRuleInterface888);
             iv_ruleInterface=ruleInterface();
 
             state._fsp--;
 
              current =iv_ruleInterface; 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleInterface996); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleInterface898); 
 
             }
 
@@ -1298,7 +1201,7 @@ public class InternalDiagramClassParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleInterface"
-    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:465:1: ruleInterface returns [EObject current=null] : ( ruleClassVisibility otherlv_1= 'i' ( (lv_interfacename_2_0= RULE_ID ) ) otherlv_3= '{' ( (lv_body_4_0= ruleMethod ) )* otherlv_5= '}' ) ;
+    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:435:1: ruleInterface returns [EObject current=null] : ( ruleClassVisibility otherlv_1= 'i' ( (lv_interfacename_2_0= RULE_ID ) ) otherlv_3= '{' ( (lv_body_4_0= ruleMethod ) )* otherlv_5= '}' ) ;
     public final EObject ruleInterface() throws RecognitionException {
         EObject current = null;
 
@@ -1312,16 +1215,16 @@ public class InternalDiagramClassParser extends AbstractInternalAntlrParser {
          enterRule(); 
             
         try {
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:468:28: ( ( ruleClassVisibility otherlv_1= 'i' ( (lv_interfacename_2_0= RULE_ID ) ) otherlv_3= '{' ( (lv_body_4_0= ruleMethod ) )* otherlv_5= '}' ) )
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:469:1: ( ruleClassVisibility otherlv_1= 'i' ( (lv_interfacename_2_0= RULE_ID ) ) otherlv_3= '{' ( (lv_body_4_0= ruleMethod ) )* otherlv_5= '}' )
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:438:28: ( ( ruleClassVisibility otherlv_1= 'i' ( (lv_interfacename_2_0= RULE_ID ) ) otherlv_3= '{' ( (lv_body_4_0= ruleMethod ) )* otherlv_5= '}' ) )
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:439:1: ( ruleClassVisibility otherlv_1= 'i' ( (lv_interfacename_2_0= RULE_ID ) ) otherlv_3= '{' ( (lv_body_4_0= ruleMethod ) )* otherlv_5= '}' )
             {
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:469:1: ( ruleClassVisibility otherlv_1= 'i' ( (lv_interfacename_2_0= RULE_ID ) ) otherlv_3= '{' ( (lv_body_4_0= ruleMethod ) )* otherlv_5= '}' )
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:470:5: ruleClassVisibility otherlv_1= 'i' ( (lv_interfacename_2_0= RULE_ID ) ) otherlv_3= '{' ( (lv_body_4_0= ruleMethod ) )* otherlv_5= '}'
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:439:1: ( ruleClassVisibility otherlv_1= 'i' ( (lv_interfacename_2_0= RULE_ID ) ) otherlv_3= '{' ( (lv_body_4_0= ruleMethod ) )* otherlv_5= '}' )
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:440:5: ruleClassVisibility otherlv_1= 'i' ( (lv_interfacename_2_0= RULE_ID ) ) otherlv_3= '{' ( (lv_body_4_0= ruleMethod ) )* otherlv_5= '}'
             {
              
                     newCompositeNode(grammarAccess.getInterfaceAccess().getClassVisibilityParserRuleCall_0()); 
                 
-            pushFollow(FOLLOW_ruleClassVisibility_in_ruleInterface1037);
+            pushFollow(FOLLOW_ruleClassVisibility_in_ruleInterface939);
             ruleClassVisibility();
 
             state._fsp--;
@@ -1329,17 +1232,17 @@ public class InternalDiagramClassParser extends AbstractInternalAntlrParser {
              
                     afterParserOrEnumRuleCall();
                 
-            otherlv_1=(Token)match(input,18,FOLLOW_18_in_ruleInterface1048); 
+            otherlv_1=(Token)match(input,18,FOLLOW_18_in_ruleInterface950); 
 
                 	newLeafNode(otherlv_1, grammarAccess.getInterfaceAccess().getIKeyword_1());
                 
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:481:1: ( (lv_interfacename_2_0= RULE_ID ) )
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:482:1: (lv_interfacename_2_0= RULE_ID )
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:451:1: ( (lv_interfacename_2_0= RULE_ID ) )
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:452:1: (lv_interfacename_2_0= RULE_ID )
             {
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:482:1: (lv_interfacename_2_0= RULE_ID )
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:483:3: lv_interfacename_2_0= RULE_ID
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:452:1: (lv_interfacename_2_0= RULE_ID )
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:453:3: lv_interfacename_2_0= RULE_ID
             {
-            lv_interfacename_2_0=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleInterface1065); 
+            lv_interfacename_2_0=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleInterface967); 
 
             			newLeafNode(lv_interfacename_2_0, grammarAccess.getInterfaceAccess().getInterfacenameIDTerminalRuleCall_2_0()); 
             		
@@ -1359,32 +1262,32 @@ public class InternalDiagramClassParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_3=(Token)match(input,13,FOLLOW_13_in_ruleInterface1082); 
+            otherlv_3=(Token)match(input,14,FOLLOW_14_in_ruleInterface984); 
 
                 	newLeafNode(otherlv_3, grammarAccess.getInterfaceAccess().getLeftCurlyBracketKeyword_3());
                 
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:503:1: ( (lv_body_4_0= ruleMethod ) )*
-            loop11:
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:473:1: ( (lv_body_4_0= ruleMethod ) )*
+            loop10:
             do {
-                int alt11=2;
-                int LA11_0 = input.LA(1);
+                int alt10=2;
+                int LA10_0 = input.LA(1);
 
-                if ( (LA11_0==24||(LA11_0>=29 && LA11_0<=30)) ) {
-                    alt11=1;
+                if ( (LA10_0==24||(LA10_0>=29 && LA10_0<=30)) ) {
+                    alt10=1;
                 }
 
 
-                switch (alt11) {
+                switch (alt10) {
             	case 1 :
-            	    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:504:1: (lv_body_4_0= ruleMethod )
+            	    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:474:1: (lv_body_4_0= ruleMethod )
             	    {
-            	    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:504:1: (lv_body_4_0= ruleMethod )
-            	    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:505:3: lv_body_4_0= ruleMethod
+            	    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:474:1: (lv_body_4_0= ruleMethod )
+            	    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:475:3: lv_body_4_0= ruleMethod
             	    {
             	     
             	    	        newCompositeNode(grammarAccess.getInterfaceAccess().getBodyMethodParserRuleCall_4_0()); 
             	    	    
-            	    pushFollow(FOLLOW_ruleMethod_in_ruleInterface1103);
+            	    pushFollow(FOLLOW_ruleMethod_in_ruleInterface1005);
             	    lv_body_4_0=ruleMethod();
 
             	    state._fsp--;
@@ -1408,11 +1311,11 @@ public class InternalDiagramClassParser extends AbstractInternalAntlrParser {
             	    break;
 
             	default :
-            	    break loop11;
+            	    break loop10;
                 }
             } while (true);
 
-            otherlv_5=(Token)match(input,14,FOLLOW_14_in_ruleInterface1116); 
+            otherlv_5=(Token)match(input,15,FOLLOW_15_in_ruleInterface1018); 
 
                 	newLeafNode(otherlv_5, grammarAccess.getInterfaceAccess().getRightCurlyBracketKeyword_5());
                 
@@ -1437,7 +1340,7 @@ public class InternalDiagramClassParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleAbstract"
-    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:533:1: entryRuleAbstract returns [EObject current=null] : iv_ruleAbstract= ruleAbstract EOF ;
+    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:503:1: entryRuleAbstract returns [EObject current=null] : iv_ruleAbstract= ruleAbstract EOF ;
     public final EObject entryRuleAbstract() throws RecognitionException {
         EObject current = null;
 
@@ -1445,17 +1348,17 @@ public class InternalDiagramClassParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:534:2: (iv_ruleAbstract= ruleAbstract EOF )
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:535:2: iv_ruleAbstract= ruleAbstract EOF
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:504:2: (iv_ruleAbstract= ruleAbstract EOF )
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:505:2: iv_ruleAbstract= ruleAbstract EOF
             {
              newCompositeNode(grammarAccess.getAbstractRule()); 
-            pushFollow(FOLLOW_ruleAbstract_in_entryRuleAbstract1152);
+            pushFollow(FOLLOW_ruleAbstract_in_entryRuleAbstract1054);
             iv_ruleAbstract=ruleAbstract();
 
             state._fsp--;
 
              current =iv_ruleAbstract; 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleAbstract1162); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleAbstract1064); 
 
             }
 
@@ -1473,7 +1376,7 @@ public class InternalDiagramClassParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleAbstract"
-    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:542:1: ruleAbstract returns [EObject current=null] : ( ruleClassVisibility otherlv_1= 'a' ( (lv_classname_2_0= RULE_ID ) ) (otherlv_3= ':' )? ( (lv_extension_4_0= RULE_ID ) )? ( (lv_implements_5_0= ruleImplements ) )* otherlv_6= '{' ( ( (lv_body_7_1= ruleAttribute | lv_body_7_2= ruleMethod ) ) )* otherlv_8= '}' ) ;
+    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:512:1: ruleAbstract returns [EObject current=null] : ( ruleClassVisibility otherlv_1= 'a' ( (lv_classname_2_0= RULE_ID ) ) (otherlv_3= ':' )? ( (lv_extension_4_0= RULE_ID ) )? (otherlv_5= ',' ( (lv_implements_6_0= RULE_ID ) ) )* otherlv_7= '{' ( ( (lv_body_8_1= ruleAttribute | lv_body_8_2= ruleMethod ) ) )* otherlv_9= '}' ) ;
     public final EObject ruleAbstract() throws RecognitionException {
         EObject current = null;
 
@@ -1481,28 +1384,28 @@ public class InternalDiagramClassParser extends AbstractInternalAntlrParser {
         Token lv_classname_2_0=null;
         Token otherlv_3=null;
         Token lv_extension_4_0=null;
-        Token otherlv_6=null;
-        Token otherlv_8=null;
-        AntlrDatatypeRuleToken lv_implements_5_0 = null;
+        Token otherlv_5=null;
+        Token lv_implements_6_0=null;
+        Token otherlv_7=null;
+        Token otherlv_9=null;
+        EObject lv_body_8_1 = null;
 
-        EObject lv_body_7_1 = null;
-
-        EObject lv_body_7_2 = null;
+        EObject lv_body_8_2 = null;
 
 
          enterRule(); 
             
         try {
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:545:28: ( ( ruleClassVisibility otherlv_1= 'a' ( (lv_classname_2_0= RULE_ID ) ) (otherlv_3= ':' )? ( (lv_extension_4_0= RULE_ID ) )? ( (lv_implements_5_0= ruleImplements ) )* otherlv_6= '{' ( ( (lv_body_7_1= ruleAttribute | lv_body_7_2= ruleMethod ) ) )* otherlv_8= '}' ) )
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:546:1: ( ruleClassVisibility otherlv_1= 'a' ( (lv_classname_2_0= RULE_ID ) ) (otherlv_3= ':' )? ( (lv_extension_4_0= RULE_ID ) )? ( (lv_implements_5_0= ruleImplements ) )* otherlv_6= '{' ( ( (lv_body_7_1= ruleAttribute | lv_body_7_2= ruleMethod ) ) )* otherlv_8= '}' )
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:515:28: ( ( ruleClassVisibility otherlv_1= 'a' ( (lv_classname_2_0= RULE_ID ) ) (otherlv_3= ':' )? ( (lv_extension_4_0= RULE_ID ) )? (otherlv_5= ',' ( (lv_implements_6_0= RULE_ID ) ) )* otherlv_7= '{' ( ( (lv_body_8_1= ruleAttribute | lv_body_8_2= ruleMethod ) ) )* otherlv_9= '}' ) )
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:516:1: ( ruleClassVisibility otherlv_1= 'a' ( (lv_classname_2_0= RULE_ID ) ) (otherlv_3= ':' )? ( (lv_extension_4_0= RULE_ID ) )? (otherlv_5= ',' ( (lv_implements_6_0= RULE_ID ) ) )* otherlv_7= '{' ( ( (lv_body_8_1= ruleAttribute | lv_body_8_2= ruleMethod ) ) )* otherlv_9= '}' )
             {
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:546:1: ( ruleClassVisibility otherlv_1= 'a' ( (lv_classname_2_0= RULE_ID ) ) (otherlv_3= ':' )? ( (lv_extension_4_0= RULE_ID ) )? ( (lv_implements_5_0= ruleImplements ) )* otherlv_6= '{' ( ( (lv_body_7_1= ruleAttribute | lv_body_7_2= ruleMethod ) ) )* otherlv_8= '}' )
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:547:5: ruleClassVisibility otherlv_1= 'a' ( (lv_classname_2_0= RULE_ID ) ) (otherlv_3= ':' )? ( (lv_extension_4_0= RULE_ID ) )? ( (lv_implements_5_0= ruleImplements ) )* otherlv_6= '{' ( ( (lv_body_7_1= ruleAttribute | lv_body_7_2= ruleMethod ) ) )* otherlv_8= '}'
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:516:1: ( ruleClassVisibility otherlv_1= 'a' ( (lv_classname_2_0= RULE_ID ) ) (otherlv_3= ':' )? ( (lv_extension_4_0= RULE_ID ) )? (otherlv_5= ',' ( (lv_implements_6_0= RULE_ID ) ) )* otherlv_7= '{' ( ( (lv_body_8_1= ruleAttribute | lv_body_8_2= ruleMethod ) ) )* otherlv_9= '}' )
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:517:5: ruleClassVisibility otherlv_1= 'a' ( (lv_classname_2_0= RULE_ID ) ) (otherlv_3= ':' )? ( (lv_extension_4_0= RULE_ID ) )? (otherlv_5= ',' ( (lv_implements_6_0= RULE_ID ) ) )* otherlv_7= '{' ( ( (lv_body_8_1= ruleAttribute | lv_body_8_2= ruleMethod ) ) )* otherlv_9= '}'
             {
              
                     newCompositeNode(grammarAccess.getAbstractAccess().getClassVisibilityParserRuleCall_0()); 
                 
-            pushFollow(FOLLOW_ruleClassVisibility_in_ruleAbstract1203);
+            pushFollow(FOLLOW_ruleClassVisibility_in_ruleAbstract1105);
             ruleClassVisibility();
 
             state._fsp--;
@@ -1510,17 +1413,17 @@ public class InternalDiagramClassParser extends AbstractInternalAntlrParser {
              
                     afterParserOrEnumRuleCall();
                 
-            otherlv_1=(Token)match(input,19,FOLLOW_19_in_ruleAbstract1214); 
+            otherlv_1=(Token)match(input,19,FOLLOW_19_in_ruleAbstract1116); 
 
                 	newLeafNode(otherlv_1, grammarAccess.getAbstractAccess().getAKeyword_1());
                 
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:558:1: ( (lv_classname_2_0= RULE_ID ) )
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:559:1: (lv_classname_2_0= RULE_ID )
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:528:1: ( (lv_classname_2_0= RULE_ID ) )
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:529:1: (lv_classname_2_0= RULE_ID )
             {
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:559:1: (lv_classname_2_0= RULE_ID )
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:560:3: lv_classname_2_0= RULE_ID
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:529:1: (lv_classname_2_0= RULE_ID )
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:530:3: lv_classname_2_0= RULE_ID
             {
-            lv_classname_2_0=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleAbstract1231); 
+            lv_classname_2_0=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleAbstract1133); 
 
             			newLeafNode(lv_classname_2_0, grammarAccess.getAbstractAccess().getClassnameIDTerminalRuleCall_2_0()); 
             		
@@ -1540,18 +1443,18 @@ public class InternalDiagramClassParser extends AbstractInternalAntlrParser {
 
             }
 
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:576:2: (otherlv_3= ':' )?
-            int alt12=2;
-            int LA12_0 = input.LA(1);
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:546:2: (otherlv_3= ':' )?
+            int alt11=2;
+            int LA11_0 = input.LA(1);
 
-            if ( (LA12_0==12) ) {
-                alt12=1;
+            if ( (LA11_0==12) ) {
+                alt11=1;
             }
-            switch (alt12) {
+            switch (alt11) {
                 case 1 :
-                    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:576:4: otherlv_3= ':'
+                    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:546:4: otherlv_3= ':'
                     {
-                    otherlv_3=(Token)match(input,12,FOLLOW_12_in_ruleAbstract1249); 
+                    otherlv_3=(Token)match(input,12,FOLLOW_12_in_ruleAbstract1151); 
 
                         	newLeafNode(otherlv_3, grammarAccess.getAbstractAccess().getColonKeyword_3());
                         
@@ -1561,21 +1464,21 @@ public class InternalDiagramClassParser extends AbstractInternalAntlrParser {
 
             }
 
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:580:3: ( (lv_extension_4_0= RULE_ID ) )?
-            int alt13=2;
-            int LA13_0 = input.LA(1);
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:550:3: ( (lv_extension_4_0= RULE_ID ) )?
+            int alt12=2;
+            int LA12_0 = input.LA(1);
 
-            if ( (LA13_0==RULE_ID) ) {
-                alt13=1;
+            if ( (LA12_0==RULE_ID) ) {
+                alt12=1;
             }
-            switch (alt13) {
+            switch (alt12) {
                 case 1 :
-                    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:581:1: (lv_extension_4_0= RULE_ID )
+                    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:551:1: (lv_extension_4_0= RULE_ID )
                     {
-                    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:581:1: (lv_extension_4_0= RULE_ID )
-                    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:582:3: lv_extension_4_0= RULE_ID
+                    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:551:1: (lv_extension_4_0= RULE_ID )
+                    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:552:3: lv_extension_4_0= RULE_ID
                     {
-                    lv_extension_4_0=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleAbstract1268); 
+                    lv_extension_4_0=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleAbstract1170); 
 
                     			newLeafNode(lv_extension_4_0, grammarAccess.getAbstractAccess().getExtensionIDTerminalRuleCall_4_0()); 
                     		
@@ -1598,43 +1501,48 @@ public class InternalDiagramClassParser extends AbstractInternalAntlrParser {
 
             }
 
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:598:3: ( (lv_implements_5_0= ruleImplements ) )*
-            loop14:
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:568:3: (otherlv_5= ',' ( (lv_implements_6_0= RULE_ID ) ) )*
+            loop13:
             do {
-                int alt14=2;
-                int LA14_0 = input.LA(1);
+                int alt13=2;
+                int LA13_0 = input.LA(1);
 
-                if ( (LA14_0==RULE_ID||LA14_0==15) ) {
-                    alt14=1;
+                if ( (LA13_0==13) ) {
+                    alt13=1;
                 }
 
 
-                switch (alt14) {
+                switch (alt13) {
             	case 1 :
-            	    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:599:1: (lv_implements_5_0= ruleImplements )
+            	    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:568:5: otherlv_5= ',' ( (lv_implements_6_0= RULE_ID ) )
             	    {
-            	    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:599:1: (lv_implements_5_0= ruleImplements )
-            	    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:600:3: lv_implements_5_0= ruleImplements
+            	    otherlv_5=(Token)match(input,13,FOLLOW_13_in_ruleAbstract1189); 
+
+            	        	newLeafNode(otherlv_5, grammarAccess.getAbstractAccess().getCommaKeyword_5_0());
+            	        
+            	    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:572:1: ( (lv_implements_6_0= RULE_ID ) )
+            	    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:573:1: (lv_implements_6_0= RULE_ID )
             	    {
-            	     
-            	    	        newCompositeNode(grammarAccess.getAbstractAccess().getImplementsImplementsParserRuleCall_5_0()); 
-            	    	    
-            	    pushFollow(FOLLOW_ruleImplements_in_ruleAbstract1295);
-            	    lv_implements_5_0=ruleImplements();
+            	    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:573:1: (lv_implements_6_0= RULE_ID )
+            	    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:574:3: lv_implements_6_0= RULE_ID
+            	    {
+            	    lv_implements_6_0=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleAbstract1206); 
 
-            	    state._fsp--;
-
+            	    			newLeafNode(lv_implements_6_0, grammarAccess.getAbstractAccess().getImplementsIDTerminalRuleCall_5_1_0()); 
+            	    		
 
             	    	        if (current==null) {
-            	    	            current = createModelElementForParent(grammarAccess.getAbstractRule());
+            	    	            current = createModelElement(grammarAccess.getAbstractRule());
             	    	        }
-            	           		set(
+            	           		setWithLastConsumed(
             	           			current, 
             	           			"implements",
-            	            		lv_implements_5_0, 
-            	            		"Implements");
-            	    	        afterParserOrEnumRuleCall();
+            	            		lv_implements_6_0, 
+            	            		"ID");
             	    	    
+
+            	    }
+
 
             	    }
 
@@ -1643,61 +1551,61 @@ public class InternalDiagramClassParser extends AbstractInternalAntlrParser {
             	    break;
 
             	default :
-            	    break loop14;
+            	    break loop13;
                 }
             } while (true);
 
-            otherlv_6=(Token)match(input,13,FOLLOW_13_in_ruleAbstract1308); 
+            otherlv_7=(Token)match(input,14,FOLLOW_14_in_ruleAbstract1225); 
 
-                	newLeafNode(otherlv_6, grammarAccess.getAbstractAccess().getLeftCurlyBracketKeyword_6());
+                	newLeafNode(otherlv_7, grammarAccess.getAbstractAccess().getLeftCurlyBracketKeyword_6());
                 
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:620:1: ( ( (lv_body_7_1= ruleAttribute | lv_body_7_2= ruleMethod ) ) )*
-            loop16:
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:594:1: ( ( (lv_body_8_1= ruleAttribute | lv_body_8_2= ruleMethod ) ) )*
+            loop15:
             do {
-                int alt16=2;
-                int LA16_0 = input.LA(1);
+                int alt15=2;
+                int LA15_0 = input.LA(1);
 
-                if ( (LA16_0==24||(LA16_0>=29 && LA16_0<=30)) ) {
-                    alt16=1;
+                if ( (LA15_0==24||(LA15_0>=29 && LA15_0<=30)) ) {
+                    alt15=1;
                 }
 
 
-                switch (alt16) {
+                switch (alt15) {
             	case 1 :
-            	    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:621:1: ( (lv_body_7_1= ruleAttribute | lv_body_7_2= ruleMethod ) )
+            	    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:595:1: ( (lv_body_8_1= ruleAttribute | lv_body_8_2= ruleMethod ) )
             	    {
-            	    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:621:1: ( (lv_body_7_1= ruleAttribute | lv_body_7_2= ruleMethod ) )
-            	    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:622:1: (lv_body_7_1= ruleAttribute | lv_body_7_2= ruleMethod )
+            	    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:595:1: ( (lv_body_8_1= ruleAttribute | lv_body_8_2= ruleMethod ) )
+            	    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:596:1: (lv_body_8_1= ruleAttribute | lv_body_8_2= ruleMethod )
             	    {
-            	    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:622:1: (lv_body_7_1= ruleAttribute | lv_body_7_2= ruleMethod )
-            	    int alt15=2;
+            	    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:596:1: (lv_body_8_1= ruleAttribute | lv_body_8_2= ruleMethod )
+            	    int alt14=2;
             	    switch ( input.LA(1) ) {
             	    case 29:
             	        {
-            	        int LA15_1 = input.LA(2);
+            	        int LA14_1 = input.LA(2);
 
-            	        if ( ((LA15_1>=25 && LA15_1<=26)) ) {
-            	            alt15=1;
+            	        if ( ((LA14_1>=25 && LA14_1<=26)) ) {
+            	            alt14=1;
             	        }
-            	        else if ( (LA15_1==RULE_ID) ) {
-            	            int LA15_5 = input.LA(3);
+            	        else if ( (LA14_1==RULE_ID) ) {
+            	            int LA14_5 = input.LA(3);
 
-            	            if ( (LA15_5==12) ) {
-            	                alt15=1;
+            	            if ( (LA14_5==12) ) {
+            	                alt14=1;
             	            }
-            	            else if ( (LA15_5==27) ) {
-            	                alt15=2;
+            	            else if ( (LA14_5==27) ) {
+            	                alt14=2;
             	            }
             	            else {
             	                NoViableAltException nvae =
-            	                    new NoViableAltException("", 15, 5, input);
+            	                    new NoViableAltException("", 14, 5, input);
 
             	                throw nvae;
             	            }
             	        }
             	        else {
             	            NoViableAltException nvae =
-            	                new NoViableAltException("", 15, 1, input);
+            	                new NoViableAltException("", 14, 1, input);
 
             	            throw nvae;
             	        }
@@ -1705,30 +1613,30 @@ public class InternalDiagramClassParser extends AbstractInternalAntlrParser {
             	        break;
             	    case 24:
             	        {
-            	        int LA15_2 = input.LA(2);
+            	        int LA14_2 = input.LA(2);
 
-            	        if ( ((LA15_2>=25 && LA15_2<=26)) ) {
-            	            alt15=1;
-            	        }
-            	        else if ( (LA15_2==RULE_ID) ) {
-            	            int LA15_5 = input.LA(3);
+            	        if ( (LA14_2==RULE_ID) ) {
+            	            int LA14_5 = input.LA(3);
 
-            	            if ( (LA15_5==12) ) {
-            	                alt15=1;
+            	            if ( (LA14_5==12) ) {
+            	                alt14=1;
             	            }
-            	            else if ( (LA15_5==27) ) {
-            	                alt15=2;
+            	            else if ( (LA14_5==27) ) {
+            	                alt14=2;
             	            }
             	            else {
             	                NoViableAltException nvae =
-            	                    new NoViableAltException("", 15, 5, input);
+            	                    new NoViableAltException("", 14, 5, input);
 
             	                throw nvae;
             	            }
             	        }
+            	        else if ( ((LA14_2>=25 && LA14_2<=26)) ) {
+            	            alt14=1;
+            	        }
             	        else {
             	            NoViableAltException nvae =
-            	                new NoViableAltException("", 15, 2, input);
+            	                new NoViableAltException("", 14, 2, input);
 
             	            throw nvae;
             	        }
@@ -1736,30 +1644,30 @@ public class InternalDiagramClassParser extends AbstractInternalAntlrParser {
             	        break;
             	    case 30:
             	        {
-            	        int LA15_3 = input.LA(2);
+            	        int LA14_3 = input.LA(2);
 
-            	        if ( (LA15_3==RULE_ID) ) {
-            	            int LA15_5 = input.LA(3);
+            	        if ( (LA14_3==RULE_ID) ) {
+            	            int LA14_5 = input.LA(3);
 
-            	            if ( (LA15_5==12) ) {
-            	                alt15=1;
+            	            if ( (LA14_5==12) ) {
+            	                alt14=1;
             	            }
-            	            else if ( (LA15_5==27) ) {
-            	                alt15=2;
+            	            else if ( (LA14_5==27) ) {
+            	                alt14=2;
             	            }
             	            else {
             	                NoViableAltException nvae =
-            	                    new NoViableAltException("", 15, 5, input);
+            	                    new NoViableAltException("", 14, 5, input);
 
             	                throw nvae;
             	            }
             	        }
-            	        else if ( ((LA15_3>=25 && LA15_3<=26)) ) {
-            	            alt15=1;
+            	        else if ( ((LA14_3>=25 && LA14_3<=26)) ) {
+            	            alt14=1;
             	        }
             	        else {
             	            NoViableAltException nvae =
-            	                new NoViableAltException("", 15, 3, input);
+            	                new NoViableAltException("", 14, 3, input);
 
             	            throw nvae;
             	        }
@@ -1767,20 +1675,20 @@ public class InternalDiagramClassParser extends AbstractInternalAntlrParser {
             	        break;
             	    default:
             	        NoViableAltException nvae =
-            	            new NoViableAltException("", 15, 0, input);
+            	            new NoViableAltException("", 14, 0, input);
 
             	        throw nvae;
             	    }
 
-            	    switch (alt15) {
+            	    switch (alt14) {
             	        case 1 :
-            	            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:623:3: lv_body_7_1= ruleAttribute
+            	            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:597:3: lv_body_8_1= ruleAttribute
             	            {
             	             
             	            	        newCompositeNode(grammarAccess.getAbstractAccess().getBodyAttributeParserRuleCall_7_0_0()); 
             	            	    
-            	            pushFollow(FOLLOW_ruleAttribute_in_ruleAbstract1331);
-            	            lv_body_7_1=ruleAttribute();
+            	            pushFollow(FOLLOW_ruleAttribute_in_ruleAbstract1248);
+            	            lv_body_8_1=ruleAttribute();
 
             	            state._fsp--;
 
@@ -1791,7 +1699,7 @@ public class InternalDiagramClassParser extends AbstractInternalAntlrParser {
             	                   		add(
             	                   			current, 
             	                   			"body",
-            	                    		lv_body_7_1, 
+            	                    		lv_body_8_1, 
             	                    		"Attribute");
             	            	        afterParserOrEnumRuleCall();
             	            	    
@@ -1799,13 +1707,13 @@ public class InternalDiagramClassParser extends AbstractInternalAntlrParser {
             	            }
             	            break;
             	        case 2 :
-            	            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:638:8: lv_body_7_2= ruleMethod
+            	            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:612:8: lv_body_8_2= ruleMethod
             	            {
             	             
             	            	        newCompositeNode(grammarAccess.getAbstractAccess().getBodyMethodParserRuleCall_7_0_1()); 
             	            	    
-            	            pushFollow(FOLLOW_ruleMethod_in_ruleAbstract1350);
-            	            lv_body_7_2=ruleMethod();
+            	            pushFollow(FOLLOW_ruleMethod_in_ruleAbstract1267);
+            	            lv_body_8_2=ruleMethod();
 
             	            state._fsp--;
 
@@ -1816,7 +1724,7 @@ public class InternalDiagramClassParser extends AbstractInternalAntlrParser {
             	                   		add(
             	                   			current, 
             	                   			"body",
-            	                    		lv_body_7_2, 
+            	                    		lv_body_8_2, 
             	                    		"Method");
             	            	        afterParserOrEnumRuleCall();
             	            	    
@@ -1834,13 +1742,13 @@ public class InternalDiagramClassParser extends AbstractInternalAntlrParser {
             	    break;
 
             	default :
-            	    break loop16;
+            	    break loop15;
                 }
             } while (true);
 
-            otherlv_8=(Token)match(input,14,FOLLOW_14_in_ruleAbstract1366); 
+            otherlv_9=(Token)match(input,15,FOLLOW_15_in_ruleAbstract1283); 
 
-                	newLeafNode(otherlv_8, grammarAccess.getAbstractAccess().getRightCurlyBracketKeyword_8());
+                	newLeafNode(otherlv_9, grammarAccess.getAbstractAccess().getRightCurlyBracketKeyword_8());
                 
 
             }
@@ -1863,7 +1771,7 @@ public class InternalDiagramClassParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleBiRelation"
-    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:668:1: entryRuleBiRelation returns [EObject current=null] : iv_ruleBiRelation= ruleBiRelation EOF ;
+    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:642:1: entryRuleBiRelation returns [EObject current=null] : iv_ruleBiRelation= ruleBiRelation EOF ;
     public final EObject entryRuleBiRelation() throws RecognitionException {
         EObject current = null;
 
@@ -1871,17 +1779,17 @@ public class InternalDiagramClassParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:669:2: (iv_ruleBiRelation= ruleBiRelation EOF )
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:670:2: iv_ruleBiRelation= ruleBiRelation EOF
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:643:2: (iv_ruleBiRelation= ruleBiRelation EOF )
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:644:2: iv_ruleBiRelation= ruleBiRelation EOF
             {
              newCompositeNode(grammarAccess.getBiRelationRule()); 
-            pushFollow(FOLLOW_ruleBiRelation_in_entryRuleBiRelation1402);
+            pushFollow(FOLLOW_ruleBiRelation_in_entryRuleBiRelation1319);
             iv_ruleBiRelation=ruleBiRelation();
 
             state._fsp--;
 
              current =iv_ruleBiRelation; 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleBiRelation1412); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleBiRelation1329); 
 
             }
 
@@ -1899,7 +1807,7 @@ public class InternalDiagramClassParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleBiRelation"
-    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:677:1: ruleBiRelation returns [EObject current=null] : (otherlv_0= '[' ( ( (this_number_1= RULE_NUMBER )+ (otherlv_2= '..' ( (this_number_3= RULE_NUMBER )+ | otherlv_4= '*' ) ) ) | otherlv_5= '*' )? otherlv_6= ']' otherlv_7= '-' ( (lv_linkName_8_0= RULE_ID ) ) otherlv_9= '->' otherlv_10= '[' ( ( (this_number_11= RULE_NUMBER )+ (otherlv_12= '..' ( (this_number_13= RULE_NUMBER )+ | otherlv_14= '*' ) ) ) | otherlv_15= '*' )? otherlv_16= ']' ) ;
+    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:651:1: ruleBiRelation returns [EObject current=null] : (otherlv_0= '[' ( ( (this_number_1= RULE_NUMBER )+ (otherlv_2= '..' ( (this_number_3= RULE_NUMBER )+ | otherlv_4= '*' ) ) ) | otherlv_5= '*' )? otherlv_6= ']' otherlv_7= '-' ( (lv_linkName_8_0= RULE_ID ) ) otherlv_9= '->' otherlv_10= '[' ( ( (this_number_11= RULE_NUMBER )+ (otherlv_12= '..' ( (this_number_13= RULE_NUMBER )+ | otherlv_14= '*' ) ) ) | otherlv_15= '*' )? otherlv_16= ']' ) ;
     public final EObject ruleBiRelation() throws RecognitionException {
         EObject current = null;
 
@@ -1924,50 +1832,50 @@ public class InternalDiagramClassParser extends AbstractInternalAntlrParser {
          enterRule(); 
             
         try {
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:680:28: ( (otherlv_0= '[' ( ( (this_number_1= RULE_NUMBER )+ (otherlv_2= '..' ( (this_number_3= RULE_NUMBER )+ | otherlv_4= '*' ) ) ) | otherlv_5= '*' )? otherlv_6= ']' otherlv_7= '-' ( (lv_linkName_8_0= RULE_ID ) ) otherlv_9= '->' otherlv_10= '[' ( ( (this_number_11= RULE_NUMBER )+ (otherlv_12= '..' ( (this_number_13= RULE_NUMBER )+ | otherlv_14= '*' ) ) ) | otherlv_15= '*' )? otherlv_16= ']' ) )
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:681:1: (otherlv_0= '[' ( ( (this_number_1= RULE_NUMBER )+ (otherlv_2= '..' ( (this_number_3= RULE_NUMBER )+ | otherlv_4= '*' ) ) ) | otherlv_5= '*' )? otherlv_6= ']' otherlv_7= '-' ( (lv_linkName_8_0= RULE_ID ) ) otherlv_9= '->' otherlv_10= '[' ( ( (this_number_11= RULE_NUMBER )+ (otherlv_12= '..' ( (this_number_13= RULE_NUMBER )+ | otherlv_14= '*' ) ) ) | otherlv_15= '*' )? otherlv_16= ']' )
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:654:28: ( (otherlv_0= '[' ( ( (this_number_1= RULE_NUMBER )+ (otherlv_2= '..' ( (this_number_3= RULE_NUMBER )+ | otherlv_4= '*' ) ) ) | otherlv_5= '*' )? otherlv_6= ']' otherlv_7= '-' ( (lv_linkName_8_0= RULE_ID ) ) otherlv_9= '->' otherlv_10= '[' ( ( (this_number_11= RULE_NUMBER )+ (otherlv_12= '..' ( (this_number_13= RULE_NUMBER )+ | otherlv_14= '*' ) ) ) | otherlv_15= '*' )? otherlv_16= ']' ) )
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:655:1: (otherlv_0= '[' ( ( (this_number_1= RULE_NUMBER )+ (otherlv_2= '..' ( (this_number_3= RULE_NUMBER )+ | otherlv_4= '*' ) ) ) | otherlv_5= '*' )? otherlv_6= ']' otherlv_7= '-' ( (lv_linkName_8_0= RULE_ID ) ) otherlv_9= '->' otherlv_10= '[' ( ( (this_number_11= RULE_NUMBER )+ (otherlv_12= '..' ( (this_number_13= RULE_NUMBER )+ | otherlv_14= '*' ) ) ) | otherlv_15= '*' )? otherlv_16= ']' )
             {
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:681:1: (otherlv_0= '[' ( ( (this_number_1= RULE_NUMBER )+ (otherlv_2= '..' ( (this_number_3= RULE_NUMBER )+ | otherlv_4= '*' ) ) ) | otherlv_5= '*' )? otherlv_6= ']' otherlv_7= '-' ( (lv_linkName_8_0= RULE_ID ) ) otherlv_9= '->' otherlv_10= '[' ( ( (this_number_11= RULE_NUMBER )+ (otherlv_12= '..' ( (this_number_13= RULE_NUMBER )+ | otherlv_14= '*' ) ) ) | otherlv_15= '*' )? otherlv_16= ']' )
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:681:3: otherlv_0= '[' ( ( (this_number_1= RULE_NUMBER )+ (otherlv_2= '..' ( (this_number_3= RULE_NUMBER )+ | otherlv_4= '*' ) ) ) | otherlv_5= '*' )? otherlv_6= ']' otherlv_7= '-' ( (lv_linkName_8_0= RULE_ID ) ) otherlv_9= '->' otherlv_10= '[' ( ( (this_number_11= RULE_NUMBER )+ (otherlv_12= '..' ( (this_number_13= RULE_NUMBER )+ | otherlv_14= '*' ) ) ) | otherlv_15= '*' )? otherlv_16= ']'
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:655:1: (otherlv_0= '[' ( ( (this_number_1= RULE_NUMBER )+ (otherlv_2= '..' ( (this_number_3= RULE_NUMBER )+ | otherlv_4= '*' ) ) ) | otherlv_5= '*' )? otherlv_6= ']' otherlv_7= '-' ( (lv_linkName_8_0= RULE_ID ) ) otherlv_9= '->' otherlv_10= '[' ( ( (this_number_11= RULE_NUMBER )+ (otherlv_12= '..' ( (this_number_13= RULE_NUMBER )+ | otherlv_14= '*' ) ) ) | otherlv_15= '*' )? otherlv_16= ']' )
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:655:3: otherlv_0= '[' ( ( (this_number_1= RULE_NUMBER )+ (otherlv_2= '..' ( (this_number_3= RULE_NUMBER )+ | otherlv_4= '*' ) ) ) | otherlv_5= '*' )? otherlv_6= ']' otherlv_7= '-' ( (lv_linkName_8_0= RULE_ID ) ) otherlv_9= '->' otherlv_10= '[' ( ( (this_number_11= RULE_NUMBER )+ (otherlv_12= '..' ( (this_number_13= RULE_NUMBER )+ | otherlv_14= '*' ) ) ) | otherlv_15= '*' )? otherlv_16= ']'
             {
-            otherlv_0=(Token)match(input,20,FOLLOW_20_in_ruleBiRelation1449); 
+            otherlv_0=(Token)match(input,20,FOLLOW_20_in_ruleBiRelation1366); 
 
                 	newLeafNode(otherlv_0, grammarAccess.getBiRelationAccess().getLeftSquareBracketKeyword_0());
                 
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:685:1: ( ( (this_number_1= RULE_NUMBER )+ (otherlv_2= '..' ( (this_number_3= RULE_NUMBER )+ | otherlv_4= '*' ) ) ) | otherlv_5= '*' )?
-            int alt20=3;
-            int LA20_0 = input.LA(1);
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:659:1: ( ( (this_number_1= RULE_NUMBER )+ (otherlv_2= '..' ( (this_number_3= RULE_NUMBER )+ | otherlv_4= '*' ) ) ) | otherlv_5= '*' )?
+            int alt19=3;
+            int LA19_0 = input.LA(1);
 
-            if ( (LA20_0==RULE_NUMBER) ) {
-                alt20=1;
+            if ( (LA19_0==RULE_NUMBER) ) {
+                alt19=1;
             }
-            else if ( (LA20_0==22) ) {
-                alt20=2;
+            else if ( (LA19_0==22) ) {
+                alt19=2;
             }
-            switch (alt20) {
+            switch (alt19) {
                 case 1 :
-                    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:685:2: ( (this_number_1= RULE_NUMBER )+ (otherlv_2= '..' ( (this_number_3= RULE_NUMBER )+ | otherlv_4= '*' ) ) )
+                    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:659:2: ( (this_number_1= RULE_NUMBER )+ (otherlv_2= '..' ( (this_number_3= RULE_NUMBER )+ | otherlv_4= '*' ) ) )
                     {
-                    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:685:2: ( (this_number_1= RULE_NUMBER )+ (otherlv_2= '..' ( (this_number_3= RULE_NUMBER )+ | otherlv_4= '*' ) ) )
-                    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:685:3: (this_number_1= RULE_NUMBER )+ (otherlv_2= '..' ( (this_number_3= RULE_NUMBER )+ | otherlv_4= '*' ) )
+                    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:659:2: ( (this_number_1= RULE_NUMBER )+ (otherlv_2= '..' ( (this_number_3= RULE_NUMBER )+ | otherlv_4= '*' ) ) )
+                    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:659:3: (this_number_1= RULE_NUMBER )+ (otherlv_2= '..' ( (this_number_3= RULE_NUMBER )+ | otherlv_4= '*' ) )
                     {
-                    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:685:3: (this_number_1= RULE_NUMBER )+
-                    int cnt17=0;
-                    loop17:
+                    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:659:3: (this_number_1= RULE_NUMBER )+
+                    int cnt16=0;
+                    loop16:
                     do {
-                        int alt17=2;
-                        int LA17_0 = input.LA(1);
+                        int alt16=2;
+                        int LA16_0 = input.LA(1);
 
-                        if ( (LA17_0==RULE_NUMBER) ) {
-                            alt17=1;
+                        if ( (LA16_0==RULE_NUMBER) ) {
+                            alt16=1;
                         }
 
 
-                        switch (alt17) {
+                        switch (alt16) {
                     	case 1 :
-                    	    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:685:4: this_number_1= RULE_NUMBER
+                    	    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:659:4: this_number_1= RULE_NUMBER
                     	    {
-                    	    this_number_1=(Token)match(input,RULE_NUMBER,FOLLOW_RULE_NUMBER_in_ruleBiRelation1463); 
+                    	    this_number_1=(Token)match(input,RULE_NUMBER,FOLLOW_RULE_NUMBER_in_ruleBiRelation1380); 
                     	     
                     	        newLeafNode(this_number_1, grammarAccess.getBiRelationAccess().getNumberTerminalRuleCall_1_0_0()); 
                     	        
@@ -1976,58 +1884,58 @@ public class InternalDiagramClassParser extends AbstractInternalAntlrParser {
                     	    break;
 
                     	default :
-                    	    if ( cnt17 >= 1 ) break loop17;
+                    	    if ( cnt16 >= 1 ) break loop16;
                                 EarlyExitException eee =
-                                    new EarlyExitException(17, input);
+                                    new EarlyExitException(16, input);
                                 throw eee;
                         }
-                        cnt17++;
+                        cnt16++;
                     } while (true);
 
-                    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:689:3: (otherlv_2= '..' ( (this_number_3= RULE_NUMBER )+ | otherlv_4= '*' ) )
-                    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:689:5: otherlv_2= '..' ( (this_number_3= RULE_NUMBER )+ | otherlv_4= '*' )
+                    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:663:3: (otherlv_2= '..' ( (this_number_3= RULE_NUMBER )+ | otherlv_4= '*' ) )
+                    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:663:5: otherlv_2= '..' ( (this_number_3= RULE_NUMBER )+ | otherlv_4= '*' )
                     {
-                    otherlv_2=(Token)match(input,21,FOLLOW_21_in_ruleBiRelation1477); 
+                    otherlv_2=(Token)match(input,21,FOLLOW_21_in_ruleBiRelation1394); 
 
                         	newLeafNode(otherlv_2, grammarAccess.getBiRelationAccess().getFullStopFullStopKeyword_1_0_1_0());
                         
-                    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:693:1: ( (this_number_3= RULE_NUMBER )+ | otherlv_4= '*' )
-                    int alt19=2;
-                    int LA19_0 = input.LA(1);
+                    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:667:1: ( (this_number_3= RULE_NUMBER )+ | otherlv_4= '*' )
+                    int alt18=2;
+                    int LA18_0 = input.LA(1);
 
-                    if ( (LA19_0==RULE_NUMBER) ) {
-                        alt19=1;
+                    if ( (LA18_0==RULE_NUMBER) ) {
+                        alt18=1;
                     }
-                    else if ( (LA19_0==22) ) {
-                        alt19=2;
+                    else if ( (LA18_0==22) ) {
+                        alt18=2;
                     }
                     else {
                         NoViableAltException nvae =
-                            new NoViableAltException("", 19, 0, input);
+                            new NoViableAltException("", 18, 0, input);
 
                         throw nvae;
                     }
-                    switch (alt19) {
+                    switch (alt18) {
                         case 1 :
-                            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:693:2: (this_number_3= RULE_NUMBER )+
+                            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:667:2: (this_number_3= RULE_NUMBER )+
                             {
-                            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:693:2: (this_number_3= RULE_NUMBER )+
-                            int cnt18=0;
-                            loop18:
+                            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:667:2: (this_number_3= RULE_NUMBER )+
+                            int cnt17=0;
+                            loop17:
                             do {
-                                int alt18=2;
-                                int LA18_0 = input.LA(1);
+                                int alt17=2;
+                                int LA17_0 = input.LA(1);
 
-                                if ( (LA18_0==RULE_NUMBER) ) {
-                                    alt18=1;
+                                if ( (LA17_0==RULE_NUMBER) ) {
+                                    alt17=1;
                                 }
 
 
-                                switch (alt18) {
+                                switch (alt17) {
                             	case 1 :
-                            	    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:693:3: this_number_3= RULE_NUMBER
+                            	    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:667:3: this_number_3= RULE_NUMBER
                             	    {
-                            	    this_number_3=(Token)match(input,RULE_NUMBER,FOLLOW_RULE_NUMBER_in_ruleBiRelation1490); 
+                            	    this_number_3=(Token)match(input,RULE_NUMBER,FOLLOW_RULE_NUMBER_in_ruleBiRelation1407); 
                             	     
                             	        newLeafNode(this_number_3, grammarAccess.getBiRelationAccess().getNumberTerminalRuleCall_1_0_1_1_0()); 
                             	        
@@ -2036,21 +1944,21 @@ public class InternalDiagramClassParser extends AbstractInternalAntlrParser {
                             	    break;
 
                             	default :
-                            	    if ( cnt18 >= 1 ) break loop18;
+                            	    if ( cnt17 >= 1 ) break loop17;
                                         EarlyExitException eee =
-                                            new EarlyExitException(18, input);
+                                            new EarlyExitException(17, input);
                                         throw eee;
                                 }
-                                cnt18++;
+                                cnt17++;
                             } while (true);
 
 
                             }
                             break;
                         case 2 :
-                            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:698:7: otherlv_4= '*'
+                            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:672:7: otherlv_4= '*'
                             {
-                            otherlv_4=(Token)match(input,22,FOLLOW_22_in_ruleBiRelation1509); 
+                            otherlv_4=(Token)match(input,22,FOLLOW_22_in_ruleBiRelation1426); 
 
                                 	newLeafNode(otherlv_4, grammarAccess.getBiRelationAccess().getAsteriskKeyword_1_0_1_1_1());
                                 
@@ -2070,9 +1978,9 @@ public class InternalDiagramClassParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 2 :
-                    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:703:7: otherlv_5= '*'
+                    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:677:7: otherlv_5= '*'
                     {
-                    otherlv_5=(Token)match(input,22,FOLLOW_22_in_ruleBiRelation1530); 
+                    otherlv_5=(Token)match(input,22,FOLLOW_22_in_ruleBiRelation1447); 
 
                         	newLeafNode(otherlv_5, grammarAccess.getBiRelationAccess().getAsteriskKeyword_1_1());
                         
@@ -2082,21 +1990,21 @@ public class InternalDiagramClassParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_6=(Token)match(input,23,FOLLOW_23_in_ruleBiRelation1544); 
+            otherlv_6=(Token)match(input,23,FOLLOW_23_in_ruleBiRelation1461); 
 
                 	newLeafNode(otherlv_6, grammarAccess.getBiRelationAccess().getRightSquareBracketKeyword_2());
                 
-            otherlv_7=(Token)match(input,24,FOLLOW_24_in_ruleBiRelation1556); 
+            otherlv_7=(Token)match(input,24,FOLLOW_24_in_ruleBiRelation1473); 
 
                 	newLeafNode(otherlv_7, grammarAccess.getBiRelationAccess().getHyphenMinusKeyword_3());
                 
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:715:1: ( (lv_linkName_8_0= RULE_ID ) )
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:716:1: (lv_linkName_8_0= RULE_ID )
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:689:1: ( (lv_linkName_8_0= RULE_ID ) )
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:690:1: (lv_linkName_8_0= RULE_ID )
             {
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:716:1: (lv_linkName_8_0= RULE_ID )
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:717:3: lv_linkName_8_0= RULE_ID
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:690:1: (lv_linkName_8_0= RULE_ID )
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:691:3: lv_linkName_8_0= RULE_ID
             {
-            lv_linkName_8_0=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleBiRelation1573); 
+            lv_linkName_8_0=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleBiRelation1490); 
 
             			newLeafNode(lv_linkName_8_0, grammarAccess.getBiRelationAccess().getLinkNameIDTerminalRuleCall_4_0()); 
             		
@@ -2116,48 +2024,48 @@ public class InternalDiagramClassParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_9=(Token)match(input,16,FOLLOW_16_in_ruleBiRelation1590); 
+            otherlv_9=(Token)match(input,16,FOLLOW_16_in_ruleBiRelation1507); 
 
                 	newLeafNode(otherlv_9, grammarAccess.getBiRelationAccess().getHyphenMinusGreaterThanSignKeyword_5());
                 
-            otherlv_10=(Token)match(input,20,FOLLOW_20_in_ruleBiRelation1602); 
+            otherlv_10=(Token)match(input,20,FOLLOW_20_in_ruleBiRelation1519); 
 
                 	newLeafNode(otherlv_10, grammarAccess.getBiRelationAccess().getLeftSquareBracketKeyword_6());
                 
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:741:1: ( ( (this_number_11= RULE_NUMBER )+ (otherlv_12= '..' ( (this_number_13= RULE_NUMBER )+ | otherlv_14= '*' ) ) ) | otherlv_15= '*' )?
-            int alt24=3;
-            int LA24_0 = input.LA(1);
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:715:1: ( ( (this_number_11= RULE_NUMBER )+ (otherlv_12= '..' ( (this_number_13= RULE_NUMBER )+ | otherlv_14= '*' ) ) ) | otherlv_15= '*' )?
+            int alt23=3;
+            int LA23_0 = input.LA(1);
 
-            if ( (LA24_0==RULE_NUMBER) ) {
-                alt24=1;
+            if ( (LA23_0==RULE_NUMBER) ) {
+                alt23=1;
             }
-            else if ( (LA24_0==22) ) {
-                alt24=2;
+            else if ( (LA23_0==22) ) {
+                alt23=2;
             }
-            switch (alt24) {
+            switch (alt23) {
                 case 1 :
-                    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:741:2: ( (this_number_11= RULE_NUMBER )+ (otherlv_12= '..' ( (this_number_13= RULE_NUMBER )+ | otherlv_14= '*' ) ) )
+                    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:715:2: ( (this_number_11= RULE_NUMBER )+ (otherlv_12= '..' ( (this_number_13= RULE_NUMBER )+ | otherlv_14= '*' ) ) )
                     {
-                    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:741:2: ( (this_number_11= RULE_NUMBER )+ (otherlv_12= '..' ( (this_number_13= RULE_NUMBER )+ | otherlv_14= '*' ) ) )
-                    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:741:3: (this_number_11= RULE_NUMBER )+ (otherlv_12= '..' ( (this_number_13= RULE_NUMBER )+ | otherlv_14= '*' ) )
+                    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:715:2: ( (this_number_11= RULE_NUMBER )+ (otherlv_12= '..' ( (this_number_13= RULE_NUMBER )+ | otherlv_14= '*' ) ) )
+                    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:715:3: (this_number_11= RULE_NUMBER )+ (otherlv_12= '..' ( (this_number_13= RULE_NUMBER )+ | otherlv_14= '*' ) )
                     {
-                    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:741:3: (this_number_11= RULE_NUMBER )+
-                    int cnt21=0;
-                    loop21:
+                    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:715:3: (this_number_11= RULE_NUMBER )+
+                    int cnt20=0;
+                    loop20:
                     do {
-                        int alt21=2;
-                        int LA21_0 = input.LA(1);
+                        int alt20=2;
+                        int LA20_0 = input.LA(1);
 
-                        if ( (LA21_0==RULE_NUMBER) ) {
-                            alt21=1;
+                        if ( (LA20_0==RULE_NUMBER) ) {
+                            alt20=1;
                         }
 
 
-                        switch (alt21) {
+                        switch (alt20) {
                     	case 1 :
-                    	    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:741:4: this_number_11= RULE_NUMBER
+                    	    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:715:4: this_number_11= RULE_NUMBER
                     	    {
-                    	    this_number_11=(Token)match(input,RULE_NUMBER,FOLLOW_RULE_NUMBER_in_ruleBiRelation1616); 
+                    	    this_number_11=(Token)match(input,RULE_NUMBER,FOLLOW_RULE_NUMBER_in_ruleBiRelation1533); 
                     	     
                     	        newLeafNode(this_number_11, grammarAccess.getBiRelationAccess().getNumberTerminalRuleCall_7_0_0()); 
                     	        
@@ -2166,58 +2074,58 @@ public class InternalDiagramClassParser extends AbstractInternalAntlrParser {
                     	    break;
 
                     	default :
-                    	    if ( cnt21 >= 1 ) break loop21;
+                    	    if ( cnt20 >= 1 ) break loop20;
                                 EarlyExitException eee =
-                                    new EarlyExitException(21, input);
+                                    new EarlyExitException(20, input);
                                 throw eee;
                         }
-                        cnt21++;
+                        cnt20++;
                     } while (true);
 
-                    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:745:3: (otherlv_12= '..' ( (this_number_13= RULE_NUMBER )+ | otherlv_14= '*' ) )
-                    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:745:5: otherlv_12= '..' ( (this_number_13= RULE_NUMBER )+ | otherlv_14= '*' )
+                    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:719:3: (otherlv_12= '..' ( (this_number_13= RULE_NUMBER )+ | otherlv_14= '*' ) )
+                    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:719:5: otherlv_12= '..' ( (this_number_13= RULE_NUMBER )+ | otherlv_14= '*' )
                     {
-                    otherlv_12=(Token)match(input,21,FOLLOW_21_in_ruleBiRelation1630); 
+                    otherlv_12=(Token)match(input,21,FOLLOW_21_in_ruleBiRelation1547); 
 
                         	newLeafNode(otherlv_12, grammarAccess.getBiRelationAccess().getFullStopFullStopKeyword_7_0_1_0());
                         
-                    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:749:1: ( (this_number_13= RULE_NUMBER )+ | otherlv_14= '*' )
-                    int alt23=2;
-                    int LA23_0 = input.LA(1);
+                    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:723:1: ( (this_number_13= RULE_NUMBER )+ | otherlv_14= '*' )
+                    int alt22=2;
+                    int LA22_0 = input.LA(1);
 
-                    if ( (LA23_0==RULE_NUMBER) ) {
-                        alt23=1;
+                    if ( (LA22_0==RULE_NUMBER) ) {
+                        alt22=1;
                     }
-                    else if ( (LA23_0==22) ) {
-                        alt23=2;
+                    else if ( (LA22_0==22) ) {
+                        alt22=2;
                     }
                     else {
                         NoViableAltException nvae =
-                            new NoViableAltException("", 23, 0, input);
+                            new NoViableAltException("", 22, 0, input);
 
                         throw nvae;
                     }
-                    switch (alt23) {
+                    switch (alt22) {
                         case 1 :
-                            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:749:2: (this_number_13= RULE_NUMBER )+
+                            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:723:2: (this_number_13= RULE_NUMBER )+
                             {
-                            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:749:2: (this_number_13= RULE_NUMBER )+
-                            int cnt22=0;
-                            loop22:
+                            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:723:2: (this_number_13= RULE_NUMBER )+
+                            int cnt21=0;
+                            loop21:
                             do {
-                                int alt22=2;
-                                int LA22_0 = input.LA(1);
+                                int alt21=2;
+                                int LA21_0 = input.LA(1);
 
-                                if ( (LA22_0==RULE_NUMBER) ) {
-                                    alt22=1;
+                                if ( (LA21_0==RULE_NUMBER) ) {
+                                    alt21=1;
                                 }
 
 
-                                switch (alt22) {
+                                switch (alt21) {
                             	case 1 :
-                            	    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:749:3: this_number_13= RULE_NUMBER
+                            	    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:723:3: this_number_13= RULE_NUMBER
                             	    {
-                            	    this_number_13=(Token)match(input,RULE_NUMBER,FOLLOW_RULE_NUMBER_in_ruleBiRelation1643); 
+                            	    this_number_13=(Token)match(input,RULE_NUMBER,FOLLOW_RULE_NUMBER_in_ruleBiRelation1560); 
                             	     
                             	        newLeafNode(this_number_13, grammarAccess.getBiRelationAccess().getNumberTerminalRuleCall_7_0_1_1_0()); 
                             	        
@@ -2226,21 +2134,21 @@ public class InternalDiagramClassParser extends AbstractInternalAntlrParser {
                             	    break;
 
                             	default :
-                            	    if ( cnt22 >= 1 ) break loop22;
+                            	    if ( cnt21 >= 1 ) break loop21;
                                         EarlyExitException eee =
-                                            new EarlyExitException(22, input);
+                                            new EarlyExitException(21, input);
                                         throw eee;
                                 }
-                                cnt22++;
+                                cnt21++;
                             } while (true);
 
 
                             }
                             break;
                         case 2 :
-                            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:754:7: otherlv_14= '*'
+                            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:728:7: otherlv_14= '*'
                             {
-                            otherlv_14=(Token)match(input,22,FOLLOW_22_in_ruleBiRelation1662); 
+                            otherlv_14=(Token)match(input,22,FOLLOW_22_in_ruleBiRelation1579); 
 
                                 	newLeafNode(otherlv_14, grammarAccess.getBiRelationAccess().getAsteriskKeyword_7_0_1_1_1());
                                 
@@ -2260,9 +2168,9 @@ public class InternalDiagramClassParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 2 :
-                    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:759:7: otherlv_15= '*'
+                    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:733:7: otherlv_15= '*'
                     {
-                    otherlv_15=(Token)match(input,22,FOLLOW_22_in_ruleBiRelation1683); 
+                    otherlv_15=(Token)match(input,22,FOLLOW_22_in_ruleBiRelation1600); 
 
                         	newLeafNode(otherlv_15, grammarAccess.getBiRelationAccess().getAsteriskKeyword_7_1());
                         
@@ -2272,7 +2180,7 @@ public class InternalDiagramClassParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_16=(Token)match(input,23,FOLLOW_23_in_ruleBiRelation1697); 
+            otherlv_16=(Token)match(input,23,FOLLOW_23_in_ruleBiRelation1614); 
 
                 	newLeafNode(otherlv_16, grammarAccess.getBiRelationAccess().getRightSquareBracketKeyword_8());
                 
@@ -2297,7 +2205,7 @@ public class InternalDiagramClassParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleAttribute"
-    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:775:1: entryRuleAttribute returns [EObject current=null] : iv_ruleAttribute= ruleAttribute EOF ;
+    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:749:1: entryRuleAttribute returns [EObject current=null] : iv_ruleAttribute= ruleAttribute EOF ;
     public final EObject entryRuleAttribute() throws RecognitionException {
         EObject current = null;
 
@@ -2305,17 +2213,17 @@ public class InternalDiagramClassParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:776:2: (iv_ruleAttribute= ruleAttribute EOF )
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:777:2: iv_ruleAttribute= ruleAttribute EOF
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:750:2: (iv_ruleAttribute= ruleAttribute EOF )
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:751:2: iv_ruleAttribute= ruleAttribute EOF
             {
              newCompositeNode(grammarAccess.getAttributeRule()); 
-            pushFollow(FOLLOW_ruleAttribute_in_entryRuleAttribute1733);
+            pushFollow(FOLLOW_ruleAttribute_in_entryRuleAttribute1650);
             iv_ruleAttribute=ruleAttribute();
 
             state._fsp--;
 
              current =iv_ruleAttribute; 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleAttribute1743); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleAttribute1660); 
 
             }
 
@@ -2333,7 +2241,7 @@ public class InternalDiagramClassParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleAttribute"
-    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:784:1: ruleAttribute returns [EObject current=null] : ( ruleBodyVisibility (otherlv_1= '<>' | otherlv_2= '<!>' )? ( (lv_attributename_3_0= RULE_ID ) ) otherlv_4= ':' ( (lv_type_5_0= RULE_ID ) ) ( (otherlv_6= '[' (this_number_7= RULE_NUMBER )* otherlv_8= ']' ) | ( (lv_birelation_9_0= ruleBiRelation ) ) )? ) ;
+    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:758:1: ruleAttribute returns [EObject current=null] : ( ruleBodyVisibility (otherlv_1= '<>' | otherlv_2= '<!>' )? ( (lv_attributename_3_0= RULE_ID ) ) otherlv_4= ':' ( (lv_type_5_0= RULE_ID ) ) ( (otherlv_6= '[' (this_number_7= RULE_NUMBER )* otherlv_8= ']' ) | ( (lv_birelation_9_0= ruleBiRelation ) ) )? ) ;
     public final EObject ruleAttribute() throws RecognitionException {
         EObject current = null;
 
@@ -2351,16 +2259,16 @@ public class InternalDiagramClassParser extends AbstractInternalAntlrParser {
          enterRule(); 
             
         try {
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:787:28: ( ( ruleBodyVisibility (otherlv_1= '<>' | otherlv_2= '<!>' )? ( (lv_attributename_3_0= RULE_ID ) ) otherlv_4= ':' ( (lv_type_5_0= RULE_ID ) ) ( (otherlv_6= '[' (this_number_7= RULE_NUMBER )* otherlv_8= ']' ) | ( (lv_birelation_9_0= ruleBiRelation ) ) )? ) )
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:788:1: ( ruleBodyVisibility (otherlv_1= '<>' | otherlv_2= '<!>' )? ( (lv_attributename_3_0= RULE_ID ) ) otherlv_4= ':' ( (lv_type_5_0= RULE_ID ) ) ( (otherlv_6= '[' (this_number_7= RULE_NUMBER )* otherlv_8= ']' ) | ( (lv_birelation_9_0= ruleBiRelation ) ) )? )
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:761:28: ( ( ruleBodyVisibility (otherlv_1= '<>' | otherlv_2= '<!>' )? ( (lv_attributename_3_0= RULE_ID ) ) otherlv_4= ':' ( (lv_type_5_0= RULE_ID ) ) ( (otherlv_6= '[' (this_number_7= RULE_NUMBER )* otherlv_8= ']' ) | ( (lv_birelation_9_0= ruleBiRelation ) ) )? ) )
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:762:1: ( ruleBodyVisibility (otherlv_1= '<>' | otherlv_2= '<!>' )? ( (lv_attributename_3_0= RULE_ID ) ) otherlv_4= ':' ( (lv_type_5_0= RULE_ID ) ) ( (otherlv_6= '[' (this_number_7= RULE_NUMBER )* otherlv_8= ']' ) | ( (lv_birelation_9_0= ruleBiRelation ) ) )? )
             {
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:788:1: ( ruleBodyVisibility (otherlv_1= '<>' | otherlv_2= '<!>' )? ( (lv_attributename_3_0= RULE_ID ) ) otherlv_4= ':' ( (lv_type_5_0= RULE_ID ) ) ( (otherlv_6= '[' (this_number_7= RULE_NUMBER )* otherlv_8= ']' ) | ( (lv_birelation_9_0= ruleBiRelation ) ) )? )
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:789:5: ruleBodyVisibility (otherlv_1= '<>' | otherlv_2= '<!>' )? ( (lv_attributename_3_0= RULE_ID ) ) otherlv_4= ':' ( (lv_type_5_0= RULE_ID ) ) ( (otherlv_6= '[' (this_number_7= RULE_NUMBER )* otherlv_8= ']' ) | ( (lv_birelation_9_0= ruleBiRelation ) ) )?
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:762:1: ( ruleBodyVisibility (otherlv_1= '<>' | otherlv_2= '<!>' )? ( (lv_attributename_3_0= RULE_ID ) ) otherlv_4= ':' ( (lv_type_5_0= RULE_ID ) ) ( (otherlv_6= '[' (this_number_7= RULE_NUMBER )* otherlv_8= ']' ) | ( (lv_birelation_9_0= ruleBiRelation ) ) )? )
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:763:5: ruleBodyVisibility (otherlv_1= '<>' | otherlv_2= '<!>' )? ( (lv_attributename_3_0= RULE_ID ) ) otherlv_4= ':' ( (lv_type_5_0= RULE_ID ) ) ( (otherlv_6= '[' (this_number_7= RULE_NUMBER )* otherlv_8= ']' ) | ( (lv_birelation_9_0= ruleBiRelation ) ) )?
             {
              
                     newCompositeNode(grammarAccess.getAttributeAccess().getBodyVisibilityParserRuleCall_0()); 
                 
-            pushFollow(FOLLOW_ruleBodyVisibility_in_ruleAttribute1784);
+            pushFollow(FOLLOW_ruleBodyVisibility_in_ruleAttribute1701);
             ruleBodyVisibility();
 
             state._fsp--;
@@ -2368,21 +2276,21 @@ public class InternalDiagramClassParser extends AbstractInternalAntlrParser {
              
                     afterParserOrEnumRuleCall();
                 
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:796:1: (otherlv_1= '<>' | otherlv_2= '<!>' )?
-            int alt25=3;
-            int LA25_0 = input.LA(1);
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:770:1: (otherlv_1= '<>' | otherlv_2= '<!>' )?
+            int alt24=3;
+            int LA24_0 = input.LA(1);
 
-            if ( (LA25_0==25) ) {
-                alt25=1;
+            if ( (LA24_0==25) ) {
+                alt24=1;
             }
-            else if ( (LA25_0==26) ) {
-                alt25=2;
+            else if ( (LA24_0==26) ) {
+                alt24=2;
             }
-            switch (alt25) {
+            switch (alt24) {
                 case 1 :
-                    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:796:3: otherlv_1= '<>'
+                    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:770:3: otherlv_1= '<>'
                     {
-                    otherlv_1=(Token)match(input,25,FOLLOW_25_in_ruleAttribute1796); 
+                    otherlv_1=(Token)match(input,25,FOLLOW_25_in_ruleAttribute1713); 
 
                         	newLeafNode(otherlv_1, grammarAccess.getAttributeAccess().getLessThanSignGreaterThanSignKeyword_1_0());
                         
@@ -2390,9 +2298,9 @@ public class InternalDiagramClassParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 2 :
-                    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:801:7: otherlv_2= '<!>'
+                    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:775:7: otherlv_2= '<!>'
                     {
-                    otherlv_2=(Token)match(input,26,FOLLOW_26_in_ruleAttribute1814); 
+                    otherlv_2=(Token)match(input,26,FOLLOW_26_in_ruleAttribute1731); 
 
                         	newLeafNode(otherlv_2, grammarAccess.getAttributeAccess().getLessThanSignExclamationMarkGreaterThanSignKeyword_1_1());
                         
@@ -2402,13 +2310,13 @@ public class InternalDiagramClassParser extends AbstractInternalAntlrParser {
 
             }
 
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:805:3: ( (lv_attributename_3_0= RULE_ID ) )
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:806:1: (lv_attributename_3_0= RULE_ID )
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:779:3: ( (lv_attributename_3_0= RULE_ID ) )
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:780:1: (lv_attributename_3_0= RULE_ID )
             {
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:806:1: (lv_attributename_3_0= RULE_ID )
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:807:3: lv_attributename_3_0= RULE_ID
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:780:1: (lv_attributename_3_0= RULE_ID )
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:781:3: lv_attributename_3_0= RULE_ID
             {
-            lv_attributename_3_0=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleAttribute1833); 
+            lv_attributename_3_0=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleAttribute1750); 
 
             			newLeafNode(lv_attributename_3_0, grammarAccess.getAttributeAccess().getAttributenameIDTerminalRuleCall_2_0()); 
             		
@@ -2428,17 +2336,17 @@ public class InternalDiagramClassParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_4=(Token)match(input,12,FOLLOW_12_in_ruleAttribute1850); 
+            otherlv_4=(Token)match(input,12,FOLLOW_12_in_ruleAttribute1767); 
 
                 	newLeafNode(otherlv_4, grammarAccess.getAttributeAccess().getColonKeyword_3());
                 
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:827:1: ( (lv_type_5_0= RULE_ID ) )
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:828:1: (lv_type_5_0= RULE_ID )
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:801:1: ( (lv_type_5_0= RULE_ID ) )
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:802:1: (lv_type_5_0= RULE_ID )
             {
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:828:1: (lv_type_5_0= RULE_ID )
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:829:3: lv_type_5_0= RULE_ID
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:802:1: (lv_type_5_0= RULE_ID )
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:803:3: lv_type_5_0= RULE_ID
             {
-            lv_type_5_0=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleAttribute1867); 
+            lv_type_5_0=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleAttribute1784); 
 
             			newLeafNode(lv_type_5_0, grammarAccess.getAttributeAccess().getTypeIDTerminalRuleCall_4_0()); 
             		
@@ -2458,36 +2366,36 @@ public class InternalDiagramClassParser extends AbstractInternalAntlrParser {
 
             }
 
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:845:2: ( (otherlv_6= '[' (this_number_7= RULE_NUMBER )* otherlv_8= ']' ) | ( (lv_birelation_9_0= ruleBiRelation ) ) )?
-            int alt27=3;
-            alt27 = dfa27.predict(input);
-            switch (alt27) {
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:819:2: ( (otherlv_6= '[' (this_number_7= RULE_NUMBER )* otherlv_8= ']' ) | ( (lv_birelation_9_0= ruleBiRelation ) ) )?
+            int alt26=3;
+            alt26 = dfa26.predict(input);
+            switch (alt26) {
                 case 1 :
-                    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:845:3: (otherlv_6= '[' (this_number_7= RULE_NUMBER )* otherlv_8= ']' )
+                    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:819:3: (otherlv_6= '[' (this_number_7= RULE_NUMBER )* otherlv_8= ']' )
                     {
-                    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:845:3: (otherlv_6= '[' (this_number_7= RULE_NUMBER )* otherlv_8= ']' )
-                    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:845:5: otherlv_6= '[' (this_number_7= RULE_NUMBER )* otherlv_8= ']'
+                    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:819:3: (otherlv_6= '[' (this_number_7= RULE_NUMBER )* otherlv_8= ']' )
+                    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:819:5: otherlv_6= '[' (this_number_7= RULE_NUMBER )* otherlv_8= ']'
                     {
-                    otherlv_6=(Token)match(input,20,FOLLOW_20_in_ruleAttribute1886); 
+                    otherlv_6=(Token)match(input,20,FOLLOW_20_in_ruleAttribute1803); 
 
                         	newLeafNode(otherlv_6, grammarAccess.getAttributeAccess().getLeftSquareBracketKeyword_5_0_0());
                         
-                    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:849:1: (this_number_7= RULE_NUMBER )*
-                    loop26:
+                    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:823:1: (this_number_7= RULE_NUMBER )*
+                    loop25:
                     do {
-                        int alt26=2;
-                        int LA26_0 = input.LA(1);
+                        int alt25=2;
+                        int LA25_0 = input.LA(1);
 
-                        if ( (LA26_0==RULE_NUMBER) ) {
-                            alt26=1;
+                        if ( (LA25_0==RULE_NUMBER) ) {
+                            alt25=1;
                         }
 
 
-                        switch (alt26) {
+                        switch (alt25) {
                     	case 1 :
-                    	    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:849:2: this_number_7= RULE_NUMBER
+                    	    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:823:2: this_number_7= RULE_NUMBER
                     	    {
-                    	    this_number_7=(Token)match(input,RULE_NUMBER,FOLLOW_RULE_NUMBER_in_ruleAttribute1898); 
+                    	    this_number_7=(Token)match(input,RULE_NUMBER,FOLLOW_RULE_NUMBER_in_ruleAttribute1815); 
                     	     
                     	        newLeafNode(this_number_7, grammarAccess.getAttributeAccess().getNumberTerminalRuleCall_5_0_1()); 
                     	        
@@ -2496,11 +2404,11 @@ public class InternalDiagramClassParser extends AbstractInternalAntlrParser {
                     	    break;
 
                     	default :
-                    	    break loop26;
+                    	    break loop25;
                         }
                     } while (true);
 
-                    otherlv_8=(Token)match(input,23,FOLLOW_23_in_ruleAttribute1911); 
+                    otherlv_8=(Token)match(input,23,FOLLOW_23_in_ruleAttribute1828); 
 
                         	newLeafNode(otherlv_8, grammarAccess.getAttributeAccess().getRightSquareBracketKeyword_5_0_2());
                         
@@ -2511,18 +2419,18 @@ public class InternalDiagramClassParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 2 :
-                    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:858:6: ( (lv_birelation_9_0= ruleBiRelation ) )
+                    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:832:6: ( (lv_birelation_9_0= ruleBiRelation ) )
                     {
-                    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:858:6: ( (lv_birelation_9_0= ruleBiRelation ) )
-                    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:859:1: (lv_birelation_9_0= ruleBiRelation )
+                    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:832:6: ( (lv_birelation_9_0= ruleBiRelation ) )
+                    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:833:1: (lv_birelation_9_0= ruleBiRelation )
                     {
-                    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:859:1: (lv_birelation_9_0= ruleBiRelation )
-                    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:860:3: lv_birelation_9_0= ruleBiRelation
+                    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:833:1: (lv_birelation_9_0= ruleBiRelation )
+                    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:834:3: lv_birelation_9_0= ruleBiRelation
                     {
                      
                     	        newCompositeNode(grammarAccess.getAttributeAccess().getBirelationBiRelationParserRuleCall_5_1_0()); 
                     	    
-                    pushFollow(FOLLOW_ruleBiRelation_in_ruleAttribute1939);
+                    pushFollow(FOLLOW_ruleBiRelation_in_ruleAttribute1856);
                     lv_birelation_9_0=ruleBiRelation();
 
                     state._fsp--;
@@ -2571,7 +2479,7 @@ public class InternalDiagramClassParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleparamIn"
-    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:884:1: entryRuleparamIn returns [EObject current=null] : iv_ruleparamIn= ruleparamIn EOF ;
+    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:858:1: entryRuleparamIn returns [EObject current=null] : iv_ruleparamIn= ruleparamIn EOF ;
     public final EObject entryRuleparamIn() throws RecognitionException {
         EObject current = null;
 
@@ -2579,17 +2487,17 @@ public class InternalDiagramClassParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:885:2: (iv_ruleparamIn= ruleparamIn EOF )
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:886:2: iv_ruleparamIn= ruleparamIn EOF
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:859:2: (iv_ruleparamIn= ruleparamIn EOF )
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:860:2: iv_ruleparamIn= ruleparamIn EOF
             {
              newCompositeNode(grammarAccess.getParamInRule()); 
-            pushFollow(FOLLOW_ruleparamIn_in_entryRuleparamIn1977);
+            pushFollow(FOLLOW_ruleparamIn_in_entryRuleparamIn1894);
             iv_ruleparamIn=ruleparamIn();
 
             state._fsp--;
 
              current =iv_ruleparamIn; 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleparamIn1987); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleparamIn1904); 
 
             }
 
@@ -2607,7 +2515,7 @@ public class InternalDiagramClassParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleparamIn"
-    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:893:1: ruleparamIn returns [EObject current=null] : ( ( (lv_name_0_0= RULE_ID ) ) otherlv_1= ':' ( (lv_type_2_0= RULE_ID ) ) (otherlv_3= ',' )? ) ;
+    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:867:1: ruleparamIn returns [EObject current=null] : ( ( (lv_name_0_0= RULE_ID ) ) otherlv_1= ':' ( (lv_type_2_0= RULE_ID ) ) (otherlv_3= ',' )? ) ;
     public final EObject ruleparamIn() throws RecognitionException {
         EObject current = null;
 
@@ -2619,19 +2527,19 @@ public class InternalDiagramClassParser extends AbstractInternalAntlrParser {
          enterRule(); 
             
         try {
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:896:28: ( ( ( (lv_name_0_0= RULE_ID ) ) otherlv_1= ':' ( (lv_type_2_0= RULE_ID ) ) (otherlv_3= ',' )? ) )
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:897:1: ( ( (lv_name_0_0= RULE_ID ) ) otherlv_1= ':' ( (lv_type_2_0= RULE_ID ) ) (otherlv_3= ',' )? )
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:870:28: ( ( ( (lv_name_0_0= RULE_ID ) ) otherlv_1= ':' ( (lv_type_2_0= RULE_ID ) ) (otherlv_3= ',' )? ) )
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:871:1: ( ( (lv_name_0_0= RULE_ID ) ) otherlv_1= ':' ( (lv_type_2_0= RULE_ID ) ) (otherlv_3= ',' )? )
             {
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:897:1: ( ( (lv_name_0_0= RULE_ID ) ) otherlv_1= ':' ( (lv_type_2_0= RULE_ID ) ) (otherlv_3= ',' )? )
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:897:2: ( (lv_name_0_0= RULE_ID ) ) otherlv_1= ':' ( (lv_type_2_0= RULE_ID ) ) (otherlv_3= ',' )?
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:871:1: ( ( (lv_name_0_0= RULE_ID ) ) otherlv_1= ':' ( (lv_type_2_0= RULE_ID ) ) (otherlv_3= ',' )? )
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:871:2: ( (lv_name_0_0= RULE_ID ) ) otherlv_1= ':' ( (lv_type_2_0= RULE_ID ) ) (otherlv_3= ',' )?
             {
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:897:2: ( (lv_name_0_0= RULE_ID ) )
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:898:1: (lv_name_0_0= RULE_ID )
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:871:2: ( (lv_name_0_0= RULE_ID ) )
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:872:1: (lv_name_0_0= RULE_ID )
             {
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:898:1: (lv_name_0_0= RULE_ID )
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:899:3: lv_name_0_0= RULE_ID
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:872:1: (lv_name_0_0= RULE_ID )
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:873:3: lv_name_0_0= RULE_ID
             {
-            lv_name_0_0=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleparamIn2029); 
+            lv_name_0_0=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleparamIn1946); 
 
             			newLeafNode(lv_name_0_0, grammarAccess.getParamInAccess().getNameIDTerminalRuleCall_0_0()); 
             		
@@ -2651,17 +2559,17 @@ public class InternalDiagramClassParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_1=(Token)match(input,12,FOLLOW_12_in_ruleparamIn2046); 
+            otherlv_1=(Token)match(input,12,FOLLOW_12_in_ruleparamIn1963); 
 
                 	newLeafNode(otherlv_1, grammarAccess.getParamInAccess().getColonKeyword_1());
                 
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:919:1: ( (lv_type_2_0= RULE_ID ) )
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:920:1: (lv_type_2_0= RULE_ID )
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:893:1: ( (lv_type_2_0= RULE_ID ) )
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:894:1: (lv_type_2_0= RULE_ID )
             {
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:920:1: (lv_type_2_0= RULE_ID )
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:921:3: lv_type_2_0= RULE_ID
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:894:1: (lv_type_2_0= RULE_ID )
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:895:3: lv_type_2_0= RULE_ID
             {
-            lv_type_2_0=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleparamIn2063); 
+            lv_type_2_0=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleparamIn1980); 
 
             			newLeafNode(lv_type_2_0, grammarAccess.getParamInAccess().getTypeIDTerminalRuleCall_2_0()); 
             		
@@ -2681,18 +2589,18 @@ public class InternalDiagramClassParser extends AbstractInternalAntlrParser {
 
             }
 
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:937:2: (otherlv_3= ',' )?
-            int alt28=2;
-            int LA28_0 = input.LA(1);
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:911:2: (otherlv_3= ',' )?
+            int alt27=2;
+            int LA27_0 = input.LA(1);
 
-            if ( (LA28_0==15) ) {
-                alt28=1;
+            if ( (LA27_0==13) ) {
+                alt27=1;
             }
-            switch (alt28) {
+            switch (alt27) {
                 case 1 :
-                    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:937:4: otherlv_3= ','
+                    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:911:4: otherlv_3= ','
                     {
-                    otherlv_3=(Token)match(input,15,FOLLOW_15_in_ruleparamIn2081); 
+                    otherlv_3=(Token)match(input,13,FOLLOW_13_in_ruleparamIn1998); 
 
                         	newLeafNode(otherlv_3, grammarAccess.getParamInAccess().getCommaKeyword_3());
                         
@@ -2723,7 +2631,7 @@ public class InternalDiagramClassParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleMethod"
-    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:949:1: entryRuleMethod returns [EObject current=null] : iv_ruleMethod= ruleMethod EOF ;
+    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:923:1: entryRuleMethod returns [EObject current=null] : iv_ruleMethod= ruleMethod EOF ;
     public final EObject entryRuleMethod() throws RecognitionException {
         EObject current = null;
 
@@ -2731,17 +2639,17 @@ public class InternalDiagramClassParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:950:2: (iv_ruleMethod= ruleMethod EOF )
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:951:2: iv_ruleMethod= ruleMethod EOF
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:924:2: (iv_ruleMethod= ruleMethod EOF )
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:925:2: iv_ruleMethod= ruleMethod EOF
             {
              newCompositeNode(grammarAccess.getMethodRule()); 
-            pushFollow(FOLLOW_ruleMethod_in_entryRuleMethod2119);
+            pushFollow(FOLLOW_ruleMethod_in_entryRuleMethod2036);
             iv_ruleMethod=ruleMethod();
 
             state._fsp--;
 
              current =iv_ruleMethod; 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleMethod2129); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleMethod2046); 
 
             }
 
@@ -2759,7 +2667,7 @@ public class InternalDiagramClassParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleMethod"
-    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:958:1: ruleMethod returns [EObject current=null] : ( ruleBodyVisibility ( (lv_name_1_0= RULE_ID ) ) otherlv_2= '(' ( (lv_param_3_0= ruleparamIn ) )* otherlv_4= ')' (otherlv_5= ':' ( (lv_returnType_6_0= RULE_ID ) ) )? ) ;
+    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:932:1: ruleMethod returns [EObject current=null] : ( ruleBodyVisibility ( (lv_name_1_0= RULE_ID ) ) otherlv_2= '(' ( (lv_param_3_0= ruleparamIn ) )* otherlv_4= ')' (otherlv_5= ':' ( (lv_returnType_6_0= RULE_ID ) ) )? ) ;
     public final EObject ruleMethod() throws RecognitionException {
         EObject current = null;
 
@@ -2774,16 +2682,16 @@ public class InternalDiagramClassParser extends AbstractInternalAntlrParser {
          enterRule(); 
             
         try {
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:961:28: ( ( ruleBodyVisibility ( (lv_name_1_0= RULE_ID ) ) otherlv_2= '(' ( (lv_param_3_0= ruleparamIn ) )* otherlv_4= ')' (otherlv_5= ':' ( (lv_returnType_6_0= RULE_ID ) ) )? ) )
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:962:1: ( ruleBodyVisibility ( (lv_name_1_0= RULE_ID ) ) otherlv_2= '(' ( (lv_param_3_0= ruleparamIn ) )* otherlv_4= ')' (otherlv_5= ':' ( (lv_returnType_6_0= RULE_ID ) ) )? )
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:935:28: ( ( ruleBodyVisibility ( (lv_name_1_0= RULE_ID ) ) otherlv_2= '(' ( (lv_param_3_0= ruleparamIn ) )* otherlv_4= ')' (otherlv_5= ':' ( (lv_returnType_6_0= RULE_ID ) ) )? ) )
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:936:1: ( ruleBodyVisibility ( (lv_name_1_0= RULE_ID ) ) otherlv_2= '(' ( (lv_param_3_0= ruleparamIn ) )* otherlv_4= ')' (otherlv_5= ':' ( (lv_returnType_6_0= RULE_ID ) ) )? )
             {
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:962:1: ( ruleBodyVisibility ( (lv_name_1_0= RULE_ID ) ) otherlv_2= '(' ( (lv_param_3_0= ruleparamIn ) )* otherlv_4= ')' (otherlv_5= ':' ( (lv_returnType_6_0= RULE_ID ) ) )? )
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:963:5: ruleBodyVisibility ( (lv_name_1_0= RULE_ID ) ) otherlv_2= '(' ( (lv_param_3_0= ruleparamIn ) )* otherlv_4= ')' (otherlv_5= ':' ( (lv_returnType_6_0= RULE_ID ) ) )?
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:936:1: ( ruleBodyVisibility ( (lv_name_1_0= RULE_ID ) ) otherlv_2= '(' ( (lv_param_3_0= ruleparamIn ) )* otherlv_4= ')' (otherlv_5= ':' ( (lv_returnType_6_0= RULE_ID ) ) )? )
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:937:5: ruleBodyVisibility ( (lv_name_1_0= RULE_ID ) ) otherlv_2= '(' ( (lv_param_3_0= ruleparamIn ) )* otherlv_4= ')' (otherlv_5= ':' ( (lv_returnType_6_0= RULE_ID ) ) )?
             {
              
                     newCompositeNode(grammarAccess.getMethodAccess().getBodyVisibilityParserRuleCall_0()); 
                 
-            pushFollow(FOLLOW_ruleBodyVisibility_in_ruleMethod2170);
+            pushFollow(FOLLOW_ruleBodyVisibility_in_ruleMethod2087);
             ruleBodyVisibility();
 
             state._fsp--;
@@ -2791,13 +2699,13 @@ public class InternalDiagramClassParser extends AbstractInternalAntlrParser {
              
                     afterParserOrEnumRuleCall();
                 
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:970:1: ( (lv_name_1_0= RULE_ID ) )
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:971:1: (lv_name_1_0= RULE_ID )
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:944:1: ( (lv_name_1_0= RULE_ID ) )
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:945:1: (lv_name_1_0= RULE_ID )
             {
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:971:1: (lv_name_1_0= RULE_ID )
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:972:3: lv_name_1_0= RULE_ID
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:945:1: (lv_name_1_0= RULE_ID )
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:946:3: lv_name_1_0= RULE_ID
             {
-            lv_name_1_0=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleMethod2186); 
+            lv_name_1_0=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleMethod2103); 
 
             			newLeafNode(lv_name_1_0, grammarAccess.getMethodAccess().getNameIDTerminalRuleCall_1_0()); 
             		
@@ -2817,32 +2725,32 @@ public class InternalDiagramClassParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_2=(Token)match(input,27,FOLLOW_27_in_ruleMethod2203); 
+            otherlv_2=(Token)match(input,27,FOLLOW_27_in_ruleMethod2120); 
 
                 	newLeafNode(otherlv_2, grammarAccess.getMethodAccess().getLeftParenthesisKeyword_2());
                 
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:992:1: ( (lv_param_3_0= ruleparamIn ) )*
-            loop29:
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:966:1: ( (lv_param_3_0= ruleparamIn ) )*
+            loop28:
             do {
-                int alt29=2;
-                int LA29_0 = input.LA(1);
+                int alt28=2;
+                int LA28_0 = input.LA(1);
 
-                if ( (LA29_0==RULE_ID) ) {
-                    alt29=1;
+                if ( (LA28_0==RULE_ID) ) {
+                    alt28=1;
                 }
 
 
-                switch (alt29) {
+                switch (alt28) {
             	case 1 :
-            	    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:993:1: (lv_param_3_0= ruleparamIn )
+            	    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:967:1: (lv_param_3_0= ruleparamIn )
             	    {
-            	    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:993:1: (lv_param_3_0= ruleparamIn )
-            	    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:994:3: lv_param_3_0= ruleparamIn
+            	    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:967:1: (lv_param_3_0= ruleparamIn )
+            	    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:968:3: lv_param_3_0= ruleparamIn
             	    {
             	     
             	    	        newCompositeNode(grammarAccess.getMethodAccess().getParamParamInParserRuleCall_3_0()); 
             	    	    
-            	    pushFollow(FOLLOW_ruleparamIn_in_ruleMethod2224);
+            	    pushFollow(FOLLOW_ruleparamIn_in_ruleMethod2141);
             	    lv_param_3_0=ruleparamIn();
 
             	    state._fsp--;
@@ -2866,36 +2774,36 @@ public class InternalDiagramClassParser extends AbstractInternalAntlrParser {
             	    break;
 
             	default :
-            	    break loop29;
+            	    break loop28;
                 }
             } while (true);
 
-            otherlv_4=(Token)match(input,28,FOLLOW_28_in_ruleMethod2237); 
+            otherlv_4=(Token)match(input,28,FOLLOW_28_in_ruleMethod2154); 
 
                 	newLeafNode(otherlv_4, grammarAccess.getMethodAccess().getRightParenthesisKeyword_4());
                 
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1014:1: (otherlv_5= ':' ( (lv_returnType_6_0= RULE_ID ) ) )?
-            int alt30=2;
-            int LA30_0 = input.LA(1);
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:988:1: (otherlv_5= ':' ( (lv_returnType_6_0= RULE_ID ) ) )?
+            int alt29=2;
+            int LA29_0 = input.LA(1);
 
-            if ( (LA30_0==12) ) {
-                alt30=1;
+            if ( (LA29_0==12) ) {
+                alt29=1;
             }
-            switch (alt30) {
+            switch (alt29) {
                 case 1 :
-                    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1014:3: otherlv_5= ':' ( (lv_returnType_6_0= RULE_ID ) )
+                    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:988:3: otherlv_5= ':' ( (lv_returnType_6_0= RULE_ID ) )
                     {
-                    otherlv_5=(Token)match(input,12,FOLLOW_12_in_ruleMethod2250); 
+                    otherlv_5=(Token)match(input,12,FOLLOW_12_in_ruleMethod2167); 
 
                         	newLeafNode(otherlv_5, grammarAccess.getMethodAccess().getColonKeyword_5_0());
                         
-                    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1018:1: ( (lv_returnType_6_0= RULE_ID ) )
-                    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1019:1: (lv_returnType_6_0= RULE_ID )
+                    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:992:1: ( (lv_returnType_6_0= RULE_ID ) )
+                    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:993:1: (lv_returnType_6_0= RULE_ID )
                     {
-                    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1019:1: (lv_returnType_6_0= RULE_ID )
-                    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1020:3: lv_returnType_6_0= RULE_ID
+                    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:993:1: (lv_returnType_6_0= RULE_ID )
+                    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:994:3: lv_returnType_6_0= RULE_ID
                     {
-                    lv_returnType_6_0=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleMethod2267); 
+                    lv_returnType_6_0=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleMethod2184); 
 
                     			newLeafNode(lv_returnType_6_0, grammarAccess.getMethodAccess().getReturnTypeIDTerminalRuleCall_5_1_0()); 
                     		
@@ -2942,7 +2850,7 @@ public class InternalDiagramClassParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleBodyVisibility"
-    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1044:1: entryRuleBodyVisibility returns [String current=null] : iv_ruleBodyVisibility= ruleBodyVisibility EOF ;
+    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1018:1: entryRuleBodyVisibility returns [String current=null] : iv_ruleBodyVisibility= ruleBodyVisibility EOF ;
     public final String entryRuleBodyVisibility() throws RecognitionException {
         String current = null;
 
@@ -2950,17 +2858,17 @@ public class InternalDiagramClassParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1045:2: (iv_ruleBodyVisibility= ruleBodyVisibility EOF )
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1046:2: iv_ruleBodyVisibility= ruleBodyVisibility EOF
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1019:2: (iv_ruleBodyVisibility= ruleBodyVisibility EOF )
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1020:2: iv_ruleBodyVisibility= ruleBodyVisibility EOF
             {
              newCompositeNode(grammarAccess.getBodyVisibilityRule()); 
-            pushFollow(FOLLOW_ruleBodyVisibility_in_entryRuleBodyVisibility2311);
+            pushFollow(FOLLOW_ruleBodyVisibility_in_entryRuleBodyVisibility2228);
             iv_ruleBodyVisibility=ruleBodyVisibility();
 
             state._fsp--;
 
              current =iv_ruleBodyVisibility.getText(); 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleBodyVisibility2322); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleBodyVisibility2239); 
 
             }
 
@@ -2978,7 +2886,7 @@ public class InternalDiagramClassParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleBodyVisibility"
-    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1053:1: ruleBodyVisibility returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()] : (kw= '+' | kw= '-' | kw= '#' ) ;
+    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1027:1: ruleBodyVisibility returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()] : (kw= '+' | kw= '-' | kw= '#' ) ;
     public final AntlrDatatypeRuleToken ruleBodyVisibility() throws RecognitionException {
         AntlrDatatypeRuleToken current = new AntlrDatatypeRuleToken();
 
@@ -2987,39 +2895,39 @@ public class InternalDiagramClassParser extends AbstractInternalAntlrParser {
          enterRule(); 
             
         try {
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1056:28: ( (kw= '+' | kw= '-' | kw= '#' ) )
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1057:1: (kw= '+' | kw= '-' | kw= '#' )
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1030:28: ( (kw= '+' | kw= '-' | kw= '#' ) )
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1031:1: (kw= '+' | kw= '-' | kw= '#' )
             {
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1057:1: (kw= '+' | kw= '-' | kw= '#' )
-            int alt31=3;
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1031:1: (kw= '+' | kw= '-' | kw= '#' )
+            int alt30=3;
             switch ( input.LA(1) ) {
             case 29:
                 {
-                alt31=1;
+                alt30=1;
                 }
                 break;
             case 24:
                 {
-                alt31=2;
+                alt30=2;
                 }
                 break;
             case 30:
                 {
-                alt31=3;
+                alt30=3;
                 }
                 break;
             default:
                 NoViableAltException nvae =
-                    new NoViableAltException("", 31, 0, input);
+                    new NoViableAltException("", 30, 0, input);
 
                 throw nvae;
             }
 
-            switch (alt31) {
+            switch (alt30) {
                 case 1 :
-                    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1058:2: kw= '+'
+                    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1032:2: kw= '+'
                     {
-                    kw=(Token)match(input,29,FOLLOW_29_in_ruleBodyVisibility2360); 
+                    kw=(Token)match(input,29,FOLLOW_29_in_ruleBodyVisibility2277); 
 
                             current.merge(kw);
                             newLeafNode(kw, grammarAccess.getBodyVisibilityAccess().getPlusSignKeyword_0()); 
@@ -3028,9 +2936,9 @@ public class InternalDiagramClassParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 2 :
-                    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1065:2: kw= '-'
+                    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1039:2: kw= '-'
                     {
-                    kw=(Token)match(input,24,FOLLOW_24_in_ruleBodyVisibility2379); 
+                    kw=(Token)match(input,24,FOLLOW_24_in_ruleBodyVisibility2296); 
 
                             current.merge(kw);
                             newLeafNode(kw, grammarAccess.getBodyVisibilityAccess().getHyphenMinusKeyword_1()); 
@@ -3039,9 +2947,9 @@ public class InternalDiagramClassParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 3 :
-                    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1072:2: kw= '#'
+                    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1046:2: kw= '#'
                     {
-                    kw=(Token)match(input,30,FOLLOW_30_in_ruleBodyVisibility2398); 
+                    kw=(Token)match(input,30,FOLLOW_30_in_ruleBodyVisibility2315); 
 
                             current.merge(kw);
                             newLeafNode(kw, grammarAccess.getBodyVisibilityAccess().getNumberSignKeyword_2()); 
@@ -3070,7 +2978,7 @@ public class InternalDiagramClassParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleClassVisibility"
-    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1085:1: entryRuleClassVisibility returns [String current=null] : iv_ruleClassVisibility= ruleClassVisibility EOF ;
+    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1059:1: entryRuleClassVisibility returns [String current=null] : iv_ruleClassVisibility= ruleClassVisibility EOF ;
     public final String entryRuleClassVisibility() throws RecognitionException {
         String current = null;
 
@@ -3078,17 +2986,17 @@ public class InternalDiagramClassParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1086:2: (iv_ruleClassVisibility= ruleClassVisibility EOF )
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1087:2: iv_ruleClassVisibility= ruleClassVisibility EOF
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1060:2: (iv_ruleClassVisibility= ruleClassVisibility EOF )
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1061:2: iv_ruleClassVisibility= ruleClassVisibility EOF
             {
              newCompositeNode(grammarAccess.getClassVisibilityRule()); 
-            pushFollow(FOLLOW_ruleClassVisibility_in_entryRuleClassVisibility2439);
+            pushFollow(FOLLOW_ruleClassVisibility_in_entryRuleClassVisibility2356);
             iv_ruleClassVisibility=ruleClassVisibility();
 
             state._fsp--;
 
              current =iv_ruleClassVisibility.getText(); 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleClassVisibility2450); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleClassVisibility2367); 
 
             }
 
@@ -3106,7 +3014,7 @@ public class InternalDiagramClassParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleClassVisibility"
-    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1094:1: ruleClassVisibility returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()] : (kw= '+' | kw= '-' ) ;
+    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1068:1: ruleClassVisibility returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()] : (kw= '+' | kw= '-' ) ;
     public final AntlrDatatypeRuleToken ruleClassVisibility() throws RecognitionException {
         AntlrDatatypeRuleToken current = new AntlrDatatypeRuleToken();
 
@@ -3115,30 +3023,30 @@ public class InternalDiagramClassParser extends AbstractInternalAntlrParser {
          enterRule(); 
             
         try {
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1097:28: ( (kw= '+' | kw= '-' ) )
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1098:1: (kw= '+' | kw= '-' )
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1071:28: ( (kw= '+' | kw= '-' ) )
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1072:1: (kw= '+' | kw= '-' )
             {
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1098:1: (kw= '+' | kw= '-' )
-            int alt32=2;
-            int LA32_0 = input.LA(1);
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1072:1: (kw= '+' | kw= '-' )
+            int alt31=2;
+            int LA31_0 = input.LA(1);
 
-            if ( (LA32_0==29) ) {
-                alt32=1;
+            if ( (LA31_0==29) ) {
+                alt31=1;
             }
-            else if ( (LA32_0==24) ) {
-                alt32=2;
+            else if ( (LA31_0==24) ) {
+                alt31=2;
             }
             else {
                 NoViableAltException nvae =
-                    new NoViableAltException("", 32, 0, input);
+                    new NoViableAltException("", 31, 0, input);
 
                 throw nvae;
             }
-            switch (alt32) {
+            switch (alt31) {
                 case 1 :
-                    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1099:2: kw= '+'
+                    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1073:2: kw= '+'
                     {
-                    kw=(Token)match(input,29,FOLLOW_29_in_ruleClassVisibility2488); 
+                    kw=(Token)match(input,29,FOLLOW_29_in_ruleClassVisibility2405); 
 
                             current.merge(kw);
                             newLeafNode(kw, grammarAccess.getClassVisibilityAccess().getPlusSignKeyword_0()); 
@@ -3147,9 +3055,9 @@ public class InternalDiagramClassParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 2 :
-                    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1106:2: kw= '-'
+                    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1080:2: kw= '-'
                     {
-                    kw=(Token)match(input,24,FOLLOW_24_in_ruleClassVisibility2507); 
+                    kw=(Token)match(input,24,FOLLOW_24_in_ruleClassVisibility2424); 
 
                             current.merge(kw);
                             newLeafNode(kw, grammarAccess.getClassVisibilityAccess().getHyphenMinusKeyword_1()); 
@@ -3178,7 +3086,7 @@ public class InternalDiagramClassParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRulePackage"
-    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1119:1: entryRulePackage returns [EObject current=null] : iv_rulePackage= rulePackage EOF ;
+    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1093:1: entryRulePackage returns [EObject current=null] : iv_rulePackage= rulePackage EOF ;
     public final EObject entryRulePackage() throws RecognitionException {
         EObject current = null;
 
@@ -3186,17 +3094,17 @@ public class InternalDiagramClassParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1120:2: (iv_rulePackage= rulePackage EOF )
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1121:2: iv_rulePackage= rulePackage EOF
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1094:2: (iv_rulePackage= rulePackage EOF )
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1095:2: iv_rulePackage= rulePackage EOF
             {
              newCompositeNode(grammarAccess.getPackageRule()); 
-            pushFollow(FOLLOW_rulePackage_in_entryRulePackage2547);
+            pushFollow(FOLLOW_rulePackage_in_entryRulePackage2464);
             iv_rulePackage=rulePackage();
 
             state._fsp--;
 
              current =iv_rulePackage; 
-            match(input,EOF,FOLLOW_EOF_in_entryRulePackage2557); 
+            match(input,EOF,FOLLOW_EOF_in_entryRulePackage2474); 
 
             }
 
@@ -3214,125 +3122,86 @@ public class InternalDiagramClassParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "rulePackage"
-    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1128:1: rulePackage returns [EObject current=null] : ( ( (lv_name_0_0= RULE_ID ) )? (otherlv_1= '.' this_ID_2= RULE_ID )* otherlv_3= '[[' ( (lv_classType_4_0= ruleElements ) )* ( (lv_subPackage_5_0= rulePackage ) )? otherlv_6= ']]' ) ;
+    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1102:1: rulePackage returns [EObject current=null] : ( ( (lv_name_0_0= rulePackageName ) ) otherlv_1= '[[' ( (lv_classType_2_0= ruleElements ) )* ( (lv_subPackage_3_0= rulePackage ) )? otherlv_4= ']]' ) ;
     public final EObject rulePackage() throws RecognitionException {
         EObject current = null;
 
-        Token lv_name_0_0=null;
         Token otherlv_1=null;
-        Token this_ID_2=null;
-        Token otherlv_3=null;
-        Token otherlv_6=null;
-        EObject lv_classType_4_0 = null;
+        Token otherlv_4=null;
+        AntlrDatatypeRuleToken lv_name_0_0 = null;
 
-        EObject lv_subPackage_5_0 = null;
+        EObject lv_classType_2_0 = null;
+
+        EObject lv_subPackage_3_0 = null;
 
 
          enterRule(); 
             
         try {
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1131:28: ( ( ( (lv_name_0_0= RULE_ID ) )? (otherlv_1= '.' this_ID_2= RULE_ID )* otherlv_3= '[[' ( (lv_classType_4_0= ruleElements ) )* ( (lv_subPackage_5_0= rulePackage ) )? otherlv_6= ']]' ) )
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1132:1: ( ( (lv_name_0_0= RULE_ID ) )? (otherlv_1= '.' this_ID_2= RULE_ID )* otherlv_3= '[[' ( (lv_classType_4_0= ruleElements ) )* ( (lv_subPackage_5_0= rulePackage ) )? otherlv_6= ']]' )
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1105:28: ( ( ( (lv_name_0_0= rulePackageName ) ) otherlv_1= '[[' ( (lv_classType_2_0= ruleElements ) )* ( (lv_subPackage_3_0= rulePackage ) )? otherlv_4= ']]' ) )
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1106:1: ( ( (lv_name_0_0= rulePackageName ) ) otherlv_1= '[[' ( (lv_classType_2_0= ruleElements ) )* ( (lv_subPackage_3_0= rulePackage ) )? otherlv_4= ']]' )
             {
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1132:1: ( ( (lv_name_0_0= RULE_ID ) )? (otherlv_1= '.' this_ID_2= RULE_ID )* otherlv_3= '[[' ( (lv_classType_4_0= ruleElements ) )* ( (lv_subPackage_5_0= rulePackage ) )? otherlv_6= ']]' )
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1132:2: ( (lv_name_0_0= RULE_ID ) )? (otherlv_1= '.' this_ID_2= RULE_ID )* otherlv_3= '[[' ( (lv_classType_4_0= ruleElements ) )* ( (lv_subPackage_5_0= rulePackage ) )? otherlv_6= ']]'
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1106:1: ( ( (lv_name_0_0= rulePackageName ) ) otherlv_1= '[[' ( (lv_classType_2_0= ruleElements ) )* ( (lv_subPackage_3_0= rulePackage ) )? otherlv_4= ']]' )
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1106:2: ( (lv_name_0_0= rulePackageName ) ) otherlv_1= '[[' ( (lv_classType_2_0= ruleElements ) )* ( (lv_subPackage_3_0= rulePackage ) )? otherlv_4= ']]'
             {
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1132:2: ( (lv_name_0_0= RULE_ID ) )?
-            int alt33=2;
-            int LA33_0 = input.LA(1);
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1106:2: ( (lv_name_0_0= rulePackageName ) )
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1107:1: (lv_name_0_0= rulePackageName )
+            {
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1107:1: (lv_name_0_0= rulePackageName )
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1108:3: lv_name_0_0= rulePackageName
+            {
+             
+            	        newCompositeNode(grammarAccess.getPackageAccess().getNamePackageNameParserRuleCall_0_0()); 
+            	    
+            pushFollow(FOLLOW_rulePackageName_in_rulePackage2520);
+            lv_name_0_0=rulePackageName();
 
-            if ( (LA33_0==RULE_ID) ) {
-                alt33=1;
-            }
-            switch (alt33) {
-                case 1 :
-                    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1133:1: (lv_name_0_0= RULE_ID )
-                    {
-                    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1133:1: (lv_name_0_0= RULE_ID )
-                    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1134:3: lv_name_0_0= RULE_ID
-                    {
-                    lv_name_0_0=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_rulePackage2599); 
-
-                    			newLeafNode(lv_name_0_0, grammarAccess.getPackageAccess().getNameIDTerminalRuleCall_0_0()); 
-                    		
-
-                    	        if (current==null) {
-                    	            current = createModelElement(grammarAccess.getPackageRule());
-                    	        }
-                           		setWithLastConsumed(
-                           			current, 
-                           			"name",
-                            		lv_name_0_0, 
-                            		"ID");
-                    	    
-
-                    }
+            state._fsp--;
 
 
-                    }
-                    break;
+            	        if (current==null) {
+            	            current = createModelElementForParent(grammarAccess.getPackageRule());
+            	        }
+                   		set(
+                   			current, 
+                   			"name",
+                    		lv_name_0_0, 
+                    		"PackageName");
+            	        afterParserOrEnumRuleCall();
+            	    
 
             }
 
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1150:3: (otherlv_1= '.' this_ID_2= RULE_ID )*
-            loop34:
-            do {
-                int alt34=2;
-                int LA34_0 = input.LA(1);
 
-                if ( (LA34_0==31) ) {
-                    alt34=1;
-                }
+            }
 
+            otherlv_1=(Token)match(input,31,FOLLOW_31_in_rulePackage2532); 
 
-                switch (alt34) {
-            	case 1 :
-            	    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1150:5: otherlv_1= '.' this_ID_2= RULE_ID
-            	    {
-            	    otherlv_1=(Token)match(input,31,FOLLOW_31_in_rulePackage2618); 
-
-            	        	newLeafNode(otherlv_1, grammarAccess.getPackageAccess().getFullStopKeyword_1_0());
-            	        
-            	    this_ID_2=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_rulePackage2629); 
-            	     
-            	        newLeafNode(this_ID_2, grammarAccess.getPackageAccess().getIDTerminalRuleCall_1_1()); 
-            	        
-
-            	    }
-            	    break;
-
-            	default :
-            	    break loop34;
-                }
-            } while (true);
-
-            otherlv_3=(Token)match(input,32,FOLLOW_32_in_rulePackage2642); 
-
-                	newLeafNode(otherlv_3, grammarAccess.getPackageAccess().getLeftSquareBracketLeftSquareBracketKeyword_2());
+                	newLeafNode(otherlv_1, grammarAccess.getPackageAccess().getLeftSquareBracketLeftSquareBracketKeyword_1());
                 
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1162:1: ( (lv_classType_4_0= ruleElements ) )*
-            loop35:
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1128:1: ( (lv_classType_2_0= ruleElements ) )*
+            loop32:
             do {
-                int alt35=2;
-                int LA35_0 = input.LA(1);
+                int alt32=2;
+                int LA32_0 = input.LA(1);
 
-                if ( (LA35_0==24||LA35_0==29) ) {
-                    alt35=1;
+                if ( (LA32_0==24||LA32_0==29) ) {
+                    alt32=1;
                 }
 
 
-                switch (alt35) {
+                switch (alt32) {
             	case 1 :
-            	    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1163:1: (lv_classType_4_0= ruleElements )
+            	    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1129:1: (lv_classType_2_0= ruleElements )
             	    {
-            	    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1163:1: (lv_classType_4_0= ruleElements )
-            	    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1164:3: lv_classType_4_0= ruleElements
+            	    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1129:1: (lv_classType_2_0= ruleElements )
+            	    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1130:3: lv_classType_2_0= ruleElements
             	    {
             	     
-            	    	        newCompositeNode(grammarAccess.getPackageAccess().getClassTypeElementsParserRuleCall_3_0()); 
+            	    	        newCompositeNode(grammarAccess.getPackageAccess().getClassTypeElementsParserRuleCall_2_0()); 
             	    	    
-            	    pushFollow(FOLLOW_ruleElements_in_rulePackage2663);
-            	    lv_classType_4_0=ruleElements();
+            	    pushFollow(FOLLOW_ruleElements_in_rulePackage2553);
+            	    lv_classType_2_0=ruleElements();
 
             	    state._fsp--;
 
@@ -3343,7 +3212,7 @@ public class InternalDiagramClassParser extends AbstractInternalAntlrParser {
             	           		add(
             	           			current, 
             	           			"classType",
-            	            		lv_classType_4_0, 
+            	            		lv_classType_2_0, 
             	            		"Elements");
             	    	        afterParserOrEnumRuleCall();
             	    	    
@@ -3355,29 +3224,29 @@ public class InternalDiagramClassParser extends AbstractInternalAntlrParser {
             	    break;
 
             	default :
-            	    break loop35;
+            	    break loop32;
                 }
             } while (true);
 
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1180:3: ( (lv_subPackage_5_0= rulePackage ) )?
-            int alt36=2;
-            int LA36_0 = input.LA(1);
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1146:3: ( (lv_subPackage_3_0= rulePackage ) )?
+            int alt33=2;
+            int LA33_0 = input.LA(1);
 
-            if ( (LA36_0==RULE_ID||(LA36_0>=31 && LA36_0<=32)) ) {
-                alt36=1;
+            if ( (LA33_0==EOF||LA33_0==RULE_ID||LA33_0==31||LA33_0==33) ) {
+                alt33=1;
             }
-            switch (alt36) {
+            switch (alt33) {
                 case 1 :
-                    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1181:1: (lv_subPackage_5_0= rulePackage )
+                    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1147:1: (lv_subPackage_3_0= rulePackage )
                     {
-                    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1181:1: (lv_subPackage_5_0= rulePackage )
-                    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1182:3: lv_subPackage_5_0= rulePackage
+                    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1147:1: (lv_subPackage_3_0= rulePackage )
+                    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1148:3: lv_subPackage_3_0= rulePackage
                     {
                      
-                    	        newCompositeNode(grammarAccess.getPackageAccess().getSubPackagePackageParserRuleCall_4_0()); 
+                    	        newCompositeNode(grammarAccess.getPackageAccess().getSubPackagePackageParserRuleCall_3_0()); 
                     	    
-                    pushFollow(FOLLOW_rulePackage_in_rulePackage2685);
-                    lv_subPackage_5_0=rulePackage();
+                    pushFollow(FOLLOW_rulePackage_in_rulePackage2575);
+                    lv_subPackage_3_0=rulePackage();
 
                     state._fsp--;
 
@@ -3388,7 +3257,7 @@ public class InternalDiagramClassParser extends AbstractInternalAntlrParser {
                            		add(
                            			current, 
                            			"subPackage",
-                            		lv_subPackage_5_0, 
+                            		lv_subPackage_3_0, 
                             		"Package");
                     	        afterParserOrEnumRuleCall();
                     	    
@@ -3401,9 +3270,9 @@ public class InternalDiagramClassParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_6=(Token)match(input,33,FOLLOW_33_in_rulePackage2698); 
+            otherlv_4=(Token)match(input,32,FOLLOW_32_in_rulePackage2588); 
 
-                	newLeafNode(otherlv_6, grammarAccess.getPackageAccess().getRightSquareBracketRightSquareBracketKeyword_5());
+                	newLeafNode(otherlv_4, grammarAccess.getPackageAccess().getRightSquareBracketRightSquareBracketKeyword_4());
                 
 
             }
@@ -3424,72 +3293,206 @@ public class InternalDiagramClassParser extends AbstractInternalAntlrParser {
     }
     // $ANTLR end "rulePackage"
 
+
+    // $ANTLR start "entryRulePackageName"
+    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1176:1: entryRulePackageName returns [String current=null] : iv_rulePackageName= rulePackageName EOF ;
+    public final String entryRulePackageName() throws RecognitionException {
+        String current = null;
+
+        AntlrDatatypeRuleToken iv_rulePackageName = null;
+
+
+        try {
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1177:2: (iv_rulePackageName= rulePackageName EOF )
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1178:2: iv_rulePackageName= rulePackageName EOF
+            {
+             newCompositeNode(grammarAccess.getPackageNameRule()); 
+            pushFollow(FOLLOW_rulePackageName_in_entryRulePackageName2625);
+            iv_rulePackageName=rulePackageName();
+
+            state._fsp--;
+
+             current =iv_rulePackageName.getText(); 
+            match(input,EOF,FOLLOW_EOF_in_entryRulePackageName2636); 
+
+            }
+
+        }
+         
+            catch (RecognitionException re) { 
+                recover(input,re); 
+                appendSkippedTokens();
+            } 
+        finally {
+        }
+        return current;
+    }
+    // $ANTLR end "entryRulePackageName"
+
+
+    // $ANTLR start "rulePackageName"
+    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1185:1: rulePackageName returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()] : ( (this_ID_0= RULE_ID )? (kw= '.' this_ID_2= RULE_ID )* ) ;
+    public final AntlrDatatypeRuleToken rulePackageName() throws RecognitionException {
+        AntlrDatatypeRuleToken current = new AntlrDatatypeRuleToken();
+
+        Token this_ID_0=null;
+        Token kw=null;
+        Token this_ID_2=null;
+
+         enterRule(); 
+            
+        try {
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1188:28: ( ( (this_ID_0= RULE_ID )? (kw= '.' this_ID_2= RULE_ID )* ) )
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1189:1: ( (this_ID_0= RULE_ID )? (kw= '.' this_ID_2= RULE_ID )* )
+            {
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1189:1: ( (this_ID_0= RULE_ID )? (kw= '.' this_ID_2= RULE_ID )* )
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1189:2: (this_ID_0= RULE_ID )? (kw= '.' this_ID_2= RULE_ID )*
+            {
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1189:2: (this_ID_0= RULE_ID )?
+            int alt34=2;
+            int LA34_0 = input.LA(1);
+
+            if ( (LA34_0==RULE_ID) ) {
+                alt34=1;
+            }
+            switch (alt34) {
+                case 1 :
+                    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1189:7: this_ID_0= RULE_ID
+                    {
+                    this_ID_0=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_rulePackageName2677); 
+
+                    		current.merge(this_ID_0);
+                        
+                     
+                        newLeafNode(this_ID_0, grammarAccess.getPackageNameAccess().getIDTerminalRuleCall_0()); 
+                        
+
+                    }
+                    break;
+
+            }
+
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1196:3: (kw= '.' this_ID_2= RULE_ID )*
+            loop35:
+            do {
+                int alt35=2;
+                int LA35_0 = input.LA(1);
+
+                if ( (LA35_0==33) ) {
+                    alt35=1;
+                }
+
+
+                switch (alt35) {
+            	case 1 :
+            	    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1197:2: kw= '.' this_ID_2= RULE_ID
+            	    {
+            	    kw=(Token)match(input,33,FOLLOW_33_in_rulePackageName2698); 
+
+            	            current.merge(kw);
+            	            newLeafNode(kw, grammarAccess.getPackageNameAccess().getFullStopKeyword_1_0()); 
+            	        
+            	    this_ID_2=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_rulePackageName2713); 
+
+            	    		current.merge(this_ID_2);
+            	        
+            	     
+            	        newLeafNode(this_ID_2, grammarAccess.getPackageNameAccess().getIDTerminalRuleCall_1_1()); 
+            	        
+
+            	    }
+            	    break;
+
+            	default :
+            	    break loop35;
+                }
+            } while (true);
+
+
+            }
+
+
+            }
+
+             leaveRule(); 
+        }
+         
+            catch (RecognitionException re) { 
+                recover(input,re); 
+                appendSkippedTokens();
+            } 
+        finally {
+        }
+        return current;
+    }
+    // $ANTLR end "rulePackageName"
+
     // Delegated rules
 
 
-    protected DFA27 dfa27 = new DFA27(this);
-    static final String DFA27_eotS =
+    protected DFA26 dfa26 = new DFA26(this);
+    static final String DFA26_eotS =
         "\11\uffff";
-    static final String DFA27_eofS =
+    static final String DFA26_eofS =
         "\1\2\4\uffff\1\6\3\uffff";
-    static final String DFA27_minS =
-        "\1\16\1\5\1\uffff\1\5\1\uffff\1\16\1\uffff\1\4\1\14";
-    static final String DFA27_maxS =
+    static final String DFA26_minS =
+        "\1\17\1\5\1\uffff\1\5\1\uffff\1\17\1\uffff\1\4\1\14";
+    static final String DFA26_maxS =
         "\1\36\1\27\1\uffff\1\27\1\uffff\1\36\1\uffff\1\32\1\33";
-    static final String DFA27_acceptS =
+    static final String DFA26_acceptS =
         "\2\uffff\1\3\1\uffff\1\2\1\uffff\1\1\2\uffff";
-    static final String DFA27_specialS =
+    static final String DFA26_specialS =
         "\11\uffff}>";
-    static final String[] DFA27_transitionS = {
-            "\1\2\1\uffff\1\2\3\uffff\1\1\3\uffff\1\2\4\uffff\2\2",
+    static final String[] DFA26_transitionS = {
+            "\2\2\3\uffff\1\1\3\uffff\1\2\4\uffff\2\2",
             "\1\3\20\uffff\1\4\1\5",
             "",
             "\1\3\17\uffff\1\4\1\uffff\1\6",
             "",
-            "\1\6\1\uffff\1\6\7\uffff\1\7\4\uffff\2\6",
+            "\2\6\7\uffff\1\7\4\uffff\2\6",
             "",
             "\1\10\24\uffff\2\6",
             "\1\6\3\uffff\1\4\12\uffff\1\6"
     };
 
-    static final short[] DFA27_eot = DFA.unpackEncodedString(DFA27_eotS);
-    static final short[] DFA27_eof = DFA.unpackEncodedString(DFA27_eofS);
-    static final char[] DFA27_min = DFA.unpackEncodedStringToUnsignedChars(DFA27_minS);
-    static final char[] DFA27_max = DFA.unpackEncodedStringToUnsignedChars(DFA27_maxS);
-    static final short[] DFA27_accept = DFA.unpackEncodedString(DFA27_acceptS);
-    static final short[] DFA27_special = DFA.unpackEncodedString(DFA27_specialS);
-    static final short[][] DFA27_transition;
+    static final short[] DFA26_eot = DFA.unpackEncodedString(DFA26_eotS);
+    static final short[] DFA26_eof = DFA.unpackEncodedString(DFA26_eofS);
+    static final char[] DFA26_min = DFA.unpackEncodedStringToUnsignedChars(DFA26_minS);
+    static final char[] DFA26_max = DFA.unpackEncodedStringToUnsignedChars(DFA26_maxS);
+    static final short[] DFA26_accept = DFA.unpackEncodedString(DFA26_acceptS);
+    static final short[] DFA26_special = DFA.unpackEncodedString(DFA26_specialS);
+    static final short[][] DFA26_transition;
 
     static {
-        int numStates = DFA27_transitionS.length;
-        DFA27_transition = new short[numStates][];
+        int numStates = DFA26_transitionS.length;
+        DFA26_transition = new short[numStates][];
         for (int i=0; i<numStates; i++) {
-            DFA27_transition[i] = DFA.unpackEncodedString(DFA27_transitionS[i]);
+            DFA26_transition[i] = DFA.unpackEncodedString(DFA26_transitionS[i]);
         }
     }
 
-    class DFA27 extends DFA {
+    class DFA26 extends DFA {
 
-        public DFA27(BaseRecognizer recognizer) {
+        public DFA26(BaseRecognizer recognizer) {
             this.recognizer = recognizer;
-            this.decisionNumber = 27;
-            this.eot = DFA27_eot;
-            this.eof = DFA27_eof;
-            this.min = DFA27_min;
-            this.max = DFA27_max;
-            this.accept = DFA27_accept;
-            this.special = DFA27_special;
-            this.transition = DFA27_transition;
+            this.decisionNumber = 26;
+            this.eot = DFA26_eot;
+            this.eof = DFA26_eof;
+            this.min = DFA26_min;
+            this.max = DFA26_max;
+            this.accept = DFA26_accept;
+            this.special = DFA26_special;
+            this.transition = DFA26_transition;
         }
         public String getDescription() {
-            return "845:2: ( (otherlv_6= '[' (this_number_7= RULE_NUMBER )* otherlv_8= ']' ) | ( (lv_birelation_9_0= ruleBiRelation ) ) )?";
+            return "819:2: ( (otherlv_6= '[' (this_number_7= RULE_NUMBER )* otherlv_8= ']' ) | ( (lv_birelation_9_0= ruleBiRelation ) ) )?";
         }
     }
  
 
     public static final BitSet FOLLOW_ruleModel_in_entryRuleModel75 = new BitSet(new long[]{0x0000000000000000L});
     public static final BitSet FOLLOW_EOF_in_entryRuleModel85 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rulePackage_in_ruleModel130 = new BitSet(new long[]{0x0000000180000012L});
+    public static final BitSet FOLLOW_rulePackage_in_ruleModel130 = new BitSet(new long[]{0x0000000280000012L});
     public static final BitSet FOLLOW_ruleElements_in_entryRuleElements166 = new BitSet(new long[]{0x0000000000000000L});
     public static final BitSet FOLLOW_EOF_in_entryRuleElements176 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_ruleClass_in_ruleElements223 = new BitSet(new long[]{0x0000000000000002L});
@@ -3499,115 +3502,116 @@ public class InternalDiagramClassParser extends AbstractInternalAntlrParser {
     public static final BitSet FOLLOW_ruleClass_in_entryRuleClass339 = new BitSet(new long[]{0x0000000000000000L});
     public static final BitSet FOLLOW_EOF_in_entryRuleClass349 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_ruleClassVisibility_in_ruleClass390 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_RULE_ID_in_ruleClass406 = new BitSet(new long[]{0x000000000000B010L});
-    public static final BitSet FOLLOW_12_in_ruleClass424 = new BitSet(new long[]{0x000000000000A010L});
-    public static final BitSet FOLLOW_RULE_ID_in_ruleClass443 = new BitSet(new long[]{0x000000000000A010L});
-    public static final BitSet FOLLOW_ruleImplements_in_ruleClass470 = new BitSet(new long[]{0x000000000000A010L});
-    public static final BitSet FOLLOW_13_in_ruleClass483 = new BitSet(new long[]{0x0000000061014000L});
-    public static final BitSet FOLLOW_ruleAttribute_in_ruleClass506 = new BitSet(new long[]{0x0000000061014000L});
-    public static final BitSet FOLLOW_ruleMethod_in_ruleClass525 = new BitSet(new long[]{0x0000000061014000L});
-    public static final BitSet FOLLOW_ruleDependancy_in_ruleClass544 = new BitSet(new long[]{0x0000000061014000L});
-    public static final BitSet FOLLOW_14_in_ruleClass560 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleImplements_in_entryRuleImplements597 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleImplements608 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_15_in_ruleImplements647 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_RULE_ID_in_ruleImplements664 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleDependancy_in_entryRuleDependancy709 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleDependancy719 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_16_in_ruleDependancy756 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_RULE_ID_in_ruleDependancy773 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleEnumeration_in_entryRuleEnumeration814 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleEnumeration824 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleClassVisibility_in_ruleEnumeration865 = new BitSet(new long[]{0x0000000000020000L});
-    public static final BitSet FOLLOW_17_in_ruleEnumeration876 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_RULE_ID_in_ruleEnumeration893 = new BitSet(new long[]{0x0000000000002000L});
-    public static final BitSet FOLLOW_13_in_ruleEnumeration910 = new BitSet(new long[]{0x0000000000004010L});
-    public static final BitSet FOLLOW_RULE_ID_in_ruleEnumeration922 = new BitSet(new long[]{0x000000000000C010L});
-    public static final BitSet FOLLOW_15_in_ruleEnumeration934 = new BitSet(new long[]{0x0000000000004010L});
-    public static final BitSet FOLLOW_14_in_ruleEnumeration950 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleInterface_in_entryRuleInterface986 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleInterface996 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleClassVisibility_in_ruleInterface1037 = new BitSet(new long[]{0x0000000000040000L});
-    public static final BitSet FOLLOW_18_in_ruleInterface1048 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_RULE_ID_in_ruleInterface1065 = new BitSet(new long[]{0x0000000000002000L});
-    public static final BitSet FOLLOW_13_in_ruleInterface1082 = new BitSet(new long[]{0x0000000061004000L});
-    public static final BitSet FOLLOW_ruleMethod_in_ruleInterface1103 = new BitSet(new long[]{0x0000000061004000L});
-    public static final BitSet FOLLOW_14_in_ruleInterface1116 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleAbstract_in_entryRuleAbstract1152 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleAbstract1162 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleClassVisibility_in_ruleAbstract1203 = new BitSet(new long[]{0x0000000000080000L});
-    public static final BitSet FOLLOW_19_in_ruleAbstract1214 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_RULE_ID_in_ruleAbstract1231 = new BitSet(new long[]{0x000000000000B010L});
-    public static final BitSet FOLLOW_12_in_ruleAbstract1249 = new BitSet(new long[]{0x000000000000A010L});
-    public static final BitSet FOLLOW_RULE_ID_in_ruleAbstract1268 = new BitSet(new long[]{0x000000000000A010L});
-    public static final BitSet FOLLOW_ruleImplements_in_ruleAbstract1295 = new BitSet(new long[]{0x000000000000A010L});
-    public static final BitSet FOLLOW_13_in_ruleAbstract1308 = new BitSet(new long[]{0x0000000061004000L});
-    public static final BitSet FOLLOW_ruleAttribute_in_ruleAbstract1331 = new BitSet(new long[]{0x0000000061004000L});
-    public static final BitSet FOLLOW_ruleMethod_in_ruleAbstract1350 = new BitSet(new long[]{0x0000000061004000L});
-    public static final BitSet FOLLOW_14_in_ruleAbstract1366 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleBiRelation_in_entryRuleBiRelation1402 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleBiRelation1412 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_20_in_ruleBiRelation1449 = new BitSet(new long[]{0x0000000000C00020L});
-    public static final BitSet FOLLOW_RULE_NUMBER_in_ruleBiRelation1463 = new BitSet(new long[]{0x0000000000200020L});
-    public static final BitSet FOLLOW_21_in_ruleBiRelation1477 = new BitSet(new long[]{0x0000000000400020L});
-    public static final BitSet FOLLOW_RULE_NUMBER_in_ruleBiRelation1490 = new BitSet(new long[]{0x0000000000800020L});
-    public static final BitSet FOLLOW_22_in_ruleBiRelation1509 = new BitSet(new long[]{0x0000000000800000L});
-    public static final BitSet FOLLOW_22_in_ruleBiRelation1530 = new BitSet(new long[]{0x0000000000800000L});
-    public static final BitSet FOLLOW_23_in_ruleBiRelation1544 = new BitSet(new long[]{0x0000000001000000L});
-    public static final BitSet FOLLOW_24_in_ruleBiRelation1556 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_RULE_ID_in_ruleBiRelation1573 = new BitSet(new long[]{0x0000000000010000L});
-    public static final BitSet FOLLOW_16_in_ruleBiRelation1590 = new BitSet(new long[]{0x0000000000100000L});
-    public static final BitSet FOLLOW_20_in_ruleBiRelation1602 = new BitSet(new long[]{0x0000000000C00020L});
-    public static final BitSet FOLLOW_RULE_NUMBER_in_ruleBiRelation1616 = new BitSet(new long[]{0x0000000000200020L});
-    public static final BitSet FOLLOW_21_in_ruleBiRelation1630 = new BitSet(new long[]{0x0000000000400020L});
-    public static final BitSet FOLLOW_RULE_NUMBER_in_ruleBiRelation1643 = new BitSet(new long[]{0x0000000000800020L});
-    public static final BitSet FOLLOW_22_in_ruleBiRelation1662 = new BitSet(new long[]{0x0000000000800000L});
-    public static final BitSet FOLLOW_22_in_ruleBiRelation1683 = new BitSet(new long[]{0x0000000000800000L});
-    public static final BitSet FOLLOW_23_in_ruleBiRelation1697 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleAttribute_in_entryRuleAttribute1733 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleAttribute1743 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleBodyVisibility_in_ruleAttribute1784 = new BitSet(new long[]{0x0000000006000010L});
-    public static final BitSet FOLLOW_25_in_ruleAttribute1796 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_26_in_ruleAttribute1814 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_RULE_ID_in_ruleAttribute1833 = new BitSet(new long[]{0x0000000000001000L});
-    public static final BitSet FOLLOW_12_in_ruleAttribute1850 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_RULE_ID_in_ruleAttribute1867 = new BitSet(new long[]{0x0000000000100002L});
-    public static final BitSet FOLLOW_20_in_ruleAttribute1886 = new BitSet(new long[]{0x0000000000800020L});
-    public static final BitSet FOLLOW_RULE_NUMBER_in_ruleAttribute1898 = new BitSet(new long[]{0x0000000000800020L});
-    public static final BitSet FOLLOW_23_in_ruleAttribute1911 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleBiRelation_in_ruleAttribute1939 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleparamIn_in_entryRuleparamIn1977 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleparamIn1987 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ID_in_ruleparamIn2029 = new BitSet(new long[]{0x0000000000001000L});
-    public static final BitSet FOLLOW_12_in_ruleparamIn2046 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_RULE_ID_in_ruleparamIn2063 = new BitSet(new long[]{0x0000000000008002L});
-    public static final BitSet FOLLOW_15_in_ruleparamIn2081 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleMethod_in_entryRuleMethod2119 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleMethod2129 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleBodyVisibility_in_ruleMethod2170 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_RULE_ID_in_ruleMethod2186 = new BitSet(new long[]{0x0000000008000000L});
-    public static final BitSet FOLLOW_27_in_ruleMethod2203 = new BitSet(new long[]{0x0000000010000010L});
-    public static final BitSet FOLLOW_ruleparamIn_in_ruleMethod2224 = new BitSet(new long[]{0x0000000010000010L});
-    public static final BitSet FOLLOW_28_in_ruleMethod2237 = new BitSet(new long[]{0x0000000000001002L});
-    public static final BitSet FOLLOW_12_in_ruleMethod2250 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_RULE_ID_in_ruleMethod2267 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleBodyVisibility_in_entryRuleBodyVisibility2311 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleBodyVisibility2322 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_29_in_ruleBodyVisibility2360 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_24_in_ruleBodyVisibility2379 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_30_in_ruleBodyVisibility2398 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleClassVisibility_in_entryRuleClassVisibility2439 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleClassVisibility2450 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_29_in_ruleClassVisibility2488 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_24_in_ruleClassVisibility2507 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rulePackage_in_entryRulePackage2547 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRulePackage2557 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ID_in_rulePackage2599 = new BitSet(new long[]{0x0000000180000000L});
-    public static final BitSet FOLLOW_31_in_rulePackage2618 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_RULE_ID_in_rulePackage2629 = new BitSet(new long[]{0x0000000180000000L});
-    public static final BitSet FOLLOW_32_in_rulePackage2642 = new BitSet(new long[]{0x00000003A1000010L});
-    public static final BitSet FOLLOW_ruleElements_in_rulePackage2663 = new BitSet(new long[]{0x00000003A1000010L});
-    public static final BitSet FOLLOW_rulePackage_in_rulePackage2685 = new BitSet(new long[]{0x0000000200000000L});
-    public static final BitSet FOLLOW_33_in_rulePackage2698 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_ruleClass406 = new BitSet(new long[]{0x0000000000007010L});
+    public static final BitSet FOLLOW_12_in_ruleClass424 = new BitSet(new long[]{0x0000000000006010L});
+    public static final BitSet FOLLOW_RULE_ID_in_ruleClass443 = new BitSet(new long[]{0x0000000000006000L});
+    public static final BitSet FOLLOW_13_in_ruleClass462 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_RULE_ID_in_ruleClass479 = new BitSet(new long[]{0x0000000000006000L});
+    public static final BitSet FOLLOW_14_in_ruleClass498 = new BitSet(new long[]{0x0000000061018000L});
+    public static final BitSet FOLLOW_ruleAttribute_in_ruleClass521 = new BitSet(new long[]{0x0000000061018000L});
+    public static final BitSet FOLLOW_ruleMethod_in_ruleClass540 = new BitSet(new long[]{0x0000000061018000L});
+    public static final BitSet FOLLOW_ruleDependancy_in_ruleClass559 = new BitSet(new long[]{0x0000000061018000L});
+    public static final BitSet FOLLOW_15_in_ruleClass575 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleDependancy_in_entryRuleDependancy611 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleDependancy621 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_16_in_ruleDependancy658 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_RULE_ID_in_ruleDependancy675 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleEnumeration_in_entryRuleEnumeration716 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleEnumeration726 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleClassVisibility_in_ruleEnumeration767 = new BitSet(new long[]{0x0000000000020000L});
+    public static final BitSet FOLLOW_17_in_ruleEnumeration778 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_RULE_ID_in_ruleEnumeration795 = new BitSet(new long[]{0x0000000000004000L});
+    public static final BitSet FOLLOW_14_in_ruleEnumeration812 = new BitSet(new long[]{0x0000000000008010L});
+    public static final BitSet FOLLOW_RULE_ID_in_ruleEnumeration824 = new BitSet(new long[]{0x000000000000A010L});
+    public static final BitSet FOLLOW_13_in_ruleEnumeration836 = new BitSet(new long[]{0x0000000000008010L});
+    public static final BitSet FOLLOW_15_in_ruleEnumeration852 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleInterface_in_entryRuleInterface888 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleInterface898 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleClassVisibility_in_ruleInterface939 = new BitSet(new long[]{0x0000000000040000L});
+    public static final BitSet FOLLOW_18_in_ruleInterface950 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_RULE_ID_in_ruleInterface967 = new BitSet(new long[]{0x0000000000004000L});
+    public static final BitSet FOLLOW_14_in_ruleInterface984 = new BitSet(new long[]{0x0000000061008000L});
+    public static final BitSet FOLLOW_ruleMethod_in_ruleInterface1005 = new BitSet(new long[]{0x0000000061008000L});
+    public static final BitSet FOLLOW_15_in_ruleInterface1018 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleAbstract_in_entryRuleAbstract1054 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleAbstract1064 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleClassVisibility_in_ruleAbstract1105 = new BitSet(new long[]{0x0000000000080000L});
+    public static final BitSet FOLLOW_19_in_ruleAbstract1116 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_RULE_ID_in_ruleAbstract1133 = new BitSet(new long[]{0x0000000000007010L});
+    public static final BitSet FOLLOW_12_in_ruleAbstract1151 = new BitSet(new long[]{0x0000000000006010L});
+    public static final BitSet FOLLOW_RULE_ID_in_ruleAbstract1170 = new BitSet(new long[]{0x0000000000006000L});
+    public static final BitSet FOLLOW_13_in_ruleAbstract1189 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_RULE_ID_in_ruleAbstract1206 = new BitSet(new long[]{0x0000000000006000L});
+    public static final BitSet FOLLOW_14_in_ruleAbstract1225 = new BitSet(new long[]{0x0000000061008000L});
+    public static final BitSet FOLLOW_ruleAttribute_in_ruleAbstract1248 = new BitSet(new long[]{0x0000000061008000L});
+    public static final BitSet FOLLOW_ruleMethod_in_ruleAbstract1267 = new BitSet(new long[]{0x0000000061008000L});
+    public static final BitSet FOLLOW_15_in_ruleAbstract1283 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleBiRelation_in_entryRuleBiRelation1319 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleBiRelation1329 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_20_in_ruleBiRelation1366 = new BitSet(new long[]{0x0000000000C00020L});
+    public static final BitSet FOLLOW_RULE_NUMBER_in_ruleBiRelation1380 = new BitSet(new long[]{0x0000000000200020L});
+    public static final BitSet FOLLOW_21_in_ruleBiRelation1394 = new BitSet(new long[]{0x0000000000400020L});
+    public static final BitSet FOLLOW_RULE_NUMBER_in_ruleBiRelation1407 = new BitSet(new long[]{0x0000000000800020L});
+    public static final BitSet FOLLOW_22_in_ruleBiRelation1426 = new BitSet(new long[]{0x0000000000800000L});
+    public static final BitSet FOLLOW_22_in_ruleBiRelation1447 = new BitSet(new long[]{0x0000000000800000L});
+    public static final BitSet FOLLOW_23_in_ruleBiRelation1461 = new BitSet(new long[]{0x0000000001000000L});
+    public static final BitSet FOLLOW_24_in_ruleBiRelation1473 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_RULE_ID_in_ruleBiRelation1490 = new BitSet(new long[]{0x0000000000010000L});
+    public static final BitSet FOLLOW_16_in_ruleBiRelation1507 = new BitSet(new long[]{0x0000000000100000L});
+    public static final BitSet FOLLOW_20_in_ruleBiRelation1519 = new BitSet(new long[]{0x0000000000C00020L});
+    public static final BitSet FOLLOW_RULE_NUMBER_in_ruleBiRelation1533 = new BitSet(new long[]{0x0000000000200020L});
+    public static final BitSet FOLLOW_21_in_ruleBiRelation1547 = new BitSet(new long[]{0x0000000000400020L});
+    public static final BitSet FOLLOW_RULE_NUMBER_in_ruleBiRelation1560 = new BitSet(new long[]{0x0000000000800020L});
+    public static final BitSet FOLLOW_22_in_ruleBiRelation1579 = new BitSet(new long[]{0x0000000000800000L});
+    public static final BitSet FOLLOW_22_in_ruleBiRelation1600 = new BitSet(new long[]{0x0000000000800000L});
+    public static final BitSet FOLLOW_23_in_ruleBiRelation1614 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleAttribute_in_entryRuleAttribute1650 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleAttribute1660 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleBodyVisibility_in_ruleAttribute1701 = new BitSet(new long[]{0x0000000006000010L});
+    public static final BitSet FOLLOW_25_in_ruleAttribute1713 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_26_in_ruleAttribute1731 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_RULE_ID_in_ruleAttribute1750 = new BitSet(new long[]{0x0000000000001000L});
+    public static final BitSet FOLLOW_12_in_ruleAttribute1767 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_RULE_ID_in_ruleAttribute1784 = new BitSet(new long[]{0x0000000000100002L});
+    public static final BitSet FOLLOW_20_in_ruleAttribute1803 = new BitSet(new long[]{0x0000000000800020L});
+    public static final BitSet FOLLOW_RULE_NUMBER_in_ruleAttribute1815 = new BitSet(new long[]{0x0000000000800020L});
+    public static final BitSet FOLLOW_23_in_ruleAttribute1828 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleBiRelation_in_ruleAttribute1856 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleparamIn_in_entryRuleparamIn1894 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleparamIn1904 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_ruleparamIn1946 = new BitSet(new long[]{0x0000000000001000L});
+    public static final BitSet FOLLOW_12_in_ruleparamIn1963 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_RULE_ID_in_ruleparamIn1980 = new BitSet(new long[]{0x0000000000002002L});
+    public static final BitSet FOLLOW_13_in_ruleparamIn1998 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleMethod_in_entryRuleMethod2036 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleMethod2046 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleBodyVisibility_in_ruleMethod2087 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_RULE_ID_in_ruleMethod2103 = new BitSet(new long[]{0x0000000008000000L});
+    public static final BitSet FOLLOW_27_in_ruleMethod2120 = new BitSet(new long[]{0x0000000010000010L});
+    public static final BitSet FOLLOW_ruleparamIn_in_ruleMethod2141 = new BitSet(new long[]{0x0000000010000010L});
+    public static final BitSet FOLLOW_28_in_ruleMethod2154 = new BitSet(new long[]{0x0000000000001002L});
+    public static final BitSet FOLLOW_12_in_ruleMethod2167 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_RULE_ID_in_ruleMethod2184 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleBodyVisibility_in_entryRuleBodyVisibility2228 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleBodyVisibility2239 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_29_in_ruleBodyVisibility2277 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_24_in_ruleBodyVisibility2296 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_30_in_ruleBodyVisibility2315 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleClassVisibility_in_entryRuleClassVisibility2356 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleClassVisibility2367 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_29_in_ruleClassVisibility2405 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_24_in_ruleClassVisibility2424 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rulePackage_in_entryRulePackage2464 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRulePackage2474 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rulePackageName_in_rulePackage2520 = new BitSet(new long[]{0x0000000080000000L});
+    public static final BitSet FOLLOW_31_in_rulePackage2532 = new BitSet(new long[]{0x00000003A1000010L});
+    public static final BitSet FOLLOW_ruleElements_in_rulePackage2553 = new BitSet(new long[]{0x00000003A1000010L});
+    public static final BitSet FOLLOW_rulePackage_in_rulePackage2575 = new BitSet(new long[]{0x0000000100000000L});
+    public static final BitSet FOLLOW_32_in_rulePackage2588 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rulePackageName_in_entryRulePackageName2625 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRulePackageName2636 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_rulePackageName2677 = new BitSet(new long[]{0x0000000200000002L});
+    public static final BitSet FOLLOW_33_in_rulePackageName2698 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_RULE_ID_in_rulePackageName2713 = new BitSet(new long[]{0x0000000200000002L});
 
 }

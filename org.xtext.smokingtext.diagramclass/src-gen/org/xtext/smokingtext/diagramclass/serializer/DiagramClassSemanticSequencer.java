@@ -76,7 +76,7 @@ public class DiagramClassSemanticSequencer extends AbstractDelegatingSemanticSeq
 	
 	/**
 	 * Constraint:
-	 *     (classname=ID extension=ID? implements=Implements* (body+=Attribute | body+=Method)*)
+	 *     (classname=ID extension=ID? implements=ID* (body+=Attribute | body+=Method)*)
 	 */
 	protected void sequence_Abstract(EObject context, Abstract semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
@@ -110,7 +110,7 @@ public class DiagramClassSemanticSequencer extends AbstractDelegatingSemanticSeq
 	
 	/**
 	 * Constraint:
-	 *     (classname=ID extension=ID? implements=Implements* (body+=Attribute | body+=Method | body+=Dependancy)*)
+	 *     (classname=ID extension=ID? implements=ID* (body+=Attribute | body+=Method | body+=Dependancy)*)
 	 */
 	protected void sequence_Class(EObject context, org.xtext.smokingtext.diagramclass.diagramClass.Class semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
@@ -178,7 +178,7 @@ public class DiagramClassSemanticSequencer extends AbstractDelegatingSemanticSeq
 	
 	/**
 	 * Constraint:
-	 *     (name=ID? classType+=Elements* subPackage+=Package?)
+	 *     (name=PackageName classType+=Elements* subPackage+=Package?)
 	 */
 	protected void sequence_Package(EObject context, org.xtext.smokingtext.diagramclass.diagramClass.Package semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);

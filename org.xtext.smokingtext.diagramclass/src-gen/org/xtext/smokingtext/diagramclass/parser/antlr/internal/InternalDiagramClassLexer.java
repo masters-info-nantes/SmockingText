@@ -82,10 +82,10 @@ public class InternalDiagramClassLexer extends Lexer {
         try {
             int _type = T__13;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:12:7: ( '{' )
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:12:9: '{'
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:12:7: ( ',' )
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:12:9: ','
             {
-            match('{'); 
+            match(','); 
 
             }
 
@@ -102,10 +102,10 @@ public class InternalDiagramClassLexer extends Lexer {
         try {
             int _type = T__14;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:13:7: ( '}' )
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:13:9: '}'
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:13:7: ( '{' )
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:13:9: '{'
             {
-            match('}'); 
+            match('{'); 
 
             }
 
@@ -122,10 +122,10 @@ public class InternalDiagramClassLexer extends Lexer {
         try {
             int _type = T__15;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:14:7: ( ',' )
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:14:9: ','
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:14:7: ( '}' )
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:14:9: '}'
             {
-            match(','); 
+            match('}'); 
 
             }
 
@@ -446,10 +446,11 @@ public class InternalDiagramClassLexer extends Lexer {
         try {
             int _type = T__31;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:30:7: ( '.' )
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:30:9: '.'
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:30:7: ( '[[' )
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:30:9: '[['
             {
-            match('.'); 
+            match("[["); 
+
 
             }
 
@@ -466,10 +467,10 @@ public class InternalDiagramClassLexer extends Lexer {
         try {
             int _type = T__32;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:31:7: ( '[[' )
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:31:9: '[['
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:31:7: ( ']]' )
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:31:9: ']]'
             {
-            match("[["); 
+            match("]]"); 
 
 
             }
@@ -487,11 +488,10 @@ public class InternalDiagramClassLexer extends Lexer {
         try {
             int _type = T__33;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:32:7: ( ']]' )
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:32:9: ']]'
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:32:7: ( '.' )
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:32:9: '.'
             {
-            match("]]"); 
-
+            match('.'); 
 
             }
 
@@ -508,8 +508,8 @@ public class InternalDiagramClassLexer extends Lexer {
         try {
             int _type = RULE_NUMBER;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1209:13: ( '0' .. '9' )
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1209:15: '0' .. '9'
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1216:13: ( '0' .. '9' )
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1216:15: '0' .. '9'
             {
             matchRange('0','9'); 
 
@@ -528,10 +528,10 @@ public class InternalDiagramClassLexer extends Lexer {
         try {
             int _type = RULE_ID;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1211:9: ( ( '^' )? ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )* )
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1211:11: ( '^' )? ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )*
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1218:9: ( ( '^' )? ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )* )
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1218:11: ( '^' )? ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )*
             {
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1211:11: ( '^' )?
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1218:11: ( '^' )?
             int alt1=2;
             int LA1_0 = input.LA(1);
 
@@ -540,7 +540,7 @@ public class InternalDiagramClassLexer extends Lexer {
             }
             switch (alt1) {
                 case 1 :
-                    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1211:11: '^'
+                    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1218:11: '^'
                     {
                     match('^'); 
 
@@ -558,7 +558,7 @@ public class InternalDiagramClassLexer extends Lexer {
                 recover(mse);
                 throw mse;}
 
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1211:40: ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )*
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1218:40: ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )*
             loop2:
             do {
                 int alt2=2;
@@ -607,10 +607,10 @@ public class InternalDiagramClassLexer extends Lexer {
         try {
             int _type = RULE_INT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1213:10: ( ( '0' .. '9' )+ )
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1213:12: ( '0' .. '9' )+
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1220:10: ( ( '0' .. '9' )+ )
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1220:12: ( '0' .. '9' )+
             {
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1213:12: ( '0' .. '9' )+
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1220:12: ( '0' .. '9' )+
             int cnt3=0;
             loop3:
             do {
@@ -624,7 +624,7 @@ public class InternalDiagramClassLexer extends Lexer {
 
                 switch (alt3) {
             	case 1 :
-            	    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1213:13: '0' .. '9'
+            	    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1220:13: '0' .. '9'
             	    {
             	    matchRange('0','9'); 
 
@@ -656,10 +656,10 @@ public class InternalDiagramClassLexer extends Lexer {
         try {
             int _type = RULE_STRING;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1215:13: ( ( '\"' ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' ) )
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1215:15: ( '\"' ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' )
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1222:13: ( ( '\"' ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' ) )
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1222:15: ( '\"' ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' )
             {
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1215:15: ( '\"' ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' )
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1222:15: ( '\"' ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' )
             int alt6=2;
             int LA6_0 = input.LA(1);
 
@@ -677,10 +677,10 @@ public class InternalDiagramClassLexer extends Lexer {
             }
             switch (alt6) {
                 case 1 :
-                    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1215:16: '\"' ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )* '\"'
+                    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1222:16: '\"' ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )* '\"'
                     {
                     match('\"'); 
-                    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1215:20: ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )*
+                    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1222:20: ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )*
                     loop4:
                     do {
                         int alt4=3;
@@ -696,7 +696,7 @@ public class InternalDiagramClassLexer extends Lexer {
 
                         switch (alt4) {
                     	case 1 :
-                    	    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1215:21: '\\\\' .
+                    	    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1222:21: '\\\\' .
                     	    {
                     	    match('\\'); 
                     	    matchAny(); 
@@ -704,7 +704,7 @@ public class InternalDiagramClassLexer extends Lexer {
                     	    }
                     	    break;
                     	case 2 :
-                    	    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1215:28: ~ ( ( '\\\\' | '\"' ) )
+                    	    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1222:28: ~ ( ( '\\\\' | '\"' ) )
                     	    {
                     	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='!')||(input.LA(1)>='#' && input.LA(1)<='[')||(input.LA(1)>=']' && input.LA(1)<='\uFFFF') ) {
                     	        input.consume();
@@ -729,10 +729,10 @@ public class InternalDiagramClassLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1215:48: '\\'' ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )* '\\''
+                    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1222:48: '\\'' ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )* '\\''
                     {
                     match('\''); 
-                    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1215:53: ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )*
+                    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1222:53: ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )*
                     loop5:
                     do {
                         int alt5=3;
@@ -748,7 +748,7 @@ public class InternalDiagramClassLexer extends Lexer {
 
                         switch (alt5) {
                     	case 1 :
-                    	    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1215:54: '\\\\' .
+                    	    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1222:54: '\\\\' .
                     	    {
                     	    match('\\'); 
                     	    matchAny(); 
@@ -756,7 +756,7 @@ public class InternalDiagramClassLexer extends Lexer {
                     	    }
                     	    break;
                     	case 2 :
-                    	    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1215:61: ~ ( ( '\\\\' | '\\'' ) )
+                    	    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1222:61: ~ ( ( '\\\\' | '\\'' ) )
                     	    {
                     	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='&')||(input.LA(1)>='(' && input.LA(1)<='[')||(input.LA(1)>=']' && input.LA(1)<='\uFFFF') ) {
                     	        input.consume();
@@ -799,12 +799,12 @@ public class InternalDiagramClassLexer extends Lexer {
         try {
             int _type = RULE_ML_COMMENT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1217:17: ( '/*' ( options {greedy=false; } : . )* '*/' )
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1217:19: '/*' ( options {greedy=false; } : . )* '*/'
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1224:17: ( '/*' ( options {greedy=false; } : . )* '*/' )
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1224:19: '/*' ( options {greedy=false; } : . )* '*/'
             {
             match("/*"); 
 
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1217:24: ( options {greedy=false; } : . )*
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1224:24: ( options {greedy=false; } : . )*
             loop7:
             do {
                 int alt7=2;
@@ -829,7 +829,7 @@ public class InternalDiagramClassLexer extends Lexer {
 
                 switch (alt7) {
             	case 1 :
-            	    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1217:52: .
+            	    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1224:52: .
             	    {
             	    matchAny(); 
 
@@ -859,12 +859,12 @@ public class InternalDiagramClassLexer extends Lexer {
         try {
             int _type = RULE_SL_COMMENT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1219:17: ( '//' (~ ( ( '\\n' | '\\r' ) ) )* ( ( '\\r' )? '\\n' )? )
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1219:19: '//' (~ ( ( '\\n' | '\\r' ) ) )* ( ( '\\r' )? '\\n' )?
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1226:17: ( '//' (~ ( ( '\\n' | '\\r' ) ) )* ( ( '\\r' )? '\\n' )? )
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1226:19: '//' (~ ( ( '\\n' | '\\r' ) ) )* ( ( '\\r' )? '\\n' )?
             {
             match("//"); 
 
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1219:24: (~ ( ( '\\n' | '\\r' ) ) )*
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1226:24: (~ ( ( '\\n' | '\\r' ) ) )*
             loop8:
             do {
                 int alt8=2;
@@ -877,7 +877,7 @@ public class InternalDiagramClassLexer extends Lexer {
 
                 switch (alt8) {
             	case 1 :
-            	    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1219:24: ~ ( ( '\\n' | '\\r' ) )
+            	    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1226:24: ~ ( ( '\\n' | '\\r' ) )
             	    {
             	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='\t')||(input.LA(1)>='\u000B' && input.LA(1)<='\f')||(input.LA(1)>='\u000E' && input.LA(1)<='\uFFFF') ) {
             	        input.consume();
@@ -897,7 +897,7 @@ public class InternalDiagramClassLexer extends Lexer {
                 }
             } while (true);
 
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1219:40: ( ( '\\r' )? '\\n' )?
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1226:40: ( ( '\\r' )? '\\n' )?
             int alt10=2;
             int LA10_0 = input.LA(1);
 
@@ -906,9 +906,9 @@ public class InternalDiagramClassLexer extends Lexer {
             }
             switch (alt10) {
                 case 1 :
-                    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1219:41: ( '\\r' )? '\\n'
+                    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1226:41: ( '\\r' )? '\\n'
                     {
-                    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1219:41: ( '\\r' )?
+                    // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1226:41: ( '\\r' )?
                     int alt9=2;
                     int LA9_0 = input.LA(1);
 
@@ -917,7 +917,7 @@ public class InternalDiagramClassLexer extends Lexer {
                     }
                     switch (alt9) {
                         case 1 :
-                            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1219:41: '\\r'
+                            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1226:41: '\\r'
                             {
                             match('\r'); 
 
@@ -949,10 +949,10 @@ public class InternalDiagramClassLexer extends Lexer {
         try {
             int _type = RULE_WS;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1221:9: ( ( ' ' | '\\t' | '\\r' | '\\n' )+ )
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1221:11: ( ' ' | '\\t' | '\\r' | '\\n' )+
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1228:9: ( ( ' ' | '\\t' | '\\r' | '\\n' )+ )
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1228:11: ( ' ' | '\\t' | '\\r' | '\\n' )+
             {
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1221:11: ( ' ' | '\\t' | '\\r' | '\\n' )+
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1228:11: ( ' ' | '\\t' | '\\r' | '\\n' )+
             int cnt11=0;
             loop11:
             do {
@@ -1006,8 +1006,8 @@ public class InternalDiagramClassLexer extends Lexer {
         try {
             int _type = RULE_ANY_OTHER;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1223:16: ( . )
-            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1223:18: .
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1230:16: ( . )
+            // ../org.xtext.smokingtext.diagramclass/src-gen/org/xtext/smokingtext/diagramclass/parser/antlr/internal/InternalDiagramClass.g:1230:18: .
             {
             matchAny(); 
 
@@ -1252,11 +1252,11 @@ public class InternalDiagramClassLexer extends Lexer {
     static final String DFA12_maxS =
         "\1\uffff\4\uffff\1\76\3\172\1\133\1\56\1\uffff\1\135\1\76\4\uffff\1\71\1\172\1\uffff\2\uffff\1\57\37\uffff";
     static final String DFA12_acceptS =
-        "\1\uffff\1\1\1\2\1\3\1\4\6\uffff\1\13\2\uffff\1\20\1\21\1\22\1\23\2\uffff\1\30\3\uffff\1\35\1\36\1\1\1\2\1\3\1\4\1\5\1\15\1\6\1\30\1\7\1\10\1\25\1\11\1\12\1\24\1\13\1\26\1\14\1\16\1\17\1\20\1\21\1\22\1\23\1\27\1\31\1\32\1\33\1\34\1\35";
+        "\1\uffff\1\1\1\2\1\3\1\4\6\uffff\1\13\2\uffff\1\20\1\21\1\22\1\23\2\uffff\1\30\3\uffff\1\35\1\36\1\1\1\2\1\3\1\4\1\5\1\15\1\6\1\30\1\7\1\10\1\24\1\11\1\12\1\26\1\13\1\25\1\14\1\16\1\17\1\20\1\21\1\22\1\23\1\27\1\31\1\32\1\33\1\34\1\35";
     static final String DFA12_specialS =
         "\1\1\24\uffff\1\2\1\0\40\uffff}>";
     static final String[] DFA12_transitionS = {
-            "\11\31\2\30\2\31\1\30\22\31\1\30\1\31\1\25\1\21\3\31\1\26\1\16\1\17\1\13\1\20\1\4\1\5\1\12\1\27\12\22\1\1\1\31\1\15\4\31\32\24\1\11\1\31\1\14\1\23\1\24\1\31\1\10\3\24\1\6\3\24\1\7\21\24\1\2\1\31\1\3\uff82\31",
+            "\11\31\2\30\2\31\1\30\22\31\1\30\1\31\1\25\1\21\3\31\1\26\1\16\1\17\1\13\1\20\1\2\1\5\1\12\1\27\12\22\1\1\1\31\1\15\4\31\32\24\1\11\1\31\1\14\1\23\1\24\1\31\1\10\3\24\1\6\3\24\1\7\21\24\1\3\1\31\1\4\uff82\31",
             "",
             "",
             "",
@@ -1365,11 +1365,11 @@ public class InternalDiagramClassLexer extends Lexer {
                         s = -1;
                         if ( (LA12_0==':') ) {s = 1;}
 
-                        else if ( (LA12_0=='{') ) {s = 2;}
+                        else if ( (LA12_0==',') ) {s = 2;}
 
-                        else if ( (LA12_0=='}') ) {s = 3;}
+                        else if ( (LA12_0=='{') ) {s = 3;}
 
-                        else if ( (LA12_0==',') ) {s = 4;}
+                        else if ( (LA12_0=='}') ) {s = 4;}
 
                         else if ( (LA12_0=='-') ) {s = 5;}
 
