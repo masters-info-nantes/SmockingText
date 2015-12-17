@@ -1,5 +1,5 @@
 -- @path MM=/org.xtext.smokingtext.diagramclass/model/generated/DiagramClass.ecore
--- @nsURI MM1=/home/david/Documents/M2ALMA/MDE/Projet/SmokingText/AtlLauncher/src/ressources/UML.ecore
+-- @nsURI MM1=/org.atl.smokingtext.diagramclass/UML.ecore
 
 module diagramclass;
 create OUT : MM1 from IN : MM;
@@ -34,7 +34,7 @@ rule usageTranformation {
 		mmdependancy : MM!Dependancy
 	to 
 		mm1Usage : MM1!Usage (
-			
+			name <- mmdependancy.name
 		)
 }
 
@@ -79,11 +79,20 @@ rule operationNameTransformation {
 	to 
 		 mm1classOperation : MM1!Operation (
 		 	name <- mmclassOperation.name,
-			ownedParameter <- mmclassOperation.param	
+			ownedParameter <- mmclassOperation.param
 		)
 }
 
-
+rule parameterTransformation {
+	
+	from 
+		mmclassParam : MM!paramIn
+	to 
+		mm1classParam : MM1!Parameter (
+			name <- mmclassParam.name
+		)
+	
+}
 
 
 rule diagramEnumerationToUmlEnumeration {

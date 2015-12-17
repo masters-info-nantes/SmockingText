@@ -11,6 +11,9 @@
       </packagedElement>
       <packagedElement xsi:type="uml:Class" name="Author">
         <ownedAttribute name="books"/>
+        <ownedOperation name="ecrire">
+          <ownedParameter name="chaine"/>
+        </ownedOperation>
       </packagedElement>
     </packagedElement>
   </uml:Package>
